@@ -11,12 +11,12 @@ function App() {
         ) : (
           <div className="flex-1 flex flex-col items-center justify-center">
             <header className="flex text-[64pt]">
-              <div>ETHBerlin<sup>3</sup></div>
+              <div>ETHBerlin&Hat;3</div>
             </header>
             <div>
               <div className="mb-4">
-                <span className="font-mono font-bold">eth_berlin.pow(3)</span>
-                <span className="text-xl">- ETHBerlin, the power of 3.</span>
+                <span className="font-mono font-bold">ETHBerlin&Hat;3</span>
+                <span className="text-xl">- ETHBerlin, to the power of 3.</span>
               </div>
               <div>September 16-18, 2022</div>
               <div>Factory G&ouml;rlitzer Park</div>
