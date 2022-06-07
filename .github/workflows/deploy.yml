@@ -41,11 +41,9 @@ jobs:
         with:
           name: production-files
           path: ./build
-      # Auto-deploy as Github pages for React app
-      # From https://github.com/tschaub/gh-pages#deploying-with-github-actions
-      - name: Deploy with gh-pages
-        run: |
-          git remote set-url origin https://${GITHUB_TOKEN}@github.com/Department-of-Decentralization/3.git
-          npm run deploy -- -u "github-actions-bot <support+actions@github.com>"
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./build
+          cname: ethberlin.ooo
