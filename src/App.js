@@ -25,18 +25,7 @@ function App() {
           </div>
         )}
         <footer className="">
-          <a
-            href="https://decentralala.com/"
-            className="flex justify-center items-center hover:cursor-pointer mb-2"
-          >
-            <img
-              src={wolpy}
-              width={96}
-              className="grayscale hover:grayscale-0"
-              alt="Logo Department of Decentralization"
-            />
-          </a>
-          {/* <div className="mb-2">Department of Decentralization</div> */}
+          <div className="mb-2">Department of Decentralization</div>
           <div>
             Read our hacker{" "}
             <a href="/manifesto" className="underline">
