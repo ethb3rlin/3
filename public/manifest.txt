@@ -51,9 +51,9 @@ ETHBerlin^3's north-star values are - and always have been:
 
 Our big question for you is: How do we get from yield farming fruit tokens, VC 
 chains, making the rich richer and a never-ending race to the top to an open and
-an inclusive system that makes a difference in people's lives? Which anarchist and
-privacy-preserving tools can we build that enable independence from governments 
-and mega corps?
+an inclusive system that makes a difference in people's lives? Which anarchist
+and privacy-preserving tools can we build that enable independence from
+governments and mega corps?
 
 We will encourage hackathon tracks, workshops, and supporters at ETHBerlin^3 to
 focus on the following key aspects:
