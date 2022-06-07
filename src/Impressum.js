@@ -5,12 +5,12 @@ export default function Impressum({ showImpressum }) {
         <div className="text-3xl font-bold">Impressum</div>
         <div className="mt-4 text-sm">
           {" "}
-          <div className="font-bold">Angaben gemäß § 5 TMG </div>
+          <div className="font-bold">Angaben gem&auml;&szlig; &sect; 5 TMG </div>
           <div>
-            Betrieb Dezentral GmbH <br />
-            Mariannenstraße 9-10 <br />
+            Betrieb Dezentral gGmbH <br />
+            Mariannenstra&szlig;e 9-10 <br />
             10999 Berlin <br />
-            Handelsregister: HRB 207663 <br />
+            Handelsregister: HRB 207663 B<br />
             Registergericht: Amtsgericht <br />
             Charlottenburg zu Berlin <br />
             Vertreten durch: A. Schoedon
