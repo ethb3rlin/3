@@ -1,5 +1,4 @@
 import { useState } from "react";
-import wolpy from "./assets/wolpy.png";
 import Impressum from "./Impressum";
 
 function App() {
