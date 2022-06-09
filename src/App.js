@@ -15,8 +15,7 @@ function App() {
             </header>
             <div>
               <div className="mb-4">
-                <span className="font-mono font-bold">ETHBerlin<sup>3</sup></span>
-                <span className="text-xl">- ETHBerlin, to the power of 3.</span>
+                <span className="text-xl">ETHBerlin, to the power of 3.</span>
               </div>
               <div>September 16-18, 2022</div>
               <div>Factory G&ouml;rlitzer Park</div>
