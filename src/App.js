@@ -26,15 +26,15 @@ function App() {
           <div className="mb-2">Department of Decentralization</div>
           <div>
             Read our hacker{" "}
-            <a href="/manifest.txt" className="underline">
+            <a href="https://office.ethberl.in/pad/#/2/pad/view/YY5CtWD3j+15ro-1itD78Pz0v2wd-9vUurTXdUyH7mc/embed/" target ="_blank" className="underline">
               manifesto
             </a>{" "}
             and join our{" "}
-            <a href="https://matrix.to/#/#ethberlin:matrix.org" className="underline">
+            <a href="https://matrix.to/#/#ethberlin:matrix.org" target ="_blank" className="underline">
               matrix space
             </a>{" "}
             or{" "}
-            <a href="mailto:henlo@ethberlin.ooo" className="underline">
+            <a href="mailto:henlo@ethberlin.ooo" target ="_blank" className="underline">
               email us
             </a>{" "}
             to get involved.
