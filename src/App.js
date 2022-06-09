@@ -25,19 +25,16 @@ function App() {
         <footer className="">
           <div className="mb-2">Department of Decentralization</div>
           <div>
-            Read our hacker{" "}
-            <a href="https://office.ethberl.in/pad/#/2/pad/view/YY5CtWD3j+15ro-1itD78Pz0v2wd-9vUurTXdUyH7mc/embed/" target ="_blank" className="underline">
-              manifesto
-            </a>{" "}
-            and join our{" "}
-            <a href="https://matrix.to/#/#ethberlin:matrix.org" target ="_blank" className="underline">
+            {" "}
+            <a href="https://office.ethberl.in/pad/#/2/pad/view/YY5CtWD3j+15ro-1itD78Pz0v2wd-9vUurTXdUyH7mc/embed/" rel="noreferrer" target ="_blank" className="underline">
+              hacker manifesto
+            </a>{" "}|{" "}
+            <a href="https://matrix.to/#/%23ethberlin:matrix.org" rel="noreferrer" target ="_blank" className="underline">
               matrix space
-            </a>{" "}
-            or{" "}
-            <a href="mailto:henlo@ethberlin.ooo" target ="_blank" className="underline">
+            </a>{" "}|{" "}
+            <a href="mailto:henlo@ethberlin.ooo" rel="noreferrer" target ="_blank" className="underline">
               email us
             </a>{" "}
-            to get involved.
           </div>
           <button
             onClick={() => setShowImpressum(!showImpressum)}
