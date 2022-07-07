@@ -47,6 +47,13 @@ function App() {
                   email us
                 </a>{" "}
               </div>
+              <div>&nbsp;</div>
+              <div>
+                {" "}
+                <a href="https://ethberlin.ooo/sponsor.pdf" rel="noreferrer" target ="_blank" className="underline">
+                  sponsor us
+                </a>{" "}
+              </div>
             </div>
           </div>
         )}
