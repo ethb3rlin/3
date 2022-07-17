@@ -2,8 +2,8 @@ import React from "react";
 
 const Manifesto = () => {
   return (
-    <div>
-      <h1>ETHBerlin³ - Expect us</h1>
+    <div className="mx-8 md:mx-32 my-32">
+      <h1 className="font-bold mb-4">ETHBerlin³ - Expect us</h1>
       <div>
         <p>Hey friend! Remember us? We know it has been a while.</p>
 
@@ -26,7 +26,7 @@ const Manifesto = () => {
           regression.
         </p>
 
-        <div>
+        <quote>
           <p>
             "Without the freedom to transact, you have no other constitutional
             rights."
@@ -39,7 +39,7 @@ const Manifesto = () => {
             </a>
             .
           </p>
-        </div>
+        </quote>
 
         <p>
           We are seriously concerned about the state of the world, but equally
@@ -51,7 +51,13 @@ const Manifesto = () => {
           want to do our part
         </p>
         <p>Please welcome ETHBerlin's official third edition:</p>
-        <div>ETHBerlin³ - ETHBerlin, to the power of 3.</div>
+
+        <div className="my-8 text-center">
+          <span className=" bg-white text-black font-bold text-xl">
+            ETHBerlin³ - ETHBerlin, to the power of 3.
+          </span>
+        </div>
+
         <p>
           With ETHBerlin³, we aim to go back to the roots and remind our
           community what it's all about: We want to invite you to Berlin to hack
@@ -61,7 +67,7 @@ const Manifesto = () => {
           cryptography, blockchain, and peer-to-peer network technologies.
         </p>
 
-        <div>
+        <quote>
           <p>
             "We must defend our own privacy if we expect to have any. We must
             come together and create systems which allow anonymous transactions
@@ -78,7 +84,7 @@ const Manifesto = () => {
             </a>
             .
           </p>
-        </div>
+        </quote>
 
         <p>
           Our big question for you is: How do we get from yield farming fruit
@@ -93,7 +99,7 @@ const Manifesto = () => {
           ETHBerlin³ to focus on the following key aspects:
         </p>
 
-        <ul>
+        <ul className="ml-8 my-4">
           <li>Private: there is no need for your name, data, or ID.</li>
           <li>Usable: it has to be accessible and user-friendly.</li>
           <li>Direct: it does not ask for permission.</li>
@@ -125,7 +131,7 @@ const Manifesto = () => {
         <p>
           In the previous years, ETHBerlin always tried to make a difference by
           pioneering the use of decentralized technologies and nurturing the
-          ecosystem. Significant projects emerged from our hackathons, such as
+          ecosystem. Significant projects emerged from our hackathons, such as{" "}
           <a href="https://www.pinata.cloud/">IPFS Pinata</a> or the{" "}
           <a href="https://goerli.net/">Goerli Testnet</a>. And legend has it
           that even the Dune Analytics founders{" "}

@@ -8,7 +8,7 @@ module.exports = {
   ],
   theme: {
     fontFamily: {
-      sans: ["Staatliches", ...defaultTheme.fontFamily.sans],
+      staat: ["Staatliches", ...defaultTheme.fontFamily.sans],
       mono: ["Major Mono Display", ...defaultTheme.fontFamily.mono],
     },
     extend: {},
