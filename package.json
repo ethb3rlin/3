@@ -1,47 +1,39 @@
 {
-  "name": "3",
-  "version": "0.1.0",
+  "name": "ethberlin",
+  "version": "1.0.0",
   "private": true,
-  "dependencies": {
-    "@testing-library/jest-dom": "^5.16.4",
-    "@testing-library/react": "^13.3.0",
-    "@testing-library/user-event": "^13.5.0",
-    "react": "^18.1.0",
-    "react-dom": "^18.1.0",
-    "react-scripts": "5.0.1",
-    "web-vitals": "^2.1.4"
-  },
+  "description": "ETHBerlin³ website",
+  "author": "kuzdogan",
+  "keywords": [
+    "gatsby"
+  ],
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "predeploy": "npm run build",
-    "deploy": "echo 'https://ethberlin.ooo' > ./build/CNAME && gh-pages -d build"
+    "develop": "gatsby develop",
+    "start": "gatsby develop",
+    "build": "gatsby build",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean"
   },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
+  "dependencies": {
+    "@fontsource/major-mono-display": "^4.5.9",
+    "@fontsource/staatliches": "^4.5.8",
+    "@mdx-js/mdx": "^1.6.22",
+    "@mdx-js/react": "^1.6.22",
+    "gatsby": "^4.18.2",
+    "gatsby-plugin-image": "^2.18.1",
+    "gatsby-plugin-manifest": "^4.18.1",
+    "gatsby-plugin-mdx": "^3.18.1",
+    "gatsby-plugin-sharp": "^4.18.1",
+    "gatsby-plugin-sitemap": "^5.18.1",
+    "gatsby-source-filesystem": "^4.18.1",
+    "gatsby-transformer-sharp": "^4.18.1",
+    "react": "^18.1.0",
+    "react-dom": "^18.1.0"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.7",
-    "gh-pages": "^4.0.0",
+    "gatsby-plugin-postcss": "^5.18.0",
     "postcss": "^8.4.14",
-    "tailwindcss": "^3.0.24"
-  },
-  "homepage": "https://ethberlin.ooo"
+    "tailwindcss": "^3.1.6"
+  }
 }
