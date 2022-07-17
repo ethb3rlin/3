@@ -13,7 +13,7 @@
     "build": "gatsby build",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
-    "deploy": "gh-pages -d build"
+    "deploy": "echo 'https://ethberlin.ooo' > ./build/CNAME && gh-pages -d build"
   },
   "dependencies": {
     "@fontsource/major-mono-display": "^4.5.9",
@@ -37,5 +37,6 @@
     "gh-pages": "^4.0.0",
     "postcss": "^8.4.14",
     "tailwindcss": "^3.1.6"
-  }
+  },
+  "homepage": "https://24trends.app"
 }
