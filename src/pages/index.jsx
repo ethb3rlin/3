@@ -78,7 +78,7 @@ const Home = () => {
           <div>
             {" "}
             <a
-              href="https://ethberlin.ooo/sponsor.pdf"
+              href="/sponsor.pdf"
               rel="noreferrer"
               target="_blank"
               className="underline"
