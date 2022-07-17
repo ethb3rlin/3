@@ -20,7 +20,7 @@
     "@fontsource/staatliches": "^4.5.8",
     "@mdx-js/mdx": "^1.6.22",
     "@mdx-js/react": "^1.6.22",
-    "gatsby": "^4.18.2",
+    "gatsby": "4.10",
     "gatsby-plugin-image": "^2.18.1",
     "gatsby-plugin-manifest": "^4.18.1",
     "gatsby-plugin-mdx": "^3.18.1",
@@ -28,8 +28,8 @@
     "gatsby-plugin-sitemap": "^5.18.1",
     "gatsby-source-filesystem": "^4.18.1",
     "gatsby-transformer-sharp": "^4.18.1",
-    "react": "^18.1.0",
-    "react-dom": "^18.1.0"
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.7",
@@ -37,10 +37,5 @@
     "gh-pages": "^4.0.0",
     "postcss": "^8.4.14",
     "tailwindcss": "^3.1.6"
-  },
-  "overrides": {
-    "react": "^18.1.0",
-    "react-dom": "^18.1.0",
-    "react-refresh": "0.13.0"
   }
 }
