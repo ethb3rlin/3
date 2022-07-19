@@ -44,7 +44,8 @@
     @apply ml-8 italic border-l-gray-200 border-l-4 pl-4 my-6
   }
   a {
-    @apply underline text-yellow-500
+    @apply hover:underline text-berlin-yellow;
+    @apply cursor-pointer;
   }
   li {
     @apply list-disc list-inside
@@ -58,10 +59,31 @@ body {
   min-height: 100vh;
   background-color: black;
   color: white;
+
+}
+
+body::after {
+  content: "";  
+    /* Grain */
+    opacity: 0.6;
+    background: url(grain.png), linear-gradient(12.51deg, #3A2F18 100%, #3A2F18 0%, #0E0C06 100% ), radial-gradient(#3A2F18, #0E0C06);
+    background-blend-mode: overlay, normal, normal;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;   
 }
 
 #__gatsby, #gatsby-focus-wrapper {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+}
+
+.blur-text {
+  color: transparent;
+  /* text-shadow: <blur>, <outer-glow> */
+  text-shadow: 0 0 10px rgb(255 210 0 / 75%), theme("colors.berlin-yellow") 0 0 15px;
 }
