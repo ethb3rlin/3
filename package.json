@@ -16,8 +16,6 @@
     "deploy": "echo 'https://ethberlin.ooo' > ./build/CNAME && gh-pages -d build"
   },
   "dependencies": {
-    "@fontsource/major-mono-display": "^4.5.9",
-    "@fontsource/staatliches": "^4.5.8",
     "@mdx-js/mdx": "^1.6.22",
     "@mdx-js/react": "^1.6.22",
     "gatsby": "4.10",

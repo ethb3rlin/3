@@ -3,6 +3,33 @@
 @tailwind utilities;
 
 @layer base {
+  @font-face {
+    font-family: DS-Digital;
+    font-weight: 400;
+    src: url(../assets/fonts/DS-Digital/DS-Digi.ttf);
+  }
+  @font-face {
+    font-family: DS-Digital;
+    font-weight: 700;
+    src: url(../assets/fonts/DS-Digital/DS-Digib.ttf);
+  }
+  @font-face {
+    font-family: DS-Digital;
+    font-weight: 400;
+    font-style: italic;
+    src: url(../assets/fonts/DS-Digital/DS-Digii.ttf);
+  }
+  @font-face {
+    font-family: DS-Digital;
+    font-weight: 700;
+    font-style: italic;
+    src: url(../assets/fonts/DS-Digital/DS-Digibi.ttf);
+  }
+  @font-face {
+    font-family: W95FA;
+    font-weight: 400;
+    src: url(../assets/fonts/W95FA/W95FA.otf);
+  }
   h1 {
     @apply text-3xl;
   }

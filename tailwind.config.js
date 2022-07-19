@@ -8,10 +8,17 @@ module.exports = {
   ],
   theme: {
     fontFamily: {
-      staat: ["Staatliches", ...defaultTheme.fontFamily.sans],
-      mono: ["Major Mono Display", ...defaultTheme.fontFamily.mono],
+      mono: [...defaultTheme.fontFamily.mono],
     },
-    extend: {},
+    extend: {
+      fontFamily: {
+        digi: ["DS-Digital", ...defaultTheme.fontFamily.mono],
+        w95: ["W95FA", ...defaultTheme.fontFamily.sans],
+      },
+      colors: {
+        "berlin-yellow": "#FFD200",
+      },
+    },
   },
   plugins: [],
 };
