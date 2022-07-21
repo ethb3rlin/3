@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  h1 {
+    @apply text-3xl;
+  }
+  h2 {
+    @apply text-2xl;
+  }
+  p {
+    @apply mb-2
+  }
+  quote {
+    display: block;
+    @apply ml-8 italic border-l-gray-200 border-l-4 pl-4 my-6
+  }
+  a {
+    @apply underline text-yellow-500
+  }
+  li {
+    @apply list-disc list-inside
+  }
+}
+
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  min-height: 100vh;
+  background-color: black;
+  color: white;
+}
+
+#__gatsby, #gatsby-focus-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}

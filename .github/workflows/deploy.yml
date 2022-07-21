@@ -27,7 +27,7 @@ jobs:
         uses: actions/upload-artifact@v2
         with:
           name: production-files
-          path: ./build
+          path: ./public
 
   deploy:
     name: Deploy
@@ -40,10 +40,10 @@ jobs:
         uses: actions/download-artifact@v2
         with:
           name: production-files
-          path: ./build
+          path: ./public
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./build
-          cname: ethberlin.ooo
+          publish_dir: ./public
+          # cname: ethberlin.ooo
