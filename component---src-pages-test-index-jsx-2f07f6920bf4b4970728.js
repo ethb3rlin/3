@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkethberlin=self.webpackChunkethberlin||[]).push([[995],{8628:function(e,t,l){l.r(t);var n=l(7294);t.default=function(){return n.createElement("div",{className:"flex-1 flex flex-col items-center justify-center bg-black text-white"},"Test")}}}]);
+//# sourceMappingURL=component---src-pages-test-index-jsx-2f07f6920bf4b4970728.js.map
