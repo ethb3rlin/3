@@ -1,11 +1,6 @@
 import React from "react";
 
-const EthDiamond = ({ className }) => (
-  <div
-    className={`whitespace-pre font-mono text-[6px] sticky top-0 pt-96 ${className}`}
-    style={{ color: "rgba(255, 210, 0, 0.5)" }}
-  >
-    {`
+const ETHDiamondString = `
                                                  ~.                                                 
                                                 73:.                                                
                                               .J5J::.                                               
@@ -82,7 +77,13 @@ const EthDiamond = ({ className }) => (
                                               !553:::.                                              
                                                .J3^:                                                
                                                  !.                                                 
-`}
+`;
+const EthDiamond = ({ className }) => (
+  <div
+    className={`whitespace-pre font-mono text-[6px] sticky top-0 pt-96 ${className}`}
+    style={{ color: "rgba(255, 210, 0, 0.5)" }}
+  >
+    {ETHDiamondString}
   </div>
 );
 

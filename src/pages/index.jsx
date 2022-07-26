@@ -1,111 +1,87 @@
-import React from "react";
+import React, { useEffect, useRef, useState } from "react";
+import EthBerlinLogo from "../components/EthBerlinLogo";
 import EthDiamond from "../components/EthDiamond";
+import Layout from "../components/Layout";
 import Sidebar from "../components/Sidebar";
 
 const Home = () => {
+  const [showSidebar, setShowSidebar] = useState(false);
+  const ethBerlinTextRef = useRef(undefined);
+
+  const MIN_SCALE = 0.1;
+  const MAX_SCALE = 1;
+  const MAX_TRANSLATE_X = 0;
+  const MAX_TRANSLATE_Y = 0;
+  // Translate away from the screen at most half of the screen width or height. (half to the edge + half away)
+  const MIN_TRANSLATE_X = -window.innerWidth;
+  const MIN_TRANSLATE_Y = -window.innerHeight;
+  let scale = 1;
+  let translateX = 0;
+  let translateY = 0;
+
+  // from https://medium.com/autodesk-tlv/smooth-text-scaling-in-javascript-css-a817ae8cc4c9
+  useEffect(() => {
+    function onMouseWheel(e) {
+      e.preventDefault();
+      const scaldeDelta = -e.deltaY / 1000;
+      // Normalize X and Y scroll to window width and height to send the element directly to the corner.
+      // Otherwise it hits the shorter axis first.
+      const translateXDelta = (-e.deltaY * window.innerWidth) / 1000;
+      const translateYDelta = (-e.deltaY * window.innerHeight) / 1000;
+
+      // Show sidebar when logo flies away the viewport
+      if (!isInViewport(ethBerlinTextRef.current)) {
+        setShowSidebar(true);
+      } else {
+        setShowSidebar(false);
+      }
+      // scroll upwards
+      if (scaldeDelta > 0) {
+        scale = Math.min(MAX_SCALE, scale + scaldeDelta);
+        // Don't translate past the original position towards right and right.
+        translateX = Math.min(translateX + translateXDelta, MAX_TRANSLATE_X);
+        translateY = Math.min(translateY + translateYDelta, MAX_TRANSLATE_Y);
+      } else {
+        // scroll downwards
+        scale = Math.max(MIN_SCALE, scale + scaldeDelta);
+        translateX = Math.max(translateX + translateXDelta, MIN_TRANSLATE_X);
+        translateY = Math.max(translateY + translateYDelta, MIN_TRANSLATE_Y);
+      }
+      console.log("Scale:" + scale);
+      console.log("TranslateX: ", translateX);
+      console.log("TranslateY: ", translateY);
+      const style = `translateX(${translateX}px) translateY(${translateY}px) scale(${scale})`;
+
+      ethBerlinTextRef.current.style.transform = style;
+    }
+
+    window.addEventListener("wheel", onMouseWheel);
+
+    return () => {
+      window.removeEventListener("wheel");
+    };
+  }, []);
+
   return (
-    <div className="flex-1 flex min-h-full  text-berlin-yellow font-w95">
-      <Sidebar />
-      <div className="flex flex-1 ml-64 text-sm">
-        <div className="mt-64 bg-black w-full mr-8 p-4">
-          <h1 className="my-4 underline">(a)bout</h1>
-          <div className="text-gray-50 text-justify">
-            <p>
-              Before reading, please note: this event is fully booked. We are
-              sorry but we are unable to accomodate more people. We will,
-              however repeat the experience improve based on what we learn, so
-              see you next time.{" "}
-            </p>
-            <p>
-              A lot has been rumored over ETHBerlin- or maybe not, but that was
-              a nice start for this write-up.
-            </p>{" "}
-            <p>
-              {" "}
-              The fact of the matter is that we are indeed working towards
-              organizing a memorable event, and while we sort out piles of GDPR
-              and legal paperwork because after all, Berlin’s cool but it’s in
-              Germany, and Germany does love bureaucracy, we need to focus more
-              on our audience and inform accordingly.{" "}
-            </p>
-            <p>
-              So we assembled this fact sheet in an FAQ format, which we intend
-              to continue adding to as questions arise.
-            </p>
-            <p>
-              Before reading, please note: this event is fully booked. We are
-              sorry but we are unable to accomodate more people. We will,
-              however repeat the experience improve based on what we learn, so
-              see you next time.{" "}
-            </p>
-            <p>
-              A lot has been rumored over ETHBerlin- or maybe not, but that was
-              a nice start for this write-up.
-            </p>{" "}
-            <p>
-              {" "}
-              The fact of the matter is that we are indeed working towards
-              organizing a memorable event, and while we sort out piles of GDPR
-              and legal paperwork because after all, Berlin’s cool but it’s in
-              Germany, and Germany does love bureaucracy, we need to focus more
-              on our audience and inform accordingly.{" "}
-            </p>
-            <p>
-              So we assembled this fact sheet in an FAQ format, which we intend
-              to continue adding to as questions arise.
-            </p>
-            <p>
-              Before reading, please note: this event is fully booked. We are
-              sorry but we are unable to accomodate more people. We will,
-              however repeat the experience improve based on what we learn, so
-              see you next time.{" "}
-            </p>
-            <p>
-              A lot has been rumored over ETHBerlin- or maybe not, but that was
-              a nice start for this write-up.
-            </p>{" "}
-            <p>
-              {" "}
-              The fact of the matter is that we are indeed working towards
-              organizing a memorable event, and while we sort out piles of GDPR
-              and legal paperwork because after all, Berlin’s cool but it’s in
-              Germany, and Germany does love bureaucracy, we need to focus more
-              on our audience and inform accordingly.{" "}
-            </p>
-            <p>
-              So we assembled this fact sheet in an FAQ format, which we intend
-              to continue adding to as questions arise.
-            </p>
-            <p>
-              Before reading, please note: this event is fully booked. We are
-              sorry but we are unable to accomodate more people. We will,
-              however repeat the experience improve based on what we learn, so
-              see you next time.{" "}
-            </p>
-            <p>
-              A lot has been rumored over ETHBerlin- or maybe not, but that was
-              a nice start for this write-up.
-            </p>{" "}
-            <p>
-              {" "}
-              The fact of the matter is that we are indeed working towards
-              organizing a memorable event, and while we sort out piles of GDPR
-              and legal paperwork because after all, Berlin’s cool but it’s in
-              Germany, and Germany does love bureaucracy, we need to focus more
-              on our audience and inform accordingly.{" "}
-            </p>
-            <p>
-              So we assembled this fact sheet in an FAQ format, which we intend
-              to continue adding to as questions arise.
-            </p>
-          </div>
-        </div>
-      </div>
-      <div className="mr-4">
-        <EthDiamond />
+    <div className="flex justify-center items-center min-h-screen">
+      <Sidebar className={showSidebar ? "fade-in-left" : "fade-out-left"} />
+      <EthBerlinLogo
+        ref={ethBerlinTextRef}
+        className="flex flex-col justify-center items-center"
+        titleClassName="text-[96pt]"
+      />
+      <div className="fixed right-0 top-0 bottom-0 overflow-y-scroll w-full">
+        <EthDiamond className="flex justify-end" />
       </div>
     </div>
   );
 };
+
+// https://www.javascripttutorial.net/dom/css/check-if-an-element-is-visible-in-the-viewport/
+function isInViewport(element) {
+  const rect = element.getBoundingClientRect();
+  console.log(rect);
+  return rect.bottom >= 0 && rect.right >= 0;
+}
 
 export default Home;
