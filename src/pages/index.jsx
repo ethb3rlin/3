@@ -64,7 +64,9 @@ const Home = () => {
 
   return (
     <div className="flex justify-center items-center min-h-screen">
-      <Sidebar className={showSidebar ? "fade-in-left" : "fade-out-left"} />
+      <Sidebar
+        className={`z-10 ${showSidebar ? "fade-in-left" : "fade-out-left"}`}
+      />
       <EthBerlinLogo
         ref={ethBerlinTextRef}
         className="flex flex-col justify-center items-center"

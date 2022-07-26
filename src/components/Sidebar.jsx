@@ -41,14 +41,14 @@ const Sidebar = ({ className }) => {
 
   return (
     <div
-      className={`h-screen flex flex-col justify-between py-8 px-4 font-w95 fixed w-52 left-0 ${className}`}
+      className={`h-screen flex flex-col py-8 px-6 font-w95 fixed w-60 left-0 text-berlin-yellow ${className}`}
     >
       <EthBerlinLogo titleClassName="text-5xl" subtitleClassName="mt-1" />
-      <nav className="flex flex-col mt-16">
+      <nav className="flex flex-col mt-16 text-xl">
         <a className="my-2" href="/about">
           <RandomReveal isPlaying duration={1} characters="(a)bout" />
         </a>
-        <a className="my-2">
+        <a className="my-2" href="/schedule">
           {" "}
           <RandomReveal isPlaying duration={1} characters="(s)chedule" />
         </a>
@@ -65,10 +65,10 @@ const Sidebar = ({ className }) => {
           <RandomReveal isPlaying duration={1} characters="(b)log" />
         </a>
       </nav>
-      <div>
+      <div className="mt-auto">
         <div className="my-2">
           read our{" "}
-          <a>
+          <a className="underline">
             <RandomReveal
               isPlaying
               duration={1}
@@ -78,26 +78,26 @@ const Sidebar = ({ className }) => {
         </div>
         <div className="my-2">
           apply to{" "}
-          <a>
+          <a className="underline">
             <RandomReveal isPlaying duration={1} characters="hack" />
           </a>
           ,{" "}
-          <a>
+          <a className="underline">
             <RandomReveal isPlaying duration={1} characters="volunteer" />
           </a>
           ,{" "}
-          <a>
+          <a className="underline">
             <RandomReveal isPlaying duration={1} characters="mentor" />
           </a>
         </div>
         <div className="my-2">
           join our{" "}
-          <a>
+          <a className="underline">
             <RandomReveal isPlaying duration={1} characters="matrix space" />
           </a>{" "}
           or{" "}
-          <a>
-            <RandomReveal isPlaying duration={1} characters="e-mail us" />
+          <a className="underline">
+            <RandomReveal isPlaying duration={1} characters="e-mail us  " />
           </a>
         </div>
       </div>
