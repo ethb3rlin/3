@@ -6,7 +6,7 @@ import Sidebar from "../components/Sidebar";
 
 const Home = () => {
   const [showSidebar, setShowSidebar] = useState(false);
-  const ethBerlinTextRef = useRef(undefined);
+  const ethBerlinTextRef = useRef();
 
   // from https://medium.com/autodesk-tlv/smooth-text-scaling-in-javascript-css-a817ae8cc4c9
   useEffect(() => {
