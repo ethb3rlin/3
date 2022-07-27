@@ -67,6 +67,45 @@ const Home = () => {
       <Sidebar
         className={`z-10 ${showSidebar ? "fade-in-left" : "fade-out-left"}`}
       />
+      <div
+        className={`z-10 ${
+          showSidebar ? "fade-in-right" : "fade-out-right"
+        } fixed top-0 right-0 flex justify-end my-6 mr-12 font-w95`}
+      >
+        <div>
+          <a
+            style={{ textDecoration: "none" }}
+            href="https://calendar.google.com/calendar/u/0/r/eventedit?text=ETHBerlin%C2%B3&location=Lohm%C3%BChlenstra%C3%9Fe+65,+12435+Berlin&dates=20220916T080000+02:00/20220918T200000+02:00"
+            target="_blank"
+            rel="noopener"
+          >
+            September 16-18, 2022
+          </a>
+        </div>
+        <div className="ml-8">
+          <a
+            style={{ textDecoration: "none" }}
+            href="https://factoryberlin.com/"
+            target="_blank"
+            rel="noopener"
+          >
+            Factory Görlitzer Park
+          </a>
+        </div>
+      </div>
+      <div
+        className={`fixed bottom-0 right-0 flex justify-end my-6 mr-12 z-20 text-sm font-w95 ${
+          showSidebar ? "fade-in-right" : "fade-out-right"
+        } `}
+      >
+        <div>department of decentralization</div>
+        <a className="ml-8 text-berlin-yellow" href="/impressum">
+          impressum
+        </a>
+        <a className="ml-8 text-berlin-yellow" href="/code-of-conduct">
+          code of conduct
+        </a>
+      </div>
       <EthBerlinLogo
         ref={ethBerlinTextRef}
         className="flex flex-col justify-center items-center"

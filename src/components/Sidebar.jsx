@@ -3,47 +3,13 @@ import EthBerlinLogo from "./EthBerlinLogo";
 import { RandomReveal } from "react-random-reveal";
 
 const Sidebar = ({ className }) => {
-  // const [aboutText, setAboutText] = useState();
-  // const letterDomain = "abcdefghijklmnopqrstuvwxyz#%&^+=-"; //You can customize what letters it will cycle through
-  // var title = "(a)bout"; // Your text goes here
-  // var speed = 1000; // ms per frame
-  // const frames = 2; // frames per step. Must be >2
-
-  // var titleLength = title.length;
-  // let completedLength = 0;
-  // var fixed = "";
-  // const totalFrames = titleLength * frames + 1;
-
-  // let currFrame = 0;
-
-  // function generateFrame() {
-  //   setTimeout(() => {
-  //     const randPart = generateRandPart(titleLength - completedLength);
-  //     if (currFrame % frames === 0) {
-  //       completedLength++;
-  //       fixed = fixed + title.charAt(completedLength - 1);
-  //     }
-  //     const result = fixed + randPart;
-  //     return result;
-  //   }, speed)
-
-  // }
-
-  // function generateRandPart(length) {
-  //   let randTextBlock = "";
-  //   for (let i = 0; i < length; i++) {
-  //     const rand = Math.floor(letterDomain.length * Math.random());
-  //     const randLetter = letterDomain.charAt(rand);
-  //     randTextBlock = randTextBlock + randLetter;
-  //   }
-  //   return randTextBlock;
-  // }
-
   return (
     <div
       className={`h-screen flex flex-col py-8 px-6 font-w95 fixed w-60 left-0 text-berlin-yellow ${className}`}
     >
-      <EthBerlinLogo titleClassName="text-5xl" subtitleClassName="mt-1" />
+      <a className="" style={{ textDecoration: "none" }} href="/">
+        <EthBerlinLogo titleClassName="text-5xl" subtitleClassName="mt-1" />
+      </a>
       <nav className="flex flex-col mt-16 text-xl">
         <a className="my-2" href="/about">
           (a)bout
@@ -53,7 +19,10 @@ const Sidebar = ({ className }) => {
           (s)chedule
         </a>
         <a className="my-2"> (p)hotos</a>
-        <a className="my-2"> ($)ponsor</a>
+        <a className="my-2" href="/sponsors">
+          {" "}
+          ($)ponsors
+        </a>
         <a className="my-2"> (b)log</a>
       </nav>
       <div className="mt-auto">
