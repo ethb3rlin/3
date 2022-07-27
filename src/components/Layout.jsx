@@ -32,7 +32,9 @@ const Layout = ({ children, showEthDiamond }) => {
 
       {/* Bottom Right fixed items */}
       <div className="fixed bottom-0 right-0 flex justify-end my-6 mr-12 z-20 text-sm">
-        <div>department of decentralization</div>
+        <a className="ml-8 text-berlin-yellow" href="/DoD">
+          department of decentralization
+        </a>
         <a className="ml-8 text-berlin-yellow" href="/impressum">
           impressum
         </a>

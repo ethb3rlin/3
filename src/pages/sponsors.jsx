@@ -1,5 +1,8 @@
 import Layout from "../components/Layout";
 import React from "react";
+import dune from "../assets/sponsors/dune.svg";
+import manta from "../assets/sponsors/manta.svg";
+import walletconnect from "../assets/sponsors/walletconnect.svg";
 
 const SponsorContainer = ({ children, tier, tierName }) => {
   return (
@@ -23,7 +26,9 @@ const Sponsors = () => (
     <h1 className="my-4 underline text-berlin-yellow">($)ponsors</h1>
     <div className="mt-8">
       <SponsorContainer tierName="Hungarian Pengő" tier="TIER 0">
-        sponsors
+        <img src={dune} className="h-24" />
+        <img src={manta} className="h-24" />
+        <img src={walletconnect} className="h-24" />
       </SponsorContainer>
       <SponsorContainer tierName="Zimbabwe Dollar" tier="TIER 1">
         sponsors

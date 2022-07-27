@@ -17,6 +17,7 @@ module.exports = {
       },
       colors: {
         "berlin-yellow": "#FFD200",
+        secondary: "#9E8DE2",
       },
     },
   },

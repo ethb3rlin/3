@@ -98,7 +98,9 @@ const Home = () => {
           showSidebar ? "fade-in-right" : "fade-out-right"
         } `}
       >
-        <div>department of decentralization</div>
+        <a className="ml-8 text-berlin-yellow" href="/DoD">
+          department of decentralization
+        </a>
         <a className="ml-8 text-berlin-yellow" href="/impressum">
           impressum
         </a>

@@ -14,53 +14,26 @@ const Sidebar = ({ className }) => {
         <a className="my-2" href="/about">
           (a)bout
         </a>
-        <a className="my-2" href="/schedule">
+        <a className="my-2" href="/hack">
           {" "}
-          (s)chedule
+          (h)ack
         </a>
-        <a className="my-2"> (p)hotos</a>
+        <a className="my-2" href="/contribute">
+          (c)ontribute
+        </a>
+        <a className="my-2" href="/program">
+          {" "}
+          (p)rogram
+        </a>
         <a className="my-2" href="/sponsors">
           {" "}
-          ($)ponsors
+          (s)ponsors
         </a>
-        <a className="my-2"> (b)log</a>
+        <a className="my-2" href="/manifesto">
+          (m)anifesto
+        </a>
       </nav>
       <div className="mt-auto">
-        <div className="my-2">
-          read our{" "}
-          <a className="underline" href="/manifesto">
-            hacker manifesto
-          </a>
-        </div>
-        <div className="my-2">
-          apply to{" "}
-          <a
-            className="underline"
-            href="https://office.ethberl.in/form/#/2/form/view/Eb09ZMX-zPLH4GFYn8vM3yoNbZoGPxrVW1dPxUy37sg/embed/"
-            target="_blank"
-            rel="noopener"
-          >
-            hack
-          </a>
-          ,{" "}
-          <a
-            className="underline"
-            target="_blank"
-            rel="noopener"
-            href="https://office.ethberl.in/form/#/2/form/view/mX4c4Fi7V4wNHZX32D20RUiXTRfWV+ogehxpQkcxxH8/embed/"
-          >
-            volunteer
-          </a>
-          ,{" "}
-          <a
-            className="underline"
-            target="_blank"
-            rel="noopener"
-            href="https://office.ethberl.in/form/#/2/form/view/YcBSf40HIEMYb04C4-LpA2kh2+NzeXj0EBppBYwYVmo/embed/"
-          >
-            mentor
-          </a>
-        </div>
         <div className="my-2">
           join our{" "}
           <a

@@ -1,17 +1,22 @@
 import Layout from "../components/Layout";
 import React from "react";
 
-const About = () => (
+const DoD = () => (
   <Layout>
-    <h1 className="my-4 underline text-berlin-yellow">code of conduct</h1>
+    <h1 className="my-4 underline text-berlin-yellow">
+      Department of Decentralization
+    </h1>
     <div className="text-gray-50 text-justify decorate-links">
       <p>
-        ETHBerlin³ is organized by the Department of Decentralization, a lose
-        collective of people from the various crypto- and blockchain communities
-        in and around Berlin working on open source and decenentralization. The
-        groub first assembled in 2018 to organize the first ETHBerlin and has
-        been active since. We don't have any leaders and everyone is free to
-        join of leave anytime.
+        ETHBerlin³ is organized by the{" "}
+        <a href="https://decentralala.com/about">
+          Department of Decentralization
+        </a>
+        , a lose collective of people from the various crypto- and blockchain
+        communities in and around Berlin working on open source and
+        decenentralization. The groub first assembled in 2018 to organize the
+        first ETHBerlin and has been active since. We don't have any leaders and
+        everyone is free to join of leave anytime.
       </p>
       <p>
         Our aim is to be an agnostic vehicle to drive adoption, educate
@@ -24,7 +29,7 @@ const About = () => (
           <span className="fake-bold">ETHBerlin (2018):</span> Hackathon,
           conference and the first event ran almost entirely using decentralized
           applications:{" "}
-          <a href="https://ethberlin.com/about/">ethberlin.com/about</a>
+          <a href="https://ethberlin.com/DoD/">ethberlin.com/about</a>
         </li>
         <li>
           <span className="fake-bold">GörliCon (2019): </span>The Ethereum
@@ -84,4 +89,4 @@ const About = () => (
   </Layout>
 );
 
-export default About;
+export default DoD;
