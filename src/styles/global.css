@@ -29,7 +29,7 @@
   @font-face {
     font-family: W95FA;
     font-weight: 400;
-    src: url(../assets/fonts/W95FA/W95FA.otf);
+    src: url(../assets/fonts/W95FA/W95FA.woff2);
   }
   h1 {
     @apply text-3xl;
@@ -38,7 +38,7 @@
     @apply text-2xl;
   }
   p {
-    @apply mb-2
+    @apply mb-6
   }
   quote {
     display: block;
@@ -49,13 +49,13 @@
     @apply cursor-pointer;
   }
   li {
-    @apply list-disc list-inside
+    @apply list-disc list-inside mb-3 ml-4
   }
 }
 
 body {
   margin: 0;
-  -webkit-font-smoothing: antialiased;
+    /* -webkit-font-smoothing: antialiased; */
   -moz-osx-font-smoothing: grayscale;
   min-height: 100vh;
   color: white;
@@ -82,7 +82,10 @@ body {
   z-index: -1;
 }
 
-
+.decorate-links a {
+  text-decoration: underline;
+  color: theme("colors.berlin-yellow")
+}
 .blur-text {
   color: transparent;
   /* text-shadow: <blur>, <outer-glow> */
@@ -97,6 +100,11 @@ body {
   50% {
     opacity: 0;
   }
+}
+.fake-bold {
+  letter-spacing:1px;
+  font-weight: normal;
+  text-shadow:1px 0 0 currentColor;
 }
 
 .fade-in-left {

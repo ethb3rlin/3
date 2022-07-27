@@ -80,8 +80,8 @@ const ETHDiamondString = `
 `;
 const EthDiamond = ({ className }) => (
   <div
-    className={`whitespace-pre font-mono text-[6px] sticky top-0 pt-96 ${className}`}
-    style={{ color: "rgba(255, 210, 0, 0.5)" }}
+    className={`whitespace-pre font-mono text-[6px] sticky top-16 mx-4 ${className}`}
+    style={{ color: "rgba(255, 210, 0, 0.5)", marginTop: "60vh" }}
   >
     {ETHDiamondString}
   </div>

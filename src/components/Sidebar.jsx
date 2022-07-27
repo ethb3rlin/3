@@ -46,58 +46,70 @@ const Sidebar = ({ className }) => {
       <EthBerlinLogo titleClassName="text-5xl" subtitleClassName="mt-1" />
       <nav className="flex flex-col mt-16 text-xl">
         <a className="my-2" href="/about">
-          <RandomReveal isPlaying duration={1} characters="(a)bout" />
+          (a)bout
         </a>
         <a className="my-2" href="/schedule">
           {" "}
-          <RandomReveal isPlaying duration={1} characters="(s)chedule" />
+          (s)chedule
         </a>
-        <a className="my-2">
-          {" "}
-          <RandomReveal isPlaying duration={1} characters="(p)hotos" />
-        </a>
-        <a className="my-2">
-          {" "}
-          <RandomReveal isPlaying duration={1} characters="(s)ponsors" />
-        </a>
-        <a className="my-2">
-          {" "}
-          <RandomReveal isPlaying duration={1} characters="(b)log" />
-        </a>
+        <a className="my-2"> (p)hotos</a>
+        <a className="my-2"> ($)ponsor</a>
+        <a className="my-2"> (b)log</a>
       </nav>
       <div className="mt-auto">
         <div className="my-2">
           read our{" "}
-          <a className="underline">
-            <RandomReveal
-              isPlaying
-              duration={1}
-              characters="hacker manifesto"
-            />
+          <a className="underline" href="/manifesto">
+            hacker manifesto
           </a>
         </div>
         <div className="my-2">
           apply to{" "}
-          <a className="underline">
-            <RandomReveal isPlaying duration={1} characters="hack" />
+          <a
+            className="underline"
+            href="https://office.ethberl.in/form/#/2/form/view/Eb09ZMX-zPLH4GFYn8vM3yoNbZoGPxrVW1dPxUy37sg/embed/"
+            target="_blank"
+            rel="noopener"
+          >
+            hack
           </a>
           ,{" "}
-          <a className="underline">
-            <RandomReveal isPlaying duration={1} characters="volunteer" />
+          <a
+            className="underline"
+            target="_blank"
+            rel="noopener"
+            href="https://office.ethberl.in/form/#/2/form/view/mX4c4Fi7V4wNHZX32D20RUiXTRfWV+ogehxpQkcxxH8/embed/"
+          >
+            volunteer
           </a>
           ,{" "}
-          <a className="underline">
-            <RandomReveal isPlaying duration={1} characters="mentor" />
+          <a
+            className="underline"
+            target="_blank"
+            rel="noopener"
+            href="https://office.ethberl.in/form/#/2/form/view/YcBSf40HIEMYb04C4-LpA2kh2+NzeXj0EBppBYwYVmo/embed/"
+          >
+            mentor
           </a>
         </div>
         <div className="my-2">
           join our{" "}
-          <a className="underline">
-            <RandomReveal isPlaying duration={1} characters="matrix space" />
+          <a
+            className="underline"
+            href="https://matrix.to/#/%23ethberlin:matrix.org"
+            target="_blank"
+            rel="noopener"
+          >
+            matrix space
           </a>{" "}
           or{" "}
-          <a className="underline">
-            <RandomReveal isPlaying duration={1} characters="e-mail us  " />
+          <a
+            className="underline"
+            href="mailto:henlo@ethberlin.ooo"
+            target="_blank"
+            rel="noopener"
+          >
+            e-mail us
           </a>
         </div>
       </div>

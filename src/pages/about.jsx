@@ -3,8 +3,8 @@ import React from "react";
 
 const About = () => (
   <Layout>
-    <h1 className="my-4 underline">(a)bout</h1>
-    <div className="text-gray-50 text-justify">
+    <h1 className="my-4 underline text-berlin-yellow">(a)bout</h1>
+    <div className="text-justify">
       <p>
         Before reading, please note: this event is fully booked. We are sorry
         but we are unable to accomodate more people. We will, however repeat the
