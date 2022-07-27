@@ -8,19 +8,19 @@ const Home = () => {
   const [showSidebar, setShowSidebar] = useState(false);
   const ethBerlinTextRef = useRef(undefined);
 
-  const MIN_SCALE = 0.1;
-  const MAX_SCALE = 1;
-  const MAX_TRANSLATE_X = 0;
-  const MAX_TRANSLATE_Y = 0;
-  // Translate away from the screen at most half of the screen width or height. (half to the edge + half away)
-  const MIN_TRANSLATE_X = -window.innerWidth;
-  const MIN_TRANSLATE_Y = -window.innerHeight;
-  let scale = 1;
-  let translateX = 0;
-  let translateY = 0;
-
   // from https://medium.com/autodesk-tlv/smooth-text-scaling-in-javascript-css-a817ae8cc4c9
   useEffect(() => {
+    const MIN_SCALE = 0.1;
+    const MAX_SCALE = 1;
+    const MAX_TRANSLATE_X = 0;
+    const MAX_TRANSLATE_Y = 0;
+    // Translate away from the screen at most half of the screen width or height. (half to the edge + half away)
+    const MIN_TRANSLATE_X = -window.innerWidth;
+    const MIN_TRANSLATE_Y = -window.innerHeight;
+    let scale = 1;
+    let translateX = 0;
+    let translateY = 0;
+
     function onMouseWheel(e) {
       e.preventDefault();
       const scaldeDelta = -e.deltaY / 1000;
