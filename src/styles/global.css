@@ -29,7 +29,7 @@
   @font-face {
     font-family: W95FA;
     font-weight: 400;
-    src: url(../assets/fonts/W95FA/W95FA.woff2);
+    src: url(../assets/fonts/W95FA/w95fa.woff2);
   }
   h1 {
     @apply text-3xl;
