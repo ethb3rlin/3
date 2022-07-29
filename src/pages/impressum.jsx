@@ -6,7 +6,7 @@ const Impressum = () => {
     <Layout>
       <div className="flex-1 flex flex-col text-center">
         <div className="">
-          <div className="text-3xl font-bold text-berlin-yellow underline">
+          <div className="text-3xl font-bold text-secondary underline">
             Impressum
           </div>
           <div className="mt-4 text-sm">

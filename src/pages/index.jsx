@@ -114,7 +114,7 @@ const Home = () => {
         titleClassName="text-[96pt]"
       />
       <div className="fixed right-0 top-0 bottom-0 overflow-y-scroll w-full">
-        <EthDiamond className="flex justify-end" />
+        <EthDiamond className="flex justify-end" isPrimaryColor={true} />
       </div>
     </div>
   );

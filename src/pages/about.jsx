@@ -3,7 +3,7 @@ import React from "react";
 
 const About = () => (
   <Layout>
-    <h1 className="my-4 underline text-berlin-yellow">(a)bout</h1>
+    <h1 className="my-4 underline text-secondary">(a)bout</h1>
     <div className="text-justify decorate-links">
       <p>
         ETHBerlin³ is a hackathon, a culture festival, an educational event, a

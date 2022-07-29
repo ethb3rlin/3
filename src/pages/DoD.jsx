@@ -3,7 +3,7 @@ import React from "react";
 
 const DoD = () => (
   <Layout>
-    <h1 className="my-4 underline text-berlin-yellow">
+    <h1 className="my-4 underline text-secondary">
       Department of Decentralization
     </h1>
     <div className="text-gray-50 text-justify decorate-links">

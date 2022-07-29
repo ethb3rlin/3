@@ -23,7 +23,7 @@ const SponsorContainer = ({ children, tier, tierName }) => {
 
 const Sponsors = () => (
   <Layout showEthDiamond={false}>
-    <h1 className="my-4 underline text-berlin-yellow">($)ponsors</h1>
+    <h1 className="my-4 underline text-secondary">($)ponsors</h1>
     <div className="mt-8">
       <SponsorContainer tierName="Hungarian Pengő" tier="TIER 0">
         <img src={dune} className="h-24" />
