@@ -63,10 +63,39 @@ const Home = () => {
   }, []);
 
   return (
-    <div className="flex justify-center items-center min-h-screen">
+    <div className="flex justify-center items-center min-h-screen font-w95">
       <Sidebar
         className={`z-10 ${showSidebar ? "fade-in-left" : "fade-out-left"}`}
       />
+      <div
+        className={`fixed max-w-xl flex flex-col left-0 top-0 mt-64 flex-1 ml-64 mr-8 z-10 ${
+          showSidebar ? "fade-in-left " : "fade-out-left"
+        }
+        `}
+      >
+        <div
+          className="w-full mr-8 p-6 text-gray-50 decorate-links"
+          style={{ backgroundColor: "rgba(0, 0, 0, 0.45)" }}
+        >
+          <p className="mt-4">
+            ETHBerlin³ is a hackathon, a cultural festival, an educational
+            event, a platform for hacktivism, and a community initiative to push
+            the decentralized ecosystem forward.
+          </p>
+          <p className="mt-4">
+            Over the last two years, the global crackdown on privacy, freedom of
+            movement, and the right to transact by governments worldwide put us
+            on the edge of a new dark age of regression.
+          </p>
+          <p className="mt-4">
+            We invite you to hack the system, now, more than ever.
+          </p>
+          <p className="mt-4">
+            To learn more about our vision & mission for ETHBerlin³, read our{" "}
+            <a href="/manifesto">hacker manifesto</a>.
+          </p>
+        </div>
+      </div>
       <div
         className={`z-10 ${
           showSidebar ? "fade-in-right" : "fade-out-right"

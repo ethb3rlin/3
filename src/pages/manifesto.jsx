@@ -57,7 +57,7 @@ const Manifesto = () => {
           <p>Please welcome ETHBerlin's official third edition:</p>
 
           <div className="my-8 text-center">
-            <span className=" bg-white text-black font-bold text-xl">
+            <span className=" font-bold text-xl">
               ETHBerlin³ - ETHBerlin, to the power of 3.
             </span>
           </div>

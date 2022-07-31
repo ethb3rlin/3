@@ -111,7 +111,7 @@ body {
   transform: translateX(0);
   opacity: 1;
   visibility: visible;
-  transition: all 0.5s;
+  transition: opacity 0.5s, visibility 0.5s;
 }
 
 .fade-out-left {
@@ -119,14 +119,14 @@ body {
   transform: translate(-13rem);
   opacity: 0;
   visibility: hidden;
-  transition: all 0.5s;
+  transition: opacity 0.5s, visibility 0.5s;
 }
 
 .fade-in-right {
   transform: translateX(0);
   opacity: 1;
   visibility: visible;
-  transition: all 0.5s;
+  transition: opacity 0.5s, visibility 0.5s;
 }
 
 .fade-out-right {
@@ -134,5 +134,5 @@ body {
   transform: translate(13rem);
   opacity: 0;
   visibility: hidden;
-  transition: all 0.5s;
+  transition: opacity 0.5s, visibility 0.5s;
 }
