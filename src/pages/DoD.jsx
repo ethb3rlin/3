@@ -12,11 +12,9 @@ const DoD = () => (
         <a href="https://decentralala.com/about">
           Department of Decentralization
         </a>
-        , a lose collective of people from the various crypto- and blockchain
-        communities in and around Berlin working on open source and
-        decenentralization. The groub first assembled in 2018 to organize the
-        first ETHBerlin and has been active since. We don't have any leaders and
-        everyone is free to join of leave anytime.
+        , a collective of people from various crypto- and blockchain communities
+        in and around Berlin. The group first assembled in 2018 to organize
+        ETHBerlin and has been active since.
       </p>
       <p>
         Our aim is to be an agnostic vehicle to drive adoption, educate
@@ -34,13 +32,12 @@ const DoD = () => (
         <li>
           <span className="fake-bold">GörliCon (2019): </span>The Ethereum
           testnet and infrastructure conference where the Goerli Testnet was
-          launched live on stage: 
-          <a href="https://goerli.net/">goerli.net</a>
+          launched live on stage: <a href="https://goerli.net/">goerli.net</a>
         </li>
         <li>
           <span className="fake-bold">Goerli Testnet (2019): </span>Born at
           ETHBerlin and launched at GörliCon, the Goerli Testnet is now one of
-          the most important public-facing Ethereum testnets after the merge.
+          the most important public-facing Ethereum testnets after the Merge.
         </li>
         <li>
           <span className="fake-bold">
@@ -67,23 +64,26 @@ const DoD = () => (
           connecting talents with web3-companies during the bear market.
         </li>
         <li>
-          <span className="fake-bold">TwoPointFive (2020): </span>the talk show.
+          <span className="fake-bold">
+            TwoPointFive (2020) - The Talk Show:{" "}
+          </span>
           TwoPointFive was a white-label virtual conference. No shill, no
           sponsors, from the community for the community and truly in it for the
           tech: <a href="https://twopointfive.online/">twopointfive.online</a>
         </li>
         <li>
-          <span className="fake-bold">Bundeskunsthalle (2022): </span>who owns
-          it? Blockchain vs. the state: an evening about the future of the
-          public sphere, culture, and its institutions.
+          <span className="fake-bold">StrikeDAO (2022): </span>The Ethereum
+          domain of Bundeskunsthalle was squatted by artist Hito Steyerl and
+          DoD. The StrikeDAO voted on three models of future governance of this
+          squatted domain, quadratically{" "}
+          <a href="https://strikedao.com//">strikedao.com</a>
         </li>
       </ul>
 
-      <p>
-        Currently, the Department is primarily run from Berlin but we encourage
-        everyone to connect and run their local chapter. We are around a dozen
-        members and work by making decisions on proposals that collective
-        members build, and decide on them by rough consensus.
+      <p className="mt-8">
+        Currently, the Department is primarily run from Berlin. We are around a
+        dozen members and currently take collective decisions using rough
+        consensus.
       </p>
     </div>
   </Layout>
