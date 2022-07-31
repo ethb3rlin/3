@@ -101,8 +101,8 @@ const Home = () => {
         <a className="ml-8 text-berlin-yellow" href="/DoD">
           department of decentralization
         </a>
-        <a className="ml-8 text-berlin-yellow" href="/impressum">
-          impressum
+        <a className="ml-8 text-berlin-yellow" href="/contact">
+          contact & impressum
         </a>
         <a className="ml-8 text-berlin-yellow" href="/code-of-conduct">
           code of conduct
