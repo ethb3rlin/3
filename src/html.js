@@ -21,16 +21,21 @@ export default function HTML(props) {
                 if (e.key == 'a' || e.key == 'A') {
                     window.location.href= "/about";
                 }
+                else if (e.key == 'h' || e.key == 'H') {
+                  window.location.href= "/hack";
+                }
+                else if (e.key == 'c' || e.key == 'C') {
+                  window.location.href= "/contribute";
+                }
+                else if (e.key == 'p' || e.key == 'P') {
+                  window.location.href= "/program";
+                }
                 else if (e.key == 's' || e.key == 'S') {
                   window.location.href= "/sponsors";
                 }
-                else if (e.key == 'a' || e.key == 'A') {
-                  window.location.href= "/about";
+                else if (e.key == 'm' || e.key == 'M') {
+                  window.location.href= "/manifesto";
                 }
-                else if (e.key == 'a' || e.key == 'A') {
-                  window.location.href= "/about";
-                }
-
             }
             `,
           }}
