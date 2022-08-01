@@ -2,6 +2,7 @@ import postcss from "postcss";
 import React, { useEffect, useRef, useState } from "react";
 import EthBerlinLogo from "../components/EthBerlinLogo";
 import EthDiamond from "../components/EthDiamond";
+import SEO from "../components/seo";
 import Sidebar from "../components/Sidebar";
 import { useBreakpoint } from "../components/useBreakpoint";
 
@@ -93,6 +94,7 @@ const Home = () => {
 
   return (
     <div className="flex flex-col lg:flex-row sm:justify-center sm:items-center min-h-screen font-w95">
+      <SEO />
       <Sidebar
         className={`hidden sm:flex z-10 ${
           showSidebar ? "fade-in-left" : "fade-out-left"

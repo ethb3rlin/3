@@ -1,12 +1,14 @@
 import React, { useState } from "react";
 import EthBerlinLogo from "./EthBerlinLogo";
 import EthDiamond from "./EthDiamond";
+import SEO from "./seo";
 import Sidebar from "./Sidebar";
 
 const Layout = ({ children, showEthDiamond }) => {
   const [showNav, setShowNav] = useState(false);
   return (
     <div className="flex-1 flex flex-col  min-h-full font-w95">
+      <SEO />
       <Sidebar className={`hidden sm:flex z-10`} hideLogo={false} />
       {/* Top Right items Desktop only */}
       <div className={`z-10 hidden sm:flex justify-end my-6 sm:mr-12 font-w95`}>
