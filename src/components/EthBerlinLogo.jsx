@@ -28,7 +28,7 @@ const EthBerlinLogo = React.forwardRef((props, ref) => {
             setCustomInterval();
           }, 7500);
         }, 50);
-      }, 3000);
+      }, 2000);
     };
 
     // run once
@@ -49,7 +49,7 @@ const EthBerlinLogo = React.forwardRef((props, ref) => {
     >
       <div className={`flex m-0 ${props.titleClassName}`}>
         <div
-          className={`${animate && "glitch"} blur-text-small`}
+          className={`${animate && "glitch layers"} blur-text-small`}
           data-text={`ETHB${letter}rlin`}
         >
           {revealed ? (
@@ -68,7 +68,9 @@ const EthBerlinLogo = React.forwardRef((props, ref) => {
         </div>
       </div>
       <div
-        className={`${animate && "glitch"} font-w95 ${props.subtitleClassName}`}
+        className={`${animate && "glitch"} font-w95 blur-text-smaller ${
+          props.subtitleClassName
+        }`}
         data-text="to the power of 3"
       >
         to the power of 3

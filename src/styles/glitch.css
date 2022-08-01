@@ -443,12 +443,12 @@
 }
 
 .glitch {
-  animation: paths 3s step-end infinite;
+  animation: paths 1.8s step-end infinite;
 }
 
 .glitch::before {
-  animation: paths 3s step-end infinite, opacity 2s step-end infinite,
-    font 3s step-end infinite, movement 2s step-end infinite;
+  animation: paths 2s step-end infinite, opacity 1.7s step-end infinite,
+    font 1s step-end infinite, movement 1.6s step-end infinite;
 }
 
 .glitch::after {

@@ -78,15 +78,15 @@ const ETHDiamondString = `
                                                .J3^:                                                
                                                  !.                                                 
 `;
-const EthDiamond = ({ className, isPrimaryColor }) => {
+const EthDiamond = ({ className, isPrimaryColor, smallScreen }) => {
   return (
     <div
-      className={`whitespace-pre font-mono text-[6px] sticky top-16 mx-4 tracking-wider ${className}`}
+      className={`whitespace-pre font-mono text-[4px] xl:text-[6px] tracking-wider ${className}`}
       style={{
         color: isPrimaryColor
           ? "rgba(255, 210, 0, 0.5)"
           : "rgba(158, 141, 226, 0.75)",
-        marginTop: "60vh",
+        marginTop: !smallScreen && "60vh",
       }}
     >
       {ETHDiamondString}

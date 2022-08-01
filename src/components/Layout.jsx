@@ -4,7 +4,7 @@ import Sidebar from "./Sidebar";
 
 const Layout = ({ children, showEthDiamond }) => {
   return (
-    <div className="flex-1 flex min-h-full font-w95">
+    <div className="flex-1 flex flex-col lg:flex-row min-h-full font-w95">
       <Sidebar />
       {/* Top Right Fixed items */}
       <div className="fixed top-0 right-0 flex justify-end my-6 mr-12">
@@ -54,7 +54,7 @@ const Layout = ({ children, showEthDiamond }) => {
           </div>
         )}
       </div>
-      <div className={`mx-4 ${showEthDiamond ? "block" : "hidden"}`}>
+      <div className={`mx-4 hidden ${showEthDiamond ? "lg:block" : "hidden"}`}>
         <EthDiamond />
       </div>
     </div>

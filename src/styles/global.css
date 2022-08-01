@@ -98,6 +98,11 @@ body {
   text-shadow: 0 0 7px rgb(255 210 0 / 75%), theme("colors.berlin-yellow") 0 0 2px;
 }
 
+.blur-text-smaller {
+  color: transparent;
+  /* text-shadow: <blur>, <outer-glow> */
+  text-shadow: 0 0 5px rgb(255 210 0 / 75%), theme("colors.berlin-yellow") 0 0 1.5px;
+}
 .blink {
   animation: blinker 1s step-start infinite;
 }

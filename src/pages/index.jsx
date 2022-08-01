@@ -101,13 +101,13 @@ const Home = () => {
   }, []);
 
   return (
-    <div className="flex justify-center items-center min-h-screen font-w95">
+    <div className="flex flex-col lg:flex-row justify-center items-center min-h-screen font-w95">
       <Sidebar
         className={`z-10 ${showSidebar ? "fade-in-left" : "fade-out-left"}`}
         hideLogo={true}
       />
       <div
-        className={`fixed max-w-xl flex flex-col left-0 top-0 mt-64 flex-1 ml-64 mr-8 z-10 ${
+        className={`lg:fixed max-w-xl flex flex-col left-0 top-0 mt-72 flex-1 ml-64 mr-8 z-10 ${
           showSidebar ? "fade-in-left " : "fade-out-left"
         }
         `}
@@ -182,18 +182,21 @@ const Home = () => {
         titleClassName="text-5xl"
         subtitleClassName={`${!showSidebar && "text-center text-xs"}`}
       />
-      <div className="fixed right-0 top-0 bottom-0 overflow-y-scroll w-full">
-        <EthDiamond className="flex justify-end" isPrimaryColor={true} />
+      <div className="flex justify-center lg:hidden ml-60">
+        <EthDiamond
+          className="flex justify-end"
+          smallScreen={true}
+          isPrimaryColor={true}
+        />
+      </div>
+      <div className="hidden lg:block fixed right-0 top-0 bottom-0 overflow-y-scroll w-full">
+        <EthDiamond
+          className="sticky top-16 mx-4  flex justify-end"
+          isPrimaryColor={true}
+        />
       </div>
     </div>
   );
 };
-
-// https://www.javascripttutorial.net/dom/css/check-if-an-element-is-visible-in-the-viewport/
-function isInViewport(element) {
-  const rect = element.getBoundingClientRect();
-  console.log(rect);
-  return rect.bottom >= 0 && rect.right >= 0;
-}
 
 export default Home;
