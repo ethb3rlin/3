@@ -12,7 +12,7 @@ import bolivar from "../assets/sponsors/bolivar.png";
 const SponsorContainer = ({ children, tier, tierName, description, image }) => {
   return (
     <div
-      className="my-8 px-16 py-16  overflow-clip"
+      className="my-8 px-8 py-8 md:px-16 md:py-16  overflow-clip"
       style={{ backgroundColor: "rgba(255,255,255, 0.05)" }}
     >
       <div className="flex flex-col ">
@@ -22,18 +22,20 @@ const SponsorContainer = ({ children, tier, tierName, description, image }) => {
             <div className="text-berlin-yellow text-2xl">{tierName}</div>
             <div className="mt-4">{description}</div>
           </div>
-          <div className="relative grid grid-rows-1 grid-cols-1">
+          <div className="hidden relative md:grid grid-rows-1 grid-cols-1">
             <img
               src={image}
-              className=" rotate-12 translate-x-32 translate-y-24 h-48"
+              className=" rotate-12 translate-x-28 lg:translate-x-32 translate-y-12 lg:translate-y-24 h-20 lg:h-48"
             />
             <img
               src={image}
-              className=" rotate-6 translate-x-32 -translate-y-24 h-48"
+              className=" rotate-6 translate-x-28 lg:translate-x-32 -translate-y-12 lg:-translate-y-24 h-20 lg:h-48"
             />
           </div>
         </div>
-        <div className="flex justify-center items-center mt-24">{children}</div>
+        <div className="flex flex-col lg:flex-row justify-center items-center mt-8 flex-wrap">
+          {children}
+        </div>
       </div>
     </div>
   );
@@ -60,17 +62,23 @@ const Sponsors = () => (
         image={pengo}
       >
         <a href="https://dune.com">
-          <img src={dune} className="h-16 mx-8 grayscale hover:grayscale-0" />
+          <img
+            src={dune}
+            className="h-12 md:h-16 mx-8 sm:grayscale hover:grayscale-0 my-4"
+          />
         </a>
-        <div className="h-16 border-l border-solid border-berlin-yellow" />
+        <div className="hidden lg:block h-16 border-l border-solid border-berlin-yellow" />
         <a href="https://www.manta.network/">
-          <img src={manta} className="h-16 mx-8 grayscale hover:grayscale-0" />
+          <img
+            src={manta}
+            className="h-12 md:h-16 mx-8 sm:grayscale hover:grayscale-0 my-4"
+          />
         </a>
-        <div className="h-16 border-l border-solid border-berlin-yellow" />
+        <div className="hidden lg:block h-16 border-l border-solid border-berlin-yellow" />
         <a href="https://walletconnect.com/">
           <img
             src={walletconnect}
-            className="h-16 mx-8 grayscale hover:grayscale-0 py-2"
+            className="h-12 md:h-16 mx-8 sm:grayscale hover:grayscale-0 my-4 py-2"
           />
         </a>
       </SponsorContainer>

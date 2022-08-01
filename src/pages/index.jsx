@@ -100,17 +100,17 @@ const Home = () => {
         hideLogo={true}
       />
       {/* Non-moving logo navbar for mobile */}
-      <div className="sm:hidden flex justify-between text-berlin-yellow">
+      <div className="sm:hidden flex justify-between text-berlin-yellow my-8 mx-4">
         <EthBerlinLogo
-          className="my-4 mx-8"
+          className=""
           titleClassName="text-4xl"
           subtitleClassName={`text-lg `}
         />
-        <div className=" flex flex-col flex-grow-0 font-w95  text-2xl leading-3 justify-center">
+        <div className=" flex flex-col flex-grow-0 font-w95  text-2xl leading-3 justify-center z-30">
           <button
-            className="p-2 mr-8 blur-text-smaller"
+            className="p-2 blur-text-smaller"
             style={{ backgroundColor: "rgba(0, 0, 0, 0.45)" }}
-            onClick={() => setShowNav((prev) => !prev)}
+            onClick={() => setShowNav(true)}
           >
             <div>---</div>
             <div>---</div>
@@ -118,8 +118,42 @@ const Home = () => {
           </button>
         </div>
       </div>
+      {/* Open/scole nav menu */}
+      <nav
+        className={`flex z-30 ${
+          showNav ? "visible opacity-95" : "invisible opacity-0"
+        } flex-col items-center transition-all duration-200 ease-in-out text-xl fixed bg-black top-0 left-0 w-screen h-screen justify-center text-berlin-yellow`}
+      >
+        <button
+          className="fixed top-8 right-8 text-4xl p-8"
+          onClick={() => setShowNav(false)}
+        >
+          X
+        </button>
+        <a className="my-2" href="/about">
+          (a)bout
+        </a>
+        <a className="my-2" href="/hack">
+          {" "}
+          (h)ack
+        </a>
+        <a className="my-2" href="/contribute">
+          (c)ontribute
+        </a>
+        <a className="my-2" href="/program">
+          {" "}
+          (p)rogram
+        </a>
+        <a className="my-2" href="/sponsors">
+          {" "}
+          (s)ponsors
+        </a>
+        <a className="my-2" href="/manifesto">
+          (m)anifesto
+        </a>
+      </nav>
       <div
-        className={`static lg:fixed max-w-xl flex flex-col left-0 top-0 mt-16 sm:mt-72 flex-1 ml-8 sm:ml-64 mr-8 z-10 ${
+        className={`static lg:fixed max-w-xl flex flex-col left-0 top-0 mt-16 sm:mt-72 flex-1 ml-4 sm:ml-64 mr-4 z-10 ${
           showSidebar ? "fade-in-left " : "fade-out-left"
         }
         `}

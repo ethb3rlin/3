@@ -91,12 +91,13 @@ body {
 #__gatsby, #gatsby-focus-wrapper::after {
   content: "";
   background: #1E1E1E;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
   z-index: -1;
+  padding-bottom: 3rem;
 }
 
 .decorate-links a {
