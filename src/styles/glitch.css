@@ -2,6 +2,7 @@
 
 .layers {
   position: relative;
+  content: attr(data-text);
 }
 
 .layers::before,
@@ -442,15 +443,15 @@
 }
 
 .glitch {
-  animation: paths 5s step-end infinite;
+  animation: paths 3s step-end infinite;
 }
 
 .glitch::before {
-  animation: paths 5s step-end infinite, opacity 5s step-end infinite,
-    font 8s step-end infinite, movement 10s step-end infinite;
+  animation: paths 3s step-end infinite, opacity 2s step-end infinite,
+    font 3s step-end infinite, movement 2s step-end infinite;
 }
 
 .glitch::after {
-  animation: paths 5s step-end infinite, opacity 5s step-end infinite,
-    font 7s step-end infinite, movement 8s step-end infinite;
+  animation: paths 2s step-end infinite, opacity 1.5s step-end infinite,
+    font 3s step-end infinite, movement 2.5s step-end infinite;
 }
