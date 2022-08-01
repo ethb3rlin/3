@@ -22,10 +22,14 @@ const SponsorContainer = ({ children, tier, tierName, description, image }) => {
             <div className="text-berlin-yellow text-2xl">{tierName}</div>
             <div className="mt-4">{description}</div>
           </div>
-          <div className="">
+          <div className="relative grid grid-rows-1 grid-cols-1">
             <img
               src={image}
-              className="rotate-12 translate-x-32 translate-y-8 h-48"
+              className=" rotate-12 translate-x-32 translate-y-24 h-48"
+            />
+            <img
+              src={image}
+              className=" rotate-6 translate-x-32 -translate-y-24 h-48"
             />
           </div>
         </div>
@@ -74,16 +78,23 @@ const Sponsors = () => (
         tierName="Zimbabwe Dollar"
         tier="TIER 1"
         image={zimbabwe}
+        description="The devaluation of the Zimbabwe Dollar was difficult to measure because the government stopped filling the statistics (2008), the peak was estimated at 80 billion percent month-on-month."
       >
         TBD
       </SponsorContainer>
-      <SponsorContainer tierName="Yugoslav Dinar" tier="TIER 2" image={dinar}>
+      <SponsorContainer
+        tierName="Yugoslav Dinar"
+        tier="TIER 2"
+        image={dinar}
+        description="Yugoslavia re-denominated the Yugoslaw Dinar in 1994 at a ration of 1 billion to 1. Previously, wages became worthless. If paid in cash, workers had to rush out and spend their wages before they lost their value overnight."
+      >
         TBD
       </SponsorContainer>
       <SponsorContainer
         tierName="Venezuelan Bolívar"
         tier="TIER 3"
         image={bolivar}
+        description="The value of the hard Venezuelan Bolívar pegged to the US dollar did not stay stable for long. The central bank stuck to the subsidised exchange rate which was so overpriced that people began using parallel rates (ongoing)."
       >
         TBD
       </SponsorContainer>
@@ -91,6 +102,7 @@ const Sponsors = () => (
         tierName="German Papiermark"
         tier="Community TIER"
         image={papiermark}
+        description="The German Papiermark was issued during the hyperinflation in 1922-23 when a peg to gold was no longer possible. Due to the fast devaluation, there was no option to mint coins and only the paper mark was issued."
       >
         TBD
       </SponsorContainer>
@@ -98,6 +110,7 @@ const Sponsors = () => (
         tierName="Greek Drachma"
         tier="CineBar TIER"
         image={drachma}
+        description="The Greek Drachma hyperinflation started during the Axis occupation and was a result of an excessive reliance by the government on the inflation tax. The inflation reached a peak in 1944 after liberation."
       >
         TBD
       </SponsorContainer>
