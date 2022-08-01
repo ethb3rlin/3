@@ -49,7 +49,9 @@ const EthBerlinLogo = React.forwardRef((props, ref) => {
     >
       <div className={`flex m-0 ${props.titleClassName}`}>
         <div
-          className={`${animate && "glitch layers"} blur-text-small`}
+          className={`${
+            animate && "glitch layers"
+          } blur-text-smaller sm:blur-text-small`}
           data-text={`ETHB${letter}rlin`}
         >
           {revealed ? (

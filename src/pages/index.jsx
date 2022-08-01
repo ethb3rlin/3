@@ -2,15 +2,21 @@ import postcss from "postcss";
 import React, { useEffect, useRef, useState } from "react";
 import EthBerlinLogo from "../components/EthBerlinLogo";
 import EthDiamond from "../components/EthDiamond";
-import Layout from "../components/Layout";
 import Sidebar from "../components/Sidebar";
+import { useBreakpoint } from "../components/useBreakpoint";
 
 const Home = () => {
   const [showSidebar, setShowSidebar] = useState(false);
   const ethBerlinTextRef = useRef();
+  const { isSm } = useBreakpoint("sm");
 
-  // from https://medium.com/autodesk-tlv/smooth-text-scaling-in-javascript-css-a817ae8cc4c9
-  useEffect(() => {
+  //medium.com/autodesk-tlv/smooth-text-scaling-in-javascript-css-a817ae8cc4c9
+  https: useEffect(() => {
+    // Don't run on mobile
+    if (!isSm) {
+      setShowSidebar(true);
+      return;
+    }
     const MIN_SCALE = 1;
     const MAX_SCALE = 2.5;
     const SCALE_DOMAIN = MAX_SCALE - MIN_SCALE;
@@ -33,22 +39,15 @@ const Home = () => {
     // Set initial position and scale
     ethBerlinTextRef.current.style.transform = `translateX(${translateX}px) translateY(${translateY}px) scale(${scale})`;
 
-    function onTouchStart(e) {
-      console.log(e);
-      const position = e.touches[0].clientY;
-      console.log("Start:" + position);
-    }
-
-    function onTouchEnd(e) {
-      console.log(e);
-      const position = e.changedTouches[0].clientY;
-      console.log("Finish: " + position);
-    }
-
     function onMouseWheel(e) {
       e.preventDefault();
-      console.log("e.deltaY: ", -e.deltaY);
-      const scaleDelta = (-e.deltaY * SCALE_DOMAIN) / TRANSLATE_DOMAIN_X;
+      moveElementOnDelta(-e.deltaY);
+    }
+
+    // Takes either the mousewheel or touch scroll as Y axis delta
+    function moveElementOnDelta(delta) {
+      console.log("e.deltaY: ", delta);
+      const scaleDelta = (delta * SCALE_DOMAIN) / TRANSLATE_DOMAIN_X;
       console.log("Scale delta: " + scaleDelta);
       const elementHeight = ethBerlinTextRef.current.offsetHeight;
       const elementWidth = ethBerlinTextRef.current.offsetWidth;
@@ -58,9 +57,8 @@ const Home = () => {
       console.log(rect);
       // Normalize X and Y scroll to window width and height to send the element directly to the corner.
       // Otherwise it hits the shorter axis first.
-      const translateXDelta = -e.deltaY;
-      const translateYDelta =
-        (-e.deltaY / TRANSLATE_DOMAIN_X) * TRANSLATE_DOMAIN_Y;
+      const translateXDelta = delta;
+      const translateYDelta = (delta / TRANSLATE_DOMAIN_X) * TRANSLATE_DOMAIN_Y;
 
       // scroll upwards
       if (scaleDelta > 0) {
@@ -82,32 +80,44 @@ const Home = () => {
       ethBerlinTextRef.current.style.transform = style;
 
       // Show sidebar when logo is in place
-      if (translateX === 0) {
-        setShowSidebar(true);
-      } else {
-        setShowSidebar(false);
-      }
+      translateX === 0 ? setShowSidebar(true) : setShowSidebar(false);
     }
 
     window.addEventListener("wheel", onMouseWheel);
-    window.addEventListener("touchstart", onTouchStart);
-    window.addEventListener("touchend", onTouchEnd);
 
     return () => {
-      window.removeEventListener("wheel");
-      window.removeEventListener("touchstart");
-      window.removeEventListener("touchend");
+      window.removeEventListener("wheel", onMouseWheel);
     };
-  }, []);
+  }, [isSm]);
 
   return (
-    <div className="flex flex-col lg:flex-row justify-center items-center min-h-screen font-w95">
+    <div className="flex flex-col lg:flex-row sm:justify-center sm:items-center min-h-screen font-w95">
       <Sidebar
-        className={`z-10 ${showSidebar ? "fade-in-left" : "fade-out-left"}`}
+        className={`hidden sm:block z-10 ${
+          showSidebar ? "fade-in-left" : "fade-out-left"
+        }`}
         hideLogo={true}
       />
+      {/* Non-moving logo for mobile */}
+      <div className="flex justify-between">
+        <EthBerlinLogo
+          className="sm:hidden my-4 mx-8"
+          titleClassName="text-4xl"
+          subtitleClassName={`text-lg `}
+        />
+        <div className="sm:hidden flex flex-col flex-grow-0 font-w95  text-berlin-yellow text-2xl leading-3 justify-center">
+          <button
+            className="p-2 mr-8 blur-text-smaller"
+            style={{ backgroundColor: "rgba(0, 0, 0, 0.45)" }}
+          >
+            <div>---</div>
+            <div>---</div>
+            <div>---</div>
+          </button>
+        </div>
+      </div>
       <div
-        className={`lg:fixed max-w-xl flex flex-col left-0 top-0 mt-72 flex-1 ml-64 mr-8 z-10 ${
+        className={`static lg:fixed max-w-xl flex flex-col left-0 top-0 mt-16 sm:mt-72 flex-1 ml-8 sm:ml-64 mr-8 z-10 ${
           showSidebar ? "fade-in-left " : "fade-out-left"
         }
         `}
@@ -135,54 +145,15 @@ const Home = () => {
           </p>
         </div>
       </div>
-      <div
-        className={`z-10 ${
-          showSidebar ? "fade-in-right" : "fade-out-right"
-        } fixed top-0 right-0 flex justify-end my-6 mr-12 font-w95`}
-      >
-        <div>
-          <a
-            style={{ textDecoration: "none" }}
-            href="https://calendar.google.com/calendar/u/0/r/eventedit?text=ETHBerlin%C2%B3&location=Lohm%C3%BChlenstra%C3%9Fe+65,+12435+Berlin&dates=20220916T080000+02:00/20220918T200000+02:00"
-            target="_blank"
-            rel="noopener"
-          >
-            September 16-18, 2022
-          </a>
-        </div>
-        <div className="ml-8">
-          <a
-            style={{ textDecoration: "none" }}
-            href="https://factoryberlin.com/"
-            target="_blank"
-            rel="noopener"
-          >
-            Factory Görlitzer Park
-          </a>
-        </div>
-      </div>
-      <div
-        className={`fixed bottom-0 right-0 flex justify-end my-6 mr-12 z-20 text-sm font-w95 ${
-          showSidebar ? "fade-in-right" : "fade-out-right"
-        } `}
-      >
-        <a className="ml-8 text-berlin-yellow" href="/DoD">
-          department of decentralization
-        </a>
-        <a className="ml-8 text-berlin-yellow" href="/contact">
-          contact & impressum
-        </a>
-        <a className="ml-8 text-berlin-yellow" href="/code-of-conduct">
-          code of conduct
-        </a>
-      </div>
+
+      {/* Moving logo not shown on mobile */}
       <EthBerlinLogo
         ref={ethBerlinTextRef}
-        className="top-0 left-0 px-6 py-8 fixed w-auto flex flex-col justify-center origin-top-left"
-        titleClassName="text-5xl"
+        className="hidden sm:flex top-0 left-0 px-6 py-8 fixed w-auto flex-col justify-center origin-top-left"
+        titleClassName="text-2xl sm:text-5xl"
         subtitleClassName={`${!showSidebar && "text-center text-xs"}`}
       />
-      <div className="flex justify-center lg:hidden ml-60">
+      <div className="flex justify-center lg:hidden sm:ml-60">
         <EthDiamond
           className="flex justify-end"
           smallScreen={true}
@@ -194,6 +165,47 @@ const Home = () => {
           className="sticky top-16 mx-4  flex justify-end"
           isPrimaryColor={true}
         />
+      </div>
+      <div
+        className={`z-10 ${
+          showSidebar ? "fade-in-right" : "fade-out-right"
+        } sm:fixed sm:top-0 sm:right-0 flex justify-evenly sm:justify-end my-6 sm:mr-12 font-w95`}
+      >
+        <div>
+          <a
+            style={{ textDecoration: "none" }}
+            href="https://calendar.google.com/calendar/u/0/r/eventedit?text=ETHBerlin%C2%B3&location=Lohm%C3%BChlenstra%C3%9Fe+65,+12435+Berlin&dates=20220916T080000+02:00/20220918T200000+02:00"
+            target="_blank"
+            rel="noopener"
+          >
+            September 16-18, 2022
+          </a>
+        </div>
+        <div className="sm:ml-8">
+          <a
+            style={{ textDecoration: "none" }}
+            href="https://factoryberlin.com/"
+            target="_blank"
+            rel="noopener"
+          >
+            Factory Görlitzer Park
+          </a>
+        </div>
+      </div>
+      <div
+        className={`sm:fixed sm:bottom-0 sm:right-0 flex justify-evenly text-center sm:justify-end my-6 sm:mr-12 z-20 text-sm font-w95 ${
+          showSidebar ? "fade-in-right" : "fade-out-right"
+        } `}
+      >
+        <a className="mx-4 sm:ml-8 text-berlin-yellow" href="/DoD">
+          department of decentralization
+        </a>
+        <a className="mx-4 sm:ml-8 text-berlin-yellow" href="/contact">
+          contact & impressum
+        </a>
+        <a className="mx-4 sm:ml-8 text-berlin-yellow" href="/code-of-conduct">
+          code of conduct
+        </a>
       </div>
     </div>
   );

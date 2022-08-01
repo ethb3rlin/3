@@ -51,6 +51,23 @@
   li {
     @apply list-disc list-inside mb-3 ml-4
   }
+  .blur-text {
+    color: transparent;
+    /* text-shadow: <blur>, <outer-glow> */
+    text-shadow: 0 0 5px rgb(255 210 0 / 75%), theme("colors.berlin-yellow") 0 0 15px;
+  }
+  
+  .blur-text-small {
+    color: transparent;
+    /* text-shadow: <blur>, <outer-glow> */
+    text-shadow: 0 0 7px rgb(255 210 0 / 75%), theme("colors.berlin-yellow") 0 0 2px;
+  }
+  
+  .blur-text-smaller {
+    color: transparent;
+    /* text-shadow: <blur>, <outer-glow> */
+    text-shadow: 0 0 5px rgb(255 210 0 / 75%), theme("colors.berlin-yellow") 0 0 1.5px;
+  }
 }
 
 body {
@@ -86,23 +103,7 @@ body {
   text-decoration: underline;
   color: theme("colors.berlin-yellow")
 }
-.blur-text {
-  color: transparent;
-  /* text-shadow: <blur>, <outer-glow> */
-  text-shadow: 0 0 5px rgb(255 210 0 / 75%), theme("colors.berlin-yellow") 0 0 15px;
-}
 
-.blur-text-small {
-  color: transparent;
-  /* text-shadow: <blur>, <outer-glow> */
-  text-shadow: 0 0 7px rgb(255 210 0 / 75%), theme("colors.berlin-yellow") 0 0 2px;
-}
-
-.blur-text-smaller {
-  color: transparent;
-  /* text-shadow: <blur>, <outer-glow> */
-  text-shadow: 0 0 5px rgb(255 210 0 / 75%), theme("colors.berlin-yellow") 0 0 1.5px;
-}
 .blink {
   animation: blinker 1s step-start infinite;
 }
