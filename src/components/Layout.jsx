@@ -92,15 +92,21 @@ const Layout = ({ children, showEthDiamond }) => {
         </a>
       </nav>
       {/* Main content */}
-      <div className="flex flex-col flex-1 ml-4 mr-4 sm:ml-64 sm:mr-8">
+      <div className="flex flex-row flex-1 ml-4 mr-4 sm:ml-64 sm:mr-8">
         {children && (
           <div
-            className="mt-16 sm:mt-64 mb-16 w-full mr-8 p-6 text-gray-50"
+            className="mt-16 sm:mt-64 mb-16 w-full mr-8 p-6 text-gray-50 self-start"
             style={{ backgroundColor: "rgba(0, 0, 0, 0.45)" }}
           >
             {children}
           </div>
         )}
+        {/* Large screen ETH */}
+        <div
+          className={`mx-4 hidden ${showEthDiamond ? "lg:block" : "hidden"}`}
+        >
+          <EthDiamond className="sticky top-16 mx-4  flex justify-end" />
+        </div>
       </div>
       {/* Mobile ETH */}
       <div className="flex justify-center sm:hidden sm:ml-60">
@@ -109,10 +115,6 @@ const Layout = ({ children, showEthDiamond }) => {
           smallScreen={true}
           isPrimaryColor={false}
         />
-      </div>
-      {/* Large screen ETH */}
-      <div className={`mx-4 hidden ${showEthDiamond ? "lg:block" : "hidden"}`}>
-        <EthDiamond />
       </div>
       {/* Top right items mobile only, on bottom */}
       <div
