@@ -94,7 +94,7 @@ const Home = () => {
   return (
     <div className="flex flex-col lg:flex-row sm:justify-center sm:items-center min-h-screen font-w95">
       <Sidebar
-        className={`hidden sm:block z-10 ${
+        className={`hidden sm:flex z-10 ${
           showSidebar ? "fade-in-left" : "fade-out-left"
         }`}
         hideLogo={true}
