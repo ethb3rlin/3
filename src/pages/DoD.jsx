@@ -8,12 +8,9 @@ const DoD = () => (
     </h1>
     <div className="text-gray-50 text-justify decorate-links">
       <p>
-        ETHBerlin³ is organized by the{" "}
-        <a href="https://decentralala.com/about">
-          Department of Decentralization
-        </a>
-        , a collective of people from various crypto- and blockchain communities
-        in and around Berlin. The group first assembled in 2018 to organize
+        ETHBerlin³ is organized by the Department of Decentralization, a
+        collective of people from various crypto- and blockchain communities in
+        and around Berlin. The group first assembled in 2018 to organize
         ETHBerlin and has been active since.
       </p>
       <p>

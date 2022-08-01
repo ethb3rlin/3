@@ -10,34 +10,33 @@ const Hack = () => (
         the space and time to unleash their entire creativity for 48 hours, we
         encourage everyone to iterate fast on their ideas without the need to
         worry about anything. It's both an educational event for people that
-        want to learn more about new technologies and a birthplace for new
+        want to learn more about new technologies and a sprouting place for new
         projects, collectives, and organizations. We try to bring together
         people that won't meet elsewhere to work on ideas they don't have time
-        for otherwise. This year, we explicetly not only to invite developers,
-        but every profession that's involved to build incredible projects.
+        for otherwise. We explicetly not only to invite developers, but every
+        profession that's involved in building incredible projects.
       </p>
 
       <p>
         That said, ETHBerlin³ is not a conference. There are no general
         attendence tickets. All participants have an active role, such as
-        hacker, mentor, volunteer, or judge. If you want to hack, apply for
-        a hacker ticket by filling out the{" "}
+        hacker, mentor, volunteer, or judge.
+      </p>
+      <p className="text-center">
         <a href="https://office.ethberl.in/form/#/2/form/view/Eb09ZMX-zPLH4GFYn8vM3yoNbZoGPxrVW1dPxUy37sg/embed/">
-          hacker application
+          APPLY AS A HACKER
         </a>
-        .
+      </p>
+
+      <p>
+        To ease travel planning, we will send out confirmations every other week
+        to approved hackers. Hacker applications close on August 7, 2022.
       </p>
 
       <p>
         Note: With the term "hacker" we include all people that make up an
         amazing hackathon team: the coders, the strategists, the creatives, the
-        visionaries, and many more.
-      </p>
-
-      <p>
-        To ease travel planning, we will send out confirmations every other week
-        to approved hackers. The hacker applications close on August 7, 2022.
-        After that date, it will not possible to apply for any further tickets.
+        visionaries, and many more. 
       </p>
     </div>
   </Layout>
