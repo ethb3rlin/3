@@ -59,15 +59,15 @@ const Sponsors = () => (
         description="The Hungarian Pengő lost value dramitcally by 40 quadrillion percent after the Second World War (1946), suffering the highest rate of hyperinflation ever recorded."
         image={pengo}
       >
-        <a href="example.com">
+        <a href="https://dune.com">
           <img src={dune} className="h-16 mx-8 grayscale hover:grayscale-0" />
         </a>
         <div className="h-16 border-l border-solid border-berlin-yellow" />
-        <a href="example.com">
+        <a href="https://www.manta.network/">
           <img src={manta} className="h-16 mx-8 grayscale hover:grayscale-0" />
         </a>
         <div className="h-16 border-l border-solid border-berlin-yellow" />
-        <a href="example.com">
+        <a href="https://walletconnect.com/">
           <img
             src={walletconnect}
             className="h-16 mx-8 grayscale hover:grayscale-0 py-2"
