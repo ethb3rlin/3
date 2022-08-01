@@ -9,9 +9,10 @@ const Home = () => {
   const [showSidebar, setShowSidebar] = useState(false);
   const ethBerlinTextRef = useRef();
   const { isSm } = useBreakpoint("sm");
+  const [showNav, setShowNav] = useState(false);
 
-  //medium.com/autodesk-tlv/smooth-text-scaling-in-javascript-css-a817ae8cc4c9
-  https: useEffect(() => {
+  // https://medium.com/autodesk-tlv/smooth-text-scaling-in-javascript-css-a817ae8cc4c9
+  useEffect(() => {
     // Don't run on mobile
     if (!isSm) {
       setShowSidebar(true);
@@ -98,17 +99,18 @@ const Home = () => {
         }`}
         hideLogo={true}
       />
-      {/* Non-moving logo for mobile */}
-      <div className="flex justify-between">
+      {/* Non-moving logo navbar for mobile */}
+      <div className="sm:hidden flex justify-between text-berlin-yellow">
         <EthBerlinLogo
-          className="sm:hidden my-4 mx-8"
+          className="my-4 mx-8"
           titleClassName="text-4xl"
           subtitleClassName={`text-lg `}
         />
-        <div className="sm:hidden flex flex-col flex-grow-0 font-w95  text-berlin-yellow text-2xl leading-3 justify-center">
+        <div className=" flex flex-col flex-grow-0 font-w95  text-2xl leading-3 justify-center">
           <button
             className="p-2 mr-8 blur-text-smaller"
             style={{ backgroundColor: "rgba(0, 0, 0, 0.45)" }}
+            onClick={() => setShowNav((prev) => !prev)}
           >
             <div>---</div>
             <div>---</div>
@@ -153,6 +155,7 @@ const Home = () => {
         titleClassName="text-2xl sm:text-5xl"
         subtitleClassName={`${!showSidebar && "text-center text-xs"}`}
       />
+      {/* Mobile and small ETH on bottom*/}
       <div className="flex justify-center lg:hidden sm:ml-60">
         <EthDiamond
           className="flex justify-end"
@@ -160,6 +163,7 @@ const Home = () => {
           isPrimaryColor={true}
         />
       </div>
+      {/* Large screen fixed ETH */}
       <div className="hidden lg:block fixed right-0 top-0 bottom-0 overflow-y-scroll w-full">
         <EthDiamond
           className="sticky top-16 mx-4  flex justify-end"
