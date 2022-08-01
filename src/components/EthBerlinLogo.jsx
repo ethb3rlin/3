@@ -21,8 +21,11 @@ const EthBerlinLogo = React.forwardRef((props, ref) => {
       ref={ref}
       className={`font-digi text-berlin-yellow ${props.className}`}
     >
-      <div className={`flex blur-text m-0 ${props.titleClassName}`}>
-        <div className="glitch  layers" data-text={`ETHB${letter}rlin`}>
+      <div className={`flex m-0 ${props.titleClassName}`}>
+        <div
+          className="glitch blur-text-small layers"
+          data-text={`ETHB${letter}rlin`}
+        >
           <RandomReveal isPlaying duration={2} characters="ETHB3rlin" />
         </div>
       </div>

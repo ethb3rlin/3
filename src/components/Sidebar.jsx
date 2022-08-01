@@ -2,13 +2,17 @@ import React, { useState } from "react";
 import EthBerlinLogo from "./EthBerlinLogo";
 import { RandomReveal } from "react-random-reveal";
 
-const Sidebar = ({ className }) => {
+const Sidebar = ({ className, hideLogo }) => {
   return (
     <div
       className={`h-screen flex flex-col py-8 px-6 font-w95 fixed w-60 left-0 top-0 text-berlin-yellow ${className}`}
     >
-      <a className="" style={{ textDecoration: "none" }} href="/">
-        <EthBerlinLogo titleClassName="text-5xl" subtitleClassName="mt-1" />
+      <a
+        style={{ textDecoration: "none" }}
+        href="/"
+        className={`${hideLogo && "invisible"}`}
+      >
+        <EthBerlinLogo titleClassName="text-5xl" subtitleClassName="" />
       </a>
       <nav className="flex flex-col mt-16 text-xl">
         <a className="my-2" href="/about">
