@@ -54,7 +54,7 @@ const EthBerlinLogo = React.forwardRef((props, ref) => {
           } blur-text-smaller sm:blur-text-small`}
           data-text={`ETHB${letter}rlin`}
         >
-          {revealed ? (
+          {revealed || props.noReveal ? (
             <span>
               ETHB
               {

@@ -9,6 +9,7 @@ import { useBreakpoint } from "../components/useBreakpoint";
 const Home = () => {
   const [showSidebar, setShowSidebar] = useState(false);
   const ethBerlinTextRef = useRef();
+  const ethBerlinTextSizeRef = useRef();
   const { isSm } = useBreakpoint("sm");
   const [showNav, setShowNav] = useState(false);
 
@@ -24,43 +25,31 @@ const Home = () => {
     const SCALE_DOMAIN = MAX_SCALE - MIN_SCALE;
     let scale = MAX_SCALE;
 
-    const elementWidth = ethBerlinTextRef.current.offsetWidth; // Why there's a 11px difference? This is a workaround.
-    const elementHeight = ethBerlinTextRef.current.offsetHeight;
-    console.log("Element width: " + elementWidth);
-    console.log("Element width x scale: " + elementWidth * scale);
+    // Use size ref not the main element
+    const elementWidth = ethBerlinTextSizeRef.current.offsetWidth;
+    const elementHeight = ethBerlinTextSizeRef.current.offsetHeight;
 
-    const MAX_TRANSLATE_X = (window.innerWidth - elementWidth * scale) / 2;
-    const MAX_TRANSLATE_Y = (window.innerHeight - elementHeight * scale) / 2;
+    const MAX_TRANSLATE_X = window.innerWidth / 2 - elementWidth / 2 + 32; //32px = 2rem
+    const MAX_TRANSLATE_Y = window.innerHeight / 2 - elementHeight / 2; // idk why + 1.5rem not needed here
     const MIN_TRANSLATE_X = 0;
     const MIN_TRANSLATE_Y = 0;
     const TRANSLATE_DOMAIN_Y = MAX_TRANSLATE_Y - MIN_TRANSLATE_Y;
     const TRANSLATE_DOMAIN_X = MAX_TRANSLATE_X - MIN_TRANSLATE_X;
 
-    let translateX = (window.innerWidth - elementWidth * scale) / 2;
-    let translateY = (window.innerHeight - elementHeight * scale) / 2;
+    let translateX = MAX_TRANSLATE_X;
+    let translateY = MAX_TRANSLATE_Y;
 
     // Set initial position and scale
     ethBerlinTextRef.current.style.transform = `translateX(${translateX}px) translateY(${translateY}px) scale(${scale})`;
-    // Initial element width is wrong. Workaround: initiate a tiny little movement
-    moveElementOnDelta(-0.1);
 
     function onMouseWheel(e) {
-      e.preventDefault();
       moveElementOnDelta(-e.deltaY);
     }
 
     // Takes either the mousewheel or touch scroll as Y axis delta
     function moveElementOnDelta(delta) {
-      console.log("e.deltaY: ", delta);
       const scaleDelta = (delta * SCALE_DOMAIN) / TRANSLATE_DOMAIN_X;
-      console.log("Scale delta: " + scaleDelta);
-      const elementHeight = ethBerlinTextRef.current.offsetHeight;
-      const elementWidth = ethBerlinTextRef.current.offsetWidth;
-      console.log("Height: ", elementHeight);
-      console.log("Width: ", elementWidth);
 
-      const rect = ethBerlinTextRef.current.getBoundingClientRect();
-      console.log(rect);
       // Normalize X and Y scroll to window width and height to send the element directly to the corner.
       // Otherwise it hits the shorter axis first.
       const translateXDelta = delta;
@@ -78,11 +67,7 @@ const Home = () => {
         translateX = Math.max(translateX + translateXDelta, MIN_TRANSLATE_X);
         translateY = Math.max(translateY + translateYDelta, MIN_TRANSLATE_Y);
       }
-      console.log("Scale:" + scale);
-      console.log("TranslateX: ", translateX);
-      console.log("TranslateY: ", translateY);
       const style = `translateX(${translateX}px) translateY(${translateY}px) scale(${scale})`;
-
       ethBerlinTextRef.current.style.transform = style;
 
       // Show sidebar when logo is in place
@@ -210,9 +195,17 @@ const Home = () => {
       {/* Moving logo not shown on mobile */}
       <EthBerlinLogo
         ref={ethBerlinTextRef}
-        className="hidden sm:flex top-0 left-0 px-6 py-8 fixed w-auto flex-col justify-center origin-top-left"
+        className="hidden sm:flex top-0 left-0 px-6 py-8 fixed w-auto flex-col justify-center origin-center"
         titleClassName="text-2xl sm:text-5xl"
         subtitleClassName={`${!showSidebar && "text-center text-xs"}`}
+      />
+      {/* Since the width of the logo changes because of text reveal, render but don't display the same element */}
+      <EthBerlinLogo
+        ref={ethBerlinTextSizeRef}
+        className="invisible top-0 left-0 px-6 py-8 fixed w-auto flex-col justify-center origin-top-left"
+        titleClassName="text-2xl sm:text-5xl"
+        subtitleClassName={`${!showSidebar && "text-center text-xs"}`}
+        noReveal
       />
       {/* Scroll indicator */}
       <div
@@ -220,10 +213,10 @@ const Home = () => {
           showSidebar ? "hidden" : "sm:flex"
         } text-berlin-yellow  fixed left-1/2 bottom-0 blur-text font-light flex-col`}
       >
-        <span class="material-symbols-outlined text-6xl -mb-4 light-up">
+        <span class="material-symbols-outlined text-6xl -mb-4 -ml-[1.875rem] light-up">
           expand_more
         </span>
-        <span class="material-symbols-outlined text-6xl -mt-5 light-up-delayed">
+        <span class="material-symbols-outlined text-6xl -mt-5 -ml-[1.875rem] light-up-delayed">
           expand_more
         </span>
       </div>
