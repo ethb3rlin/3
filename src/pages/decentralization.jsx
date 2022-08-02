@@ -1,7 +1,7 @@
 import Layout from "../components/Layout";
 import React from "react";
 
-const DoD = () => (
+const decentralization = () => (
   <Layout>
     <h1 className="my-4 underline text-secondary">
       Department of Decentralization
@@ -24,23 +24,28 @@ const DoD = () => (
           <span className="fake-bold">ETHBerlin (2018):</span> Hackathon,
           conference and the first event ran almost entirely using decentralized
           applications:{" "}
-          <a href="https://ethberlin.com/about">ethberlin.com/about</a>
+          <a href="https://ethberlin.com/about" target="_blank">
+            ethberlin.com/about
+          </a>
         </li>
         <li>
-          <span className="fake-bold">GörliCon (2019): </span>The Ethereum
+          <span className="fake-bold">G&ouml;rliCon (2019): </span>The Ethereum
           testnet and infrastructure conference where the Goerli Testnet was
-          launched live on stage: <a href="https://goerli.net/">goerli.net</a>
+          launched live on stage: <a href="https://goerli.net/" target="_blank">
+            goerli.net
+          </a>
         </li>
         <li>
           <span className="fake-bold">Goerli Testnet (2019): </span>Born at
-          ETHBerlin and launched at GörliCon, the Goerli Testnet is now one of
+          ETHBerlin and launched at G&ouml;rliCon, the Goerli Testnet is now one of
           the most important public-facing Ethereum testnets after the Merge.
         </li>
         <li>
           <span className="fake-bold">
             Blockstars Education Program (2019):
           </span>{" "}
-          A partnership with B9labs to onboard new hackers to web3.
+          A partnership with <a href="https://b9lab.com/" target="_blank">B9lab</a>
+          {" "}to onboard new hackers to web3.
         </li>
         <li>
           <span className="fake-bold">
@@ -52,7 +57,7 @@ const DoD = () => (
         <li>
           <span className="fake-bold">ETHBerlin ZWEI (2019): </span>hackathon,
           conference and cultural festival, second edition:{" "}
-          <a href="https://ethberlinzwei.com/about.html">
+          <a href="https://ethberlinzwei.com/about.html" target="_blank">
             ethberlinzwei.com/about.html
           </a>
         </li>
@@ -66,14 +71,14 @@ const DoD = () => (
           </span>
           TwoPointFive was a white-label virtual conference. No shill, no
           sponsors, from the community for the community and truly in it for the
-          tech: <a href="https://twopointfive.online">twopointfive.online</a>
+          tech: <a href="https://twopointfive.online" target="_blank">twopointfive.online</a>
         </li>
         <li>
           <span className="fake-bold">StrikeDAO (2022): </span>The Ethereum
-          domain of Bundeskunsthalle was squatted by artist Hito Steyerl and
+          domain of Bundeskunsthalle was squatted by artist Hito Steyerl and the
           DoD. The StrikeDAO voted on three models of future governance of this
-          squatted domain, quadratically{" "}
-          <a href="https://strikedao.com">strikedao.com</a>
+          squatted domain, quadratically:{" "}
+          <a href="https://strikedao.com" target="_blank">strikedao.com</a>
         </li>
       </ul>
 
@@ -86,4 +91,4 @@ const DoD = () => (
   </Layout>
 );
 
-export default DoD;
+export default decentralization;

@@ -146,7 +146,7 @@ const Layout = ({ children, showEthDiamond }) => {
       <div
         className={`flex justify-evenly text-center sm:justify-end my-6 sm:mr-12 z-20 text-sm font-w95`}
       >
-        <a className="mx-4 sm:ml-8 text-berlin-yellow" href="/DoD">
+        <a className="mx-4 sm:ml-8 text-berlin-yellow" href="/decentralization">
           department of decentralization
         </a>
         <a className="mx-4 sm:ml-8 text-berlin-yellow" href="/contact">
