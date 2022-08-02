@@ -94,4 +94,7 @@ const EthDiamond = ({ className, isPrimaryColor, smallScreen }) => {
   );
 };
 
+EthDiamond.defaultProps = {
+  isPrimaryColor: true,
+};
 export default EthDiamond;
