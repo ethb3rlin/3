@@ -212,10 +212,10 @@ const Home = () => {
           showSidebar ? "hidden" : "sm:flex"
         } text-berlin-yellow  fixed left-1/2 bottom-0 blur-text font-light flex-col`}
       >
-        <span className="material-symbols-outlined text-6xl -mb-4 -ml-[1.875rem] light-up">
+        <span className="material-symbols-outlined text-6xl -mb-4 light-up">
           expand_more
         </span>
-        <span className="material-symbols-outlined text-6xl -mt-5 -ml-[1.875rem] light-up-delayed">
+        <span className="material-symbols-outlined text-6xl -mt-5 light-up-delayed">
           expand_more
         </span>
       </div>
