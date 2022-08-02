@@ -28,7 +28,7 @@ export default function HTML(props) {
                   window.location.href= "/contribute";
                 }
                 else if (e.key == 's' || e.key == 'S') {
-                  window.location.href= "/sponsors";
+                  window.location.href= "/sponsor";
                 }
                 else if (e.key == 'm' || e.key == 'M') {
                   window.location.href= "/manifesto";

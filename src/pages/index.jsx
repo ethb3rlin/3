@@ -28,7 +28,7 @@ const Home = () => {
     const elementWidth = ethBerlinTextSizeRef.current.offsetWidth;
     const elementHeight = ethBerlinTextSizeRef.current.offsetHeight;
 
-    const MAX_TRANSLATE_X = window.innerWidth / 2 - elementWidth / 2 + 32; //32px = 2rem
+    const MAX_TRANSLATE_X = window.innerWidth / 2 - elementWidth / 2; //32px = 2rem
     const MAX_TRANSLATE_Y = window.innerHeight / 2 - elementHeight / 2; // idk why + 1.5rem not needed here
     const MIN_TRANSLATE_X = 0;
     const MIN_TRANSLATE_Y = 0;
@@ -130,9 +130,9 @@ const Home = () => {
         <a className="my-2" href="/contribute">
           (c)ontribute
         </a>
-        <a className="my-2" href="/sponsors">
+        <a className="my-2" href="/sponsor">
           {" "}
-          (s)ponsors
+          (s)ponsor
         </a>
         <a className="my-2" href="/manifesto">
           (m)anifesto

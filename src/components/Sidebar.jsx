@@ -25,9 +25,9 @@ const Sidebar = ({ className, hideLogo }) => {
         <a className="my-2" href="/contribute">
           (c)ontribute
         </a>
-        <a className="my-2" href="/sponsors">
+        <a className="my-2" href="/sponsor">
           {" "}
-          (s)ponsors
+          (s)ponsor
         </a>
         <a className="my-2" href="/manifesto">
           (m)anifesto

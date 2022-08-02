@@ -41,9 +41,9 @@ const SponsorContainer = ({ children, tier, tierName, description, image }) => {
   );
 };
 
-const Sponsors = () => (
+const Sponsor = () => (
   <Layout showEthDiamond={false}>
-    <h1 className="my-4 underline text-secondary">sponsors</h1>
+    <h1 className="my-4 underline text-secondary">(s)ponsor</h1>
     <div className="mt-8">
       <div className="text-xl decorate-links">
         <p>It's not too late to support us!</p>{" "}
@@ -126,4 +126,4 @@ const Sponsors = () => (
   </Layout>
 );
 
-export default Sponsors;
+export default Sponsor;
