@@ -25,10 +25,6 @@ const Sidebar = ({ className, hideLogo }) => {
         <a className="my-2" href="/contribute">
           (c)ontribute
         </a>
-        <a className="my-2" href="/program">
-          {" "}
-          (p)rogram
-        </a>
         <a className="my-2" href="/sponsors">
           {" "}
           (s)ponsors
@@ -47,7 +43,8 @@ const Sidebar = ({ className, hideLogo }) => {
             rel="noopener"
           >
             matrix space
-          </a>{" "}
+          </a>
+          <br />
           or{" "}
           <a
             className="underline"

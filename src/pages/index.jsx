@@ -142,10 +142,6 @@ const Home = () => {
         <a className="my-2" href="/contribute">
           (c)ontribute
         </a>
-        <a className="my-2" href="/program">
-          {" "}
-          (p)rogram
-        </a>
         <a className="my-2" href="/sponsors">
           {" "}
           (s)ponsors
@@ -153,6 +149,29 @@ const Home = () => {
         <a className="my-2" href="/manifesto">
           (m)anifesto
         </a>
+        <div className="fixed bottom-0 mb-8 text-sm text-center">
+          <div className="my-2">
+            join our{" "}
+            <a
+              className="underline"
+              href="https://matrix.to/#/%23ethberlin:matrix.org"
+              target="_blank"
+              rel="noopener"
+            >
+              matrix space
+            </a>
+            <br />
+            or{" "}
+            <a
+              className="underline"
+              href="mailto:henlo@ethberlin.ooo"
+              target="_blank"
+              rel="noopener"
+            >
+              e-mail us
+            </a>
+          </div>
+        </div>
       </nav>
       <div
         className={`static lg:fixed max-w-xl flex flex-col left-0 top-0 mt-16 sm:mt-72 flex-1 ml-4 sm:ml-64 mr-4 z-10 ${
