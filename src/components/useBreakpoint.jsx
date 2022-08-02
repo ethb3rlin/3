@@ -6,7 +6,6 @@ const fullConfig = resolveConfig(tailwindConfig);
 // https://stackoverflow.com/questions/59982018/how-do-i-get-tailwinds-active-breakpoint-in-javascript
 export function useBreakpoint(breakpointKey) {
   const breakpoints = fullConfig.theme.screens;
-  console.log(breakpoints);
   const bool = useMediaQuery({
     query: `(min-width: ${breakpoints[breakpointKey]})`,
   });

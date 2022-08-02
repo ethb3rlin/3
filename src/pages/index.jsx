@@ -24,22 +24,25 @@ const Home = () => {
     const SCALE_DOMAIN = MAX_SCALE - MIN_SCALE;
     let scale = MAX_SCALE;
 
-    const elementWidth = ethBerlinTextRef.current.offsetWidth - 10; // Why there's a 11px difference? This is a workaround.
+    const elementWidth = ethBerlinTextRef.current.offsetWidth; // Why there's a 11px difference? This is a workaround.
     const elementHeight = ethBerlinTextRef.current.offsetHeight;
+    console.log("Element width: " + elementWidth);
+    console.log("Element width x scale: " + elementWidth * scale);
 
     const MAX_TRANSLATE_X = (window.innerWidth - elementWidth * scale) / 2;
     const MAX_TRANSLATE_Y = (window.innerHeight - elementHeight * scale) / 2;
-    // Translate away from the screen at most half of the screen width or height. (half to the edge + half away)
     const MIN_TRANSLATE_X = 0;
     const MIN_TRANSLATE_Y = 0;
     const TRANSLATE_DOMAIN_Y = MAX_TRANSLATE_Y - MIN_TRANSLATE_Y;
     const TRANSLATE_DOMAIN_X = MAX_TRANSLATE_X - MIN_TRANSLATE_X;
 
-    let translateX = MAX_TRANSLATE_X;
-    let translateY = MAX_TRANSLATE_Y;
+    let translateX = (window.innerWidth - elementWidth * scale) / 2;
+    let translateY = (window.innerHeight - elementHeight * scale) / 2;
 
     // Set initial position and scale
     ethBerlinTextRef.current.style.transform = `translateX(${translateX}px) translateY(${translateY}px) scale(${scale})`;
+    // Initial element width is wrong. Workaround: initiate a tiny little movement
+    moveElementOnDelta(-0.1);
 
     function onMouseWheel(e) {
       e.preventDefault();
@@ -55,6 +58,7 @@ const Home = () => {
       const elementWidth = ethBerlinTextRef.current.offsetWidth;
       console.log("Height: ", elementHeight);
       console.log("Width: ", elementWidth);
+
       const rect = ethBerlinTextRef.current.getBoundingClientRect();
       console.log(rect);
       // Normalize X and Y scroll to window width and height to send the element directly to the corner.
@@ -120,7 +124,7 @@ const Home = () => {
           </button>
         </div>
       </div>
-      {/* Open/scole nav menu */}
+      {/* Open/close nav menu */}
       <nav
         className={`flex z-30 ${
           showNav ? "visible opacity-95" : "invisible opacity-0"
@@ -174,7 +178,7 @@ const Home = () => {
         </div>
       </nav>
       <div
-        className={`static lg:fixed max-w-xl flex flex-col left-0 top-0 mt-16 sm:mt-72 flex-1 ml-4 sm:ml-64 mr-4 z-10 ${
+        className={`static lg:fixed max-w-xl flex flex-col left-0 top-0 mt-16 sm:mt-48 flex-1 ml-4 sm:ml-64 mr-4 z-10 ${
           showSidebar ? "fade-in-left " : "fade-out-left"
         }
         `}
@@ -210,6 +214,19 @@ const Home = () => {
         titleClassName="text-2xl sm:text-5xl"
         subtitleClassName={`${!showSidebar && "text-center text-xs"}`}
       />
+      {/* Scroll indicator */}
+      <div
+        className={`hidden ${
+          showSidebar ? "hidden" : "sm:flex"
+        } text-berlin-yellow  fixed left-1/2 bottom-0 blur-text font-light flex-col`}
+      >
+        <span class="material-symbols-outlined text-6xl -mb-4 light-up">
+          expand_more
+        </span>
+        <span class="material-symbols-outlined text-6xl -mt-5 light-up-delayed">
+          expand_more
+        </span>
+      </div>
       {/* Mobile and small ETH on bottom*/}
       <div className="flex justify-center lg:hidden sm:ml-60">
         <EthDiamond

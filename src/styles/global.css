@@ -31,6 +31,28 @@
     font-weight: 400;
     src: url(../assets/fonts/W95FA/w95fa.woff2);
   }
+  @font-face {
+    font-family: 'Material Symbols Outlined';
+    font-style: normal;
+    font-weight: 400;
+    src: url(../assets/fonts/google-icons.woff2) format('woff2');
+  }
+  
+  .material-symbols-outlined {
+    font-family: 'Material Symbols Outlined';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 0;
+    letter-spacing: normal;
+    text-transform: none;
+    display: inline-block;
+    white-space: nowrap;
+    word-wrap: normal;
+    direction: ltr;
+    -webkit-font-feature-settings: 'liga';
+    -webkit-font-smoothing: antialiased;
+  }
   h1 {
     @apply text-3xl;
   }
@@ -148,4 +170,22 @@ body {
   opacity: 0;
   visibility: hidden;
   transition: opacity 0.5s, visibility 0.5s;
+}
+
+.light-up {
+  animation: light-up-animation 2s ease infinite;
+}
+
+@keyframes light-up-animation {
+  0%, 100% {
+    opacity: 80%;
+  }
+  50% {
+    opacity: 30%;
+  }
+}
+
+.light-up-delayed {
+  animation: light-up-animation 2s ease infinite;
+  animation-delay: 1s;
 }

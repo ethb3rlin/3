@@ -44,7 +44,7 @@ const Impressum = () => {
           </div>
           <div className="mt-4">
             Goerli Dezentral gGmbH is an acknowledged non-profit entity in
-            Germany accodring to §52 AO.
+            Germany according to §52 AO.
           </div>
         </div>
       </div>

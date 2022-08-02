@@ -114,7 +114,7 @@ const Layout = ({ children, showEthDiamond }) => {
       <div className="flex flex-row flex-1 ml-4 mr-4 sm:ml-64 sm:mr-8">
         {children && (
           <div
-            className="mt-16 sm:mt-64 mb-16 w-full sm:mr-8 p-6 text-gray-50 self-start"
+            className="mt-16 sm:mt-32 mb-16 w-full sm:mr-8 p-6 text-gray-50 self-start"
             style={{ backgroundColor: "rgba(0, 0, 0, 0.45)" }}
           >
             {children}
@@ -132,7 +132,7 @@ const Layout = ({ children, showEthDiamond }) => {
         <EthDiamond
           className="flex justify-end"
           smallScreen={true}
-          isPrimaryColor={false}
+          isPrimaryColor={true}
         />
       </div>
       {/* Top right items mobile only, on bottom */}

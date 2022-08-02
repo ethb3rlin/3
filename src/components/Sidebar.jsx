@@ -14,7 +14,8 @@ const Sidebar = ({ className, hideLogo }) => {
       >
         <EthBerlinLogo titleClassName="text-5xl" subtitleClassName="" />
       </a>
-      <nav className="flex flex-col mt-16 text-xl text-left">
+      {/* 5.5rem to align with the Latout main content box */}
+      <nav className="flex flex-col mt-[5.5rem] text-xl text-left">
         <a className="my-2" href="/about">
           (a)bout
         </a>
