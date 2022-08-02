@@ -15,7 +15,7 @@ const About = () => (
       <p>
         After successful events in 2018 and 2019, ETHBerlin decided to reaffirm
         its commitment with the ecosystem and founded the{" "}
-        <a href="/DoD">Department of Decentralization</a>. The DoD is
+        <a href="/decentralization">Department of Decentralization</a>. The DoD is
         responsible for initiatives that go beyond organizing hackathons and
         seek to also support the projects coming from our events and community.
         ETHBerlin 2018 and ETHBerlinZwei 2019 sought to marry the culture and
