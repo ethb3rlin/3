@@ -1,8 +1,7 @@
-import postcss from "postcss";
 import React, { useEffect, useRef, useState } from "react";
 import EthBerlinLogo from "../components/EthBerlinLogo";
 import EthDiamond from "../components/EthDiamond";
-import SEO from "../components/seo";
+import Seo from "../components/seo";
 import Sidebar from "../components/Sidebar";
 import { useBreakpoint } from "../components/useBreakpoint";
 
@@ -83,7 +82,7 @@ const Home = () => {
 
   return (
     <div className="flex flex-col lg:flex-row sm:justify-center sm:items-center min-h-screen font-w95">
-      <SEO />
+      <Seo />
       <Sidebar
         className={`hidden sm:flex z-10 ${
           showSidebar ? "fade-in-left" : "fade-out-left"
@@ -145,7 +144,7 @@ const Home = () => {
               className="underline"
               href="https://matrix.to/#/%23ethberlin:matrix.org"
               target="_blank"
-              rel="noopener"
+              rel="noreferrer"
             >
               matrix space
             </a>
@@ -155,7 +154,7 @@ const Home = () => {
               className="underline"
               href="mailto:henlo@ethberlin.ooo"
               target="_blank"
-              rel="noopener"
+              rel="noreferrer"
             >
               e-mail us
             </a>
@@ -213,10 +212,10 @@ const Home = () => {
           showSidebar ? "hidden" : "sm:flex"
         } text-berlin-yellow  fixed left-1/2 bottom-0 blur-text font-light flex-col`}
       >
-        <span class="material-symbols-outlined text-6xl -mb-4 -ml-[1.875rem] light-up">
+        <span className="material-symbols-outlined text-6xl -mb-4 -ml-[1.875rem] light-up">
           expand_more
         </span>
-        <span class="material-symbols-outlined text-6xl -mt-5 -ml-[1.875rem] light-up-delayed">
+        <span className="material-symbols-outlined text-6xl -mt-5 -ml-[1.875rem] light-up-delayed">
           expand_more
         </span>
       </div>
@@ -245,7 +244,7 @@ const Home = () => {
             style={{ textDecoration: "none" }}
             href="https://calendar.google.com/calendar/u/0/r/eventedit?text=ETHBerlin%C2%B3&location=Lohm%C3%BChlenstra%C3%9Fe+65,+12435+Berlin&dates=20220916T080000+02:00/20220918T200000+02:00"
             target="_blank"
-            rel="noopener"
+            rel="noreferrer"
           >
             September 16-18, 2022
           </a>
@@ -255,7 +254,7 @@ const Home = () => {
             style={{ textDecoration: "none" }}
             href="https://factoryberlin.com/"
             target="_blank"
-            rel="noopener"
+            rel="noreferrer"
           >
             Factory Görlitzer Park
           </a>

@@ -1,14 +1,14 @@
 import React, { useState } from "react";
 import EthBerlinLogo from "./EthBerlinLogo";
 import EthDiamond from "./EthDiamond";
-import SEO from "./seo";
+import Seo from "./seo";
 import Sidebar from "./Sidebar";
 
 const Layout = ({ children, showEthDiamond }) => {
   const [showNav, setShowNav] = useState(false);
   return (
     <div className="flex-1 flex flex-col  min-h-full font-w95">
-      <SEO />
+      <Seo />
       <Sidebar className={`hidden sm:flex z-10`} hideLogo={false} />
       {/* Top Right items Desktop only */}
       <div className={`z-10 hidden sm:flex justify-end my-6 sm:mr-12 font-w95`}>
@@ -17,7 +17,7 @@ const Layout = ({ children, showEthDiamond }) => {
             style={{ textDecoration: "none" }}
             href="https://calendar.google.com/calendar/u/0/r/eventedit?text=ETHBerlin%C2%B3&location=Lohm%C3%BChlenstra%C3%9Fe+65,+12435+Berlin&dates=20220916T080000+02:00/20220918T200000+02:00"
             target="_blank"
-            rel="noopener"
+            rel="noreferrer"
           >
             September 16-18, 2022
           </a>
@@ -27,7 +27,7 @@ const Layout = ({ children, showEthDiamond }) => {
             style={{ textDecoration: "none" }}
             href="https://factoryberlin.com/"
             target="_blank"
-            rel="noopener"
+            rel="noreferrer"
           >
             Factory Görlitzer Park
           </a>
@@ -93,7 +93,7 @@ const Layout = ({ children, showEthDiamond }) => {
               className="underline"
               href="https://matrix.to/#/%23ethberlin:matrix.org"
               target="_blank"
-              rel="noopener"
+              rel="noreferrer"
             >
               matrix space
             </a>
@@ -103,7 +103,7 @@ const Layout = ({ children, showEthDiamond }) => {
               className="underline"
               href="mailto:henlo@ethberlin.ooo"
               target="_blank"
-              rel="noopener"
+              rel="noreferrer"
             >
               e-mail us
             </a>
@@ -144,7 +144,7 @@ const Layout = ({ children, showEthDiamond }) => {
             style={{ textDecoration: "none" }}
             href="https://calendar.google.com/calendar/u/0/r/eventedit?text=ETHBerlin%C2%B3&location=Lohm%C3%BChlenstra%C3%9Fe+65,+12435+Berlin&dates=20220916T080000+02:00/20220918T200000+02:00"
             target="_blank"
-            rel="noopener"
+            rel="noreferrer"
           >
             September 16-18, 2022
           </a>
@@ -154,7 +154,7 @@ const Layout = ({ children, showEthDiamond }) => {
             style={{ textDecoration: "none" }}
             href="https://factoryberlin.com/"
             target="_blank"
-            rel="noopener"
+            rel="noreferrer"
           >
             Factory Görlitzer Park
           </a>

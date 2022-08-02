@@ -1,6 +1,5 @@
-import React, { useState } from "react";
+import React from "react";
 import EthBerlinLogo from "./EthBerlinLogo";
-import { RandomReveal } from "react-random-reveal";
 
 const Sidebar = ({ className, hideLogo }) => {
   return (
@@ -41,7 +40,7 @@ const Sidebar = ({ className, hideLogo }) => {
             className="underline"
             href="https://matrix.to/#/%23ethberlin:matrix.org"
             target="_blank"
-            rel="noopener"
+            rel="noreferrer"
           >
             matrix space
           </a>
@@ -51,7 +50,7 @@ const Sidebar = ({ className, hideLogo }) => {
             className="underline"
             href="mailto:henlo@ethberlin.ooo"
             target="_blank"
-            rel="noopener"
+            rel="noreferrer"
           >
             e-mail us
           </a>
