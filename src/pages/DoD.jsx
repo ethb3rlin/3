@@ -24,7 +24,7 @@ const DoD = () => (
           <span className="fake-bold">ETHBerlin (2018):</span> Hackathon,
           conference and the first event ran almost entirely using decentralized
           applications:{" "}
-          <a href="https://ethberlin.com/DoD/">ethberlin.com/about</a>
+          <a href="https://ethberlin.com/about">ethberlin.com/about</a>
         </li>
         <li>
           <span className="fake-bold">GörliCon (2019): </span>The Ethereum
@@ -52,7 +52,7 @@ const DoD = () => (
         <li>
           <span className="fake-bold">ETHBerlin ZWEI (2019): </span>hackathon,
           conference and cultural festival, second edition:{" "}
-          <a href="https://ethberlinzwei.com/about.html/">
+          <a href="https://ethberlinzwei.com/about.html">
             ethberlinzwei.com/about.html
           </a>
         </li>
@@ -66,14 +66,14 @@ const DoD = () => (
           </span>
           TwoPointFive was a white-label virtual conference. No shill, no
           sponsors, from the community for the community and truly in it for the
-          tech: <a href="https://twopointfive.online/">twopointfive.online</a>
+          tech: <a href="https://twopointfive.online">twopointfive.online</a>
         </li>
         <li>
           <span className="fake-bold">StrikeDAO (2022): </span>The Ethereum
           domain of Bundeskunsthalle was squatted by artist Hito Steyerl and
           DoD. The StrikeDAO voted on three models of future governance of this
           squatted domain, quadratically{" "}
-          <a href="https://strikedao.com//">strikedao.com</a>
+          <a href="https://strikedao.com">strikedao.com</a>
         </li>
       </ul>
 

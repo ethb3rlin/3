@@ -46,7 +46,7 @@ const Sponsors = () => (
     <h1 className="my-4 underline text-secondary">sponsors</h1>
     <div className="mt-8">
       <div className="text-xl decorate-links">
-        <p>It's not too late to support us as a sponsor!</p>{" "}
+        <p>It's not too late to support us!</p>{" "}
         <p>
           {" "}
           Check out the <a href="/sponsor.pdf">sponsorship deck</a> and reach
@@ -58,7 +58,7 @@ const Sponsors = () => (
       <SponsorContainer
         tierName="Hungarian Pengő"
         tier="TIER 0"
-        description="The Hungarian Pengő lost value dramitcally by 40 quadrillion percent after the Second World War (1946), suffering the highest rate of hyperinflation ever recorded."
+        description="The Hungarian Pengő lost value dramatically by 40 quadrillion percent after the Second World War (1946), suffering the highest rate of hyperinflation ever recorded."
         image={pengo}
       >
         <a href="https://dune.com">
@@ -86,7 +86,7 @@ const Sponsors = () => (
         tierName="Zimbabwe Dollar"
         tier="TIER 1"
         image={zimbabwe}
-        description="The devaluation of the Zimbabwe Dollar was difficult to measure because the government stopped filling the statistics (2008), the peak was estimated at 80 billion percent month-on-month."
+        description="The devaluation of the Zimbabwe Dollar was difficult to measure because the government stopped filling the statistics post 2008; the peak was estimated at 80 billion percent month-on-month."
       >
         TBD
       </SponsorContainer>
@@ -94,7 +94,7 @@ const Sponsors = () => (
         tierName="Yugoslav Dinar"
         tier="TIER 2"
         image={dinar}
-        description="Yugoslavia re-denominated the Yugoslaw Dinar in 1994 at a ration of 1 billion to 1. Previously, wages became worthless. If paid in cash, workers had to rush out and spend their wages before they lost their value overnight."
+        description="Yugoslavia re-denominated the Yugoslav Dinar in 1994 at a ration of 1 billion to 1. Wages became worthless. If paid in cash, workers had to rush out and spend their wages before they lost their value overnight."
       >
         TBD
       </SponsorContainer>

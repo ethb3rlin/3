@@ -13,13 +13,13 @@ const Hack = () => (
         want to learn more about new technologies and a sprouting place for new
         projects, collectives, and organizations. We try to bring together
         people that won't meet elsewhere to work on ideas they don't have time
-        for otherwise. We explicetly not only to invite developers, but every
+        for otherwise. We explicitly not only invite developers, but every
         profession that's involved in building incredible projects.
       </p>
 
       <p>
         That said, ETHBerlin³ is not a conference. There are no general
-        attendence tickets. All participants have an active role, such as
+        attendance tickets. All participants have an active role, such as
         hacker, mentor, volunteer, or judge.
       </p>
       <p className="text-center">
@@ -36,7 +36,7 @@ const Hack = () => (
       <p>
         Note: With the term "hacker" we include all people that make up an
         amazing hackathon team: the coders, the strategists, the creatives, the
-        visionaries, and many more. 
+        visionaries, and many more.
       </p>
     </div>
   </Layout>

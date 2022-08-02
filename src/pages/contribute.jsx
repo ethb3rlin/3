@@ -8,16 +8,19 @@ const Contribute = () => (
       <p>
         ETHBerlin³ is a hackathon and cultural festival that is entirely
         organized by the Berlin Ethereum, Cosmos, and Polkadot community. We are
-        neither seeking profits nor a professional event-production company.
+        neither seeking profits nor a professional event-production company.
         Everything we create during the event is entirely ideated by our friends
         and contributors, and the whole event is only made possible by the
         countless volunteers that make it happen.
       </p>
       <p>Do you want to contribute to ETHBerlin³, too? Here are the options.</p>
+      <p className="italic text-sm text-gray-400">
+        Please only apply to one of the below.
+      </p>
 
       <h2 className="text-2xl font-bold mt-8">Volunteer</h2>
       <p>
-        Our volunteers are the super-glue that hold all the pieces of the event
+        Our volunteers are the super-glue that hold all the pieces of the event
         together. You will assist with setup of the venue space, handling
         registrations, organizing swag, and answering all the questions that
         hackers may have.

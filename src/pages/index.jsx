@@ -210,7 +210,7 @@ const Home = () => {
       <div
         className={`hidden ${
           showSidebar ? "hidden" : "sm:flex"
-        } text-berlin-yellow  fixed left-1/2 bottom-0 blur-text font-light flex-col`}
+        } text-berlin-yellow  fixed left-1/2 bottom-0 blur-text font-light flex-col -translate-x-1/2`}
       >
         <span className="material-symbols-outlined text-6xl -mb-4 light-up">
           expand_more
@@ -239,16 +239,7 @@ const Home = () => {
           showSidebar ? "fade-in-right" : "fade-out-right"
         } sm:fixed sm:top-0 sm:right-0 flex justify-evenly sm:justify-end my-6 sm:mr-12 font-w95`}
       >
-        <div>
-          <a
-            style={{ textDecoration: "none" }}
-            href="https://calendar.google.com/calendar/u/0/r/eventedit?text=ETHBerlin%C2%B3&location=Lohm%C3%BChlenstra%C3%9Fe+65,+12435+Berlin&dates=20220916T080000+02:00/20220918T200000+02:00"
-            target="_blank"
-            rel="noreferrer"
-          >
-            September 16-18, 2022
-          </a>
-        </div>
+        <div>September 16-18, 2022</div>
         <div className="sm:ml-8">
           <a
             style={{ textDecoration: "none" }}
