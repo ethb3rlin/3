@@ -13,11 +13,18 @@ const Impressum = () => {
             <p>
               If you want to reach out:
               <ul>
-                {" "}
                 <li>
                   send us an email:{" "}
                   <a href="mailto:henlo@ethberlin.ooo">henlo@ethberlin.ooo</a>{" "}
-                </li>{" "}
+                </li>
+                <li>
+                  sponsors contact:{" "}
+                  <a href="mailto:sponsors@ethberlin.ooo">sponsors@ethberlin.ooo</a>{" "}
+                </li>
+                <li>
+                  press enquiries:{" "}
+                  <a href="mailto:press@ethberlin.ooo">press@ethberlin.ooo</a>{" "}
+                </li>
                 <li>
                   join our{" "}
                   <a href="https://matrix.to/#/%23ethberlin:matrix.org">
@@ -30,21 +37,21 @@ const Impressum = () => {
         </div>
         <div className="text-sm">
           <h1 className="text-xl font-bold ">Impressum</h1>
-          <div className="">Angaben gem&auml;&szlig; &sect; 5 TMG </div>
+          <div className="">Angaben gem&auml;&szlig; &sect; 5 TMG</div>
           <div className="mt-4">
-            Goerli Dezentral gGmbH Mariannenstraße 9-10 10999 Berlin
+            Goerli Dezentral gGmbH, Mariannenstra&szlig;e 9-10, 10999 Berlin
           </div>
           <div className="mt-4">
-            Handelsregister: HRB 207663 B Registergericht: Amtsgericht
-            Charlottenburg, Berlin Umstatzsteuer-ID: DE325917754
+            Handelsregister: HRB 207663 B, Registergericht: Amtsgericht
+            Charlottenburg, Berlin, Umstatzsteuer-ID: DE325917754
           </div>
           <div className="mt-4">
-            Vertreten durch A. Schoedon Telefon: +49 (0) 30 20613410 E-Mail:
-            schoedon@ethberlin.ooo
+            Vertreten durch A. Schoedon, Telefon: +49 (0) 30 20613410, E-Mail:{" "}
+            <a href="mailto:schoedon@ethberlin.ooo">schoedon@ethberlin.ooo</a>
           </div>
           <div className="mt-4">
             Goerli Dezentral gGmbH is an acknowledged non-profit entity in
-            Germany according to §52 AO.
+            Germany according to &sect; 52 AO.
           </div>
         </div>
       </div>
