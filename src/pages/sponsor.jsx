@@ -118,7 +118,7 @@ const Sponsor = () => (
         tierName="Yugoslav Dinar"
         tier="TIER 2"
         image={dinar}
-        description="Yugoslavia re-denominated the Yugoslav Dinar in 1994 at a ration of 1 billion to 1. Wages became worthless. If paid in cash, workers had to rush out and spend their wages before they lost their value overnight."
+        description="Yugoslavia re-denominated the Yugoslav Dinar in 1994 at a ratio of 1 billion to 1. Wages became worthless. If paid in cash, workers had to rush out and spend their wages before they lost their value overnight."
       >
         To be announced soon...
       </SponsorContainer>
