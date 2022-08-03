@@ -7,7 +7,7 @@ const Impressum = () => {
       <div className="decorate-links">
         <div>
           <h1 className="text-3xl font-bold text-secondary underline">
-            contact & impressum
+            contact &amp; impressum
           </h1>
           <div className="mt-4">
             <p>

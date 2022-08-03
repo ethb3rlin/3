@@ -180,13 +180,11 @@ const Home = () => {
             Over the last two years, the global crackdown on privacy, freedom of
             movement, and the right to transact by governments worldwide put us
             on the edge of a new dark age of regression.
-          </p>
-          <p className="mt-4">
             We invite you to hack the system, now, more than ever.
           </p>
-          <p className="mt-4">Press (a) to get started.</p>
+          <p className="mt-4 text-center">Press <a href="/about" target="_blank">(a)</a> to get started.</p>
           <p className="mt-4">
-            To learn more about our vision & mission press (m).
+            To learn more about our vision &amp; mission, press <a href="/manifesto" target="_blank">(m)</a>.
           </p>
         </div>
       </div>
@@ -247,7 +245,7 @@ const Home = () => {
             target="_blank"
             rel="noreferrer"
           >
-            Factory Görlitzer Park
+            Factory G&ouml;rlitzer Park
           </a>
         </div>
       </div>
@@ -260,7 +258,7 @@ const Home = () => {
           department of decentralization
         </a>
         <a className="mx-4 sm:ml-8 text-berlin-yellow" href="/contact">
-          contact & impressum
+          contact &amp; impressum
         </a>
         <a className="mx-4 sm:ml-8 text-berlin-yellow" href="/code-of-conduct">
           code of conduct
