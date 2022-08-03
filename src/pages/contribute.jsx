@@ -82,6 +82,12 @@ const Contribute = () => (
         <a href="https://blockchainweek.berlin" target="_blank">Berlin Blockchain Week</a>, e.g.,
         at DAppCon, DuneCon, or the EVM Summit.
       </p>
+      <p>
+        Found a typo on the website or want to contribute content? Send us a pull request at:{" "}
+        <a href="https://github.com/Department-of-Decentralization/3" target="_blank">
+          github.com/Department-of-Decentralization/3
+        </a>.
+      </p>
     </div>
   </Layout>
 );
