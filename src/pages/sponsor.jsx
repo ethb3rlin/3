@@ -3,6 +3,8 @@ import React from "react";
 import dune from "../assets/sponsors/dune.svg";
 import manta from "../assets/sponsors/manta.png";
 import walletconnect from "../assets/sponsors/walletconnect.svg";
+import factory from "../assets/sponsors/factory.png";
+import infura from "../assets/sponsors/infura.png";
 import pengo from "../assets/sponsors/pengo.png";
 import dinar from "../assets/sponsors/dinar.png";
 import drachma from "../assets/sponsors/drachma.png";
@@ -61,21 +63,21 @@ const Sponsor = () => (
         description="The Hungarian Pengő lost value dramatically by 40 quadrillion percent after the Second World War (1946), suffering the highest rate of hyperinflation ever recorded."
         image={pengo}
       >
-        <a href="https://dune.com">
+        <a href="https://dune.com" target="_blank">
           <img
             src={dune}
             className="h-12 md:h-16 mx-8 sm:grayscale hover:grayscale-0 my-4"
           />
         </a>
         <div className="hidden lg:block h-16 border-l border-solid border-berlin-yellow" />
-        <a href="https://www.manta.network/">
+        <a href="https://www.manta.network/" target="_blank">
           <img
             src={manta}
             className="h-12 md:h-16 mx-8 sm:grayscale hover:grayscale-0 my-4"
           />
         </a>
         <div className="hidden lg:block h-16 border-l border-solid border-berlin-yellow" />
-        <a href="https://walletconnect.com/">
+        <a href="https://walletconnect.com/" target="_blank">
           <img
             src={walletconnect}
             className="h-12 md:h-16 mx-8 sm:grayscale hover:grayscale-0 my-4 py-2"
@@ -88,7 +90,27 @@ const Sponsor = () => (
         image={zimbabwe}
         description="The devaluation of the Zimbabwe Dollar was difficult to measure because the government stopped filling the statistics post 2008; the peak was estimated at 80 billion percent month-on-month."
       >
-        TBD
+        To be announced soon...
+      </SponsorContainer>
+      <SponsorContainer
+        tierName="Greek Drachma"
+        tier="Special TIERS"
+        image={drachma}
+        description="The Greek Drachma hyperinflation started during the Axis occupation and was a result of an excessive reliance by the government on the inflation tax. The inflation reached a peak in 1944 after liberation."
+      >
+      <a href="https://www.infura.io/" target="_blank">
+        <img
+          src={infura}
+          className="h-12 md:h-16 mx-8 sm:grayscale hover:grayscale-0 my-4"
+        />
+      </a>
+      <div className="hidden lg:block h-16 border-l border-solid border-berlin-yellow" />
+      <a href="https://www.factoryberlin.com/" target="_blank">
+        <img
+          src={factory}
+          className="h-12 md:h-16 mx-8 sm:grayscale hover:grayscale-0 my-4"
+        />
+      </a>
       </SponsorContainer>
       <SponsorContainer
         tierName="Yugoslav Dinar"
@@ -96,7 +118,7 @@ const Sponsor = () => (
         image={dinar}
         description="Yugoslavia re-denominated the Yugoslav Dinar in 1994 at a ration of 1 billion to 1. Wages became worthless. If paid in cash, workers had to rush out and spend their wages before they lost their value overnight."
       >
-        TBD
+        To be announced soon...
       </SponsorContainer>
       <SponsorContainer
         tierName="Venezuelan Bolívar"
@@ -104,23 +126,15 @@ const Sponsor = () => (
         image={bolivar}
         description="The value of the hard Venezuelan Bolívar pegged to the US dollar did not stay stable for long. The central bank stuck to the subsidised exchange rate which was so overpriced that people began using parallel rates (ongoing)."
       >
-        TBD
+        To be announced soon...
       </SponsorContainer>
       <SponsorContainer
         tierName="German Papiermark"
-        tier="Community TIER"
+        tier="Community TIERS"
         image={papiermark}
         description="The German Papiermark was issued during the hyperinflation in 1922-23 when a peg to gold was no longer possible. Due to the fast devaluation, there was no option to mint coins and only the paper mark was issued."
       >
-        TBD
-      </SponsorContainer>
-      <SponsorContainer
-        tierName="Greek Drachma"
-        tier="CineBar TIER"
-        image={drachma}
-        description="The Greek Drachma hyperinflation started during the Axis occupation and was a result of an excessive reliance by the government on the inflation tax. The inflation reached a peak in 1944 after liberation."
-      >
-        TBD
+        To be announced soon...
       </SponsorContainer>
     </div>
   </Layout>
