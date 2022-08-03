@@ -5,6 +5,11 @@ import manta from "../assets/sponsors/manta.png";
 import walletconnect from "../assets/sponsors/walletconnect.svg";
 import factory from "../assets/sponsors/factory.png";
 import infura from "../assets/sponsors/infura.png";
+import pinata from "../assets/sponsors/pinata.png";
+import fuel from "../assets/sponsors/fuel.svg";
+import lens from "../assets/sponsors/lens.svg";
+import obol from "../assets/sponsors/obol.png";
+import zksync from "../assets/sponsors/zksync.svg";
 import pengo from "../assets/sponsors/pengo.png";
 import dinar from "../assets/sponsors/dinar.png";
 import drachma from "../assets/sponsors/drachma.png";
@@ -69,14 +74,14 @@ const Sponsor = () => (
             className="max-h-12 md:max-h-16 px-8 sm:grayscale hover:grayscale-0 my-4"
           />
         </a>
-        <div className="hidden lg:block h-16 border-l border-solid border-berlin-yellow" />
+
         <a href="https://www.manta.network/" target="_blank">
           <img
             src={manta}
             className="max-h-12 md:max-h-16 px-8 sm:grayscale hover:grayscale-0 my-4"
           />
         </a>
-        <div className="hidden lg:block h-16 border-l border-solid border-berlin-yellow" />
+
         <a href="https://walletconnect.com/" target="_blank">
           <img
             src={walletconnect}
@@ -90,7 +95,36 @@ const Sponsor = () => (
         image={zimbabwe}
         description="The devaluation of the Zimbabwe Dollar was difficult to measure because the government stopped filling the statistics post 2008; the peak was estimated at 80 billion percent month-on-month."
       >
-        To be announced soon...
+        <a href="https://www.pinata.cloud/" target="_blank">
+          <img
+            src={pinata}
+            className="h-12 md:h-16 mx-8 sm:grayscale hover:grayscale-0 my-4"
+          />
+        </a>
+        <a href="https://fuel.network/" target="_blank">
+          <img
+            src={fuel}
+            className="h-12 md:h-16 mx-8 sm:grayscale hover:grayscale-0 my-4"
+          />
+        </a>
+        <a href="https://lens.xyz/" target="_blank">
+          <img
+            src={lens}
+            className="h-12 md:h-16 mx-8 sm:grayscale hover:grayscale-0 my-4"
+          />
+        </a>
+        <a href="https://obol.tech/" target="_blank">
+          <img
+            src={obol}
+            className="h-12 md:h-16 mx-8 sm:grayscale hover:grayscale-0 my-4"
+          />
+        </a>
+        <a href="https://zksync.io/" target="_blank">
+          <img
+            src={zksync}
+            className="h-12 md:h-16 mx-8 sm:grayscale hover:grayscale-0 my-4"
+          />
+        </a>
       </SponsorContainer>
       <SponsorContainer
         tierName="Greek Drachma"
@@ -105,7 +139,7 @@ const Sponsor = () => (
             className="max-h-12 md:max-h-16 px-8 sm:grayscale hover:grayscale-0 my-4"
           />
         </a>
-        <div className="hidden lg:block h-16 border-l border-solid border-berlin-yellow" />
+
         <a href="https://www.factoryberlin.com/" target="_blank">
           <div className="text-center text-lg mt-6 sm:mt-0">Venue Sponsor</div>
           <img
@@ -118,7 +152,7 @@ const Sponsor = () => (
         tierName="Yugoslav Dinar"
         tier="TIER 2"
         image={dinar}
-        description="Yugoslavia re-denominated the Yugoslav Dinar in 1994 at a ration of 1 billion to 1. Wages became worthless. If paid in cash, workers had to rush out and spend their wages before they lost their value overnight."
+        description="Yugoslavia re-denominated the Yugoslav Dinar in 1994 at a ratio of 1 billion to 1. Wages became worthless. If paid in cash, workers had to rush out and spend their wages before they lost their value overnight."
       >
         To be announced soon...
       </SponsorContainer>
