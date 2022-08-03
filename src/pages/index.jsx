@@ -252,18 +252,32 @@ const Home = () => {
         </div>
       </div>
       <div
-        className={`sm:fixed sm:bottom-0 sm:right-0 flex justify-evenly text-center sm:justify-end my-6 sm:mr-12 z-20 text-sm font-w95 ${
+        className={`sm:fixed sm:bottom-0 sm:right-0 flex flex-wrap justify-evenly items-center text-center sm:justify-end my-4 sm:mr-12 z-20 text-sm font-w95 ${
           showSidebar ? "fade-in-right" : "fade-out-right"
         } `}
       >
-        <a className="mx-4 sm:ml-8 text-berlin-yellow" href="/decentralization">
+        <a
+          className="mx-4 my-2 sm:ml-8 text-berlin-yellow"
+          href="/decentralization"
+        >
           department of decentralization
         </a>
-        <a className="mx-4 sm:ml-8 text-berlin-yellow" href="/contact">
+        <a className="mx-4 my-2 sm:ml-8 text-berlin-yellow" href="/contact">
           contact & impressum
         </a>
-        <a className="mx-4 sm:ml-8 text-berlin-yellow" href="/code-of-conduct">
+        <a
+          className="mx-4 my-2 sm:ml-8 text-berlin-yellow"
+          href="/code-of-conduct"
+        >
           code of conduct
+        </a>
+        <a
+          className="mx-4 my-2 sm:ml-8 text-berlin-yellow"
+          href="https://github.com/Department-of-Decentralization/3"
+          target="_blank"
+          rel="noreferrer"
+        >
+          source
         </a>
       </div>
     </div>
