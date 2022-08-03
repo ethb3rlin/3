@@ -66,21 +66,21 @@ const Sponsor = () => (
         <a href="https://dune.com" target="_blank">
           <img
             src={dune}
-            className="h-12 md:h-16 mx-8 sm:grayscale hover:grayscale-0 my-4"
+            className="max-h-12 md:max-h-16 px-8 sm:grayscale hover:grayscale-0 my-4"
           />
         </a>
         <div className="hidden lg:block h-16 border-l border-solid border-berlin-yellow" />
         <a href="https://www.manta.network/" target="_blank">
           <img
             src={manta}
-            className="h-12 md:h-16 mx-8 sm:grayscale hover:grayscale-0 my-4"
+            className="max-h-12 md:max-h-16 px-8 sm:grayscale hover:grayscale-0 my-4"
           />
         </a>
         <div className="hidden lg:block h-16 border-l border-solid border-berlin-yellow" />
         <a href="https://walletconnect.com/" target="_blank">
           <img
             src={walletconnect}
-            className="h-12 md:h-16 mx-8 sm:grayscale hover:grayscale-0 my-4 py-2"
+            className="max-h-12 md:max-h-16 px-8 sm:grayscale hover:grayscale-0 my-4 py-2"
           />
         </a>
       </SponsorContainer>
@@ -98,19 +98,21 @@ const Sponsor = () => (
         image={drachma}
         description="The Greek Drachma hyperinflation started during the Axis occupation and was a result of an excessive reliance by the government on the inflation tax. The inflation reached a peak in 1944 after liberation."
       >
-      <a href="https://www.infura.io/" target="_blank">
-        <img
-          src={infura}
-          className="h-12 md:h-16 mx-8 sm:grayscale hover:grayscale-0 my-4"
-        />
-      </a>
-      <div className="hidden lg:block h-16 border-l border-solid border-berlin-yellow" />
-      <a href="https://www.factoryberlin.com/" target="_blank">
-        <img
-          src={factory}
-          className="h-12 md:h-16 mx-8 sm:grayscale hover:grayscale-0 my-4"
-        />
-      </a>
+        <a href="https://www.infura.io/" target="_blank">
+          <div className="text-center text-lg">Cinebar Sponsor</div>
+          <img
+            src={infura}
+            className="max-h-12 md:max-h-16 px-8 sm:grayscale hover:grayscale-0 my-4"
+          />
+        </a>
+        <div className="hidden lg:block h-16 border-l border-solid border-berlin-yellow" />
+        <a href="https://www.factoryberlin.com/" target="_blank">
+          <div className="text-center text-lg mt-6 sm:mt-0">Venue Sponsor</div>
+          <img
+            src={factory}
+            className="max-h-12 md:max-h-16 px-8 sm:grayscale hover:grayscale-0 my-4"
+          />
+        </a>
       </SponsorContainer>
       <SponsorContainer
         tierName="Yugoslav Dinar"
