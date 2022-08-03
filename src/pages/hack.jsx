@@ -23,20 +23,20 @@ const Hack = () => (
         hacker, mentor, volunteer, or judge.
       </p>
       <p className="text-center">
-        <a href="https://office.ethberl.in/form/#/2/form/view/Eb09ZMX-zPLH4GFYn8vM3yoNbZoGPxrVW1dPxUy37sg/embed/">
+        <a href="https://office.ethberl.in/form/#/2/form/view/Eb09ZMX-zPLH4GFYn8vM3yoNbZoGPxrVW1dPxUy37sg/embed/" target="_blank">
           APPLY AS A HACKER
         </a>
       </p>
 
       <p>
         To ease travel planning, we will send out confirmations every other week
-        to approved hackers. Hacker applications close on August 7, 2022.
+        to approved hackers.
       </p>
 
       <p>
         Note: With the term "hacker" we include all people that make up an
         amazing hackathon team: the coders, the strategists, the creatives, the
-        visionaries, and many more.
+        visionaries, and many more. Give it a try!
       </p>
     </div>
   </Layout>

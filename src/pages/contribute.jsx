@@ -8,7 +8,7 @@ const Contribute = () => (
       <p>
         ETHBerlin³ is a hackathon and cultural festival that is entirely
         organized by the Berlin Ethereum, Cosmos, and Polkadot community. We are
-        neither seeking profits nor a professional event-production company.
+        neither seeking profits nor are a professional event-production company.
         Everything we create during the event is entirely ideated by our friends
         and contributors, and the whole event is only made possible by the
         countless volunteers that make it happen.
@@ -25,8 +25,8 @@ const Contribute = () => (
         registrations, organizing swag, and answering all the questions that
         hackers may have.
       </p>
-      <p>
-        <a href="https://office.ethberl.in/form/#/2/form/view/mX4c4Fi7V4wNHZX32D20RUiXTRfWV+ogehxpQkcxxH8/embed/">
+      <p className="text-center">
+        <a href="https://office.ethberl.in/form/#/2/form/view/mX4c4Fi7V4wNHZX32D20RUiXTRfWV+ogehxpQkcxxH8/embed/" target="_blank">
           APPLY AS A VOLUNTEER
         </a>
       </p>
@@ -43,8 +43,8 @@ const Contribute = () => (
         Mentors can be reached through an internal ticketing system and will be
         easy to identify by their special swag.
       </p>
-      <p>
-        <a href="https://office.ethberl.in/form/#/2/form/view/YcBSf40HIEMYb04C4-LpA2kh2+NzeXj0EBppBYwYVmo/embed/">
+      <p className="text-center">
+        <a href="https://office.ethberl.in/form/#/2/form/view/YcBSf40HIEMYb04C4-LpA2kh2+NzeXj0EBppBYwYVmo/embed/" target="_blank">
           APPLY AS A MENTOR
         </a>
       </p>
@@ -54,11 +54,11 @@ const Contribute = () => (
         ETHBerlin³ is and has always been a non-profit event without any venture
         capital or company backing. If you want to financially support the event
         through sponsorships or donations, please message us at{" "}
-        <a href="mailto:sponsors@ethberlin.ooo">sponsors@ethberlin.ooo</a>.
+        <a href="mailto:sponsors@ethberlin.ooo" target="_blank">sponsors@ethberlin.ooo</a>.
       </p>
       <p>
         The sponsorship deck is available{" "}
-        <a href="https://ethberlin.ooo/sponsor.pdf">here.</a>
+        <a href="https://ethberlin.ooo/sponsor.pdf" target="_blank">here.</a>
       </p>
       <p>
         As an acknowledged German non-profit entity we are entitled to issue
@@ -71,7 +71,7 @@ const Contribute = () => (
         to be creative and create experiences that we can host during the event.
         Do you have an idea? Propose it directly to our experiences team by
         emailing them to{" "}
-        <a href="mailto:experiences@ethberlin.ooo">experiences@ethberlin.ooo</a>
+        <a href="mailto:experiences@ethberlin.ooo" target="_blank">experiences@ethberlin.ooo</a>
         .
       </p>
       <p>
@@ -79,8 +79,8 @@ const Contribute = () => (
         only have a selected amount of speakers and workshops on an invite-only
         basis. If you are looking for speaking opportunities, there will be
         plenty available during{" "}
-        <a href="https://blockchainweek.berlin">Berlin Blockchain Week</a> e.g.,
-        at DAppCon, DuneCon or the EVM Summit.
+        <a href="https://blockchainweek.berlin" target="_blank">Berlin Blockchain Week</a>, e.g.,
+        at DAppCon, DuneCon, or the EVM Summit.
       </p>
     </div>
   </Layout>
