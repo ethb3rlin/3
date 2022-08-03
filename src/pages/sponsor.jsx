@@ -74,14 +74,14 @@ const Sponsor = () => (
             className="max-h-12 md:max-h-16 px-8 sm:grayscale hover:grayscale-0 my-4"
           />
         </a>
-        <div className="hidden lg:block h-16 border-l border-solid border-berlin-yellow" />
+
         <a href="https://www.manta.network/" target="_blank">
           <img
             src={manta}
             className="max-h-12 md:max-h-16 px-8 sm:grayscale hover:grayscale-0 my-4"
           />
         </a>
-        <div className="hidden lg:block h-16 border-l border-solid border-berlin-yellow" />
+
         <a href="https://walletconnect.com/" target="_blank">
           <img
             src={walletconnect}
@@ -95,40 +95,36 @@ const Sponsor = () => (
         image={zimbabwe}
         description="The devaluation of the Zimbabwe Dollar was difficult to measure because the government stopped filling the statistics post 2008; the peak was estimated at 80 billion percent month-on-month."
       >
-      <a href="https://www.pinata.cloud/" target="_blank">
-        <img
-          src={pinata}
-          className="h-12 md:h-16 mx-8 sm:grayscale hover:grayscale-0 my-4"
-        />
-      </a>
-      <div className="hidden lg:block h-16 border-l border-solid border-berlin-yellow" />
-      <a href="https://fuel.network/" target="_blank">
-        <img
-          src={fuel}
-          className="h-12 md:h-16 mx-8 sm:grayscale hover:grayscale-0 my-4"
-        />
-      </a>
-      <div className="hidden lg:block h-16 border-l border-solid border-berlin-yellow" />
-      <a href="https://lens.xyz/" target="_blank">
-        <img
-          src={lens}
-          className="h-12 md:h-16 mx-8 sm:grayscale hover:grayscale-0 my-4"
-        />
-      </a>
-      <div className="hidden lg:block h-16 border-l border-solid border-berlin-yellow" />
-      <a href="https://obol.tech/" target="_blank">
-        <img
-          src={obol}
-          className="h-12 md:h-16 mx-8 sm:grayscale hover:grayscale-0 my-4"
-        />
-      </a>
-      <div className="hidden lg:block h-16 border-l border-solid border-berlin-yellow" />
-      <a href="https://zksync.io/" target="_blank">
-        <img
-          src={zksync}
-          className="h-12 md:h-16 mx-8 sm:grayscale hover:grayscale-0 my-4"
-        />
-      </a>
+        <a href="https://www.pinata.cloud/" target="_blank">
+          <img
+            src={pinata}
+            className="h-12 md:h-16 mx-8 sm:grayscale hover:grayscale-0 my-4"
+          />
+        </a>
+        <a href="https://fuel.network/" target="_blank">
+          <img
+            src={fuel}
+            className="h-12 md:h-16 mx-8 sm:grayscale hover:grayscale-0 my-4"
+          />
+        </a>
+        <a href="https://lens.xyz/" target="_blank">
+          <img
+            src={lens}
+            className="h-12 md:h-16 mx-8 sm:grayscale hover:grayscale-0 my-4"
+          />
+        </a>
+        <a href="https://obol.tech/" target="_blank">
+          <img
+            src={obol}
+            className="h-12 md:h-16 mx-8 sm:grayscale hover:grayscale-0 my-4"
+          />
+        </a>
+        <a href="https://zksync.io/" target="_blank">
+          <img
+            src={zksync}
+            className="h-12 md:h-16 mx-8 sm:grayscale hover:grayscale-0 my-4"
+          />
+        </a>
       </SponsorContainer>
       <SponsorContainer
         tierName="Greek Drachma"
@@ -143,7 +139,7 @@ const Sponsor = () => (
             className="max-h-12 md:max-h-16 px-8 sm:grayscale hover:grayscale-0 my-4"
           />
         </a>
-        <div className="hidden lg:block h-16 border-l border-solid border-berlin-yellow" />
+
         <a href="https://www.factoryberlin.com/" target="_blank">
           <div className="text-center text-lg mt-6 sm:mt-0">Venue Sponsor</div>
           <img
