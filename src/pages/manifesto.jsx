@@ -6,15 +6,16 @@ const Manifesto = () => {
     <Layout>
       <div className="text-base decorate-links">
         <h1 className="font-bold mb-4 text-secondary underline">(m)anifesto</h1>
-        <h2 className="text-2xl font-bold mb-4 mt-8">ETHBerlin³ - Expect us</h2>
         <div>
           <p>Hey friend! Remember us? We know it has been a while.</p>
 
           <p>
             In fact, the world seems to have changed drastically since we last
             met in Berlin in{" "}
-            <a href="https://ethberlin.com/about/">2018 for ETHBerlin</a> and in{" "}
-            <a href="https://ethberlinzwei.com/about.html">
+            <a href="https://ethberlin.com/about/" target="_blank">
+              2018 for ETHBerlin
+            </a> and in{" "}
+            <a href="https://ethberlinzwei.com/about.html" target="_blank">
               2019 for ETHBerlin ZWEI
             </a>
             .
@@ -37,7 +38,7 @@ const Manifesto = () => {
             <p>
               {" "}
               Punk6529:{" "}
-              <a href="https://twitter.com/punk6529/status/1494444624630403083">
+              <a href="https://twitter.com/punk6529/status/1494444624630403083" target="_blank">
                 On the freedom to transact
               </a>
               .
@@ -84,7 +85,7 @@ const Manifesto = () => {
             <p>
               {" "}
               Eric Hughes:{" "}
-              <a href="https://nakamotoinstitute.org/cypherpunk-manifesto/">
+              <a href="https://nakamotoinstitute.org/cypherpunk-manifesto/" target="_blank">
                 A Cypherpunk's Manifesto
               </a>
               .
@@ -139,10 +140,12 @@ const Manifesto = () => {
             In the previous years, ETHBerlin always tried to make a difference
             by pioneering the use of decentralized technologies and nurturing
             the ecosystem. Significant projects emerged from our hackathons,
-            such as <a href="https://www.pinata.cloud/">IPFS Pinata</a> or the{" "}
-            <a href="https://goerli.net/">Goerli Testnet</a>. And legend has it
-            that even the Dune Analytics founders{" "}
-            <a href="https://dune.com/blog/money-aint-a-thang">
+            such as <a href="https://www.pinata.cloud/" target="_blank">
+              IPFS Pinata
+            </a> or the{" "}
+            <a href="https://goerli.net/" target="_blank">Goerli Testnet</a>.
+            And legend has it that even the Dune Analytics founders{" "}
+            <a href="https://dune.com/blog/money-aint-a-thang" target="_blank">
               started their career
             </a>{" "}
             at ETHBerlin.
