@@ -184,9 +184,9 @@ const Home = () => {
           <p className="mt-4">
             We invite you to hack the system, now, more than ever.
           </p>
+          <p className="mt-4">Press (a) to get started.</p>
           <p className="mt-4">
-            To learn more about our vision & mission for ETHBerlin³, read our{" "}
-            <a href="/manifesto">hacker manifesto</a>.
+            To learn more about our vision & mission press (m).
           </p>
         </div>
       </div>
