@@ -80,6 +80,11 @@ const Home = () => {
     };
   }, [isSm]);
 
+  function sendToTopLeft() {
+    const style = `translateX(0) translateY(0) scale(1)`;
+    ethBerlinTextRef.current.style.transform = style;
+    setShowSidebar(true);
+  }
   return (
     <div className="flex flex-col lg:flex-row sm:justify-center sm:items-center min-h-screen font-w95">
       <Seo />
@@ -207,10 +212,11 @@ const Home = () => {
         noReveal
       />
       {/* Scroll indicator */}
-      <div
+      <button
         className={`hidden ${
           showSidebar ? "hidden" : "sm:flex"
-        } text-berlin-yellow  fixed left-1/2 bottom-0 blur-text font-light flex-col -translate-x-1/2`}
+        } text-berlin-yellow  fixed left-1/2 bottom-0 blur-text font-light flex-col -translate-x-1/2 z-20`}
+        onClick={sendToTopLeft}
       >
         <span className="material-symbols-outlined text-6xl -mb-4 light-up">
           expand_more
@@ -218,7 +224,7 @@ const Home = () => {
         <span className="material-symbols-outlined text-6xl -mt-5 light-up-delayed">
           expand_more
         </span>
-      </div>
+      </button>
       {/* Mobile and small ETH on bottom*/}
       <div className="flex justify-center lg:hidden sm:ml-60">
         <EthDiamond
