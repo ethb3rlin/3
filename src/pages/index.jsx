@@ -80,6 +80,11 @@ const Home = () => {
     };
   }, [isSm]);
 
+  function sendToTopLeft() {
+    const style = `translateX(0) translateY(0) scale(1)`;
+    ethBerlinTextRef.current.style.transform = style;
+    setShowSidebar(true);
+  }
   return (
     <div className="flex flex-col lg:flex-row sm:justify-center sm:items-center min-h-screen font-w95">
       <Seo />
@@ -182,9 +187,9 @@ const Home = () => {
             on the edge of a new dark age of regression.
             We invite you to hack the system, now, more than ever.
           </p>
-          <p className="mt-4 text-center">Press <a href="/about" target="_blank">(a)</a> to get started.</p>
+          <p className="mt-4 text-center">Press <a href="/about">(a)</a> to get started.</p>
           <p className="mt-4">
-            To learn more about our vision &amp; mission, press <a href="/manifesto" target="_blank">(m)</a>.
+            To learn more about our vision &amp; mission, press <a href="/manifesto">(m)</a>.
           </p>
         </div>
       </div>
@@ -205,10 +210,11 @@ const Home = () => {
         noReveal
       />
       {/* Scroll indicator */}
-      <div
+      <button
         className={`hidden ${
           showSidebar ? "hidden" : "sm:flex"
-        } text-berlin-yellow  fixed left-1/2 bottom-0 blur-text font-light flex-col -translate-x-1/2`}
+        } text-berlin-yellow  fixed left-1/2 bottom-0 blur-text font-light flex-col -translate-x-1/2 z-20`}
+        onClick={sendToTopLeft}
       >
         <span className="material-symbols-outlined text-6xl -mb-4 light-up">
           expand_more
@@ -216,7 +222,7 @@ const Home = () => {
         <span className="material-symbols-outlined text-6xl -mt-5 light-up-delayed">
           expand_more
         </span>
-      </div>
+      </button>
       {/* Mobile and small ETH on bottom*/}
       <div className="flex justify-center lg:hidden sm:ml-60">
         <EthDiamond
@@ -250,18 +256,32 @@ const Home = () => {
         </div>
       </div>
       <div
-        className={`sm:fixed sm:bottom-0 sm:right-0 flex justify-evenly text-center sm:justify-end my-6 sm:mr-12 z-20 text-sm font-w95 ${
+        className={`sm:fixed sm:bottom-0 sm:right-0 flex flex-wrap justify-evenly items-center text-center sm:justify-end my-4 sm:mr-12 z-20 text-sm font-w95 ${
           showSidebar ? "fade-in-right" : "fade-out-right"
         } `}
       >
-        <a className="mx-4 sm:ml-8 text-berlin-yellow" href="/decentralization">
+        <a
+          className="mx-4 my-2 sm:ml-8 text-berlin-yellow"
+          href="/decentralization"
+        >
           department of decentralization
         </a>
-        <a className="mx-4 sm:ml-8 text-berlin-yellow" href="/contact">
-          contact &amp; impressum
+        <a className="mx-4 my-2 sm:ml-8 text-berlin-yellow" href="/contact">
+          contact & impressum
         </a>
-        <a className="mx-4 sm:ml-8 text-berlin-yellow" href="/code-of-conduct">
+        <a
+          className="mx-4 my-2 sm:ml-8 text-berlin-yellow"
+          href="/code-of-conduct"
+        >
           code of conduct
+        </a>
+        <a
+          className="mx-4 my-2 sm:ml-8 text-berlin-yellow"
+          href="https://github.com/Department-of-Decentralization/3"
+          target="_blank"
+          rel="noreferrer"
+        >
+          source
         </a>
       </div>
     </div>
