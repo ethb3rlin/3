@@ -6,7 +6,7 @@ module.exports = {
     description:
       "ETHBerlin 3: three-day hackathon extravaganza, September 16-18, 2022",
     twitterUsername: "@ETHBerlin",
-    image: `/card.png`,
+    image: `/ETHBerlin.gif`,
   },
   plugins: [
     "gatsby-plugin-image",
