@@ -50,8 +50,10 @@ const Impressum = () => {
             <a href="mailto:schoedon@ethberlin.ooo">schoedon@ethberlin.ooo</a>
           </div>
           <div className="mt-4">
-            Goerli Dezentral gGmbH is an acknowledged non-profit entity in
-            Germany according to &sect; 52 AO.
+            Goerli Dezentral gGmbH is a non-profit organization serving
+            tax-privileged purposes, according to the articles of association.
+            The organization meets the statutory requirements under
+            &sect;&sect; 51, 59, 60, and 61 AO.
           </div>
         </div>
       </div>
