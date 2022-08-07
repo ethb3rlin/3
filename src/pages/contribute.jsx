@@ -14,10 +14,6 @@ const Contribute = () => (
         countless volunteers that make it happen.
       </p>
       <p>Do you want to contribute to ETHBerlin³, too? Here are the options.</p>
-      <p className="italic text-sm text-gray-400">
-        Please only apply to one of the below.
-      </p>
-
       <h2 className="text-2xl font-bold mt-8">Volunteer</h2>
       <p>
         Our volunteers are the super-glue that hold all the pieces of the event
@@ -26,9 +22,7 @@ const Contribute = () => (
         hackers may have.
       </p>
       <p className="text-center">
-        <a href="https://office.ethberl.in/form/#/2/form/view/mX4c4Fi7V4wNHZX32D20RUiXTRfWV+ogehxpQkcxxH8/embed/" target="_blank">
-          APPLY AS A VOLUNTEER
-        </a>
+        <span className="fake-delete text-gray-400">APPLY AS A VOLUNTEER</span> CLOSED.
       </p>
 
       <h2 className="text-2xl font-bold mt-8">Mentor</h2>
@@ -44,9 +38,7 @@ const Contribute = () => (
         easy to identify by their special swag.
       </p>
       <p className="text-center">
-        <a href="https://office.ethberl.in/form/#/2/form/view/YcBSf40HIEMYb04C4-LpA2kh2+NzeXj0EBppBYwYVmo/embed/" target="_blank">
-          APPLY AS A MENTOR
-        </a>
+        <span className="fake-delete text-gray-400">APPLY AS A MENTOR</span> CLOSED.
       </p>
 
       <h2 className="text-2xl font-bold mt-8">Sponsor</h2>

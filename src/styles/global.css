@@ -37,7 +37,7 @@
     font-weight: 400;
     src: url(../assets/fonts/google-icons.woff2) format('woff2');
   }
-  
+
   .material-symbols-outlined {
     font-family: 'Material Symbols Outlined';
     font-weight: normal;
@@ -78,13 +78,13 @@
     /* text-shadow: <blur>, <outer-glow> */
     text-shadow: 0 0 5px rgb(255 210 0 / 75%), theme("colors.berlin-yellow") 0 0 15px;
   }
-  
+
   .blur-text-small {
     color: transparent;
     /* text-shadow: <blur>, <outer-glow> */
     text-shadow: 0 0 7px rgb(255 210 0 / 75%), theme("colors.berlin-yellow") 0 0 2px;
   }
-  
+
   .blur-text-smaller {
     color: transparent;
     /* text-shadow: <blur>, <outer-glow> */
@@ -136,10 +136,15 @@ body {
     opacity: 0;
   }
 }
+
 .fake-bold {
   letter-spacing:1px;
   font-weight: normal;
   text-shadow:1px 0 0 currentColor;
+}
+
+.fake-delete {
+  text-decoration: line-through;
 }
 
 .fade-in-left {
