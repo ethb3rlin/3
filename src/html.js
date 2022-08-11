@@ -24,6 +24,9 @@ export default function HTML(props) {
                 else if (e.key == 'h' || e.key == 'H') {
                   window.location.href= "/hack";
                 }
+                else if (e.key == 'p' || e.key == 'P') {
+                  window.location.href= "/program";
+                }
                 else if (e.key == 'c' || e.key == 'C') {
                   window.location.href= "/contribute";
                 }
