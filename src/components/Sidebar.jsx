@@ -16,13 +16,19 @@ const Sidebar = ({ className, hideLogo }) => {
       {/* 5.5rem to align with the Latout main content box */}
       <nav className="flex flex-col mt-[5.5rem] text-xl text-left">
         <a className="my-2" href="/about">
+          {" "}
           (a)bout
         </a>
         <a className="my-2" href="/hack">
           {" "}
           (h)ack
         </a>
+        <a className="my-2" href="/program">
+          {" "}
+          (p)rogram
+        </a>
         <a className="my-2" href="/contribute">
+          {" "}
           (c)ontribute
         </a>
         <a className="my-2" href="/sponsor">
@@ -30,6 +36,7 @@ const Sidebar = ({ className, hideLogo }) => {
           (s)ponsor
         </a>
         <a className="my-2" href="/manifesto">
+          {" "}
           (m)anifesto
         </a>
       </nav>

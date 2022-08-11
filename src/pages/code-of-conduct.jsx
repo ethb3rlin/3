@@ -30,7 +30,7 @@ const CoC = () => (
         technology, so we should be open to everyone and everything. We all
         bring different backgrounds and experiences. Great things can happen
         when we show up with an open mind and curiosities to explore. If you
-        don’t have an open mind, this group is not for you.
+        don't have an open mind, this group is not for you.
       </p>
       <h2 className="text-xl font-bold">Be Respectful</h2>
       <p className="mt-2">
@@ -59,7 +59,7 @@ const CoC = () => (
       <p className="mt-2">
         Everyone in this community is responsible for their own tasks. If you
         have a project, it is your responsibility to manage it. We are not here
-        to spoon feed you or do your work for you. Ain’t nobody got time for
+        to spoon feed you or do your work for you. Ain't nobody got time for
         that. But we are a community and here to support. Always reach out if
         you are having issues with completing a task.
       </p>
