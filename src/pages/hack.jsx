@@ -16,7 +16,6 @@ const Hack = () => (
         for otherwise. We explicitly not only invite developers, but every
         profession that's involved in building incredible projects.
       </p>
-
       <p>
         That said, ETHBerlin³ is not a conference. There are no general
         attendance tickets. All participants have an active role, such as
@@ -26,13 +25,30 @@ const Hack = () => (
         <a href="https://office.ethberl.in/form/#/2/form/view/Eb09ZMX-zPLH4GFYn8vM3yoNbZoGPxrVW1dPxUy37sg/embed/" target="_blank">
           APPLY AS A HACKER
         </a>
+        {" "}
+        BEFORE AUG/16
       </p>
-
       <p>
         To ease travel planning, we will send out confirmations every other week
-        to approved hackers.
+        to approved hackers. Already received your hacker voucher? Make sure to
+        {" "}
+        <a href="https://ticketh.xyz/ethberlin/3/" target="_blank">
+          redeem it before it expires
+        </a>! Once, you redeemed your ticket,
+        {" "}
+        <a href="https://matrix.to/#/%23ethberlin:matrix.org" target="_blank">
+          join the official matrix space
+        </a>, and read on!
       </p>
-
+      <p className="text-center">
+        <a href="https://github.com/ethb3rlin/find-a-team" target="_blank">
+          FIND A TEAM
+        </a>,
+        {" "}
+        <a href="https://github.com/ethb3rlin/sponsor-bounties" target="_blank">
+          SPONSOR BOUNTIES
+        </a>
+      </p>
       <p>
         Note: With the term "hacker" we include all people that make up an
         amazing hackathon team: the coders, the strategists, the creatives, the
