@@ -36,6 +36,15 @@ export default function HTML(props) {
                 else if (e.key == 'm' || e.key == 'M') {
                   window.location.href= "/manifesto";
                 }
+                else if (e.key == 'i' || e.key == 'I') {
+                  window.location.href= "/contact";
+                }
+                else if (e.key == 'd' || e.key == 'D') {
+                  window.location.href= "/decentralization";
+                }
+                else if (e.key == 'o' || e.key == 'O') {
+                  window.location.href= "/code-of-conduct";
+                }
             }
             `,
           }}
