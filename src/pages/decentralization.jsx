@@ -4,7 +4,7 @@ import React from "react";
 const decentralization = () => (
   <Layout>
     <h1 className="my-4 underline text-secondary">
-      Department of Decentralization
+      department of (d)ecentralization
     </h1>
     <div className="text-gray-50 text-justify decorate-links">
       <p>

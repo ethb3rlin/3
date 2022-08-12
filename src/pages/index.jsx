@@ -129,6 +129,10 @@ const Home = () => {
           {" "}
           (a)bout
         </a>
+        <a className="my-2" href="/manifesto">
+          {" "}
+          (m)anifesto
+        </a>
         <a className="my-2" href="/hack">
           {" "}
           (h)ack
@@ -144,10 +148,6 @@ const Home = () => {
         <a className="my-2" href="/sponsor">
           {" "}
           (s)ponsor
-        </a>
-        <a className="my-2" href="/manifesto">
-          {" "}
-          (m)anifesto
         </a>
         <div className="fixed bottom-0 mb-8 text-sm text-center">
           <div className="my-2">
@@ -271,16 +271,16 @@ const Home = () => {
           className="mx-4 my-2 sm:ml-8 text-berlin-yellow"
           href="/decentralization"
         >
-          department of decentralization
+          department of (d)ecentralization
         </a>
         <a className="mx-4 my-2 sm:ml-8 text-berlin-yellow" href="/contact">
-          contact & impressum
+          contact & (i)mpressum
         </a>
         <a
           className="mx-4 my-2 sm:ml-8 text-berlin-yellow"
           href="/code-of-conduct"
         >
-          code of conduct
+          code (o)f conduct
         </a>
         <a
           className="mx-4 my-2 sm:ml-8 text-berlin-yellow"

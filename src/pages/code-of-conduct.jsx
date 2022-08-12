@@ -3,7 +3,7 @@ import React from "react";
 
 const CoC = () => (
   <Layout>
-    <h1 className="my-4 underline text-secondary">code of conduct</h1>
+    <h1 className="my-4 underline text-secondary">code (o)f conduct</h1>
     <div className="text-justify decorate-links">
       <p className="mt-2">
         We are a collective and we want to bring people in the community

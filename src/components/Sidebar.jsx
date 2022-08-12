@@ -19,6 +19,10 @@ const Sidebar = ({ className, hideLogo }) => {
           {" "}
           (a)bout
         </a>
+        <a className="my-2" href="/manifesto">
+          {" "}
+          (m)anifesto
+        </a>
         <a className="my-2" href="/hack">
           {" "}
           (h)ack
@@ -34,10 +38,6 @@ const Sidebar = ({ className, hideLogo }) => {
         <a className="my-2" href="/sponsor">
           {" "}
           (s)ponsor
-        </a>
-        <a className="my-2" href="/manifesto">
-          {" "}
-          (m)anifesto
         </a>
       </nav>
       <div className="mt-auto">
