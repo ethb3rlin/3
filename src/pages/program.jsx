@@ -48,9 +48,9 @@ const Program = () => (
         <li><span className="fake-bold">22:00</span> DJ/Music (Creator's Lab, Ground Floor)</li>
         <li><span className="fake-bold">24:00</span> Midnight Snack (Community Spaces)</li>
       </p>
-      <h2 className="text-xl font-bold">Sunday, September 16</h2>
+      <h2 className="text-xl font-bold">Sunday, September 18</h2>
       <p className="mt-4">
-        Don't forget to submit your projects by 11:00 am!
+        Don't forget to submit your projects by 11:00 am Berlin time!
       </p>
       <p className="mt-4">
         <ul>
