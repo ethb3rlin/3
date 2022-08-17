@@ -21,6 +21,9 @@ const Hack = () => (
         attendance tickets. All participants have an active role, such as
         hacker, mentor, volunteer, or judge.
       </p>
+      <p className="text-center">
+        <span className="fake-delete text-gray-400">APPLY AS A HACKER</span> CLOSED.
+      </p>
       <p>
         To ease travel planning, we will send out confirmations every other week
         to approved hackers. Already received your hacker voucher? Make sure to
