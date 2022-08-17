@@ -21,13 +21,6 @@ const Hack = () => (
         attendance tickets. All participants have an active role, such as
         hacker, mentor, volunteer, or judge.
       </p>
-      <p className="text-center">
-        <a href="https://office.ethberl.in/form/#/2/form/view/Eb09ZMX-zPLH4GFYn8vM3yoNbZoGPxrVW1dPxUy37sg/embed/" target="_blank">
-          APPLY AS A HACKER
-        </a>
-        {" "}
-        BEFORE AUG/16
-      </p>
       <p>
         To ease travel planning, we will send out confirmations every other week
         to approved hackers. Already received your hacker voucher? Make sure to
