@@ -12,7 +12,7 @@ const About = () => (
   <Layout showEthDiamond={false}>
     <h1 className="my-4 underline text-secondary">(v)enue</h1>
     <div className="text-justify decorate-links">
-      <div className="relative">
+      <div className="relative my-16">
         <div className="yard1" data-tip="Yard 1" />
         <div className="yard2" data-tip="Yard 2" />
         <div className="restaurant" data-tip="Restaurant" />
@@ -21,7 +21,7 @@ const About = () => (
         <div className="creators-lab" data-tip="Creators Lab" />
         <img src={groundFloor} alt="ground floor"></img>
       </div>
-      <div className="relative">
+      <div className="relative my-16">
         <div
           className="community-space-first-floor"
           data-tip="Community Space (1st Floor)"
@@ -30,7 +30,7 @@ const About = () => (
         <div className="else" data-tip="Else" />
         <img src={firstFloor} alt="first floor"></img>
       </div>
-      <div className="relative">
+      <div className="relative my-16">
         <div
           className="community-space-second-floor"
           data-tip="Community Space (2nd Floor)"
@@ -48,21 +48,21 @@ const About = () => (
         ></div>
         <img src={secondFloor} alt="second floor"></img>
       </div>
-      <div className="relative">
+      <div className="relative my-16">
         <img
           src={thirdFloor}
           alt="third floor"
           data-tip="No ETHBerlin spaces on 3rd floor"
         ></img>
       </div>
-      <div className="relative">
+      <div className="relative my-16">
         <img
           src={fourthFloor}
           alt="fourth floor"
           data-tip="No ETHBerlin spaces on 4rd floor"
         ></img>
       </div>
-      <div className="relative">
+      <div className="relative my-16">
         <div className="wildenbruch" data-tip="Wildenbruch"></div>
         <div className="persius" data-tip="Persius"></div>
         <div className="parlour" data-tip="Parlour"></div>
@@ -71,7 +71,7 @@ const About = () => (
         <img src={fifthFloor} alt="fifth floor"></img>
       </div>
     </div>
-    <ReactTooltip />
+    <ReactTooltip backgroundColor="#000" arrowColor="#000" textColor="#fff" />
   </Layout>
 );
 
