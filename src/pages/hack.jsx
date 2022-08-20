@@ -41,10 +41,6 @@ const Hack = () => (
           FIND A TEAM
         </a>,
         {" "}
-        <a href="https://office.ethberl.in/sheet/#/2/sheet/edit/QwTrwOKdKS3FBRLPQp3BWNBM/" target="_blank">
-          COUCH SURFING
-        </a>,
-        {" "}
         <a href="https://github.com/ethb3rlin/sponsor-bounties" target="_blank">
           SPONSOR BOUNTIES
         </a>
