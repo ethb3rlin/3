@@ -72,7 +72,10 @@ const Contribute = () => (
         basis. If you are looking for speaking opportunities, there will be
         plenty available during{" "}
         <a href="https://blockchainweek.berlin" target="_blank">Berlin Blockchain Week</a>, e.g.,
-        at DAppCon, DuneCon, or the EVM Summit.
+        at the <a href="https://github.com/ChainAgnostic/Gatherings/tree/main/2022-09-15-BLN-blockchainweek.berlin" target="_blank">CASA gathering</a>,
+        DAppCon, DuneCon,
+        <a href="https://ethereum-magicians.org/t/eth-station-upcoming-event-in-berlin-call-for-action/10415" target="_blank">ETH Station (Ethereum Magicians)</a>  
+        or the EVM Summit.
       </p>
     </div>
   </Layout>
