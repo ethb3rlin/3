@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 @import "./glitch.css";
+@import "./rooms/groundFloor.css";
+@import "./rooms/firstFloor.css";
+@import "./rooms/secondFloor.css";
+@import "./rooms/fifthFloor.css";
 
 @layer base {
   @font-face {

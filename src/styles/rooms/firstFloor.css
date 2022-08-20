@@ -1,0 +1,41 @@
+.community-space-first-floor {
+  position: absolute;
+  clip-path:polygon(53.5% 36%, 60.5% 29%, 60.5% 94%, 53.5% 94%);
+  opacity: 0.5;
+  background-color: blue;
+  width: 100%;
+  height: 100%;
+}
+
+.community-space-first-floor:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+.peter {
+  position: absolute;
+  clip-path:polygon(87.5% 81%, 91.5% 81%, 91.5% 94%, 87.5% 94%);
+  opacity: 0.5;
+  background-color: darkorange;
+  width: 100%;
+  height: 100%;
+}
+
+.peter:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+.else {
+  position: absolute;
+  clip-path:polygon(91.5% 60%, 96.5% 60%, 96.5% 94%, 91.5% 94%);
+  opacity: 0.5;
+  background-color: lightgreen;
+  width: 100%;
+  height: 100%;
+}
+
+.else:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
