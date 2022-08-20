@@ -22,11 +22,7 @@ const Hack = () => (
         hacker, mentor, volunteer, or judge.
       </p>
       <p className="text-center">
-        <a href="https://office.ethberl.in/form/#/2/form/view/Eb09ZMX-zPLH4GFYn8vM3yoNbZoGPxrVW1dPxUy37sg/embed/" target="_blank">
-          APPLY AS A HACKER
-        </a>
-        {" "}
-        BEFORE AUG/16
+        <span className="fake-delete text-gray-400">APPLY AS A HACKER</span> CLOSED.
       </p>
       <p>
         To ease travel planning, we will send out confirmations every other week
@@ -43,10 +39,6 @@ const Hack = () => (
       <p className="text-center">
         <a href="https://github.com/ethb3rlin/find-a-team" target="_blank">
           FIND A TEAM
-        </a>,
-        {" "}
-        <a href="https://office.ethberl.in/sheet/#/2/sheet/edit/QwTrwOKdKS3FBRLPQp3BWNBM/" target="_blank">
-          COUCH SURFING
         </a>,
         {" "}
         <a href="https://github.com/ethb3rlin/sponsor-bounties" target="_blank">
