@@ -71,21 +71,21 @@ const Sponsor = () => (
         <a href="https://dune.com" target="_blank">
           <img
             src={dune}
-            className="max-h-12 md:h-16 px-8 sm:grayscale hover:grayscale-0 my-4"
+            className="h-12 md:h-20 px-8 sm:grayscale hover:grayscale-0 my-4"
           />
         </a>
 
         <a href="https://www.manta.network/" target="_blank">
           <img
             src={manta}
-            className="max-h-12 md:h-16 px-8 sm:grayscale hover:grayscale-0 my-4"
+            className="h-12 md:h-16 px-8 sm:grayscale hover:grayscale-0 my-4"
           />
         </a>
 
         <a href="https://walletconnect.com/" target="_blank">
           <img
             src={walletconnect}
-            className="max-h-12 md:h-16 px-8 sm:grayscale hover:grayscale-0 my-4 py-2"
+            className="h-12 md:h-16 px-8 sm:grayscale hover:grayscale-0 my-4 py-2"
           />
         </a>
       </SponsorContainer>
