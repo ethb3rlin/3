@@ -8,7 +8,7 @@ import infura from "../assets/sponsors/infura.png";
 import pinata from "../assets/sponsors/pinata.png";
 import fuel from "../assets/sponsors/fuel.svg";
 import lens from "../assets/sponsors/lens.svg";
-import obol from "../assets/sponsors/obol.png";
+import obol from "../assets/sponsors/obol.svg";
 import zksync from "../assets/sponsors/zksync.svg";
 import pengo from "../assets/sponsors/pengo.png";
 import dinar from "../assets/sponsors/dinar.png";
@@ -71,21 +71,21 @@ const Sponsor = () => (
         <a href="https://dune.com" target="_blank">
           <img
             src={dune}
-            className="max-h-12 md:max-h-16 px-8 sm:grayscale hover:grayscale-0 my-4"
+            className="max-h-12 md:h-16 px-8 sm:grayscale hover:grayscale-0 my-4"
           />
         </a>
 
         <a href="https://www.manta.network/" target="_blank">
           <img
             src={manta}
-            className="max-h-12 md:max-h-16 px-8 sm:grayscale hover:grayscale-0 my-4"
+            className="max-h-12 md:h-16 px-8 sm:grayscale hover:grayscale-0 my-4"
           />
         </a>
 
         <a href="https://walletconnect.com/" target="_blank">
           <img
             src={walletconnect}
-            className="max-h-12 md:max-h-16 px-8 sm:grayscale hover:grayscale-0 my-4 py-2"
+            className="max-h-12 md:h-16 px-8 sm:grayscale hover:grayscale-0 my-4 py-2"
           />
         </a>
       </SponsorContainer>
@@ -98,7 +98,7 @@ const Sponsor = () => (
         <a href="https://www.pinata.cloud/" target="_blank">
           <img
             src={pinata}
-            className="h-12 md:h-16 mx-8 sm:grayscale hover:grayscale-0 my-4"
+            className="h-16 md:h-20 mx-8 sm:grayscale hover:grayscale-0 my-4"
           />
         </a>
         <a href="https://fuel.network/" target="_blank">
@@ -110,19 +110,19 @@ const Sponsor = () => (
         <a href="https://lens.xyz/" target="_blank">
           <img
             src={lens}
-            className="h-12 md:h-16 mx-8 sm:grayscale hover:grayscale-0 my-4"
+            className="h-16 md:h-20 mx-8 sm:grayscale hover:grayscale-0 my-4"
           />
         </a>
         <a href="https://obol.tech/" target="_blank">
           <img
             src={obol}
-            className="h-12 md:h-16 mx-8 sm:grayscale hover:grayscale-0 my-4"
+            className="h-10 md:h-12 mx-8 sm:grayscale hover:grayscale-0 my-4"
           />
         </a>
         <a href="https://zksync.io/" target="_blank">
           <img
             src={zksync}
-            className="h-12 md:h-16 mx-8 sm:grayscale hover:grayscale-0 my-4"
+            className="h-10 md:h-11 mx-8 sm:grayscale hover:grayscale-0 my-4"
           />
         </a>
       </SponsorContainer>
