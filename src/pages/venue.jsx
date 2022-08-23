@@ -3,76 +3,77 @@ import React from "react";
 import groundFloor from "../images/groundFloor.png";
 import firstFloor from "../images/firstFloor.png";
 import secondFloor from "../images/secondFloor.png";
-import thirdFloor from "../images/thirdFloor.png";
-import fourthFloor from "../images/fourthFloor.png";
+import secondFloorSunday from "../images/secondFloor-sunday.png";
+// import thirdFloor from "../images/thirdFloor.png";
+// import fourthFloor from "../images/fourthFloor.png";
 import fifthFloor from "../images/fifthFloor.png";
 import ReactTooltip from "react-tooltip";
 
-const About = () => (
-  <Layout showEthDiamond={false}>
-    <h1 className="my-4 underline text-secondary">(v)enue</h1>
-    <div className="text-justify decorate-links">
-      <div className="relative my-16">
-        <div className="yard1" data-tip="Yard 1" />
-        <div className="yard2" data-tip="Yard 2" />
-        <div className="restaurant" data-tip="Restaurant" />
-        <div className="yard3" data-tip="Yard 3" />
-        <div className="lexis" data-tip="Lexis" />
-        <div className="creators-lab" data-tip="Creators Lab" />
-        <img src={groundFloor} alt="ground floor"></img>
-      </div>
-      <div className="relative my-16">
-        <div
-          className="community-space-first-floor"
-          data-tip="Community Space (1st Floor)"
-        />
-        <div className="peter" data-tip="Peter" />
-        <div className="else" data-tip="Else" />
-        <img src={firstFloor} alt="first floor"></img>
-      </div>
-      <div className="relative my-16">
-        <div
-          className="community-space-second-floor"
-          data-tip="Community Space (2nd Floor)"
-        />
-        <div className="grace" data-tip="Grace" />
-        <div className="mercury" data-tip="Mercury" />
-        <div className="kiefholz" data-tip="Kiefholz" />
-        <div
-          className="meeting-room-1-second-floor"
-          data-tip="Meeting Room 1 (2nd Floor)"
-        />
-        <div
-          className="meeting-room-2-second-floor"
-          data-tip="Meeting Room 2 (2nd Floor)"
-        ></div>
-        <img src={secondFloor} alt="second floor"></img>
-      </div>
-      <div className="relative my-16">
-        <img
-          src={thirdFloor}
-          alt="third floor"
-          data-tip="No ETHBerlin spaces on 3rd floor"
-        ></img>
-      </div>
-      <div className="relative my-16">
-        <img
-          src={fourthFloor}
-          alt="fourth floor"
-          data-tip="No ETHBerlin spaces on 4rd floor"
-        ></img>
-      </div>
-      <div className="relative my-16">
-        <div className="wildenbruch" data-tip="Wildenbruch"></div>
-        <div className="persius" data-tip="Persius"></div>
-        <div className="parlour" data-tip="Parlour"></div>
-        <div className="cinema" data-tip="Cinema"></div>
-        <div className="cinebar" data-tip="Cinebar"></div>
-        <img src={fifthFloor} alt="fifth floor"></img>
-      </div>
-    </div>
-    <ReactTooltip backgroundColor="#000" arrowColor="#000" textColor="#fff" />
-  </Layout>
-);
+const isSundayCheck = () => {
+  const date = new Date();
+  const day = date.getDate();
+  const month = date.getMonth() + 1;
+  const year = date.getFullYear();
+  if (day === 18 && month === 9 && year === 2022) {
+    return true;
+  } else {
+    return false;
+  }
+};
 
-export default About;
+const Venue = () => {
+  const [isSunday, setIsSunday] = React.useState(isSundayCheck());
+
+  return (
+    <Layout showEthDiamond={false}>
+      <h1 className="my-4 underline text-secondary">(v)enue</h1>
+      <div className="decorate-links flex flex-col items-center text-berlin-yellow mt-16">
+        <div className="my-4 italic text-gray-300">
+          Gray marked areas and the 3rd and 4th floors are not available for
+          ETHBerlin
+        </div>
+        <h2 className="text-3xl underline mb-4">Ground Floor / Floor 0</h2>
+        <div className="relative mb-16 lg:px-32 py-2 bg-white">
+          <img src={groundFloor} alt="ground floor"></img>
+        </div>
+        <h2 className="text-3xl underline mb-4"> First Floor / Floor 1 </h2>
+        <div className="relative mb-16 lg:px-32 py-2 bg-white">
+          <img src={firstFloor} alt="first floor"></img>
+        </div>
+        <h2 className="text-3xl underline mb-4"> Second Floor / Floor 2 </h2>
+        <div className="mb-4">
+          <button
+            className={`bg-berlin-yellow ${
+              isSunday && "opacity-50"
+            } text-gray-800 px-4 py-2 mx-4 rounded-xl`}
+            onClick={() => setIsSunday(false)}
+          >
+            Friday & Saturday
+          </button>
+          <button
+            className={`bg-berlin-yellow ${
+              !isSunday && "opacity-50"
+            } text-gray-800 px-4 py-2 mx-4 rounded-xl`}
+            onClick={() => setIsSunday(true)}
+          >
+            Sunday
+          </button>
+        </div>
+        <div className="relative mb-16 lg:px-32 py-2 bg-white">
+          {isSunday ? (
+            <img src={secondFloor} alt="second floor"></img>
+          ) : (
+            <img src={secondFloorSunday} alt="second floor"></img>
+          )}
+        </div>
+        <h2 className="text-3xl underline mb-4"> Fifth Floor / Floor 5 </h2>
+        <div className="relative mb-16 lg:px-32 py-2 bg-white">
+          <img src={fifthFloor} alt="fifth floor"></img>
+        </div>
+      </div>
+      <ReactTooltip backgroundColor="#000" arrowColor="#000" textColor="#fff" />
+    </Layout>
+  );
+};
+
+export default Venue;
