@@ -9,31 +9,50 @@ import secondFloorSunday from "../images/secondFloor-sunday.png";
 // import fourthFloor from "../images/fourthFloor.png";
 import fifthFloor from "../images/fifthFloor.png";
 import "../styles/modal.css";
-
-const currentDate = new Date();
+import "../styles/rooms/groundFloor.css";
+import "../styles/rooms/firstFloor.css";
+import "../styles/rooms/secondFloor.css";
+import "../styles/rooms/fifthFloor.css";
+// const currentDate = new Date();
+const currentDate = new Date("2022-09-17T21:20:00+02:00");
 
 const ProgramItem = ({
   title,
   location,
-  date,
+  dayStr,
+  endDayStr,
   startTime,
   endTime,
   setIsModalOpen,
 }) => {
   // ISO Format: 2022-09-16T00:09:00+02:00
-  const startDate = new Date(date + "T" + startTime + ":00+02:00");
+  const startDate = new Date(dayStr + "T" + startTime + ":00+02:00");
   const endDate = endTime
-    ? new Date(date + "T" + endTime + ":00+02:00")
+    ? new Date(endDayStr || dayStr + "T" + endTime + ":00+02:00")
     : startDate;
 
   return (
-    <li className={`${currentDate > endDate ? "text-gray-500" : ""}`}>
+    <li
+      className={`${
+        currentDate > endDate
+          ? "text-gray-700"
+          : currentDate > startDate
+          ? "font-bold animate-pulse"
+          : ""
+      } list-none`}
+    >
       <span className="fake-bold">
-        {startTime + (endTime ? "- " + endTime : "")}
+        {"> " + startTime + (endTime ? "-" + endTime : "") + " -"}
       </span>{" "}
       {title}{" "}
       <button
-        className="text-berlin-yellow"
+        className={`${
+          currentDate > endDate
+            ? "text-gray-700"
+            : currentDate > startDate
+            ? "font-bold animate-pulse"
+            : "text-berlin-yellow"
+        }`}
         onClick={() => setIsModalOpen(true)}
       >
         <span className="align-middle">
@@ -48,7 +67,8 @@ const ProgramItem = ({
 };
 const Program = () => {
   const [isModalOpen, setIsModalOpen] = React.useState(true);
-
+  const [highlightedRoomClass, setHighlightedRoomClass] =
+    React.useState("cinebar");
   const handleCloseModal = (e) => {
     e.stopPropagation();
     setIsModalOpen(false);
@@ -57,7 +77,7 @@ const Program = () => {
   return (
     <Layout>
       <h1 className="my-4 underline text-secondary">(p)rogram</h1>
-      <div className="text-gray-50 text-justify">
+      <div className="text-gray-50">
         <h2 className="text-xl font-bold">Friday, September 16</h2>
         <p className="mt-4">
           Welcome to ETHBerlin³! If you have the chance, please claim your badge
@@ -67,124 +87,169 @@ const Program = () => {
         <p className="mt-4">
           <ul>
             <ProgramItem
-              date="2022-09-16"
+              dayStr="2022-09-16"
               startTime="12:00"
               title="Pre-registration opens"
               location="Creator's Lab, Courtyard 3"
               setIsModalOpen={setIsModalOpen}
             />
             <ProgramItem
-              date="2022-09-16"
+              dayStr="2022-09-16"
               startTime="16:00"
+              endTime="23:00"
               title="Registration and doors open"
               location="Main entrance, Courtyard 1"
               setIsModalOpen={setIsModalOpen}
             />
-            <li>
-              <span className="fake-bold">17:00</span> Keynote 1 (Lexis, Ground
-              Floor)
-            </li>
-            <li>
-              <span className="fake-bold">17:30</span> Keynote 2 (Lexis, Ground
-              Floor)
-            </li>
-            <li>
-              <span className="fake-bold">18:00</span> Opening Ceremony (Lexis,
-              Ground Floor)
-            </li>
-            <li>
-              <span className="fake-bold">19:00</span> Team Matching (Lexis,
-              Ground Floor)
-            </li>
-            <li>
-              <span className="fake-bold">19:00</span> Hacking Starts (Community
-              Spaces, Meeting Rooms)
-            </li>
-            <li>
-              <span className="fake-bold">19:00</span> Dinner (Restaurant,
-              Ground Floor)
-            </li>
-            <li>
-              <span className="fake-bold">20:00</span> DJ/Music (Courtyard 1,
-              Ground Floor)
-            </li>
-            <li>
-              <span className="fake-bold">20:00</span> Technical Workshop 1
-              (Lexis, Ground Floor)
-            </li>
-            <li>
-              <span className="fake-bold">20:00</span> Technical Workshop 2
-              (Creator's Lab, Ground Floor)
-            </li>
-            <li>
-              <span className="fake-bold">20:45</span> Technical Workshop 3
-              (Lexis, Ground Floor)
-            </li>
-            <li>
-              <span className="fake-bold">20:45</span> Technical Workshop 4
-              (Creator's Lab, Ground Floor)
-            </li>
-            <li>
-              <span className="fake-bold">21:30</span> Technical Workshop 5
-              (Lexis, Ground Floor)
-            </li>
-            <li>
-              <span className="fake-bold">21:30</span> Technical Workshop 6
-              (Creator's Lab, Ground Floor)
-            </li>
-            <li>
-              <span className="fake-bold">22:15</span> Technical Workshop 7
-              (Lexis, Ground Floor)
-            </li>
-            <li>
-              <span className="fake-bold">22:15</span> Technical Workshop 8
-              (Creator's Lab, Ground Floor)
-            </li>
-            <li>
-              <span className="fake-bold">24:00</span> Midnight Snack (Community
-              Spaces)
-            </li>
+            <ProgramItem
+              dayStr="2022-09-16"
+              startTime="17:00"
+              endTime="17:30"
+              title="Keynote 1"
+              location="Yard 1"
+              setIsModalOpen={setIsModalOpen}
+            />
+            <ProgramItem
+              dayStr="2022-09-16"
+              startTime="17:30"
+              endTime="18:00"
+              title="Keynote 2"
+              location="Yard 1"
+              setIsModalOpen={setIsModalOpen}
+            />
+            <ProgramItem
+              dayStr="2022-09-16"
+              startTime="18:00"
+              endTime="19:00"
+              title="Opening Ceremony"
+              location="Yard 1"
+              setIsModalOpen={setIsModalOpen}
+            />
+            <ProgramItem
+              dayStr="2022-09-16"
+              startTime="19:00"
+              endTime="20:00"
+              title="Team Speed Dating"
+              location="Yard 1"
+              setIsModalOpen={setIsModalOpen}
+            />
+            <ProgramItem
+              dayStr="2022-09-16"
+              startTime="19:00"
+              endTime="20:00"
+              title="Dinner"
+              location="Restaurant"
+              setIsModalOpen={setIsModalOpen}
+            />
+            <ProgramItem
+              dayStr="2022-09-16"
+              startTime="19:00"
+              endTime="23:59"
+              title="Hacking Starts"
+              location="Community Spaces, Meeting Rooms"
+              setIsModalOpen={setIsModalOpen}
+            />
+            <ProgramItem
+              dayStr="2022-09-16"
+              startTime="20:00"
+              endTime="23:00"
+              title="DJ"
+              location="Yard 1"
+              setIsModalOpen={setIsModalOpen}
+            />
+            <ProgramItem
+              dayStr="2022-09-16"
+              startTime="20:00"
+              endTime="23:59"
+              title="Tech Workshop 1"
+              location="Lexis"
+              setIsModalOpen={setIsModalOpen}
+            />
+            <ProgramItem
+              dayStr="2022-09-16"
+              startTime="20:00"
+              endTime="23:59"
+              title="Tech Workshop 2"
+              location="Creators Lab"
+              setIsModalOpen={setIsModalOpen}
+            />
+            <ProgramItem
+              dayStr="2022-09-16"
+              startTime="23:59"
+              title="Midnight Snack"
+              location="Yard 2, First 1st Floor Community Space, 2nd Floor Community Space"
+              setIsModalOpen={setIsModalOpen}
+            />
+            <ProgramItem
+              dayStr="2022-09-16"
+              startTime="23:59"
+              title="DJ"
+              location="Creator's Lab"
+              setIsModalOpen={setIsModalOpen}
+            />
           </ul>
         </p>
         <h2 className="text-xl font-bold">Saturday, September 17</h2>
         <p className="mt-4">Happy hacking, no distraction!</p>
         <p className="mt-4">
-          <li>
-            <span className="fake-bold">09:00</span> Breakfast (Restaurant,
-            Ground Floor)
-          </li>
-          <li>
-            <span className="fake-bold">13:00</span> Lunch (Restaurant, Ground
-            Floor)
-          </li>
-          <li>
-            <span className="fake-bold">18:00</span> Documentary 1 (Cinema, Top
-            Floor)
-          </li>
-          <li>
-            <span className="fake-bold">19:00</span> Dinner (Restaurant, Ground
-            Floor)
-          </li>
-          <li>
-            <span className="fake-bold">20:00</span> Documentary 2 (Cinema, Top
-            Floor)
-          </li>
-          <li>
-            <span className="fake-bold">20:00</span> DJ/Music (Courtyard 1,
-            Ground Floor)
-          </li>
-          <li>
-            <span className="fake-bold">20:00</span> Documentary 3 (Cinema, Top
-            Floor)
-          </li>
-          <li>
-            <span className="fake-bold">22:00</span> DJ/Music (Creator's Lab,
-            Ground Floor)
-          </li>
-          <li>
-            <span className="fake-bold">24:00</span> Midnight Snack (Community
-            Spaces)
-          </li>
+          <ProgramItem
+            dayStr="2022-09-17"
+            startTime="00:00"
+            endTime="23:59"
+            title="Hacking"
+            location="Community Spaces, Meeting Rooms"
+            setIsModalOpen={setIsModalOpen}
+          />
+          <ProgramItem
+            dayStr="2022-09-17"
+            startTime="09:00"
+            endTime="11:00"
+            title="Breakfast"
+            location="Restaurant"
+            setIsModalOpen={setIsModalOpen}
+          />
+          <ProgramItem
+            dayStr="2022-09-17"
+            startTime="13:00"
+            endTime="15:00"
+            title="Lunch"
+            location="Restaurant"
+            setIsModalOpen={setIsModalOpen}
+          />
+          <ProgramItem
+            dayStr="2022-09-17"
+            startTime="19:00"
+            endTime="21:00"
+            title="Dinner"
+            location="Restaurant"
+            setIsModalOpen={setIsModalOpen}
+          />
+          <ProgramItem
+            dayStr="2022-09-17"
+            startTime="20:00"
+            endTime="23:00"
+            title="DJ"
+            location="Yard 1"
+            setIsModalOpen={setIsModalOpen}
+          />
+          <ProgramItem
+            dayStr="2022-09-17"
+            startTime="23:00"
+            endDayStr="2022-09-18"
+            endTime="01:00"
+            title="DJ"
+            location="Creator's Lab"
+            setIsModalOpen={setIsModalOpen}
+          />
+          <ProgramItem
+            dayStr="2022-09-18"
+            startTime="00:00"
+            endDayStr="2022-09-18"
+            endTime="01:00"
+            title="Midnight Snack"
+            location="Restaurant, 1st Floor Community Space, 2nd Floor Community Space"
+            setIsModalOpen={setIsModalOpen}
+          />
         </p>
         <h2 className="text-xl font-bold">Sunday, September 18</h2>
         <p className="mt-4">
@@ -192,50 +257,76 @@ const Program = () => {
         </p>
         <p className="mt-4">
           <ul>
-            <li>
-              <span className="fake-bold">09:00</span> Breakfast (Restaurant,
-              Ground Floor)
-            </li>
-            <li>
-              <span className="fake-bold">11:00</span> Hacker Submission
-              Deadline (Internet)
-            </li>
-            <li>
-              <span className="fake-bold">12:00</span> Judging starts (Community
-              Spaces, Meeting Rooms)
-            </li>
-            <li>
-              <span className="fake-bold">13:00</span> Lunch (Restaurant, Ground
-              Floor)
-            </li>
-            <li>
-              <span className="fake-bold">14:30</span> Keynote 3 (Lexis, Ground
-              Floor)
-            </li>
-            <li>
-              <span className="fake-bold">15:00</span> Keynote 4 (Lexis, Ground
-              Floor)
-            </li>
-            <li>
-              <span className="fake-bold">15:30</span> Keynote 5 (Lexis, Ground
-              Floor)
-            </li>
-            <li>
-              <span className="fake-bold">16:00</span> Closing Ceremony (Lexis,
-              Ground Floor)
-            </li>
-            <li>
-              <span className="fake-bold">17:00</span> Closing Drinks (Courtyard
-              1, Ground Floor)
-            </li>
-            <li>
-              <span className="fake-bold">18:00</span> Doors close (Main
-              entrance, Courtyard 1)
-            </li>
-            <li>
-              <span className="fake-bold">21:00</span> Afterparty (To be
-              announced...)
-            </li>
+            <ProgramItem
+              dayStr="2022-09-18"
+              startTime="00:00"
+              endTime="11:00"
+              title="Hacking"
+              location="Community Spaces, Meeting Rooms"
+              setIsModalOpen={setIsModalOpen}
+            />
+            <ProgramItem
+              dayStr="2022-09-18"
+              startTime="09:00"
+              endTime="11:00"
+              title="Breakfast"
+              location="Restaurant"
+              setIsModalOpen={setIsModalOpen}
+            />
+            <ProgramItem
+              dayStr="2022-09-18"
+              startTime="13:00"
+              endTime="15:00"
+              title="Lunch"
+              location="Restaurant"
+              setIsModalOpen={setIsModalOpen}
+            />
+            <ProgramItem
+              dayStr="2022-09-18"
+              startTime="14:00"
+              endTime="15:00"
+              title="Keynote 1"
+              location="Yard 1"
+              setIsModalOpen={setIsModalOpen}
+            />
+            <ProgramItem
+              dayStr="2022-09-18"
+              startTime="15:00"
+              endTime="16:00"
+              title="Keynote 2"
+              location="Yard 1"
+              setIsModalOpen={setIsModalOpen}
+            />
+            <ProgramItem
+              dayStr="2022-09-18"
+              startTime="16:00"
+              endTime="17:00"
+              title="Closing Ceremony"
+              location="Yard 1"
+              setIsModalOpen={setIsModalOpen}
+            />
+            <ProgramItem
+              dayStr="2022-09-18"
+              startTime="17:00"
+              endTime="18:00"
+              title="Drinks & Closing"
+              location="Creator's Lab"
+              setIsModalOpen={setIsModalOpen}
+            />
+            <ProgramItem
+              dayStr="2022-09-18"
+              startTime="19:00"
+              endTime="03:00"
+              title="Afterparty"
+              location="TBD"
+              setIsModalOpen={setIsModalOpen}
+            />
+            <ProgramItem
+              dayStr="2022-09-18"
+              startTime="18:00"
+              title="Doors Close"
+              setIsModalOpen={setIsModalOpen}
+            />
           </ul>
         </p>
       </div>
@@ -266,8 +357,11 @@ const Program = () => {
           <h2 className="text-3xl underline mb-4 text-berlin-yellow text-center font-w95">
             Ground Floor / Floor 0
           </h2>
-          <div className="relative mb-16 lg:px-32 py-2 bg-white">
-            <img src={groundFloor} alt="ground floor"></img>
+          <div className="mb-16 px-8 lg:px-32 py-2 bg-white">
+            <div className="relative">
+              <img src={fifthFloor} alt="ground floor" />
+              <div className={`${highlightedRoomClass}`} data-tip="Yard 1" />
+            </div>
           </div>
         </div>
       </ReactModal>
