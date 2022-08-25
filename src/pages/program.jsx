@@ -1,13 +1,13 @@
 import Layout from "../components/Layout";
 import React from "react";
 import ReactModal from "react-modal";
-import groundFloor from "../images/groundFloor.png";
-import firstFloor from "../images/firstFloor.png";
-import secondFloor from "../images/secondFloor.png";
-import secondFloorSunday from "../images/secondFloor-sunday.png";
-// import thirdFloor from "../images/thirdFloor.png";
-// import fourthFloor from "../images/fourthFloor.png";
-import fifthFloor from "../images/fifthFloor.png";
+import groundFloor from "../images/groundFloor-transparent.png";
+import firstFloor from "../images/firstFloor-transparent.png";
+import secondFloor from "../images/secondFloor-transparent.png";
+import secondFloorSunday from "../images/secondFloor-sunday-transparent.png";
+// import thirdFloor from "../images/thirdFloor-transparent.png";
+// import fourthFloor from "../images/fourthFloor-transparent.png";
+import fifthFloor from "../images/fifthFloor-transparent.png";
 import "../styles/modal.css";
 import "../styles/rooms/groundFloor.css";
 import "../styles/rooms/firstFloor.css";
@@ -357,7 +357,7 @@ const Program = () => {
           <h2 className="text-3xl underline mb-4 text-berlin-yellow text-center font-w95">
             Ground Floor / Floor 0
           </h2>
-          <div className="mb-16 px-8 lg:px-32 py-2 bg-white">
+          <div className="mb-16 px-8 lg:px-32 py-2 ">
             <div className="relative">
               <img src={fifthFloor} alt="ground floor" />
               <div className={`${highlightedRoomClass}`} data-tip="Yard 1" />
