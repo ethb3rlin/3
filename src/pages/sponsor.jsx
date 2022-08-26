@@ -10,6 +10,23 @@ import fuel from "../assets/sponsors/fuel.svg";
 import lens from "../assets/sponsors/lens.svg";
 import obol from "../assets/sponsors/obol.svg";
 import zksync from "../assets/sponsors/zksync.svg";
+import swype from "../assets/sponsors/swype.png";
+import optimism from "../assets/sponsors/optimism.png";
+import nftfi from "../assets/sponsors/nftfi.png";
+import celestia from "../assets/sponsors/celestia.png";
+import ethereum from "../assets/sponsors/ethereum.png";
+import missinglink from "../assets/sponsors/missinglink.png";
+import gitpoap from "../assets/sponsors/gitpoap.png";
+import chainsafe from "../assets/sponsors/chainsafe.png";
+import orchid from "../assets/sponsors/orchid.png";
+import altlayer from "../assets/sponsors/altlayer.png";
+import jpg from "../assets/sponsors/jpg.png";
+import dappnode from "../assets/sponsors/dappnode.png";
+import molecule from "../assets/sponsors/molecule.png";
+import squid from "../assets/sponsors/squid.png";
+import attestant from "../assets/sponsors/attestant.png";
+import goerli from "../assets/sponsors/goerli.png";
+import fault from "../assets/sponsors/fault.png";
 import pengo from "../assets/sponsors/pengo.png";
 import dinar from "../assets/sponsors/dinar.png";
 import drachma from "../assets/sponsors/drachma.png";
@@ -53,14 +70,10 @@ const Sponsor = () => (
     <h1 className="my-4 underline text-secondary">(s)ponsor</h1>
     <div className="mt-8">
       <div className="text-xl decorate-links">
-        <p>It's not too late to support us!</p>{" "}
         <p>
-          {" "}
-          Check out the <a href="/sponsor.pdf">sponsorship deck</a> and reach
-          out to{" "}
-          <a href="mailto:sponsors@ethberlin.ooo">sponsors@ethberlin.ooo</a> to
-          get in touch.
-        </p>
+          Thank you for supporting us!{" "}
+          Sponsorships are now CLOSED.{" "}
+          Please, give a warm welcome to all of our 2022 sponsors!</p>
       </div>
       <SponsorContainer
         tierName="Hungarian Pengő"
@@ -154,7 +167,18 @@ const Sponsor = () => (
         image={dinar}
         description="Yugoslavia re-denominated the Yugoslav Dinar in 1994 at a ratio of 1 billion to 1. Wages became worthless. If paid in cash, workers had to rush out and spend their wages before they lost their value overnight."
       >
-        To be announced soon...
+      <a href="https://swype.com/" target="_blank">
+        <img
+          src={swype}
+          className="h-10 md:h-11 mx-8 sm:grayscale hover:grayscale-0 my-4"
+        />
+      </a>
+      <a href="https://optimism.io/" target="_blank">
+        <img
+          src={optimism}
+          className="h-10 md:h-11 mx-8 sm:grayscale hover:grayscale-0 my-4"
+        />
+      </a>
       </SponsorContainer>
       <SponsorContainer
         tierName="Venezuelan Bolívar"
@@ -162,7 +186,54 @@ const Sponsor = () => (
         image={bolivar}
         description="The value of the hard Venezuelan Bolívar pegged to the US dollar did not stay stable for long. The central bank stuck to the subsidised exchange rate which was so overpriced that people began using parallel rates (ongoing)."
       >
-        To be announced soon...
+      <a href="https://nftfi.com/" target="_blank">
+        <img
+          src={nftfi}
+          className="h-10 md:h-11 mx-8 sm:grayscale hover:grayscale-0 my-4"
+        />
+      </a>
+      <a href="https://celestia.org/" target="_blank">
+        <img
+          src={celestia}
+          className="h-10 md:h-11 mx-8 sm:grayscale hover:grayscale-0 my-4"
+        />
+      </a>
+      <a href="https://ethereum.org/" target="_blank">
+        <img
+          src={ethereum}
+          className="h-10 md:h-11 mx-8 sm:grayscale hover:grayscale-0 my-4"
+        />
+      </a>
+      <a href="https://missing-link.io/" target="_blank">
+        <img
+          src={missinglink}
+          className="h-10 md:h-11 mx-8 sm:grayscale hover:grayscale-0 my-4"
+        />
+      </a>
+      <a href="https://gitpoap.io/" target="_blank">
+        <img
+          src={gitpoap}
+          className="h-10 md:h-11 mx-8 sm:grayscale hover:grayscale-0 my-4"
+        />
+      </a>
+      <a href="https://chainsafe.io/" target="_blank">
+        <img
+          src={chainsafe}
+          className="h-10 md:h-11 mx-8 sm:grayscale hover:grayscale-0 my-4"
+        />
+      </a>
+      <a href="https://orchid.com/" target="_blank">
+        <img
+          src={orchid}
+          className="h-10 md:h-11 mx-8 sm:grayscale hover:grayscale-0 my-4"
+        />
+      </a>
+      <a href="https://altresear.ch/" target="_blank">
+        <img
+          src={altlayer}
+          className="h-10 md:h-11 mx-8 sm:grayscale hover:grayscale-0 my-4"
+        />
+      </a>
       </SponsorContainer>
       <SponsorContainer
         tierName="German Papiermark"
@@ -170,7 +241,48 @@ const Sponsor = () => (
         image={papiermark}
         description="The German Papiermark was issued during the hyperinflation in 1922-23 when a peg to gold was no longer possible. Due to the fast devaluation, there was no option to mint coins and only the paper mark was issued."
       >
-        To be announced soon...
+      <a href="https://jpg.space/" target="_blank">
+        <img
+          src={jpg}
+          className="h-10 md:h-11 mx-8 sm:grayscale hover:grayscale-0 my-4"
+        />
+      </a>
+      <a href="https://dappnode.io/" target="_blank">
+        <img
+          src={dappnode}
+          className="h-10 md:h-11 mx-8 sm:grayscale hover:grayscale-0 my-4"
+        />
+      </a>
+      <a href="https://molecule.to/" target="_blank">
+        <img
+          src={molecule}
+          className="h-10 md:h-11 mx-8 sm:grayscale hover:grayscale-0 my-4"
+        />
+      </a>
+      <a href="https://0xsquid.com/" target="_blank">
+        <img
+          src={squid}
+          className="h-10 md:h-11 mx-8 sm:grayscale hover:grayscale-0 my-4"
+        />
+      </a>
+      <a href="https://attestant.io/" target="_blank">
+        <img
+          src={attestant}
+          className="h-10 md:h-11 mx-8 sm:grayscale hover:grayscale-0 my-4"
+        />
+      </a>
+      <a href="https://goerli.net/" target="_blank">
+        <img
+          src={goerli}
+          className="h-10 md:h-11 mx-8 sm:grayscale hover:grayscale-0 my-4"
+        />
+      </a>
+      <a href="https://fault.dev/" target="_blank">
+        <img
+          src={fault}
+          className="h-10 md:h-11 mx-8 sm:grayscale hover:grayscale-0 my-4"
+        />
+      </a>
       </SponsorContainer>
     </div>
   </Layout>
