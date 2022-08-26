@@ -94,6 +94,16 @@
     /* text-shadow: <blur>, <outer-glow> */
     text-shadow: 0 0 5px rgb(255 210 0 / 75%), theme("colors.berlin-yellow") 0 0 1.5px;
   }
+  .bright-gray {
+    --tw-grayscale: grayscale(100%);
+    --tw-brightness: brightness(1.5);
+    filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+  }
+  .bright-non-gray {
+    --tw-grayscale: grayscale(0);
+    --tw-brightness: brightness(1.5);
+    filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+  }
 }
 
 body {
