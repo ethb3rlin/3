@@ -71,9 +71,9 @@ const Sponsor = () => (
     <div className="mt-8">
       <div className="text-xl decorate-links">
         <p>
-          Thank you for supporting us!{" "}
-          Sponsorships are now CLOSED.{" "}
-          Please, give a warm welcome to all of our 2022 sponsors!</p>
+          Thank you for supporting us! Sponsorships are now CLOSED. Please, give
+          a warm welcome to all of our 2022 sponsors!
+        </p>
       </div>
       <SponsorContainer
         tierName="Hungarian Pengő"
@@ -111,31 +111,31 @@ const Sponsor = () => (
         <a href="https://www.pinata.cloud/" target="_blank">
           <img
             src={pinata}
-            className="h-16 md:h-20 mx-8 sm:grayscale hover:grayscale-0 my-4"
+            className="h-16 md:h-20 sm:mx-8 sm:grayscale hover:grayscale-0 my-4"
           />
         </a>
         <a href="https://fuel.network/" target="_blank">
           <img
             src={fuel}
-            className="h-12 md:h-16 mx-8 sm:grayscale hover:grayscale-0 my-4"
+            className="h-12 md:h-16 sm:mx-8 sm:grayscale hover:grayscale-0 my-4"
           />
         </a>
         <a href="https://lens.xyz/" target="_blank">
           <img
             src={lens}
-            className="h-16 md:h-20 mx-8 sm:grayscale hover:grayscale-0 my-4"
+            className="h-16 md:h-20 sm:mx-8 sm:grayscale hover:grayscale-0 my-4"
           />
         </a>
         <a href="https://obol.tech/" target="_blank">
           <img
             src={obol}
-            className="h-10 md:h-12 mx-8 sm:grayscale hover:grayscale-0 my-4"
+            className="h-8 md:h-12 sm:mx-8 sm:grayscale hover:grayscale-0 my-4"
           />
         </a>
         <a href="https://zksync.io/" target="_blank">
           <img
             src={zksync}
-            className="h-10 md:h-11 mx-8 sm:grayscale hover:grayscale-0 my-4"
+            className="h-9 md:h-11 sm:mx-8 sm:grayscale hover:grayscale-0 my-4"
           />
         </a>
       </SponsorContainer>
@@ -167,18 +167,18 @@ const Sponsor = () => (
         image={dinar}
         description="Yugoslavia re-denominated the Yugoslav Dinar in 1994 at a ratio of 1 billion to 1. Wages became worthless. If paid in cash, workers had to rush out and spend their wages before they lost their value overnight."
       >
-      <a href="https://swype.com/" target="_blank">
-        <img
-          src={swype}
-          className="h-10 md:h-11 mx-8 sm:grayscale hover:grayscale-0 my-4"
-        />
-      </a>
-      <a href="https://optimism.io/" target="_blank">
-        <img
-          src={optimism}
-          className="h-10 md:h-11 mx-8 sm:grayscale hover:grayscale-0 my-4"
-        />
-      </a>
+        <a href="https://swype.com/" target="_blank">
+          <img
+            src={swype}
+            className="h-12 md:h-14 sm:mx-8 sm:grayscale hover:grayscale-0 my-4"
+          />
+        </a>
+        <a href="https://optimism.io/" target="_blank">
+          <img
+            src={optimism}
+            className="h-24 md:h-32 sm:mx-8 sm:grayscale hover:grayscale-0 my-4"
+          />
+        </a>
       </SponsorContainer>
       <SponsorContainer
         tierName="Venezuelan Bolívar"
@@ -186,54 +186,54 @@ const Sponsor = () => (
         image={bolivar}
         description="The value of the hard Venezuelan Bolívar pegged to the US dollar did not stay stable for long. The central bank stuck to the subsidised exchange rate which was so overpriced that people began using parallel rates (ongoing)."
       >
-      <a href="https://nftfi.com/" target="_blank">
-        <img
-          src={nftfi}
-          className="h-10 md:h-11 mx-8 sm:grayscale hover:grayscale-0 my-4"
-        />
-      </a>
-      <a href="https://celestia.org/" target="_blank">
-        <img
-          src={celestia}
-          className="h-10 md:h-11 mx-8 sm:grayscale hover:grayscale-0 my-4"
-        />
-      </a>
-      <a href="https://ethereum.org/" target="_blank">
-        <img
-          src={ethereum}
-          className="h-10 md:h-11 mx-8 sm:grayscale hover:grayscale-0 my-4"
-        />
-      </a>
-      <a href="https://missing-link.io/" target="_blank">
-        <img
-          src={missinglink}
-          className="h-10 md:h-11 mx-8 sm:grayscale hover:grayscale-0 my-4"
-        />
-      </a>
-      <a href="https://gitpoap.io/" target="_blank">
-        <img
-          src={gitpoap}
-          className="h-10 md:h-11 mx-8 sm:grayscale hover:grayscale-0 my-4"
-        />
-      </a>
-      <a href="https://chainsafe.io/" target="_blank">
-        <img
-          src={chainsafe}
-          className="h-10 md:h-11 mx-8 sm:grayscale hover:grayscale-0 my-4"
-        />
-      </a>
-      <a href="https://orchid.com/" target="_blank">
-        <img
-          src={orchid}
-          className="h-10 md:h-11 mx-8 sm:grayscale hover:grayscale-0 my-4"
-        />
-      </a>
-      <a href="https://altresear.ch/" target="_blank">
-        <img
-          src={altlayer}
-          className="h-10 md:h-11 mx-8 sm:grayscale hover:grayscale-0 my-4"
-        />
-      </a>
+        <a href="https://nftfi.com/" target="_blank" rel="noreferrer">
+          <img
+            src={nftfi}
+            className="h-20 md:h-24 sm:mx-8 sm:grayscale hover:grayscale-0 my-4 "
+          />
+        </a>
+        <a href="https://celestia.org/" target="_blank" rel="noreferrer">
+          <img
+            src={celestia}
+            className="h-20 md:h-24 sm:mx-8 sm:bright-gray hover:bright-non-gray my-4 "
+          />
+        </a>
+        <a href="https://ethereum.org/" target="_blank" rel="noreferrer">
+          <img
+            src={ethereum}
+            className="h-14 md:h-20 sm:mx-8 sm:grayscale hover:grayscale-0 my-4 "
+          />
+        </a>
+        <a href="https://missing-link.io/" target="_blank" rel="noreferrer">
+          <img
+            src={missinglink}
+            className="h-16 md:h-20 sm:mx-8 sm:grayscale hover:grayscale-0 my-4 "
+          />
+        </a>
+        <a href="https://gitpoap.io/" target="_blank" rel="noreferrer">
+          <img
+            src={gitpoap}
+            className="h-20 md:h-24 sm:mx-8 sm:bright-gray hover:bright-non-gray my-4"
+          />
+        </a>
+        <a href="https://chainsafe.io/" target="_blank" rel="noreferrer">
+          <img
+            src={chainsafe}
+            className="h-14 md:h-20 sm:mx-8 sm:grayscale hover:grayscale-0 my-4 "
+          />
+        </a>
+        <a href="https://orchid.com/" target="_blank" rel="noreferrer">
+          <img
+            src={orchid}
+            className="h-10 md:h-14 sm:mx-8 sm:bright-gray hover:bright-non-gray my-4 "
+          />
+        </a>
+        <a href="https://altresear.ch/" target="_blank" rel="noreferrer">
+          <img
+            src={altlayer}
+            className="h-10 md:h-12 sm:mx-8 sm:bright-gray hover:bright-non-gray my-4 "
+          />
+        </a>
       </SponsorContainer>
       <SponsorContainer
         tierName="German Papiermark"
@@ -241,48 +241,48 @@ const Sponsor = () => (
         image={papiermark}
         description="The German Papiermark was issued during the hyperinflation in 1922-23 when a peg to gold was no longer possible. Due to the fast devaluation, there was no option to mint coins and only the paper mark was issued."
       >
-      <a href="https://jpg.space/" target="_blank">
-        <img
-          src={jpg}
-          className="h-10 md:h-11 mx-8 sm:grayscale hover:grayscale-0 my-4"
-        />
-      </a>
-      <a href="https://dappnode.io/" target="_blank">
-        <img
-          src={dappnode}
-          className="h-10 md:h-11 mx-8 sm:grayscale hover:grayscale-0 my-4"
-        />
-      </a>
-      <a href="https://molecule.to/" target="_blank">
-        <img
-          src={molecule}
-          className="h-10 md:h-11 mx-8 sm:grayscale hover:grayscale-0 my-4"
-        />
-      </a>
-      <a href="https://0xsquid.com/" target="_blank">
-        <img
-          src={squid}
-          className="h-10 md:h-11 mx-8 sm:grayscale hover:grayscale-0 my-4"
-        />
-      </a>
-      <a href="https://attestant.io/" target="_blank">
-        <img
-          src={attestant}
-          className="h-10 md:h-11 mx-8 sm:grayscale hover:grayscale-0 my-4"
-        />
-      </a>
-      <a href="https://goerli.net/" target="_blank">
-        <img
-          src={goerli}
-          className="h-10 md:h-11 mx-8 sm:grayscale hover:grayscale-0 my-4"
-        />
-      </a>
-      <a href="https://fault.dev/" target="_blank">
-        <img
-          src={fault}
-          className="h-10 md:h-11 mx-8 sm:grayscale hover:grayscale-0 my-4"
-        />
-      </a>
+        <a href="https://jpg.space/" target="_blank" rel="noreferrer">
+          <img
+            src={jpg}
+            className="h-10 md:h-12 sm:mx-8 sm:grayscale hover:grayscale-0 my-4"
+          />
+        </a>
+        <a href="https://dappnode.io/" target="_blank" rel="noreferrer">
+          <img
+            src={dappnode}
+            className="h-16 md:h-20 sm:mx-8 sm:bright-gray hover:bright-non-gray my-4"
+          />
+        </a>
+        <a href="https://molecule.to/" target="_blank" rel="noreferrer">
+          <img
+            src={molecule}
+            className="h-14 md:h-16 sm:mx-8 sm:grayscale hover:grayscale-0 my-4"
+          />
+        </a>
+        <a href="https://0xsquid.com/" target="_blank" rel="noreferrer">
+          <img
+            src={squid}
+            className="h-16 md:h-16 sm:mx-8 sm:grayscale hover:grayscale-0 my-4"
+          />
+        </a>
+        <a href="https://attestant.io/" target="_blank" rel="noreferrer">
+          <img
+            src={attestant}
+            className="h-12 md:h-14 sm:mx-8 sm:grayscale hover:grayscale-0 my-4"
+          />
+        </a>
+        <a href="https://goerli.net/" target="_blank" rel="noreferrer">
+          <img
+            src={goerli}
+            className="h-24 md:h-28 sm:mx-8 sm:grayscale hover:grayscale-0 my-4"
+          />
+        </a>
+        <a href="https://fault.dev/" target="_blank" rel="noreferrer">
+          <img
+            src={fault}
+            className="h-24 md:h-28 sm:mx-8 sm:grayscale hover:grayscale-0 my-4"
+          />
+        </a>
       </SponsorContainer>
     </div>
   </Layout>
