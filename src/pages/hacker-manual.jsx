@@ -7,6 +7,32 @@ const About = () => (
     <div className="text-justify decorate-links">
       <p>This section aims to help you better prepare for the hackathon.</p>
       <div className="mb-16">
+      <h3 className="text-xl">TL;DR</h3>
+      <ul>
+          <li>
+            Join the conversation on Matrix:{" "}
+            <a href="https://matrix.to/#/%23ethberlin:matrix.org" target="_blank">
+              #ethberlin:matrix.org
+            </a>
+          </li>
+          <li>
+            Find a team on Github:{" "}
+            <a href="https://github.com/ethb3rlin/find-a-team" target="_blank">
+              github.com/ethb3rlin/find-a-team
+            </a>
+          </li>
+          <li>
+            Bookmark the Mentor Helpdesk:{" "}
+            <a href="https://ask.ethberlin.ooo" target="_blank">
+              ask.ethberlin.ooo
+            </a>
+          </li>
+        </ul>
+      </div>
+        <h2 className="text-2xl font-bold font-bold">
+          Overview
+        </h2>
+      <div className="mb-16">
         <h3 className="text-xl">Before the Hackathon</h3>
         <ul>
           <li>
@@ -28,13 +54,10 @@ const About = () => (
             <a href="#hack">Hacking and Rules</a>
           </li>
           <li>
-            <a href="#ethercards"> EtherCards with Görli ETH </a>
+            <a href="#ethercards"> EtherCards with Goerli ETH </a>
           </li>
           <li>
             <a href="#prizes-bounties"> Prizes and Bounties </a>
-          </li>
-          <li>
-            <a href="sponsor-resources">Resources from Sponsors</a>
           </li>
           <li>
             <a href="#mentors">Getting Help from Mentors</a>
@@ -62,7 +85,8 @@ const About = () => (
         </h2>
         <h3 className="text-xl">Travel to Berlin</h3>
         <p>
-          Berlin has one airport called Berlin Brandenburg Airport and is well
+          Berlin has one airport called
+          Berlin Brandenburg Airport "Willy Brandt" (BER) and is well
           connected with railway. You can take a train from European cities such
           as Amsterdam and Paris to travel with the convenience of comfortable
           high-speed trains with internet access, avoid the long security lines,
@@ -72,9 +96,9 @@ const About = () => (
             rel="noreferrer noopener"
             target="_blank"
           >
-            Deutsche Bahn website
+            Deutsche Bahn
           </a>{" "}
-          for routes.
+          website for routes.
         </p>
         <h3 className="text-xl">Urban Transport</h3>
         <p>
@@ -100,7 +124,8 @@ const About = () => (
           Join the couchsurfing chat if you are offering or looking for a couch:{" "}
           <a href="https://matrix.to/#/#couchsurfing:tchncs.de">
             #couchsurfing
-          </a>
+          </a>{" "}
+          (Matrix)
         </p>
         <p>
           Aside from hotels and AirBnbs, you can try to find someone in Berlin
@@ -110,7 +135,7 @@ const About = () => (
           please be wary of the risks and potential scams.
         </p>
         <p>
-          We recommend the districts Treptow, Kreuzberg, Neukölln, or
+          We recommend the districts Treptow, Kreuzberg, Neuk&ouml;lln, or
           Friedrichshain due to their proximity to the venue.
         </p>
       </div>
@@ -125,9 +150,9 @@ const About = () => (
             target="_blank"
           >
             Github
-          </a>
-          : and/or join the Hacker Matchmaking session on Friday during the
-          event.
+          </a>{" "}
+          or join the Hacker Matchmaking session on Friday after the
+          opening ceremony.
         </p>
       </div>
       <div id="connect">
@@ -140,60 +165,56 @@ const About = () => (
             #ethberlin:matrix.org
           </a>
         </p>
-        <p>
-          Follow and tag us on Twitter{" "}
-          <a href="https://twitter.com/ETHBerlin">@ETHBerlin</a>.
-        </p>
       </div>
       <div id="food">
         <h2 className="text-2xl font-bold">Food and Drinks</h2>
         <p>
           ETHBerlin will cover all meals and drinks for the entire Hackathon,
           and conference coffee breaks. Just come with an open mind, a
-          knowledge-thirsty brain and enthusiasm.
+          knowledge-thirsty brain and enthusiasm. Check the{" "}
+          <a href="/program">agenda</a>{" "}
+          for the next meal.
         </p>
       </div>
       <div id="hack" className="mt-16">
         <h2 className="text-2xl font-bold">Hacking and Rules</h2>
         <p>
           Hacker teams are made up of maximum of 5 people. You can find some
-          rules and resources useful while you are hacking here. Sponsors are
-          also advised to add their resources and APIs to this document with a{" "}
-          <a href="https://github.com/Department-of-Decentralization/3/tree/main/src/pages/hacker-manual.jsx">
-            Pull Request
-          </a>
+          rules and resources useful while you are hacking here.
         </p>
         <h3 className="text-xl">Hacking Rules</h3>
         <ul>
           <li>You must be at ETHBerlin to work on a project for submission</li>
-          <li>Your hack must be related to Ethereum</li>
+          <li>Your hack must be related to decentralization, cryptography, or privacy</li>
           <li>
             You can plan ahead of time, but all code for your project has to be
             written during the event
           </li>
-          <li>You cannot steal another team's source code</li>
+          <li>You cannot use another team's source code</li>
           <li>
             The decision of judges is final for determining prizes and awards
           </li>
           <li>Please comply with all instructions from ETHBerlin organizers</li>
+          <li>Please respect our <a href="/code-of-conduct">Code of Conduct</a>!
+          </li>
         </ul>
         <h3 className="text-xl">Minimum requirements to be judged</h3>
         <ul>
           <li>A link to the open-source code must be provided</li>
           <li>A short presentation file must describe your project</li>
           <li>
-            The contract address(es) of your deployed demo must be provided,
-            either on a testnet of your choice or mainnet of a platform of
-            choice.
+            If applicable, the contract address(es) of your deployed demo must
+            be provided, either on a testnet of your choice or mainnet of a
+            platform of choice.
           </li>
         </ul>
       </div>
       <div id="ethercards">
-        <h2 className="text-2xl font-bold">EtherCards with Görli ETH</h2>
+        <h2 className="text-2xl font-bold">EtherCards with Goerli ETH</h2>
         <p>
           All participants will receive ETHBerlin EtherCards for hacking. To
           encourage the usage of the cards and to simplify logistics, all cards
-          come pre-charged with Görli Testnet Ether!
+          come pre-charged with Goerli and Sepolia Testnet Ether!
         </p>
         <p>
           Soon the public keys for the handed out EtherCards will be posted
@@ -205,48 +226,97 @@ const About = () => (
       <div id="prizes-bounties">
         <h2 className="text-2xl font-bold">Prizes and Bounties</h2>
         <p>
-          What a lame hackathon this could be without any prizes, bounties, and
-          an incredible award ceremony. Fear no more, here's the prizes and
-          bounties documentation.
+          This year we are going to try something different. Please study
+          the following section carefully.
         </p>
-        <h3 className="text-xl">Prizes</h3>
-        <p>There are three different prize categories available</p>
+        <h3 className="text-xl">Open Track</h3>
+        <p>
+          The open-track prize is the main hackathon award. Every project
+          is eligible, given they are respecting the hackathon rules. The
+          open track will be judged by everyone attending the event. There
+          will be no pitches and no judges. All the attendees can vote using
+          their EtherCards.
+        </p>
+        <p>
+          The winning project will be presenting at the closing ceremony
+          and the prize is 10000 DAI. There is only one.
+        </p>
+        <h3 className="text-xl">Track Awards</h3>
+        <p>
+          Track awards are based on covering specific topics. Each project
+          can only submit to one track maximum. It is not possible to apply
+          for multiple tracks!
+        </p>
+        <p>
+          One team member pitches in front of the judges. The
+          domain experts will evaluate the projects according to defined
+          parameters. Judges will also review code and ensure hackathon
+          rules are respected.
+        </p>
+        <p>
+          These are the four tracks:
+        </p>
         <ul>
           <li>
-            <b>Open Track Prize:</b> This is the main prize of ETHBerlin Zwei.
-            There will be 10 winners. The grand bounty will be revealed soon!
+            <span className="fake-bold">Counter-Surveillance: Security- and privacy-enhancing projects.</span>
+            Topics: Privacy, Anonymity, Anti-identity, Security, Encryption.
           </li>
           <li>
-            <b>Sponsor Prizes:</b> Some of ETHBerlin's sponsors have their own
-            prize awards. Note that we have no influence on neither the
-            challenge nor the judging, this is entirely up to the sponsors.
+            <span className="fake-bold">Freedom to Transact: Financial independence from institutions.</span>
+            Topics: Dentralized Finance, Unstoppable Applications, Crypto-Economics.
           </li>
           <li>
-            <b>Community Improvement Awards:</b> These are small prizes endowed
-            by ETHBerlin Zwei.
+            <span className="fake-bold">Even the Odds: Empowering the underprivileged.</span>
+            Topcis: Social Justice, Inclusion, Sustainability, Public Goods.
+          </li>
+          <li>
+            <span className="fake-bold">Infrastructure: Providing distributed public goods.</span>
+            Topcis: Protocols, Networks, Infrastructure, Developer Tools, Hardware
           </li>
         </ul>
         <p>
-          You can submit your work to multiple prize awards, they are not
-          exclusive! For example you can submit your work to the open track
-          bounty and a sponsor specific prize, just make sure to submit it
-          everywhere where you want to participate.
+          The winning projects will be presenting at the closing ceremony
+          and the prize is 7000 DAI for each track. There is only one per track,
+          four in total.
+        </p>
+        <h3 className="text-xl">Meta Awards</h3>
+        <p>
+          Meta awards reward certain aspects of your project. Every project
+          is eligible, given you are respecting the hackathon rules. Projects
+          should indicate which meta-award they think they qualify for in the
+          submission form.
+        </p>
+        <p>
+          There will be no pitches and our judges will review submissions asynchronously
+          during the track award pitching.
+        </p>
+        <p>
+          These are the three meta awards:
+        </p>
+        <ul>
+          <li>
+            <span className="fake-bold">Best Smart Contracts</span>:
+            outstanding smart contract code quality and documentation.
+          </li>
+          <li>
+            <span className="fake-bold">Best Design</span>:
+            outstanding user interfaces, graphics and experience.
+          </li>
+          <li>
+            <span className="fake-bold">Best Cryptography</span>:
+            outstanding encryption security.
+          </li>
+        </ul>
+        <p>
+          The winning projects will be presenting at the closing ceremony
+          and the prize is 6000 DAI for each award. There is only one per award,
+          three in total.
         </p>
         <h3 className="text-xl">Sponsor Bounties</h3>
         <p>
-          You can find or add sponsor bounties{" "}
+          You can find or add additional sponsor bounties{" "}
           <a href="https://github.com/ethb3rlin/sponsor-bounties">
             in this repository
-          </a>
-          .
-        </p>
-      </div>
-      <div id="sponsor-resources">
-        <h2 className="text-2xl font-bold">Resources from Sponsors</h2>
-        <p>
-          Resources will be gathered here. Please send a{" "}
-          <a href="https://github.com/Department-of-Decentralization/3/tree/main/src/pages/hacker-manual.jsx">
-            Pull Request
           </a>
           .
         </p>
@@ -259,8 +329,10 @@ const About = () => (
           to get in touch:
           <ul>
             <li>
-              Spot them at the venue! They are wearing yellow t-shirts and
-              badges!
+              Reach all of our mentors via the simple ticket system, HELPq:{" "}
+              <a href="https://ask.ethberlin.ooo" target="_blank">
+                ask.ethberlin.ooo
+              </a>
             </li>
             <li>
               Discuss your issues in the hackers channel the{" "}
@@ -270,29 +342,27 @@ const About = () => (
               channel.
             </li>
             <li>
-              Reach all of our mentors via the simple ticket system, HELPq.
+              Spot them at the venue! They are wearing yellow t-shirts and
+              badges!
             </li>
           </ul>
         </p>
       </div>
       <div id="submissions">
         <h2 className="text-2xl font-bold">Submissions</h2>
+        <p>TO DO</p>
       </div>
       <div id="judging">
         <h2 className="text-2xl font-bold">Judging</h2>
+        <p>TO DO</p>
       </div>
       <div id="experiences">
         <h2 className="text-2xl font-bold">Experiences</h2>
-        <p>
-          <span className="italic">ETHBerlin Zwei is an experience.</span>{" "}
-          <br />
-          <br />
-          Nevertheless, here's what else you can explore around Factory Berlin
-          in-between crisp bottles of Club Mate:
-        </p>
+        <p>TO DO</p>
       </div>
       <div id="afterparty" className="mt-16">
         <h2 className="text-2xl font-bold">Afterparty</h2>
+        <p>TO DO</p>
       </div>
     </div>
   </Layout>
