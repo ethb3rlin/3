@@ -5,13 +5,14 @@ import judges from "../assets/people/judges";
 import twitterLogo from "../assets/twitter.png";
 import githubLogo from "../assets/github.png";
 import team from "../assets/people/team";
+import speakers from "../assets/people/speakers";
 
-const Person = ({ name, organization, image, twitter, github }) => {
+const Person = ({ name, organization, image, twitter, github, title }) => {
   return (
     <div className="mx-4 my-6 w-48 hover:text-berlin-yellow">
       <div className="flex flex-col justify-center items-center h-48 w-full relative break-words">
         <img
-          src={`/letters/${name.charAt(0).toUpperCase()}.png`}
+          src={`/letters/${name.charAt(0).toUpperCase()}.jpeg`}
           className="max-h-full max-w-full top-0 left-0 right-0 bottom-0 absolute m-auto z-10 opacity-95 hover:opacity-0 transition-all duration-200 ease-in-out"
         />
         <img
@@ -27,6 +28,7 @@ const Person = ({ name, organization, image, twitter, github }) => {
           </a>{" "}
         </div>
       )}
+      {title && <div className="text-center text-gray-400">{title}</div>}
       <div className="flex justify-center mt-2">
         {twitter && (
           <a href={twitter}>
@@ -74,6 +76,11 @@ const Contributors = () => {
     setTitle("Team");
   };
 
+  const handleSpeakers = () => {
+    setPeople(speakers);
+    setTitle("Speakers");
+  };
+
   return (
     <Layout showEthDiamond={false}>
       <h1 className="my-4 underline text-secondary">(c)ontributors</h1>
@@ -82,7 +89,8 @@ const Contributors = () => {
         <button
           className={`${
             title === "Team" ? "bg-berlin-yellow text-black" : ""
-          } text-xl md:text-2xl mx-4 my-2`}
+          } text-xl md:text-2xl mx-4 my-2 
+          `}
           onClick={handleTeam}
         >
           {"< Team >"}
@@ -90,7 +98,8 @@ const Contributors = () => {
         <button
           className={`${
             title === "Mentors" ? "bg-berlin-yellow text-black" : ""
-          } text-xl md:text-2xl mx-4 my-2`}
+          } text-xl md:text-2xl mx-4 my-2 
+          `}
           onClick={handleMentors}
         >
           {"< Mentors >"}
@@ -98,10 +107,20 @@ const Contributors = () => {
         <button
           className={`${
             title === "Judges" ? "bg-berlin-yellow text-black" : ""
-          } text-xl md:text-2xl mx-4 my-2`}
+          } text-xl md:text-2xl mx-4 my-2 
+          `}
           onClick={handleJudges}
         >
           {"< Judges >"}
+        </button>
+        <button
+          className={`${
+            title === "Speakers" ? "bg-berlin-yellow text-black" : ""
+          } text-xl md:text-2xl mx-4 my-2 
+          `}
+          onClick={handleSpeakers}
+        >
+          {"< Speakers >"}
         </button>
       </div>
       <div>
