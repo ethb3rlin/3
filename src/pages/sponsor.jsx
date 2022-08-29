@@ -74,9 +74,7 @@ const Sponsor = () => (
     <h1 className="my-4 underline text-secondary">(s)ponsors</h1>
     <div className="mt-8">
       <div className="text-xl decorate-links">
-        <p>
-          Please, give a warm welcome to all of our 2022 sponsors!
-        </p>
+        <p>Please, give a warm welcome to all of our 2022 sponsors!</p>
       </div>
       <SponsorContainer
         tierName="Hungarian Pengő"
@@ -185,13 +183,13 @@ const Sponsor = () => (
         <a href="https://galaxis.xyz/" target="_blank">
           <img
             src={galaxis}
-            className="h-24 md:h-32 sm:mx-8 sm:grayscale hover:grayscale-0 my-4"
+            className="h-14 md:h-16 sm:mx-8 sm:grayscale hover:grayscale-0 my-4"
           />
         </a>
         <a href="https://sismo.io/" target="_blank">
           <img
             src={sismo}
-            className="h-24 md:h-32 sm:mx-8 sm:grayscale hover:grayscale-0 my-4"
+            className="h-12 md:h-16 sm:mx-8 sm:grayscale hover:grayscale-0 my-4"
           />
         </a>
       </SponsorContainer>
@@ -252,13 +250,13 @@ const Sponsor = () => (
         <a href="https://poap.xyz/" target="_blank" rel="noreferrer">
           <img
             src={poap}
-            className="h-10 md:h-12 sm:mx-8 sm:bright-gray hover:bright-non-gray my-4 "
+            className="h-24 md:h-28 sm:mx-8 sm:bright-gray hover:bright-non-gray my-4 "
           />
         </a>
         <a href="https://entropy.xyz/" target="_blank" rel="noreferrer">
           <img
             src={entropy}
-            className="h-10 md:h-12 sm:mx-8 sm:bright-gray hover:bright-non-gray my-4 "
+            className="h-12 md:h-16 sm:mx-8 sm:bright-gray hover:bright-non-gray my-4 "
           />
         </a>
       </SponsorContainer>

@@ -240,15 +240,15 @@ const About = () => (
         </p>
         <p>
           The public addresses for the handed out EtherCards are available on
-          Github:
+          Github:{" "}
           <a href="https://github.com/ethb3rlin/attendees" target="_blank">
             github.com/ethb3rlin/attendees
           </a>
         </p>
         <p>
-          You can use it for your hacks, drop funny tokens to these
-          accounts or use it for voting systems where only participants can
-          vote. Be creative and let us know how you used this list!
+          You can use it for your hacks, drop funny tokens to these accounts or
+          use it for voting systems where only participants can vote. Be
+          creative and let us know how you used this list!
         </p>
       </div>
       <div className="flex justify-center">
@@ -376,9 +376,7 @@ const About = () => (
           </li>
           <li>
             Discuss your issues in the{" "}
-            <a href="https://matrix.to/#/#mentors:tchncs.de">
-              Ask-our-mentors
-            </a>{" "}
+            <a href="https://matrix.to/#/#mentors:tchncs.de">Ask-our-mentors</a>{" "}
             channel.
           </li>
           <li>
