@@ -239,8 +239,14 @@ const About = () => (
           come pre-charged with Goerli and Sepolia Testnet Ether!
         </p>
         <p>
-          Soon the public keys for the handed out EtherCards will be posted
-          here. You can use it for your hacks, drop funny tokens to these
+          The public addresses for the handed out EtherCards are available on
+          Github:
+          <a href="https://github.com/ethb3rlin/attendees" target="_blank">
+            github.com/ethb3rlin/attendees
+          </a>
+        </p>
+        <p>
+          You can use it for your hacks, drop funny tokens to these
           accounts or use it for voting systems where only participants can
           vote. Be creative and let us know how you used this list!
         </p>
@@ -282,28 +288,28 @@ const About = () => (
           <li>
             <span className="fake-bold">
               Counter-Surveillance: Security- and privacy-enhancing projects.
-            </span>
+            </span>{" "}
             Topics: Privacy, Anonymity, Anti-identity, Security, Encryption.
           </li>
           <li>
             <span className="fake-bold">
               Freedom to Transact: Financial independence from institutions.
-            </span>
+            </span>{" "}
             Topics: Dentralized Finance, Unstoppable Applications,
             Crypto-Economics.
           </li>
           <li>
             <span className="fake-bold">
               Even the Odds: Empowering the underprivileged.
-            </span>
+            </span>{" "}
             Topcis: Social Justice, Inclusion, Sustainability, Public Goods.
           </li>
           <li>
             <span className="fake-bold">
               Infrastructure: Providing distributed public goods.
-            </span>
+            </span>{" "}
             Topcis: Protocols, Networks, Infrastructure, Developer Tools,
-            Hardware
+            Hardware.
           </li>
         </ul>
         <p>
@@ -360,26 +366,26 @@ const About = () => (
           Ooops! You had an amazing idea, but now you are stuck? No worries, our
           experienced mentors will help you as best as they can. And here's how
           to get in touch:
-          <ul>
-            <li>
-              Reach all of our mentors via the simple ticket system, HELPq:{" "}
-              <a href="https://ask.ethberlin.ooo" target="_blank">
-                ask.ethberlin.ooo
-              </a>
-            </li>
-            <li>
-              Discuss your issues in the{" "}
-              <a href="https://matrix.to/#/#mentors:tchncs.de">
-                Ask-our-mentors
-              </a>{" "}
-              channel.
-            </li>
-            <li>
-              Spot our mentors at the venue! They are wearing yellow t-shirts and
-              mentor buttons!
-            </li>
-          </ul>
         </p>
+        <ul>
+          <li>
+            Reach all of our mentors via the simple ticket system, HELPq:{" "}
+            <a href="https://ask.ethberlin.ooo" target="_blank">
+              ask.ethberlin.ooo
+            </a>
+          </li>
+          <li>
+            Discuss your issues in the{" "}
+            <a href="https://matrix.to/#/#mentors:tchncs.de">
+              Ask-our-mentors
+            </a>{" "}
+            channel.
+          </li>
+          <li>
+            Spot our mentors at the venue! They are wearing yellow t-shirts and
+            mentor buttons!
+          </li>
+        </ul>
       </div>
       <div className="flex justify-center">
         <div className="border-b-[1px] mb-8 mt-4 border-berlin-yellow opacity-40 w-full"></div>
