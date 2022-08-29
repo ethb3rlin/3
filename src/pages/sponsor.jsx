@@ -18,6 +18,7 @@ import sismo from "../assets/sponsors/sismo.png";
 import nftfi from "../assets/sponsors/nftfi.png";
 import celestia from "../assets/sponsors/celestia.png";
 import ethereum from "../assets/sponsors/ethereum.png";
+import entropy from "../assets/sponsors/entropy.png";
 import missinglink from "../assets/sponsors/missinglink.png";
 import gitpoap from "../assets/sponsors/gitpoap.png";
 import chainsafe from "../assets/sponsors/chainsafe.png";
@@ -251,6 +252,12 @@ const Sponsor = () => (
         <a href="https://poap.xyz/" target="_blank" rel="noreferrer">
           <img
             src={poap}
+            className="h-10 md:h-12 sm:mx-8 sm:bright-gray hover:bright-non-gray my-4 "
+          />
+        </a>
+        <a href="https://entropy.xyz/" target="_blank" rel="noreferrer">
+          <img
+            src={entropy}
             className="h-10 md:h-12 sm:mx-8 sm:bright-gray hover:bright-non-gray my-4 "
           />
         </a>
