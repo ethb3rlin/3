@@ -1,8 +1,12 @@
 import Layout from "../components/Layout";
 import React from "react";
 import mentors from "../assets/people/mentors";
+import judges from "../assets/people/judges";
+import twitterLogo from "../assets/twitter.png";
+import githubLogo from "../assets/github.png";
+import team from "../assets/people/team";
 
-const Person = ({ name, organization, image }) => {
+const Person = ({ name, organization, image, twitter, github }) => {
   return (
     <div className="mx-4 my-6 w-48 hover:text-berlin-yellow">
       <div className="flex flex-col justify-center items-center h-48 w-full relative break-words">
@@ -16,10 +20,32 @@ const Person = ({ name, organization, image }) => {
         />
       </div>
       <div className="text-2xl text-center mt-2">{name}</div>
-      <div className="text-center text-gray-400">
-        <a href={organization.url} rel="noopener noreferrer" target="_blank">
-          {organization.name}
-        </a>{" "}
+      {organization && (
+        <div className="text-center text-gray-400">
+          <a href={organization.url} rel="noopener noreferrer" target="_blank">
+            {organization.name}
+          </a>{" "}
+        </div>
+      )}
+      <div className="flex justify-center mt-2">
+        {twitter && (
+          <a href={twitter}>
+            <img
+              src={twitterLogo}
+              className="mx-2 h-5 opacity-70 hover:opacity-100"
+              alt="twitter"
+            />
+          </a>
+        )}
+        {github && (
+          <a href={github}>
+            <img
+              src={githubLogo}
+              className="mx-2 h-5 opacity-70 hover:opacity-100"
+              alt="github"
+            />
+          </a>
+        )}
       </div>
     </div>
   );
@@ -29,23 +55,69 @@ const Person = ({ name, organization, image }) => {
 //// MAIN COMPONENT ///
 ///////////////////////
 
-const Contributors = () => (
-  <Layout showEthDiamond={false}>
-    <h1 className="my-4 underline text-secondary">(c)ontributors</h1>
-    <p>These are the amazing people that made ETHBerlin³ possible.</p>
-    <div>
-      <h2 className="text-4xl mt-8">Mentors</h2>
-      <div className="flex flex-wrap justify-around">
-        {mentors
-          .sort((a, b) =>
-            a.name.toLowerCase().localeCompare(b.name.toLowerCase())
-          )
-          .map((mentor) => (
-            <Person {...mentor} />
-          ))}
+const Contributors = () => {
+  const [people, setPeople] = React.useState(team);
+  const [title, setTitle] = React.useState("Team");
+
+  const handleMentors = () => {
+    setPeople(mentors);
+    setTitle("Mentors");
+  };
+
+  const handleJudges = () => {
+    setPeople(judges);
+    setTitle("Judges");
+  };
+
+  const handleTeam = () => {
+    setPeople(team);
+    setTitle("Team");
+  };
+
+  return (
+    <Layout showEthDiamond={false}>
+      <h1 className="my-4 underline text-secondary">(c)ontributors</h1>
+      <p>These are the amazing people that made ETHBerlin³ possible.</p>
+      <div className="flex justify-center">
+        <button
+          className={`${
+            title === "Team" ? "bg-berlin-yellow text-black" : ""
+          } text-xl md:text-2xl mx-4`}
+          onClick={handleTeam}
+        >
+          {"< Team >"}
+        </button>
+        <button
+          className={`${
+            title === "Mentors" ? "bg-berlin-yellow text-black" : ""
+          } text-xl md:text-2xl mx-4`}
+          onClick={handleMentors}
+        >
+          {"< Mentors >"}
+        </button>
+        <button
+          className={`${
+            title === "Judges" ? "bg-berlin-yellow text-black" : ""
+          } text-xl md:text-2xl mx-4`}
+          onClick={handleJudges}
+        >
+          {"< Judges >"}
+        </button>
       </div>
-    </div>
-  </Layout>
-);
+      <div>
+        <h2 className="text-4xl mt-8">{title}</h2>
+        <div className="flex flex-wrap justify-around">
+          {people
+            .sort((a, b) =>
+              a.name.toLowerCase().localeCompare(b.name.toLowerCase())
+            )
+            .map((person) => (
+              <Person {...person} />
+            ))}
+        </div>
+      </div>
+    </Layout>
+  );
+};
 
 export default Contributors;
