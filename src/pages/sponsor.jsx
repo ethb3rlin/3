@@ -12,6 +12,9 @@ import obol from "../assets/sponsors/obol.svg";
 import zksync from "../assets/sponsors/zksync.svg";
 import swype from "../assets/sponsors/swype.png";
 import optimism from "../assets/sponsors/optimism.png";
+import galaxis from "../assets/sponsors/galaxis.svg";
+import poap from "../assets/sponsors/poap.png";
+import sismo from "../assets/sponsors/sismo.svg";
 import nftfi from "../assets/sponsors/nftfi.png";
 import celestia from "../assets/sponsors/celestia.png";
 import ethereum from "../assets/sponsors/ethereum.png";
@@ -67,12 +70,11 @@ const SponsorContainer = ({ children, tier, tierName, description, image }) => {
 
 const Sponsor = () => (
   <Layout showEthDiamond={false}>
-    <h1 className="my-4 underline text-secondary">(s)ponsor</h1>
+    <h1 className="my-4 underline text-secondary">(s)ponsors</h1>
     <div className="mt-8">
       <div className="text-xl decorate-links">
         <p>
-          Thank you for supporting us! Sponsorships are now CLOSED. Please, give
-          a warm welcome to all of our 2022 sponsors!
+          Please, give a warm welcome to all of our 2022 sponsors!
         </p>
       </div>
       <SponsorContainer
@@ -179,6 +181,18 @@ const Sponsor = () => (
             className="h-24 md:h-32 sm:mx-8 sm:grayscale hover:grayscale-0 my-4"
           />
         </a>
+        <a href="https://galaxis.xyz/" target="_blank">
+          <img
+            src={galaxis}
+            className="h-24 md:h-32 sm:mx-8 sm:grayscale hover:grayscale-0 my-4"
+          />
+        </a>
+        <a href="https://sismo.io/" target="_blank">
+          <img
+            src={sismo}
+            className="h-24 md:h-32 sm:mx-8 sm:grayscale hover:grayscale-0 my-4"
+          />
+        </a>
       </SponsorContainer>
       <SponsorContainer
         tierName="Venezuelan Bolívar"
@@ -231,6 +245,12 @@ const Sponsor = () => (
         <a href="https://altresear.ch/" target="_blank" rel="noreferrer">
           <img
             src={altlayer}
+            className="h-10 md:h-12 sm:mx-8 sm:bright-gray hover:bright-non-gray my-4 "
+          />
+        </a>
+        <a href="https://poap.xyz/" target="_blank" rel="noreferrer">
+          <img
+            src={poap}
             className="h-10 md:h-12 sm:mx-8 sm:bright-gray hover:bright-non-gray my-4 "
           />
         </a>
