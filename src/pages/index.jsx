@@ -133,9 +133,9 @@ const Home = () => {
           {" "}
           (m)anifesto
         </a>
-        <a className="my-2" href="/hack">
+        <a className="my-2" href="/hacker-manual">
           {" "}
-          (h)ack
+          (h)acker manual
         </a>
         <a className="my-2" href="/program">
           {" "}
@@ -191,12 +191,15 @@ const Home = () => {
           <p className="mt-4">
             Over the last two years, the global crackdown on privacy, freedom of
             movement, and the right to transact by governments worldwide put us
-            on the edge of a new dark age of regression.
-            We invite you to hack the system, now, more than ever.
+            on the edge of a new dark age of regression. We invite you to hack
+            the system, now, more than ever.
           </p>
-          <p className="mt-4 text-center">Press <a href="/about">(a)</a> to get started.</p>
+          <p className="mt-4 text-center">
+            Press <a href="/about">(a)</a> to get started.
+          </p>
           <p className="mt-4">
-            To learn more about our vision &amp; mission, press <a href="/manifesto">(m)</a>.
+            To learn more about our vision &amp; mission, press{" "}
+            <a href="/manifesto">(m)</a>.
           </p>
         </div>
       </div>

@@ -22,7 +22,7 @@ export default function HTML(props) {
                     window.location.href= "/about";
                 }
                 else if (e.key == 'h' || e.key == 'H') {
-                  window.location.href= "/hack";
+                  window.location.href= "/hacker-manual";
                 }
                 else if (e.key == 'p' || e.key == 'P') {
                   window.location.href= "/program";

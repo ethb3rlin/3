@@ -7,11 +7,14 @@ const About = () => (
     <div className="text-justify decorate-links">
       <p>This section aims to help you better prepare for the hackathon.</p>
       <div className="mb-16">
-      <h3 className="text-xl">TL;DR</h3>
-      <ul>
+        <h3 className="text-xl">TL;DR</h3>
+        <ul>
           <li>
             Join the conversation on Matrix:{" "}
-            <a href="https://matrix.to/#/%23ethberlin:matrix.org" target="_blank">
+            <a
+              href="https://matrix.to/#/%23ethberlin:matrix.org"
+              target="_blank"
+            >
               #ethberlin:matrix.org
             </a>
           </li>
@@ -29,10 +32,8 @@ const About = () => (
           </li>
         </ul>
       </div>
-        <h2 className="text-2xl font-bold font-bold">
-          Overview
-        </h2>
-      <div className="mb-16">
+      <h2 className="text-2xl font-bold">Overview</h2>
+      <div className="mb-8">
         <h3 className="text-xl">Before the Hackathon</h3>
         <ul>
           <li>
@@ -79,18 +80,21 @@ const About = () => (
           </li>
         </ul>
       </div>
-      <div id="travel">
+      <div className="flex justify-center">
+        <div className="border-b-[1px] mb-8 mt-8 border-berlin-yellow opacity-40 w-full"></div>
+      </div>
+      <div id="travel" className="mt-8">
         <h2 className="text-2xl font-bold font-bold">
           Travel and Accommodation
         </h2>
         <h3 className="text-xl">Travel to Berlin</h3>
         <p>
-          Berlin has one airport called
-          Berlin Brandenburg Airport "Willy Brandt" (BER) and is well
-          connected with railway. You can take a train from European cities such
-          as Amsterdam and Paris to travel with the convenience of comfortable
-          high-speed trains with internet access, avoid the long security lines,
-          missing luggages, and decrease your CO2 footprint. Check the{" "}
+          Berlin has one airport called Berlin Brandenburg Airport "Willy
+          Brandt" (BER) and is well connected with railway. You can take a train
+          from European cities such as Amsterdam and Paris to travel with the
+          convenience of comfortable high-speed trains with internet access,
+          avoid the long security lines, missing luggages, and decrease your CO2
+          footprint. Check the{" "}
           <a
             href="https://www.bahn.com/en"
             rel="noreferrer noopener"
@@ -139,6 +143,9 @@ const About = () => (
           Friedrichshain due to their proximity to the venue.
         </p>
       </div>
+      <div className="flex justify-center">
+        <div className="border-b-[1px] mb-8 mt-4 border-berlin-yellow opacity-40 w-full"></div>
+      </div>
       <div id="find-a-team">
         <h2 className="text-2xl font-bold">Find a Team/Hacker/Idea</h2>
         <p>
@@ -151,9 +158,12 @@ const About = () => (
           >
             Github
           </a>{" "}
-          or join the Hacker Matchmaking session on Friday after the
-          opening ceremony.
+          or join the Hacker Matchmaking session on Friday after the opening
+          ceremony.
         </p>
+      </div>
+      <div className="flex justify-center">
+        <div className="border-b-[1px] mb-8 mt-4 border-berlin-yellow opacity-40 w-full"></div>
       </div>
       <div id="connect">
         <h2 className="text-2xl font-bold">Connect and Chat</h2>
@@ -166,17 +176,22 @@ const About = () => (
           </a>
         </p>
       </div>
+      <div className="flex justify-center">
+        <div className="border-b-[1px] mb-8 mt-4 border-berlin-yellow opacity-40 w-full"></div>
+      </div>
       <div id="food">
         <h2 className="text-2xl font-bold">Food and Drinks</h2>
         <p>
           ETHBerlin will cover all meals and drinks for the entire Hackathon,
           and conference coffee breaks. Just come with an open mind, a
-          knowledge-thirsty brain and enthusiasm. Check the{" "}
-          <a href="/program">agenda</a>{" "}
-          for the next meal.
+          knowledge-thirsty brain and enthusiasm. Meal and snack times will be
+          on the <a href="/program">program</a>.
         </p>
       </div>
-      <div id="hack" className="mt-16">
+      <div className="flex justify-center">
+        <div className="border-b-[1px] mb-8 mt-4 border-berlin-yellow opacity-40 w-full"></div>
+      </div>
+      <div id="hack">
         <h2 className="text-2xl font-bold">Hacking and Rules</h2>
         <p>
           Hacker teams are made up of maximum of 5 people. You can find some
@@ -185,7 +200,10 @@ const About = () => (
         <h3 className="text-xl">Hacking Rules</h3>
         <ul>
           <li>You must be at ETHBerlin to work on a project for submission</li>
-          <li>Your hack must be related to decentralization, cryptography, or privacy</li>
+          <li>
+            Your hack must be related to decentralization, cryptography, or
+            privacy
+          </li>
           <li>
             You can plan ahead of time, but all code for your project has to be
             written during the event
@@ -195,7 +213,8 @@ const About = () => (
             The decision of judges is final for determining prizes and awards
           </li>
           <li>Please comply with all instructions from ETHBerlin organizers</li>
-          <li>Please respect our <a href="/code-of-conduct">Code of Conduct</a>!
+          <li>
+            Please respect our <a href="/code-of-conduct">Code of Conduct</a>!
           </li>
         </ul>
         <h3 className="text-xl">Minimum requirements to be judged</h3>
@@ -208,6 +227,9 @@ const About = () => (
             platform of choice.
           </li>
         </ul>
+      </div>
+      <div className="flex justify-center">
+        <div className="border-b-[1px] mb-8 mt-4 border-berlin-yellow opacity-40 w-full"></div>
       </div>
       <div id="ethercards">
         <h2 className="text-2xl font-bold">EtherCards with Goerli ETH</h2>
@@ -223,93 +245,101 @@ const About = () => (
           vote. Be creative and let us know how you used this list!
         </p>
       </div>
+      <div className="flex justify-center">
+        <div className="border-b-[1px] mb-8 mt-4 border-berlin-yellow opacity-40 w-full"></div>
+      </div>
       <div id="prizes-bounties">
         <h2 className="text-2xl font-bold">Prizes and Bounties</h2>
         <p>
-          This year we are going to try something different. Please study
-          the following section carefully.
+          This year we are going to try something different. Please study the
+          following section carefully.
         </p>
         <h3 className="text-xl">Open Track</h3>
         <p>
-          The open-track prize is the main hackathon award. Every project
-          is eligible, given they are respecting the hackathon rules. The
-          open track will be judged by everyone attending the event. There
-          will be no pitches and no judges. All the attendees can vote using
-          their EtherCards.
+          The open-track prize is the main hackathon award. Every project is
+          eligible, given they are respecting the hackathon rules. The open
+          track will be judged by everyone attending the event. There will be no
+          pitches and no judges. All the attendees can vote using their
+          EtherCards.
         </p>
         <p>
-          The winning project will be presenting at the closing ceremony
-          and the prize is 10000 DAI. There is only one.
+          The winning project will be presenting at the closing ceremony and the
+          prize is 10000 DAI. There is only one.
         </p>
         <h3 className="text-xl">Track Awards</h3>
         <p>
-          Track awards are based on covering specific topics. Each project
-          can only submit to one track maximum. It is not possible to apply
-          for multiple tracks!
+          Track awards are based on covering specific topics. Each project can
+          only submit to one track maximum. It is not possible to apply for
+          multiple tracks!
         </p>
         <p>
-          One team member pitches in front of the judges. The
-          domain experts will evaluate the projects according to defined
-          parameters. Judges will also review code and ensure hackathon
-          rules are respected.
+          One team member pitches in front of the judges. The domain experts
+          will evaluate the projects according to defined parameters. Judges
+          will also review code and ensure hackathon rules are respected.
         </p>
-        <p>
-          These are the four tracks:
-        </p>
+        <p>These are the four tracks:</p>
         <ul>
           <li>
-            <span className="fake-bold">Counter-Surveillance: Security- and privacy-enhancing projects.</span>
+            <span className="fake-bold">
+              Counter-Surveillance: Security- and privacy-enhancing projects.
+            </span>
             Topics: Privacy, Anonymity, Anti-identity, Security, Encryption.
           </li>
           <li>
-            <span className="fake-bold">Freedom to Transact: Financial independence from institutions.</span>
-            Topics: Dentralized Finance, Unstoppable Applications, Crypto-Economics.
+            <span className="fake-bold">
+              Freedom to Transact: Financial independence from institutions.
+            </span>
+            Topics: Dentralized Finance, Unstoppable Applications,
+            Crypto-Economics.
           </li>
           <li>
-            <span className="fake-bold">Even the Odds: Empowering the underprivileged.</span>
+            <span className="fake-bold">
+              Even the Odds: Empowering the underprivileged.
+            </span>
             Topcis: Social Justice, Inclusion, Sustainability, Public Goods.
           </li>
           <li>
-            <span className="fake-bold">Infrastructure: Providing distributed public goods.</span>
-            Topcis: Protocols, Networks, Infrastructure, Developer Tools, Hardware
+            <span className="fake-bold">
+              Infrastructure: Providing distributed public goods.
+            </span>
+            Topcis: Protocols, Networks, Infrastructure, Developer Tools,
+            Hardware
           </li>
         </ul>
         <p>
-          The winning projects will be presenting at the closing ceremony
-          and the prize is 7000 DAI for each track. There is only one per track,
+          The winning projects will be presenting at the closing ceremony and
+          the prize is 7000 DAI for each track. There is only one per track,
           four in total.
         </p>
         <h3 className="text-xl">Meta Awards</h3>
         <p>
-          Meta awards reward certain aspects of your project. Every project
-          is eligible, given you are respecting the hackathon rules. Projects
+          Meta awards reward certain aspects of your project. Every project is
+          eligible, given you are respecting the hackathon rules. Projects
           should indicate which meta-award they think they qualify for in the
           submission form.
         </p>
         <p>
-          There will be no pitches and our judges will review submissions asynchronously
-          during the track award pitching.
+          There will be no pitches and our judges will review submissions
+          asynchronously during the track award pitching.
         </p>
-        <p>
-          These are the three meta awards:
-        </p>
+        <p>These are the three meta awards:</p>
         <ul>
           <li>
-            <span className="fake-bold">Best Smart Contracts</span>:
-            outstanding smart contract code quality and documentation.
+            <span className="fake-bold">Best Smart Contracts</span>: outstanding
+            smart contract code quality and documentation.
           </li>
           <li>
-            <span className="fake-bold">Best Design</span>:
-            outstanding user interfaces, graphics and experience.
+            <span className="fake-bold">Best Design</span>: outstanding user
+            interfaces, graphics and experience.
           </li>
           <li>
-            <span className="fake-bold">Best Cryptography</span>:
-            outstanding encryption security.
+            <span className="fake-bold">Best Cryptography</span>: outstanding
+            encryption security.
           </li>
         </ul>
         <p>
-          The winning projects will be presenting at the closing ceremony
-          and the prize is 6000 DAI for each award. There is only one per award,
+          The winning projects will be presenting at the closing ceremony and
+          the prize is 6000 DAI for each award. There is only one per award,
           three in total.
         </p>
         <h3 className="text-xl">Sponsor Bounties</h3>
@@ -320,6 +350,9 @@ const About = () => (
           </a>
           .
         </p>
+      </div>
+      <div className="flex justify-center">
+        <div className="border-b-[1px] mb-8 mt-4 border-berlin-yellow opacity-40 w-full"></div>
       </div>
       <div id="mentors">
         <h2 className="text-2xl font-bold">Getting Help from Mentors</h2>
@@ -348,21 +381,34 @@ const About = () => (
           </ul>
         </p>
       </div>
+      <div className="flex justify-center">
+        <div className="border-b-[1px] mb-8 mt-4 border-berlin-yellow opacity-40 w-full"></div>
+      </div>
+
       <div id="submissions">
         <h2 className="text-2xl font-bold">Submissions</h2>
-        <p>TO DO</p>
+        <p>To be announced...</p>
+      </div>
+      <div className="flex justify-center">
+        <div className="border-b-[1px] mb-8 mt-4 border-berlin-yellow opacity-40 w-full"></div>
       </div>
       <div id="judging">
         <h2 className="text-2xl font-bold">Judging</h2>
-        <p>TO DO</p>
+        <p>To be announced...</p>
+      </div>
+      <div className="flex justify-center">
+        <div className="border-b-[1px] mb-8 mt-4 border-berlin-yellow opacity-40 w-full"></div>
       </div>
       <div id="experiences">
         <h2 className="text-2xl font-bold">Experiences</h2>
-        <p>TO DO</p>
+        <p>To be announced...</p>
       </div>
-      <div id="afterparty" className="mt-16">
+      <div className="flex justify-center">
+        <div className="border-b-[1px] mb-8 mt-4 border-berlin-yellow opacity-40 w-full"></div>
+      </div>
+      <div id="afterparty" className="">
         <h2 className="text-2xl font-bold">Afterparty</h2>
-        <p>TO DO</p>
+        <p>To be announced...</p>
       </div>
     </div>
   </Layout>

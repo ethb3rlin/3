@@ -23,9 +23,9 @@ const Sidebar = ({ className, hideLogo }) => {
           {" "}
           (m)anifesto
         </a>
-        <a className="my-2" href="/hack">
+        <a className="my-2" href="/hacker-manual">
           {" "}
-          (h)ack
+          (h)acker manual
         </a>
         <a className="my-2" href="/program">
           {" "}
