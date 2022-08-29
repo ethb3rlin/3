@@ -2,6 +2,7 @@ export default [
   {
     name: "Afri Schoedon",
     image: require("./afri_schoedon.jpeg"),
+    github: "https://github.com/q9f",
   },
   {
     name: "Carl Bezzenberger",
@@ -9,11 +10,11 @@ export default [
   },
   {
     name: "Eylon Aviv",
-    image: require("./Eylon_Aviv.png"),
+    image: require("./Eylon_Aviv.jpeg"),
   },
   {
     name: "Franziska Heintel",
-    image: require("./franziska_heintel.png"),
+    image: require("./franziska_heintel.jpeg"),
   },
   {
     name: "Jacob Czepluch",

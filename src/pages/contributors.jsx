@@ -78,11 +78,11 @@ const Contributors = () => {
     <Layout showEthDiamond={false}>
       <h1 className="my-4 underline text-secondary">(c)ontributors</h1>
       <p>These are the amazing people that made ETHBerlin³ possible.</p>
-      <div className="flex justify-center">
+      <div className="flex justify-center flex-wrap">
         <button
           className={`${
             title === "Team" ? "bg-berlin-yellow text-black" : ""
-          } text-xl md:text-2xl mx-4`}
+          } text-xl md:text-2xl mx-4 my-2`}
           onClick={handleTeam}
         >
           {"< Team >"}
@@ -90,7 +90,7 @@ const Contributors = () => {
         <button
           className={`${
             title === "Mentors" ? "bg-berlin-yellow text-black" : ""
-          } text-xl md:text-2xl mx-4`}
+          } text-xl md:text-2xl mx-4 my-2`}
           onClick={handleMentors}
         >
           {"< Mentors >"}
@@ -98,7 +98,7 @@ const Contributors = () => {
         <button
           className={`${
             title === "Judges" ? "bg-berlin-yellow text-black" : ""
-          } text-xl md:text-2xl mx-4`}
+          } text-xl md:text-2xl mx-4 my-2`}
           onClick={handleJudges}
         >
           {"< Judges >"}
