@@ -1,11 +1,33 @@
 export default [
   {
+    name: "Ali Nuraldin",
+    organization: {
+      name: "Opium Network",
+      url: "https://opium.network/",
+    },
+    image: require("./AliNuraldin_OpiumNetwork.png"),
+    github: "https://github.com/alirun",
+    twitter: "https://twitter.com/Ali_run",
+  },
+  {
+    name: "Dominik Muhs",
+    organization: {
+      name: "ConsenSys Diligence",
+      url: "https://consensys.net/diligence/",
+    },
+    image: require("./DominikMuhs_ConsenSysDiligence.jpg"),
+    github: "https://github.com/dmuhs/",
+    twitter: "https://twitter.com/lethalspoons",
+  },
+  {
     name: "Alex Stokes",
     organization: {
       name: "Ethereum Foundation",
       url: "https://ethereum.org",
     },
     image: require("./AlexStokes_EthereumFoundation.png"),
+    github: "https://github.com/ralexstokes/",
+    twitter: "https://twitter.com/ralexstokes",
   },
   {
     name: "Andrej Berlin",
@@ -14,6 +36,7 @@ export default [
       url: "https://deepwork.studio/",
     },
     image: require("./AndrejBerlin_DeepWork.png"),
+    twitter: "https://twitter.com/kischiman",
   },
   {
     name: "Colin Schwarz",
@@ -22,6 +45,8 @@ export default [
       url: "https:/chainsafe.io",
     },
     image: require("./ColinSchwarz_ChainSafe.jpg"),
+    github: "https://github.com/ColinSchwarz",
+    twitter: "https://twitter.com/colin_schwarz",
   },
   {
     name: "Dan",
@@ -30,6 +55,8 @@ export default [
       url: "https://www.rysk.finance/",
     },
     image: require("./dan_ryskfinance.jpeg"),
+    github: "https://github.com/ugolino",
+    twitter: "https://twitter.com/ugolino_me",
   },
   {
     name: "Federico Kunze Küllmer",
@@ -38,6 +65,8 @@ export default [
       url: "https://evmos.org/",
     },
     image: require("./Federico_Evmos.jpeg"),
+    github: "https://github.com/fedekunze",
+    twitter: "https://twitter.com/fekunze",
   },
   {
     name: "Greg The Greek",
@@ -46,6 +75,8 @@ export default [
       url: "https:/chainsafe.io",
     },
     image: require("./GregTheGreek_ChainSafe.png"),
+    github: "http://github.com/GregTheGreek",
+    twitter: "http://twitter.com/GregTheGreek",
   },
   {
     name: "Markus Waas",
@@ -54,6 +85,8 @@ export default [
       url: "https://soliditydeveloper.com/",
     },
     image: require("./MarkusWaas_Soliditydeveloper.com.jpg"),
+    github: "https://github.com/gorgos",
+    twitter: "https://twitter.com/gorgos",
   },
   {
     name: "Nuno Loureiro",
@@ -62,6 +95,8 @@ export default [
       url: "https://ethereum.org",
     },
     image: require("./NunoLoureiro_EthereumFoundation.jpg"),
+    github: "https://github.com/nloureiro",
+    twitter: "https://twitter.com/nloureiro",
   },
   {
     name: "Owen Barnes",
@@ -70,6 +105,8 @@ export default [
       url: "https://www.owenbarnes.com/",
     },
     image: require("./OwenBarnes_OwenBarnes.com.jpeg"),
+    github: "https://github.com/owenb",
+    twitter: "https://twitter.com/temporalwave",
   },
   {
     name: "Pavel Kireyev",
@@ -78,6 +115,7 @@ export default [
       url: "https://www.insead.edu/",
     },
     image: require("./PavelKireyev_INSEAD.jpg"),
+    twitter: "https://twitter.com/virtual_markets",
   },
   {
     name: "Pranav Garg",
@@ -86,6 +124,8 @@ export default [
       url: "https://www.routerprotocol.com/",
     },
     image: require("./PranavGarg_RouterProtocol.png"),
+    github: "https://github.com/PranavGarg01",
+    twitter: "https://twitter.com/pranav__garg_",
   },
   {
     name: "Terence",
@@ -94,6 +134,8 @@ export default [
       url: "https://prysmaticlabs.com/",
     },
     image: require("./Terence_Prysm.png"),
+    github: "https://github.com/terencechain",
+    twitter: "https://twitter.com/terencechain",
   },
   {
     name: "Theo Beutel",
@@ -102,6 +144,7 @@ export default [
       url: "https://www.vitadao.com/",
     },
     image: require("./TheoBeutel_VitaDAO.jpg"),
+    twitter: "https://twitter.com/theobtl",
   },
   {
     name: "Tobias Schubotz",
@@ -110,6 +153,8 @@ export default [
       url: "https://gnosis-safe.io/",
     },
     image: require("./TobiasSchubotz_Safe.png"),
+    github: "https://github.com/tschubotz",
+    twitter: "https://twitter.com/tschubotz",
   },
   {
     name: "Uladzislau Radkevich",
@@ -118,6 +163,8 @@ export default [
       url: "https://zkdao.io/",
     },
     image: require("./UladzislauRadkevich_zkDAO.jpg"),
+    github: "https://github.com/vlad324",
+    twitter: "https://twitter.com/codeformars",
   },
   {
     name: "Willian Mitsuda",
@@ -126,6 +173,8 @@ export default [
       url: "https://github.com/wmitsuda/otterscan",
     },
     image: require("./WillianMitsuda_Otterscan.jpg"),
+    github: "https://github.com/wmitsuda/",
+    twitter: "https://twitter.com/wmitsuda",
   },
   {
     name: "Will Scott",
@@ -134,6 +183,8 @@ export default [
       url: "https://protocol.ai/",
     },
     image: require("./willscott_ProtocolLabs.png"),
+    github: "https://github.com/willscott",
+    twitter: "https://twitter.com/willscott",
   },
   {
     name: "Yan Minagawa",
@@ -142,6 +193,8 @@ export default [
       url: "https://datanauten.de/",
     },
     image: require("./YanMinagawa_Datanauten.png"),
+    github: "https://github.com/yncyrydybyl",
+    twitter: "https://twitter.com/zwodreivierzwo",
   },
   {
     name: "Zannis",
@@ -158,5 +211,6 @@ export default [
       url: "https://www.0x.org/",
     },
     image: require("./Zhehao_0xlab.jpeg"),
+    twitter: "https://twitter.com/tomzzh1991",
   },
 ];
