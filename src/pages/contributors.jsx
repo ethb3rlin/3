@@ -4,6 +4,7 @@ import mentors from "../assets/people/mentors";
 import judges from "../assets/people/judges";
 import twitterLogo from "../assets/twitter.png";
 import githubLogo from "../assets/github.png";
+import team from "../assets/people/team";
 
 const Person = ({ name, organization, image, twitter, github }) => {
   return (
@@ -19,11 +20,13 @@ const Person = ({ name, organization, image, twitter, github }) => {
         />
       </div>
       <div className="text-2xl text-center mt-2">{name}</div>
-      <div className="text-center text-gray-400">
-        <a href={organization.url} rel="noopener noreferrer" target="_blank">
-          {organization.name}
-        </a>{" "}
-      </div>
+      {organization && (
+        <div className="text-center text-gray-400">
+          <a href={organization.url} rel="noopener noreferrer" target="_blank">
+            {organization.name}
+          </a>{" "}
+        </div>
+      )}
       <div className="flex justify-center mt-2">
         {twitter && (
           <a href={twitter}>
@@ -53,8 +56,8 @@ const Person = ({ name, organization, image, twitter, github }) => {
 ///////////////////////
 
 const Contributors = () => {
-  const [people, setPeople] = React.useState(mentors);
-  const [title, setTitle] = React.useState("Mentors");
+  const [people, setPeople] = React.useState(team);
+  const [title, setTitle] = React.useState("Team");
 
   const handleMentors = () => {
     setPeople(mentors);
@@ -66,11 +69,24 @@ const Contributors = () => {
     setTitle("Judges");
   };
 
+  const handleTeam = () => {
+    setPeople(team);
+    setTitle("Team");
+  };
+
   return (
     <Layout showEthDiamond={false}>
       <h1 className="my-4 underline text-secondary">(c)ontributors</h1>
       <p>These are the amazing people that made ETHBerlin³ possible.</p>
       <div className="flex justify-center">
+        <button
+          className={`${
+            title === "Team" ? "bg-berlin-yellow text-black" : ""
+          } text-xl md:text-2xl mx-4`}
+          onClick={handleTeam}
+        >
+          {"< Team >"}
+        </button>
         <button
           className={`${
             title === "Mentors" ? "bg-berlin-yellow text-black" : ""
