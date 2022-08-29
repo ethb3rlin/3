@@ -11,7 +11,7 @@ const Person = ({ name, organization, image, twitter, github }) => {
     <div className="mx-4 my-6 w-48 hover:text-berlin-yellow">
       <div className="flex flex-col justify-center items-center h-48 w-full relative break-words">
         <img
-          src={`/letters/${name.charAt(0)}.png`}
+          src={`/letters/${name.charAt(0).toUpperCase()}.png`}
           className="max-h-full max-w-full top-0 left-0 right-0 bottom-0 absolute m-auto z-10 opacity-95 hover:opacity-0 transition-all duration-200 ease-in-out"
         />
         <img
