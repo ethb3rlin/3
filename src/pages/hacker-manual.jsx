@@ -34,7 +34,7 @@ const About = () => (
       </div>
       <h2 className="text-2xl font-bold">Overview</h2>
       <div className="mb-8">
-        <h3 className="text-xl">Before the Hackers channel, the{ackathon</h3>
+        <h3 className="text-xl">Before the Hackathon</h3>
         <ul>
           <li>
             <a href="#travel"> Travel and Accomodation</a>
