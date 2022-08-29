@@ -34,7 +34,7 @@ const About = () => (
       </div>
       <h2 className="text-2xl font-bold">Overview</h2>
       <div className="mb-8">
-        <h3 className="text-xl">Before the Hackathon</h3>
+        <h3 className="text-xl">Before the Hackers channel, the{ackathon</h3>
         <ul>
           <li>
             <a href="#travel"> Travel and Accomodation</a>
@@ -350,7 +350,7 @@ const About = () => (
         </p>
         <h3 className="text-xl">Sponsor Bounties</h3>
         <p>
-          You can find or add additional sponsor bounties{" "}
+          You can find sponsor bounties{" "}
           <a href="https://github.com/ethb3rlin/sponsor-bounties">
             in this repository
           </a>
@@ -375,15 +375,15 @@ const About = () => (
             </a>
           </li>
           <li>
-            Discuss your issues in the hackers channel, the{" "}
+            Discuss your issues in the{" "}
             <a href="https://matrix.to/#/#mentors:tchncs.de">
               Ask-our-mentors
             </a>{" "}
             channel.
           </li>
           <li>
-            Spot them at the venue! They are wearing yellow t-shirts and
-            badges!
+            Spot our mentors at the venue! They are wearing yellow t-shirts and
+            mentor buttons!
           </li>
         </ul>
       </div>
