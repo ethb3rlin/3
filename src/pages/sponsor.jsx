@@ -31,12 +31,12 @@ import squid from "../assets/sponsors/squid.png";
 import attestant from "../assets/sponsors/attestant.png";
 import goerli from "../assets/sponsors/goerli.png";
 import fault from "../assets/sponsors/fault.png";
-import pengo from "../assets/sponsors/pengo.png";
-import dinar from "../assets/sponsors/dinar.png";
-import drachma from "../assets/sponsors/drachma.png";
-import papiermark from "../assets/sponsors/papiermark.png";
-import zimbabwe from "../assets/sponsors/zimbabwe.png";
-import bolivar from "../assets/sponsors/bolivar.png";
+import pengo from "../assets/sponsors/pengo.jpeg";
+import dinar from "../assets/sponsors/dinar.jpeg";
+import drachma from "../assets/sponsors/drachma.jpeg";
+import papiermark from "../assets/sponsors/papiermark.jpeg";
+import zimbabwe from "../assets/sponsors/zimbabwe.jpeg";
+import bolivar from "../assets/sponsors/bolivar.jpeg";
 const SponsorContainer = ({ children, tier, tierName, description, image }) => {
   return (
     <div
