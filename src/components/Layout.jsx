@@ -82,7 +82,7 @@ const Layout = ({ children, showEthDiamond }) => {
         </a> */}
         <a className="my-2" href="/sponsor">
           {" "}
-          (s)ponsor
+          (s)ponsors
         </a>
         <div className="fixed bottom-0 mb-8 text-sm text-center">
           <div className="my-2">
