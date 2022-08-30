@@ -1,5 +1,5 @@
 import Layout from "../components/Layout";
-import React from "react";
+import React, { useEffect } from "react";
 import mentors from "../assets/people/mentors";
 import judges from "../assets/people/judges";
 import twitterLogo from "../assets/twitter.png";
@@ -82,8 +82,12 @@ function shuffle(array) {
 ///////////////////////
 
 const Contributors = () => {
-  const [people, setPeople] = React.useState(team);
+  const [people, setPeople] = React.useState([]);
   const [title, setTitle] = React.useState("Team");
+
+  useEffect(() => {
+    setPeople(team);
+  }, []);
 
   const handleMentors = () => {
     setPeople(mentors);
@@ -157,7 +161,7 @@ const Contributors = () => {
         <h2 className="text-4xl mt-8">{title}</h2>
         <div className="flex flex-wrap justify-around">
           {shuffle(people).map((person) => (
-            <Person {...person} key={person.name} />
+            <Person {...person} key={person.name + Math.random()} />
           ))}
         </div>
       </div>
