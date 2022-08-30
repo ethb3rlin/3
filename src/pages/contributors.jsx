@@ -9,7 +9,10 @@ import speakers from "../assets/people/speakers";
 
 const Person = ({ name, organization, image, twitter, github, title }) => {
   return (
-    <div className="mx-4 my-6 w-48 hover:text-berlin-yellow">
+    <div
+      className="mx-4 my-6 w-48 hover:text-berlin-yellow animate-flicker"
+      style={{ animationDuration: Math.floor(Math.random() * 2 + 1) + "s" }}
+    >
       <div className="flex flex-col justify-center items-center h-48 w-full relative break-words">
         <img
           src={`/letters/${name.charAt(0).toUpperCase()}.jpeg`}
@@ -53,6 +56,27 @@ const Person = ({ name, organization, image, twitter, github, title }) => {
   );
 };
 
+// function to randomize an array
+function shuffle(array) {
+  var currentIndex = array.length,
+    temporaryValue,
+    randomIndex;
+
+  // While there remain elements to shuffle...
+  while (0 !== currentIndex) {
+    // Pick a remaining element...
+    randomIndex = Math.floor(Math.random() * currentIndex);
+    currentIndex -= 1;
+
+    // And swap it with the current element.
+    temporaryValue = array[currentIndex];
+    array[currentIndex] = array[randomIndex];
+    array[randomIndex] = temporaryValue;
+  }
+
+  return array;
+}
+
 ///////////////////////
 //// MAIN COMPONENT ///
 ///////////////////////
@@ -84,7 +108,13 @@ const Contributors = () => {
   return (
     <Layout showEthDiamond={false}>
       <h1 className="my-4 underline text-secondary">(c)ontributors</h1>
-      <p>These are the amazing people that made ETHBerlin³ possible.</p>
+      <p>
+        These are the amazing people that made ETHBerlin³ possible.{" "}
+        <span className="text-sm text-gray-500 italic">
+          In pseudo-random order
+        </span>
+      </p>
+
       <div className="flex justify-center flex-wrap">
         <button
           className={`${
@@ -126,13 +156,9 @@ const Contributors = () => {
       <div>
         <h2 className="text-4xl mt-8">{title}</h2>
         <div className="flex flex-wrap justify-around">
-          {people
-            .sort((a, b) =>
-              a.name.toLowerCase().localeCompare(b.name.toLowerCase())
-            )
-            .map((person) => (
-              <Person {...person} />
-            ))}
+          {shuffle(people).map((person) => (
+            <Person {...person} key={person.name} />
+          ))}
         </div>
       </div>
     </Layout>
