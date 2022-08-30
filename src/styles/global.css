@@ -223,5 +223,5 @@ body {
 }
 
 .animate-flicker {
-    animation: flickerAnimation 1.5s ease;
+    animation: flickerAnimation 1.5s step-start;
 }

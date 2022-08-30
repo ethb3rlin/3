@@ -11,7 +11,7 @@ const Person = ({ name, organization, image, twitter, github, title }) => {
   return (
     <div
       className="mx-4 my-6 w-48 hover:text-berlin-yellow animate-flicker"
-      style={{ animationDuration: Math.floor(Math.random() * 2 + 1) + "s" }}
+      style={{ animationDuration: Math.random() * 2 + "s" }}
     >
       <div className="flex flex-col justify-center items-center h-48 w-full relative break-words">
         <img
