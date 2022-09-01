@@ -21,7 +21,7 @@ import celestia from "../assets/sponsors/celestia.png";
 import ethereum from "../assets/sponsors/ethereum.png";
 import entropy from "../assets/sponsors/entropy.png";
 import livepeer from "../assets/sponsors/livepeer.png";
-import delta from "../assets/sponsors/delta.svg";
+import delta from "../assets/sponsors/delta.png";
 import missinglink from "../assets/sponsors/missinglink.png";
 import gitpoap from "../assets/sponsors/gitpoap.png";
 import chainsafe from "../assets/sponsors/chainsafe.png";
@@ -201,7 +201,7 @@ const Sponsor = () => (
         <a href="https://polygon.technology/" target="_blank">
           <img
             src={polygon}
-            className="h-12 md:h-16 sm:mx-8 sm:grayscale hover:grayscale-0 my-4"
+            className="h-16 md:h-20 sm:mx-8 sm:grayscale hover:grayscale-0 my-4"
           />
         </a>
       </SponsorContainer>
@@ -262,25 +262,25 @@ const Sponsor = () => (
         <a href="https://poap.xyz/" target="_blank" rel="noreferrer">
           <img
             src={poap}
-            className="h-24 md:h-28 sm:mx-8 sm:bright-gray hover:bright-non-gray my-4 "
+            className="h-24 md:h-28 sm:mx-8 sm:grayscale hover:grayscale-0 my-4 "
           />
         </a>
         <a href="https://entropy.xyz/" target="_blank" rel="noreferrer">
           <img
             src={entropy}
-            className="h-12 md:h-16 sm:mx-8 sm:bright-gray hover:bright-non-gray my-4 "
+            className="h-12 md:h-16 sm:mx-8 sm:grayscale hover:grayscale-0 my-4 "
           />
         </a>
         <a href="https://livepeer.org/" target="_blank" rel="noreferrer">
           <img
             src={livepeer}
-            className="h-12 md:h-16 sm:mx-8 sm:bright-gray hover:bright-non-gray my-4 "
+            className="h-10 md:h-12 sm:mx-8 sm:grayscale hover:grayscale-0 my-4 "
           />
         </a>
         <a href="https://deltafund.io/" target="_blank" rel="noreferrer">
           <img
             src={delta}
-            className="h-12 md:h-16 sm:mx-8 sm:bright-gray hover:bright-non-gray my-4 "
+            className="h-24 md:h-32 sm:mx-8 sm:grayscale hover:grayscale-0 my-4 "
           />
         </a>
       </SponsorContainer>
@@ -335,19 +335,19 @@ const Sponsor = () => (
         <a href="https://justopensource.io/" target="_blank" rel="noreferrer">
           <img
             src={just}
-            className="h-24 md:h-28 sm:mx-8 sm:grayscale hover:grayscale-0 my-4"
+            className="h-28 md:h-32 sm:mx-8 sm:grayscale hover:grayscale-0 my-4"
           />
         </a>
         <a href="https://ethindia.co/" target="_blank" rel="noreferrer">
           <img
             src={ethindia}
-            className="h-24 md:h-28 sm:mx-8 sm:grayscale hover:grayscale-0 my-4"
+            className="h-10 md:h-12 sm:mx-8 sm:grayscale hover:grayscale-0 my-4"
           />
         </a>
         <a href="https://devfolio.co/" target="_blank" rel="noreferrer">
           <img
             src={devfolio}
-            className="h-24 md:h-28 sm:mx-8 sm:grayscale hover:grayscale-0 my-4"
+            className="h-10 md:h-12 sm:mx-8 sm:grayscale hover:grayscale-0 my-4"
           />
         </a>
       </SponsorContainer>
