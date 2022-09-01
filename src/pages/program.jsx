@@ -178,7 +178,7 @@ const Program = () => (
             Courtyard 1)
           </li>
           <li>
-            <span className="fake-bold">21:00</span> Afterparty (To be
+            <span className="fake-bold">19:00</span> Afterparty (To be
             announced...)
           </li>
         </ul>
