@@ -1,5 +1,23 @@
 export default [
   {
+    name: "Manu Alzuru",
+    organization: {
+      name: "DoinGud",
+      url: "https://doingud.com/",
+    },
+    image: require("./ManuAlzuru-DoinGud.jpg"),
+    twitter: "https://twitter.com/ManuAlzuru",
+  },
+  {
+    name: "Marek Sandrik",
+    organization: {
+      name: "Rockaway",
+      url: "https://rbf.capital/",
+    },
+    image: require("./MarekSandrik_Rockaway.jpg"),
+    twitter: "https://mobile.twitter.com/_mareksan_",
+  },
+  {
     name: "dcbuilder",
     organization: {
       name: "Worldcoin",

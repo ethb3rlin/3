@@ -25,13 +25,12 @@ const Person = ({ name, organization, image, twitter, github, title }) => {
       </div>
       <div className="text-2xl text-center mt-2">{name}</div>
       {organization && (
-        <div className="text-center text-gray-400">
+        <div className="text-center text-gray-400 text-lg">
           <a href={organization.url} rel="noopener noreferrer" target="_blank">
             {organization.name}
           </a>{" "}
         </div>
       )}
-      {title && <div className="text-center text-gray-400">{title}</div>}
       <div className="flex justify-center mt-2">
         {twitter && (
           <a href={twitter}>

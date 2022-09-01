@@ -1,5 +1,24 @@
 export default [
   {
+    name: "Hadrien Croubois",
+    organization: {
+      name: "Open Zeppelin",
+      url: "https://openzeppelin.com",
+    },
+    image: require("./HadrienCroubois_OpenZeppelin.jpg"),
+    github: "https://github.com/Amxx/",
+    twitter: "https://twitter.com/Amxx",
+  },
+  {
+    name: "iqdecay",
+    organization: {
+      name: "Fuel Labs",
+      url: "https://www.fuel.network/",
+    },
+    image: require("./iqdecay_FuelLabs.jpg"),
+    github: "https://github.com/iqdecay",
+  },
+  {
     name: "Ali Nuraldin",
     organization: {
       name: "Opium Network",
@@ -203,6 +222,7 @@ export default [
       url: "https://aave.com/",
     },
     image: require("./Zannis_Aave.jpeg"),
+    github: "https://github.com/zannis",
   },
   {
     name: "Zhehao",
