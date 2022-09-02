@@ -146,7 +146,7 @@ const Contributors = () => {
         >
           {"< Judges >"}
         </button>
-        <button
+        {/* <button
           className={`${
             title === "Speakers" ? "bg-berlin-yellow text-black" : ""
           } text-xl md:text-2xl mx-4 my-2 
@@ -154,7 +154,7 @@ const Contributors = () => {
           onClick={handleSpeakers}
         >
           {"< Speakers >"}
-        </button>
+        </button> */}
       </div>
       <div>
         <h2 className="text-4xl mt-8">{title}</h2>
