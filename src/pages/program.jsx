@@ -6,8 +6,6 @@ import thirdFloor from "../images/thirdFloor.png";
 import firstFloor from "../images/firstFloor.png";
 import secondFloor from "../images/secondFloor.png";
 import secondFloorSunday from "../images/secondFloor-sunday.png";
-// import thirdFloor from "../images/thirdFloor-transparent.png";
-// import fourthFloor from "../images/fourthFloor-transparent.png";
 import fifthFloor from "../images/fifthFloor.png";
 import "../styles/modal.css";
 import "../styles/rooms/groundFloor.css";
@@ -92,6 +90,12 @@ const SpeechItem = ({
     e.stopPropagation();
     setIsModalOpen(false);
   };
+  // ISO Format: 2022-09-16T00:09:00+02:00
+  const startDate = new Date(dayStr + "T" + startTime + ":00+02:00");
+  const endDate = endTime
+    ? new Date(endDayStr || dayStr + "T" + endTime + ":00+02:00")
+    : startDate;
+
   return (
     <div>
       <ProgramItem
@@ -102,11 +106,21 @@ const SpeechItem = ({
         startTime={startTime}
         endTime={endTime}
       />
-      <div className="ml-8 -mt-2 mb-4">
+      <div
+        className={`ml-8 -mt-2 mb-4 ${
+          currentDate > endDate
+            ? "text-gray-700"
+            : currentDate > startDate
+            ? "font-bold animate-pulse"
+            : ""
+        }`}
+      >
         <span>{speakerName}</span>
         <button
           onClick={() => setIsModalOpen(true)}
-          className="underline text-gray-500 mx-2"
+          className={`underline ${
+            currentDate > endDate ? "text-gray-700" : "text-gray-500"
+          } mx-2`}
         >
           More Info
         </button>
