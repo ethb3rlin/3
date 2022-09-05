@@ -11,6 +11,8 @@ import lens from "../assets/sponsors/lens.svg";
 import obol from "../assets/sponsors/obol.svg";
 import zksync from "../assets/sponsors/zksync.svg";
 import swype from "../assets/sponsors/swype.png";
+import nomad from "../assets/sponsors/nomad.png";
+import neonlabs from "../assets/sponsors/neonlabs.png";
 import polygon from "../assets/sponsors/polygon.svg";
 import optimism from "../assets/sponsors/optimism.png";
 import galaxis from "../assets/sponsors/galaxis.png";
@@ -27,6 +29,8 @@ import gitpoap from "../assets/sponsors/gitpoap.png";
 import chainsafe from "../assets/sponsors/chainsafe.png";
 import orchid from "../assets/sponsors/orchid.png";
 import altlayer from "../assets/sponsors/altlayer.png";
+import abacus from "../assets/sponsors/hyperlane.png";
+import lit from "../assets/sponsors/lit.svg";
 import jpg from "../assets/sponsors/jpg.png";
 import dappnode from "../assets/sponsors/dappnode.png";
 import molecule from "../assets/sponsors/molecule.png";
@@ -37,6 +41,10 @@ import fault from "../assets/sponsors/fault.png";
 import just from "../assets/sponsors/just.png";
 import ethindia from "../assets/sponsors/ethindia.png";
 import devfolio from "../assets/sponsors/devfolio.png";
+import nftberlin from "../assets/sponsors/nftberlin.png";
+import onekx from "../assets/sponsors/1kx.png";
+import nobs from "../assets/sponsors/nobs.png";
+import sepana from "../assets/sponsors/sepana.png";
 import pengo from "../assets/sponsors/pengo.jpeg";
 import dinar from "../assets/sponsors/dinar.jpeg";
 import drachma from "../assets/sponsors/drachma.jpeg";
@@ -204,6 +212,18 @@ const Sponsor = () => (
             className="h-16 md:h-20 sm:mx-8 sm:grayscale hover:grayscale-0 my-4"
           />
         </a>
+        <a href="https://nomad.xyz/" target="_blank">
+          <img
+            src={nomad}
+            className="h-8 md:h-12 sm:mx-8 sm:grayscale hover:grayscale-0 my-4"
+          />
+        </a>
+        <a href="https://neonlabs.org/" target="_blank">
+          <img
+            src={neonlabs}
+            className="h-12 md:h-16 sm:mx-8 sm:grayscale hover:grayscale-0 my-4"
+          />
+        </a>
       </SponsorContainer>
       <SponsorContainer
         tierName="Venezuelan Bolívar"
@@ -280,13 +300,29 @@ const Sponsor = () => (
         <a href="https://deltafund.io/" target="_blank" rel="noreferrer">
           <img
             src={delta}
-            className="h-24 md:h-32 sm:mx-8 sm:grayscale hover:grayscale-0 my-4 "
+            className="h-28 md:h-32 sm:mx-8 sm:grayscale hover:grayscale-0 my-4 "
+          />
+        </a>
+        <a
+          href="https://www.useabacus.network/"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <img
+            src={abacus}
+            className="h-20 md:h-24 sm:mx-8 sm:grayscale hover:grayscale-0 my-4 "
+          />
+        </a>
+        <a href="https://litprotocol.com/" target="_blank" rel="noreferrer">
+          <img
+            src={lit}
+            className="h-28 md:h-36 sm:mx-8 sm:grayscale hover:grayscale-0 my-4 "
           />
         </a>
       </SponsorContainer>
       <SponsorContainer
         tierName="German Papiermark"
-        tier="Community TIERS"
+        tier="Community and Frens"
         image={papiermark}
         description="The German Papiermark was issued during the hyperinflation in 1922-23 when a peg to gold was no longer possible. Due to the fast devaluation, there was no option to mint coins and only the paper mark was issued."
       >
@@ -348,6 +384,30 @@ const Sponsor = () => (
           <img
             src={devfolio}
             className="h-10 md:h-12 sm:mx-8 sm:grayscale hover:grayscale-0 my-4"
+          />
+        </a>
+        <a href="https://nftberlin.org/" target="_blank" rel="noreferrer">
+          <img
+            src={nftberlin}
+            className="h-20 md:h-24 sm:mx-8 sm:grayscale hover:grayscale-0 my-4"
+          />
+        </a>
+        <a href="http://1kx.capital/" target="_blank" rel="noreferrer">
+          <img
+            src={onekx}
+            className="h-10 md:h-14 sm:mx-8 sm:grayscale hover:grayscale-0 my-4"
+          />
+        </a>
+        <a href="http://nobsstudio.com/" target="_blank" rel="noreferrer">
+          <img
+            src={nobs}
+            className="h-10 md:h-14 sm:mx-8 sm:grayscale hover:grayscale-0 my-4"
+          />
+        </a>
+        <a href="http://sepana.io/" target="_blank" rel="noreferrer">
+          <img
+            src={sepana}
+            className="h-10 md:h-14 sm:mx-8 sm:grayscale hover:grayscale-0 my-4"
           />
         </a>
       </SponsorContainer>
