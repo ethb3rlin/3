@@ -30,6 +30,7 @@ import chainsafe from "../assets/sponsors/chainsafe.png";
 import orchid from "../assets/sponsors/orchid.png";
 import altlayer from "../assets/sponsors/altlayer.png";
 import abacus from "../assets/sponsors/hyperlane.png";
+import lit from "../assets/sponsors/lit.svg";
 import jpg from "../assets/sponsors/jpg.png";
 import dappnode from "../assets/sponsors/dappnode.png";
 import molecule from "../assets/sponsors/molecule.png";
@@ -42,6 +43,7 @@ import ethindia from "../assets/sponsors/ethindia.png";
 import devfolio from "../assets/sponsors/devfolio.png";
 import nftberlin from "../assets/sponsors/nftberlin.png";
 import onekx from "../assets/sponsors/1kx.png";
+import nobs from "../assets/sponsors/nobs.png";
 import pengo from "../assets/sponsors/pengo.jpeg";
 import dinar from "../assets/sponsors/dinar.jpeg";
 import drachma from "../assets/sponsors/drachma.jpeg";
@@ -310,6 +312,12 @@ const Sponsor = () => (
             className="h-24 md:h-32 sm:mx-8 sm:grayscale hover:grayscale-0 my-4 "
           />
         </a>
+        <a href="https://litprotocol.com/" target="_blank" rel="noreferrer">
+          <img
+            src={lit}
+            className="h-24 md:h-32 sm:mx-8 sm:grayscale hover:grayscale-0 my-4 "
+          />
+        </a>
       </SponsorContainer>
       <SponsorContainer
         tierName="German Papiermark"
@@ -386,6 +394,12 @@ const Sponsor = () => (
         <a href="http://1kx.capital/" target="_blank" rel="noreferrer">
           <img
             src={onekx}
+            className="h-10 md:h-14 sm:mx-8 sm:grayscale hover:grayscale-0 my-4"
+          />
+        </a>
+        <a href="http://nobsstudio.com/" target="_blank" rel="noreferrer">
+          <img
+            src={nobs}
             className="h-10 md:h-14 sm:mx-8 sm:grayscale hover:grayscale-0 my-4"
           />
         </a>
