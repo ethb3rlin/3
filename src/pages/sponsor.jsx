@@ -44,6 +44,7 @@ import devfolio from "../assets/sponsors/devfolio.png";
 import nftberlin from "../assets/sponsors/nftberlin.png";
 import onekx from "../assets/sponsors/1kx.png";
 import nobs from "../assets/sponsors/nobs.png";
+import sepana from "../assets/sponsors/sepana.png";
 import pengo from "../assets/sponsors/pengo.jpeg";
 import dinar from "../assets/sponsors/dinar.jpeg";
 import drachma from "../assets/sponsors/drachma.jpeg";
@@ -400,6 +401,12 @@ const Sponsor = () => (
         <a href="http://nobsstudio.com/" target="_blank" rel="noreferrer">
           <img
             src={nobs}
+            className="h-10 md:h-14 sm:mx-8 sm:grayscale hover:grayscale-0 my-4"
+          />
+        </a>
+        <a href="http://sepana.io/" target="_blank" rel="noreferrer">
+          <img
+            src={sepana}
             className="h-10 md:h-14 sm:mx-8 sm:grayscale hover:grayscale-0 my-4"
           />
         </a>
