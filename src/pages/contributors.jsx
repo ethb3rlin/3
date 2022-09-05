@@ -5,7 +5,7 @@ import judges from "../assets/people/judges";
 import twitterLogo from "../assets/twitter.png";
 import githubLogo from "../assets/github.png";
 import team from "../assets/people/team";
-import speakers from "../assets/people/speakers";
+import speakers from "../assets/people/workshops";
 
 const Person = ({
   name,
