@@ -116,4 +116,22 @@ export default [
     twitter: "https://twitter.com/Yazanator",
     github: "https://github.com/YazzyYaz",
   },
+  {
+    name: "Abbey",
+    organization: {
+      name: "Radicle",
+      url: "https://radicle.xyz/",
+    },
+    image: require("./Abbey_Radicle.jpg"),
+    twitter: "https://twitter.com/abbey_titcomb",
+  },
+  {
+    name: "Prestwich",
+    organization: {
+      name: "Nomad",
+      url: "https://www.nomad.xyz/",
+    },
+    image: require("./Prestwich_Nomad.jpg"),
+    twitter: "https://twitter.com/_prestwich",
+  },
 ];

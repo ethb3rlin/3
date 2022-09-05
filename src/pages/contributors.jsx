@@ -7,7 +7,14 @@ import githubLogo from "../assets/github.png";
 import team from "../assets/people/team";
 import speakers from "../assets/people/speakers";
 
-const Person = ({ name, organization, image, twitter, github, title }) => {
+const Person = ({
+  name,
+  organization,
+  image,
+  twitter,
+  github,
+  organization2,
+}) => {
   return (
     <div
       className="mx-4 my-6 w-48 hover:text-berlin-yellow animate-flicker"
@@ -29,11 +36,21 @@ const Person = ({ name, organization, image, twitter, github, title }) => {
           <a href={organization.url} rel="noopener noreferrer" target="_blank">
             {organization.name}
           </a>{" "}
+          {organization2 && <span>{" - "}</span>}
+          {organization2 && (
+            <a
+              href={organization2.url}
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              {organization2.name}
+            </a>
+          )}
         </div>
       )}
       <div className="flex justify-center mt-2">
         {twitter && (
-          <a href={twitter}>
+          <a href={twitter} rel="noopener noreferrer" target="_blank">
             <img
               src={twitterLogo}
               className="mx-2 h-5 opacity-70 hover:opacity-100"
@@ -42,7 +59,7 @@ const Person = ({ name, organization, image, twitter, github, title }) => {
           </a>
         )}
         {github && (
-          <a href={github}>
+          <a href={github} rel="noopener noreferrer" target="_blank">
             <img
               src={githubLogo}
               className="mx-2 h-5 opacity-70 hover:opacity-100"

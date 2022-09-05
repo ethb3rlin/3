@@ -233,4 +233,58 @@ export default [
     image: require("./Zhehao_0xlab.jpeg"),
     twitter: "https://twitter.com/tomzzh1991",
   },
+  {
+    name: "Simon Harman",
+    organization: {
+      name: "Chainflip Labs",
+      url: "https://chainflip.io/",
+    },
+    image: require("./SimonHarman_ChainflipLabs.jpg"),
+    github: "https://github.com/Haafingar",
+    twitter: "https://twitter.com/simonaharman",
+  },
+  {
+    name: "Iryna Nezhynska",
+    organization: {
+      name: "DWebCamp",
+      url: "https://dwebcamp.org/",
+    },
+    organization2: {
+      name: "Jolocom",
+      url: "https://jolocom.io/",
+    },
+    image: require("./IrynaNezhynska_DWebCamp-Jolocom.jpg"),
+    twitter: "https://twitter.com/iranezhynska",
+    github: "https://github.com/eirena",
+  },
+  {
+    name: "Dean Eigenmann",
+    organization: {
+      name: "Dialectic",
+      url: "https://dialectic.ch/",
+    },
+    image: require("./DeanEigenmann_Dialectic.jpeg"),
+    github: "https://github.com/decanus",
+    twitter: "https://twitter.com/deaneigenmann",
+  },
+  {
+    name: "Benjamin Shafii",
+    organization: {
+      name: "DAOnative",
+      url: "https://www.daonative.xyz/",
+    },
+    image: require("./BenjaminShafii_DAOnative.jpg"),
+    github: "https://github.com/hotkartoffel",
+    twitter: "https://twitter.com/hotkartoffel1",
+  },
+  {
+    name: "Barnabé Monnot",
+    organization: {
+      name: "Ethereum Foundation",
+      url: "https://ethereum.org/",
+    },
+    image: require("./BarnabeMonnot_EthereumFoundation.jpg"),
+    twitter: "https://twitter.com/barnabemonnot",
+    github: "https://github.com/barnabemonnot",
+  },
 ];

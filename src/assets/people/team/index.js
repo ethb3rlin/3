@@ -16,6 +16,7 @@ export default [
   {
     name: "Hany",
     image: require("./Hany.jpg"),
+    twitter: "https://twitter.com/hanyrizk_",
   },
   {
     name: "ligi",
@@ -24,6 +25,8 @@ export default [
   {
     name: "Nichanan",
     image: require("./Nichanan_Kesonpat.jpeg"),
+    twitter: "https://twitter.com/nichanank",
+    github: "https://github.com/nichanank",
   },
   {
     name: "Afri",
@@ -41,6 +44,8 @@ export default [
   {
     name: "Franziska",
     image: require("./franziska_heintel.jpeg"),
+    twitter: "https://twitter.com/_franzihei",
+    github: "https://github.com/franzihei",
   },
   {
     name: "Jacob",
@@ -48,8 +53,22 @@ export default [
   },
   {
     name: "Kaan",
-    image: require("./Kaan_Uzdogan.jpeg"),
+    image: require("./Kaan.jpg"),
     twitter: "https://twitter.com/kaanuzdogan",
     github: "https://github.com/kuzdogan",
+  },
+  {
+    name: "Raul",
+    image: require("./Raul.jpg"),
+  },
+  {
+    name: "Rose",
+    image: require("./Rose.gif"),
+    twitter: "https://twitter.com/roseighteth",
+  },
+  {
+    name: "Helena",
+    image: require("./Helena.jpg"),
+    twitter: "https://twitter.com/helsoftroy",
   },
 ];
