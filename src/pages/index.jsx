@@ -272,6 +272,12 @@ const Home = () => {
       >
         <a
           className="mx-4 my-2 sm:ml-8 text-berlin-yellow"
+          href="https://blog.ethberlin.ooo"
+        >
+          (b)log
+        </a>
+        <a
+          className="mx-4 my-2 sm:ml-8 text-berlin-yellow"
           href="/decentralization"
         >
           department of (d)ecentralization

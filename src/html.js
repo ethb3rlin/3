@@ -45,6 +45,9 @@ export default function HTML(props) {
                 else if (e.key == 'o' || e.key == 'O') {
                   window.location.href= "/code-of-conduct";
                 }
+                else if (e.key == 'b' || e.key == 'B') {
+                  window.location.href= "https://blog.ethberlin.ooo";
+                }
             }
             `,
           }}
