@@ -212,13 +212,13 @@ const Sponsor = () => (
         <a href="https://nomad.xyz/" target="_blank">
           <img
             src={nomad}
-            className="h-16 md:h-20 sm:mx-8 sm:grayscale hover:grayscale-0 my-4"
+            className="h-8 md:h-12 sm:mx-8 sm:grayscale hover:grayscale-0 my-4"
           />
         </a>
         <a href="https://neonlabs.org/" target="_blank">
           <img
             src={neonlabs}
-            className="h-16 md:h-20 sm:mx-8 sm:grayscale hover:grayscale-0 my-4"
+            className="h-12 md:h-16 sm:mx-8 sm:grayscale hover:grayscale-0 my-4"
           />
         </a>
       </SponsorContainer>
@@ -300,7 +300,11 @@ const Sponsor = () => (
             className="h-24 md:h-32 sm:mx-8 sm:grayscale hover:grayscale-0 my-4 "
           />
         </a>
-        <a href="https://www.useabacus.network/" target="_blank" rel="noreferrer">
+        <a
+          href="https://www.useabacus.network/"
+          target="_blank"
+          rel="noreferrer"
+        >
           <img
             src={abacus}
             className="h-24 md:h-32 sm:mx-8 sm:grayscale hover:grayscale-0 my-4 "
@@ -376,13 +380,13 @@ const Sponsor = () => (
         <a href="https://nftberlin.org/" target="_blank" rel="noreferrer">
           <img
             src={nftberlin}
-            className="h-10 md:h-12 sm:mx-8 sm:grayscale hover:grayscale-0 my-4"
+            className="h-20 md:h-24 sm:mx-8 sm:grayscale hover:grayscale-0 my-4"
           />
         </a>
         <a href="http://1kx.capital/" target="_blank" rel="noreferrer">
           <img
             src={onekx}
-            className="h-10 md:h-12 sm:mx-8 sm:grayscale hover:grayscale-0 my-4"
+            className="h-10 md:h-14 sm:mx-8 sm:grayscale hover:grayscale-0 my-4"
           />
         </a>
       </SponsorContainer>
