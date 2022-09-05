@@ -300,7 +300,7 @@ const Sponsor = () => (
         <a href="https://deltafund.io/" target="_blank" rel="noreferrer">
           <img
             src={delta}
-            className="h-24 md:h-32 sm:mx-8 sm:grayscale hover:grayscale-0 my-4 "
+            className="h-28 md:h-32 sm:mx-8 sm:grayscale hover:grayscale-0 my-4 "
           />
         </a>
         <a
@@ -310,13 +310,13 @@ const Sponsor = () => (
         >
           <img
             src={abacus}
-            className="h-24 md:h-32 sm:mx-8 sm:grayscale hover:grayscale-0 my-4 "
+            className="h-20 md:h-24 sm:mx-8 sm:grayscale hover:grayscale-0 my-4 "
           />
         </a>
         <a href="https://litprotocol.com/" target="_blank" rel="noreferrer">
           <img
             src={lit}
-            className="h-24 md:h-32 sm:mx-8 sm:grayscale hover:grayscale-0 my-4 "
+            className="h-28 md:h-36 sm:mx-8 sm:grayscale hover:grayscale-0 my-4 "
           />
         </a>
       </SponsorContainer>
