@@ -31,13 +31,13 @@ const Sidebar = ({ className, hideLogo }) => {
           {" "}
           (p)rogram
         </a>
-        {/* <a className="my-2" href="/contribute">
-          {" "}
-          (c)ontribute
-        </a> */}
         <a className="my-2" href="/sponsor">
           {" "}
           (s)ponsors
+        </a>
+        <a className="my-2" href="/contributors">
+          {" "}
+          (c)ontributors
         </a>
       </nav>
       <div className="mt-auto">

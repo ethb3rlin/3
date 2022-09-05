@@ -76,13 +76,13 @@ const Layout = ({ children, showEthDiamond }) => {
           {" "}
           (p)rogram
         </a>
-        {/* <a className="my-2" href="/contribute">
-          {" "}
-          (c)ontribute
-        </a> */}
         <a className="my-2" href="/sponsor">
           {" "}
           (s)ponsors
+        </a>
+        <a className="my-2" href="/contributors">
+          {" "}
+          (c)ontributors
         </a>
         <div className="fixed bottom-0 mb-8 text-sm text-center">
           <div className="my-2">
