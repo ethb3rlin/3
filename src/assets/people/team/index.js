@@ -21,6 +21,8 @@ export default [
   {
     name: "ligi",
     image: require("./ligi.jpg"),
+    twitter: "https://twitter.com/mr_ligi",
+    github: "https://github.com/ligi"
   },
   {
     name: "Nichanan",
@@ -50,6 +52,7 @@ export default [
   {
     name: "Jacob",
     image: require("./jacob_czepluch.jpeg"),
+    twitter: "https://twitter.com/_czepluch"
   },
   {
     name: "Kaan",
