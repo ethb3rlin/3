@@ -637,7 +637,7 @@ Technical requirements: Users should feel comfortable using a terminal & Docker 
         closeTimeoutMS={500}
       >
         <div className=" p-8 ">
-          <h2 className="text-xl lg:text-3xl underline mb-4 text-berlin-yellow text-center font-w95">
+          <h2 className="text-xl lg:text-3xl mb-4 text-berlin-yellow text-center font-w95">
             {activeMapName}
           </h2>
           <div className="mb-16 lg:px-32 py-2 ">

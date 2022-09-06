@@ -39,6 +39,10 @@ const Sidebar = ({ className, hideLogo }) => {
           {" "}
           (s)ponsors
         </a>
+        <a className="my-2" href="/venue">
+          {" "}
+          (v)enue
+        </a>
       </nav>
       <div className="mt-auto">
         <div className="my-2">

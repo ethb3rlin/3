@@ -84,6 +84,10 @@ const Layout = ({ children, showEthDiamond }) => {
           {" "}
           (s)ponsors
         </a>
+        <a className="my-2" href="/venue">
+          {" "}
+          (v)enue
+        </a>
         <div className="fixed bottom-0 mb-8 text-sm text-center">
           <div className="my-2">
             join our{" "}

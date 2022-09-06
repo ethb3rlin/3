@@ -28,18 +28,17 @@ const Venue = () => {
       <h1 className="my-4 underline text-secondary">(v)enue</h1>
       <div className="decorate-links flex flex-col items-center text-berlin-yellow mt-16">
         <div className="my-4 italic text-gray-300">
-          Gray marked areas and the 3rd and 4th floors are not available for
-          ETHBerlin
+          Gray marked areas and the4th floor are not available for ETHBerlin
         </div>
-        <h2 className="text-3xl underline mb-4">Ground Floor / Floor 0</h2>
-        <div className="relative mb-16 mx-16">
+        <h2 className="text-xl lg:text-3xl  mb-4">Ground Floor / Floor 0</h2>
+        <div className="relative mb-16 lg:mx-16">
           <img src={groundFloor} alt="ground floor"></img>
         </div>
-        <h2 className="text-3xl underline mb-4"> First Floor / Floor 1 </h2>
-        <div className="relative mb-16 mx-16">
+        <h2 className="text-xl lg:text-3xl  mb-4"> First Floor / Floor 1 </h2>
+        <div className="relative mb-16 lg:mx-16">
           <img src={firstFloor} alt="first floor"></img>
         </div>
-        <h2 className="text-3xl underline mb-4"> Second Floor / Floor 2 </h2>
+        <h2 className="text-xl lg:text-3xl  mb-4"> Second Floor / Floor 2 </h2>
         <div className="mb-4">
           <button
             className={`bg-berlin-yellow ${
@@ -58,15 +57,15 @@ const Venue = () => {
             Sunday
           </button>
         </div>
-        <div className="relative mb-16 mx-16">
+        <div className="relative mb-16 lg:mx-16">
           {isSunday ? (
             <img src={secondFloor} alt="second floor"></img>
           ) : (
             <img src={secondFloorSunday} alt="second floor"></img>
           )}
         </div>
-        <h2 className="text-3xl underline mb-4"> Fifth Floor / Floor 5 </h2>
-        <div className="relative mb-16 mx-16">
+        <h2 className="text-xl lg:text-3xl  mb-4"> Fifth Floor / Floor 5 </h2>
+        <div className="relative mb-16 lg:mx-16">
           <img src={fifthFloor} alt="fifth floor"></img>
         </div>
       </div>
