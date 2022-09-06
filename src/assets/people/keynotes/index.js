@@ -9,4 +9,12 @@ export default [
     twitter: "https://twitter.com/marknadal",
     github: "https://github.com/amark",
   },
+  {
+    name: "Alec Empire",
+    organization: {
+      name: "Atari Teenage Riot",
+      url: "https://www.atari-teenage-riot.com/",
+    },
+    image: require("./AlecEmpire_AtariTeenageRiot.jpg"),
+  },
 ];
