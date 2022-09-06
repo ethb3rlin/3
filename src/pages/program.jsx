@@ -25,12 +25,11 @@ const currentDate = new Date();
 
 const ProgramItem = ({
   title,
-  location,
+  eventLocations,
   dayStr,
   endDayStr,
   startTime,
   endTime,
-  setIsModalOpen,
 }) => {
   // ISO Format: 2022-09-16T00:09:00+02:00
   const startDate = new Date(dayStr + "T" + startTime + ":00+02:00");
@@ -46,36 +45,40 @@ const ProgramItem = ({
           : currentDate > startDate
           ? "font-bold animate-pulse"
           : ""
-      } list-none`}
+      } list-none text-lg`}
     >
       <span className="fake-bold">
         {"> " + startTime + (endTime ? "-" + endTime : "") + " -"}
       </span>{" "}
       {title}{" "}
-      <button
-        className={`${
-          currentDate > endDate
-            ? "text-gray-700"
-            : currentDate > startDate
-            ? "font-bold animate-pulse"
-            : "text-berlin-yellow"
-        }`}
-        onClick={() => setIsModalOpen(true)}
-      >
-        <span className="align-middle">
-          <span class="material-symbols-outlined text-sm mr-1 ml-2">
-            my_location
+      {eventLocations.map((loc) => (
+        <button
+          className={`${
+            currentDate > endDate
+              ? "text-gray-700"
+              : currentDate > startDate
+              ? "font-bold animate-pulse"
+              : "text-berlin-yellow"
+          }`}
+          onClick={() => {
+            loc.handler();
+          }}
+        >
+          <span className="align-middle">
+            <span class="material-symbols-outlined text-sm mr-1 ml-2">
+              my_location
+            </span>
           </span>
-        </span>
-        <span className="underline">{location}</span>
-      </button>
+          <span className="underline">{loc.name}</span>
+        </button>
+      ))}
     </li>
   );
 };
 
 const SpeechItem = ({
   title,
-  location,
+  eventLocations,
   dayStr,
   endDayStr,
   startTime,
@@ -100,7 +103,7 @@ const SpeechItem = ({
     <div>
       <ProgramItem
         title={title}
-        location={location}
+        eventLocations={eventLocations}
         dayStr={dayStr}
         endDayStr={endDayStr}
         startTime={startTime}
@@ -168,12 +171,112 @@ const SpeechItem = ({
 };
 
 const Program = () => {
-  const [isModalOpen, setIsModalOpen] = React.useState(true);
-  const [highlightedRoomClass, setHighlightedRoomClass] =
-    React.useState("cinebar");
+  const [isMapModalOpen, setIsMapModalOpen] = React.useState(false);
+  const [activeMap, setActiveMap] = React.useState(groundFloor);
+  const [activeRoomClass, setActiveRoomClass] = React.useState("lexis");
+  const [activeMapName, setActiveMapName] = React.useState(
+    "Ground Floor / Floor 0"
+  );
+
   const handleCloseModal = (e) => {
     e.stopPropagation();
-    setIsModalOpen(false);
+    setIsMapModalOpen(false);
+  };
+
+  const handleGroundFloor = () => {
+    setActiveMap(groundFloor);
+    setActiveMapName("Ground Floor / Floor 0");
+  };
+
+  const handleFirstFloor = () => {
+    setActiveMap(firstFloor);
+    setActiveMapName("First Floor / Floor 1");
+  };
+
+  const handleSecondFloor = () => {
+    setActiveMap(secondFloor);
+    setActiveMapName("Second Floor / Floor 2");
+  };
+
+  const locations = {
+    lexis: {
+      name: "Lexis",
+      handler: () => {
+        handleGroundFloor();
+        setActiveRoomClass("lexis");
+        setIsMapModalOpen(true);
+      },
+    },
+    creatorsLab: {
+      name: "Creator's Lab",
+      handler: () => {
+        handleGroundFloor();
+        setActiveRoomClass("creators-lab");
+        setIsMapModalOpen(true);
+      },
+    },
+    yard1: {
+      name: "Yard 1",
+      handler: () => {
+        handleGroundFloor();
+        setActiveRoomClass("yard1");
+        setIsMapModalOpen(true);
+      },
+    },
+    yard2: {
+      name: "Yard 2",
+      handler: () => {
+        handleGroundFloor();
+        setActiveRoomClass("yard2");
+        setIsMapModalOpen(true);
+      },
+    },
+    yard3: {
+      name: "Yard 3",
+      handler: () => {
+        handleGroundFloor();
+        setActiveRoomClass("yard3");
+        setIsMapModalOpen(true);
+      },
+    },
+    mainEnterence: {
+      name: "Main Enterence",
+      handler: () => {
+        handleGroundFloor();
+        setActiveRoomClass("main-enterence");
+        setIsMapModalOpen(true);
+      },
+    },
+    restaurant: {
+      name: "Restaurant",
+      handler: () => {
+        handleGroundFloor();
+        setActiveRoomClass("restaurant");
+        setIsMapModalOpen(true);
+      },
+    },
+    communitySpace1: {
+      name: "First Floor Community Space",
+      handler: () => {
+        handleFirstFloor();
+        setActiveRoomClass("community-space-first-floor");
+        setIsMapModalOpen(true);
+      },
+    },
+    communitySpace2: {
+      name: "Second Floor Community Space",
+      handler: () => {
+        handleSecondFloor();
+        setActiveRoomClass("community-space-second-floor");
+        setIsMapModalOpen(true);
+      },
+    },
+    aeve: {
+      name: "ÆVE",
+      handler: () => {
+        window.open("https://goo.gl/maps/gRLnWHZapuLgQyQV9", "_blank").focus();
+      },
+    },
   };
 
   return (
@@ -192,23 +295,20 @@ const Program = () => {
               dayStr="2022-09-16"
               startTime="10:00"
               title="Volunteer Briefing"
-              location="Lexis"
-              setIsModalOpen={setIsModalOpen}
+              eventLocations={[locations.lexis]}
             />
             <ProgramItem
               dayStr="2022-09-16"
               startTime="12:00"
               title="Pre-registration"
-              location="Creator's Lab, Courtyard 3"
-              setIsModalOpen={setIsModalOpen}
+              eventLocations={[locations.creatorsLab, locations.yard3]}
             />
             <ProgramItem
               dayStr="2022-09-16"
               startTime="16:00"
               endTime="23:00"
               title="Registration and doors open"
-              location="Main entrance, Courtyard 1"
-              setIsModalOpen={setIsModalOpen}
+              eventLocations={[locations.mainEnterence, locations.yard2]}
             />
             <SpeechItem
               dayStr="2022-09-16"
@@ -216,8 +316,7 @@ const Program = () => {
               endTime="17:30"
               title="Keynote:"
               speakerName="E.G. Galano, Infura, Co-founder"
-              location="Lexis"
-              setIsModalOpen={setIsModalOpen}
+              eventLocations={[locations.lexis]}
             />
             <SpeechItem
               dayStr="2022-09-16"
@@ -226,72 +325,63 @@ const Program = () => {
               title="Keynote: Humanity 3.0: Beyond Blockchains, Planetary Systems, & Infinite Games"
               speakerName="Mark Nadal, Lead Open Source Engineer at GUN"
               photo={markNadal}
-              location="Lexis"
-              setIsModalOpen={setIsModalOpen}
+              eventLocations={[locations.lexis]}
             />
             <ProgramItem
               dayStr="2022-09-16"
               startTime="18:00"
               endTime="19:00"
               title="Opening Ceremony"
-              location="Lexis"
-              setIsModalOpen={setIsModalOpen}
+              eventLocations={[locations.lexis]}
             />
             <ProgramItem
               dayStr="2022-09-16"
               startTime="19:00"
               endTime="20:00"
               title="Team Speed Dating"
-              location="Yard 1"
-              setIsModalOpen={setIsModalOpen}
+              eventLocations={[locations.yard1]}
             />
             <ProgramItem
               dayStr="2022-09-16"
               startTime="19:00"
               endTime="21:00"
               title="Dinner"
-              location="Restaurant"
-              setIsModalOpen={setIsModalOpen}
+              eventLocations={[locations.restaurant]}
             />
             <ProgramItem
               dayStr="2022-09-16"
               startTime="19:00"
               endTime="23:59"
               title="HACKING STARTS"
-              location="Community Spaces, Meeting Rooms"
-              setIsModalOpen={setIsModalOpen}
+              eventLocations={[]} // Location = everywhere
             />
             <ProgramItem
               dayStr="2022-09-16"
               startTime="20:00"
               endTime="22:00"
               title="DJ"
-              location="Yard 1"
-              setIsModalOpen={setIsModalOpen}
+              eventLocations={[locations.yard1]}
             />
             <SpeechItem
               dayStr="2022-09-16"
               startTime="20:00"
               endTime="20:45"
               title="Technical Workshop: Abracadabra with Open Data"
-              location="Lexis"
-              setIsModalOpen={setIsModalOpen}
+              eventLocations={[locations.lexis]}
             />
             <SpeechItem
               dayStr="2022-09-16"
               startTime="20:00"
               endTime="20:45"
               title="Technical Workshop: Manta"
-              location="Creators Lab"
-              setIsModalOpen={setIsModalOpen}
+              eventLocations={[locations.creatorsLab]}
             />
             <SpeechItem
               dayStr="2022-09-16"
               startTime="20:45"
               endTime="21:30"
               title="Technical Workshop: How to connect your app with WalletConnect"
-              location="Lexis"
-              setIsModalOpen={setIsModalOpen}
+              eventLocations={[locations.lexis]}
               description={
                 "Improve your dapp by integrating WalletConnect with Web3Modal and allow your users to connect to Metamask, Rainbow, Trust Wallet and many more wallets. Including a short introduction to Ethereum libraries such as web3.js and ethers.js followed by a code walkthrough integrating a dapp with Web3Modal supporting WalletConnect. Finally we will cover best practices and UX improvements to really polish your dapp."
               }
@@ -301,11 +391,10 @@ const Program = () => {
               startTime="20:45"
               endTime="21:30"
               title="Technical Workshop: Create a Distributed Validator with your friends and fellow EthBerlin hackers (real time DV creation workshop & ceremony)"
-              location="Creator's Lab"
+              eventLocations={[locations.creatorsLab]}
               speakerName="Chris Battenfield - Product Lead at Obol, Oisin Kyne - CTO at Obol"
               photo={chrisBattenfield}
               photo2={oisinKyne}
-              setIsModalOpen={setIsModalOpen}
               description="Learn how to create a Distributed Validator Cluster with fellow EthBerlin hackers! Learn about Distributed Validator Technology (DVT) by creating a validator with a group of peers to mitigate the problem of single-point of failure in Ethereum Staking.
 Technical requirements: Users should feel comfortable using a terminal & Docker locally on their Macbook or Linux machine. If on Windows, the ability to spin up a linux VM will be needed."
             />
@@ -314,22 +403,20 @@ Technical requirements: Users should feel comfortable using a terminal & Docker 
               startTime="21:30"
               endTime="22:15"
               title="Technical Workshop: Lets be frens through Lens"
-              location="Lexis"
+              eventLocations={[locations.lexis]}
               speakerName="Jenny Pollack, Zannis Kalampoukis - Lens"
               photo={jennyPollack}
               photo2={zannisKalampoukis}
               description="Join the Lens team for a hands on session all about how to set up and integrate the Lens API on any app, creating an API key on Devportal, and choosing a Lens starter boiler plate. We'll walk you through how to hook everything together and demonstrate with a few interesting use cases."
-              setIsModalOpen={setIsModalOpen}
             />
             <SpeechItem
               dayStr="2022-09-16"
               startTime="21:30"
               endTime="22:15"
               title="Technical Workshop: Developing a DAO Contract in Sway, a next-Gen Smart Contract Language"
-              location="Creator's Lab"
+              eventLocations={[locations.creatorsLab]}
               speakerName="Alex Hansen"
               photo={alexHansen}
-              setIsModalOpen={setIsModalOpen}
               description="Learn how to develop a performant and safe DAO contract in Sway, the next-generation smart contract language from Fuel Labs. Feel free to bring a laptop, this will be interactive! Install dependencies using this tool: https://github.com/FuelLabs/fuelup"
             />
             <SpeechItem
@@ -337,45 +424,44 @@ Technical requirements: Users should feel comfortable using a terminal & Docker 
               startTime="22:15"
               endTime="22:45"
               title="Technical Workshop: Pinata Workshop"
-              location="Lexis"
+              eventLocations={[locations.lexis]}
               speakerName=""
-              setIsModalOpen={setIsModalOpen}
             />
             <SpeechItem
               dayStr="2022-09-16"
               startTime="22:15"
               endTime="22:45"
               title="Technical Workshop: Building on zkSync 2.0"
-              location="Creator's Lab"
+              eventLocations={[locations.creatorsLab]}
               photo={vladyslavBochok}
               description="Are you a builder interested in learning more about zkSync 2.0? Join us for this workshop where we will discuss zkSync's user and developer UX, detail what migration from existing protocols generally looks like, what can be implemented on zkSync that can't be on Ethereum, and answer any questions you may have! Dev Docs: https://v2-docs.zksync.io/dev/"
               speakerName="Vladyslav Bochok"
-              setIsModalOpen={setIsModalOpen}
             />
             <SpeechItem
               dayStr="2022-09-16"
               startTime="22:45"
               endTime="23:30"
               title="Technical Workshop: Solidity for Beginners"
-              location="Lexis"
+              eventLocations={[locations.lexis]}
               speakerName="Patrick McCorry"
-              setIsModalOpen={setIsModalOpen}
             />
             <SpeechItem
               dayStr="2022-09-16"
               startTime="22:45"
               endTime="23:30"
               title="Technical Workshop: Infura Workshop"
-              location="Creator's Lab"
+              eventLocations={[locations.creatorsLab]}
               speakerName=""
-              setIsModalOpen={setIsModalOpen}
             />
             <ProgramItem
               dayStr="2022-09-16"
               startTime="23:59"
               title="Midnight Snack"
-              location="Yard 2, First 1st Floor Community Space, 2nd Floor Community Space"
-              setIsModalOpen={setIsModalOpen}
+              eventLocations={[
+                locations.restaurant,
+                locations.communitySpace1,
+                locations.communitySpace2,
+              ]}
             />
           </ul>
         </p>
@@ -387,48 +473,42 @@ Technical requirements: Users should feel comfortable using a terminal & Docker 
             startTime="00:00"
             endTime="23:59"
             title="HACKING"
-            location="Community Spaces, Meeting Rooms"
-            setIsModalOpen={setIsModalOpen}
+            eventLocations={[]}
           />
           <ProgramItem
             dayStr="2022-09-17"
             startTime="09:00"
             endTime="11:00"
             title="Breakfast"
-            location="Restaurant"
-            setIsModalOpen={setIsModalOpen}
+            eventLocations={[locations.restaurant]}
           />
           <ProgramItem
             dayStr="2022-09-17"
             startTime="11:00"
             endTime="17:00"
             title="Art Exhibition"
-            location="XXX"
-            setIsModalOpen={setIsModalOpen}
+            eventLocations={[]}
           />
           <ProgramItem
             dayStr="2022-09-17"
             startTime="13:00"
             endTime="15:00"
             title="Lunch"
-            location="Restaurant"
-            setIsModalOpen={setIsModalOpen}
+            eventLocations={[locations.restaurant]}
           />
           <ProgramItem
             dayStr="2022-09-17"
             startTime="19:00"
             endTime="21:00"
             title="Dinner"
-            location="Restaurant"
-            setIsModalOpen={setIsModalOpen}
+            eventLocations={[locations.restaurant]}
           />
           <ProgramItem
             dayStr="2022-09-17"
             startTime="20:00"
             endTime="22:00"
             title="DJ"
-            location="Yard 1"
-            setIsModalOpen={setIsModalOpen}
+            eventLocations={[locations.yard1]}
           />
           <ProgramItem
             dayStr="2022-09-17"
@@ -436,8 +516,7 @@ Technical requirements: Users should feel comfortable using a terminal & Docker 
             endDayStr="2022-09-18"
             endTime="01:00"
             title="DJ"
-            location="Creator's Lab"
-            setIsModalOpen={setIsModalOpen}
+            eventLocations={[locations.creatorsLab]}
           />
           <ProgramItem
             dayStr="2022-09-18"
@@ -445,8 +524,11 @@ Technical requirements: Users should feel comfortable using a terminal & Docker 
             endDayStr="2022-09-18"
             endTime="01:00"
             title="Midnight Snack"
-            location="Restaurant, 1st Floor Community Space, 2nd Floor Community Space"
-            setIsModalOpen={setIsModalOpen}
+            eventLocations={[
+              locations.restaurant,
+              locations.communitySpace1,
+              locations.communitySpace2,
+            ]}
           />
         </p>
         <h2 className="text-xl font-bold">Sunday, September 18</h2>
@@ -460,82 +542,73 @@ Technical requirements: Users should feel comfortable using a terminal & Docker 
               startTime="00:00"
               endTime="11:00"
               title="HACKING (Submission deadline at 11:00 am)"
-              location="Community Spaces, Meeting Rooms"
-              setIsModalOpen={setIsModalOpen}
+              eventLocations={[]}
             />
             <ProgramItem
               dayStr="2022-09-18"
               startTime="09:00"
               endTime="11:00"
               title="Breakfast"
-              location="Restaurant"
-              setIsModalOpen={setIsModalOpen}
+              eventLocations={[locations.restaurant]}
             />
             <ProgramItem
               dayStr="2022-09-18"
               startTime="13:00"
               endTime="15:00"
               title="Lunch"
-              location="Restaurant"
-              setIsModalOpen={setIsModalOpen}
+              eventLocations={[locations.restaurant]}
             />
             <SpeechItem
               dayStr="2022-09-18"
               startTime="14:00"
               endTime="15:00"
               title="Keynote:"
-              location="Lexis"
+              eventLocations={[locations.lexis]}
               speakerName="Jarrad Hope - Founder at Status"
-              setIsModalOpen={setIsModalOpen}
             />
             <SpeechItem
               dayStr="2022-09-18"
               startTime="15:00"
               endTime="15:30"
               title="Keynote: The Sovereign Creator"
-              location="Lexis"
+              eventLocations={[locations.lexis]}
               speakerName="Alec Empire - Atari Teenage Riot"
               description="Alec Empire’s talk about being an artist in web3, how to understand music and hacker culture in cyberspace and why Ethereum will give rise to the Sovereign Creator."
-              setIsModalOpen={setIsModalOpen}
             />
             <SpeechItem
               dayStr="2022-09-18"
               startTime="15:30"
               endTime="16:00"
               title="Keynote:"
-              location="Lexis"
+              eventLocations={[locations.lexis]}
               speakerName="Jaya and Chelsea Manning - Nym"
-              setIsModalOpen={setIsModalOpen}
             />
             <ProgramItem
               dayStr="2022-09-18"
               startTime="16:00"
               endTime="17:30"
               title="Closing Ceremony"
-              location="Lexis"
-              setIsModalOpen={setIsModalOpen}
+              eventLocations={[locations.lexis]}
             />
             <ProgramItem
               dayStr="2022-09-18"
               startTime="17:00"
               endTime="18:00"
               title="Drinks & Closing"
-              location="Creator's Lab"
-              setIsModalOpen={setIsModalOpen}
+              eventLocations={[locations.creatorsLab]}
             />
             <ProgramItem
               dayStr="2022-09-18"
               startTime="18:00"
               title="Doors Close"
-              setIsModalOpen={setIsModalOpen}
+              eventLocations={[]}
             />
             <ProgramItem
               dayStr="2022-09-18"
               startTime="19:00"
               endTime="03:00"
               title="Afterparty"
-              location="TBD"
-              setIsModalOpen={setIsModalOpen}
+              eventLocations={[locations.aeve]}
             />
           </ul>
         </p>
@@ -543,7 +616,7 @@ Technical requirements: Users should feel comfortable using a terminal & Docker 
 
       {/* Venue Map Modal */}
       <ReactModal
-        isOpen={isModalOpen}
+        isOpen={isMapModalOpen}
         style={{
           overlay: {
             // Default styles
@@ -564,13 +637,13 @@ Technical requirements: Users should feel comfortable using a terminal & Docker 
         closeTimeoutMS={500}
       >
         <div className=" p-8 ">
-          <h2 className="text-3xl underline mb-4 text-berlin-yellow text-center font-w95">
-            Ground Floor / Floor 0
+          <h2 className="text-xl lg:text-3xl underline mb-4 text-berlin-yellow text-center font-w95">
+            {activeMapName}
           </h2>
-          <div className="mb-16 px-8 lg:px-32 py-2 ">
+          <div className="mb-16 lg:px-32 py-2 ">
             <div className="relative">
-              <img src={fifthFloor} alt="ground floor" />
-              <div className={`${highlightedRoomClass}`} data-tip="Yard 1" />
+              <img src={activeMap} alt={activeMapName} />
+              <div className={`${activeRoomClass}`} />
             </div>
           </div>
         </div>

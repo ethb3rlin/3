@@ -7,7 +7,6 @@ import secondFloorSunday from "../images/secondFloor-sunday.png";
 // import thirdFloor from "../images/thirdFloor.png";
 // import fourthFloor from "../images/fourthFloor.png";
 import fifthFloor from "../images/fifthFloor.png";
-import ReactTooltip from "react-tooltip";
 
 const isSundayCheck = () => {
   const date = new Date();
@@ -33,11 +32,11 @@ const Venue = () => {
           ETHBerlin
         </div>
         <h2 className="text-3xl underline mb-4">Ground Floor / Floor 0</h2>
-        <div className="relative mb-16 lg:px-32 py-2 bg-white">
+        <div className="relative mb-16 mx-16">
           <img src={groundFloor} alt="ground floor"></img>
         </div>
         <h2 className="text-3xl underline mb-4"> First Floor / Floor 1 </h2>
-        <div className="relative mb-16 lg:px-32 py-2 bg-white">
+        <div className="relative mb-16 mx-16">
           <img src={firstFloor} alt="first floor"></img>
         </div>
         <h2 className="text-3xl underline mb-4"> Second Floor / Floor 2 </h2>
@@ -59,7 +58,7 @@ const Venue = () => {
             Sunday
           </button>
         </div>
-        <div className="relative mb-16 lg:px-32 py-2 bg-white">
+        <div className="relative mb-16 mx-16">
           {isSunday ? (
             <img src={secondFloor} alt="second floor"></img>
           ) : (
@@ -67,11 +66,10 @@ const Venue = () => {
           )}
         </div>
         <h2 className="text-3xl underline mb-4"> Fifth Floor / Floor 5 </h2>
-        <div className="relative mb-16 lg:px-32 py-2 bg-white">
+        <div className="relative mb-16 mx-16">
           <img src={fifthFloor} alt="fifth floor"></img>
         </div>
       </div>
-      <ReactTooltip backgroundColor="#000" arrowColor="#000" textColor="#fff" />
     </Layout>
   );
 };
