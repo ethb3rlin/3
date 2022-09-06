@@ -287,4 +287,9 @@ export default [
     twitter: "https://twitter.com/barnabemonnot",
     github: "https://github.com/barnabemonnot",
   },
+  {
+    name: "Hany Rizk",
+    image: require("./Hany.jpg"),
+    twitter: "https://twitter.com/hanyrizk_",
+  },
 ];
