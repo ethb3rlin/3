@@ -52,7 +52,7 @@ const Layout = ({ children, showEthDiamond }) => {
       <nav
         className={`flex ${
           showNav ? "visible opacity-95" : "invisible opacity-0"
-        } flex-col items-center transition-all duration-200 ease-in-out text-xl fixed bg-black top-0 left-0 w-screen h-screen justify-center text-berlin-yellow`}
+        } flex-col items-center transition-all duration-200 ease-in-out text-xl fixed z-50 bg-black top-0 left-0 w-screen h-screen justify-center text-berlin-yellow`}
       >
         <button
           className="fixed top-8 right-8 text-4xl p-8"

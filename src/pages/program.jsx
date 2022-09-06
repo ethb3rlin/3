@@ -43,7 +43,7 @@ const ProgramItem = ({
         currentDate > endDate
           ? "text-gray-700"
           : currentDate > startDate
-          ? "font-bold animate-pulse"
+          ? "font-bold animate-pulse-faster"
           : ""
       } list-none text-lg`}
     >
@@ -57,7 +57,7 @@ const ProgramItem = ({
             currentDate > endDate
               ? "text-gray-700"
               : currentDate > startDate
-              ? "font-bold animate-pulse"
+              ? "font-bold animate-pulse-faster"
               : "text-berlin-yellow"
           }`}
           onClick={() => {
@@ -114,7 +114,7 @@ const SpeechItem = ({
           currentDate > endDate
             ? "text-gray-700"
             : currentDate > startDate
-            ? "font-bold animate-pulse"
+            ? "font-bold animate-pulse-faster"
             : ""
         }`}
       >
