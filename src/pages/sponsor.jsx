@@ -45,6 +45,7 @@ import nftberlin from "../assets/sponsors/nftberlin.png";
 import onekx from "../assets/sponsors/1kx.png";
 import nobs from "../assets/sponsors/nobs.png";
 import sepana from "../assets/sponsors/sepana.png";
+import atr from "../assets/sponsors/atr.png";
 import pengo from "../assets/sponsors/pengo.jpeg";
 import dinar from "../assets/sponsors/dinar.jpeg";
 import drachma from "../assets/sponsors/drachma.jpeg";
@@ -398,15 +399,21 @@ const Sponsor = () => (
             className="h-10 md:h-14 sm:mx-8 sm:grayscale hover:grayscale-0 my-4"
           />
         </a>
-        <a href="http://nobsstudio.com/" target="_blank" rel="noreferrer">
+        <a href="https://nobsstudio.com/" target="_blank" rel="noreferrer">
           <img
             src={nobs}
             className="h-10 md:h-14 sm:mx-8 sm:grayscale hover:grayscale-0 my-4"
           />
         </a>
-        <a href="http://sepana.io/" target="_blank" rel="noreferrer">
+        <a href="https://sepana.io/" target="_blank" rel="noreferrer">
           <img
             src={sepana}
+            className="h-10 md:h-14 sm:mx-8 sm:grayscale hover:grayscale-0 my-4"
+          />
+        </a>
+        <a href="https://www.atari-teenage-riot.com/" target="_blank" rel="noreferrer">
+          <img
+            src={atr}
             className="h-10 md:h-14 sm:mx-8 sm:grayscale hover:grayscale-0 my-4"
           />
         </a>
