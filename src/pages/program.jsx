@@ -19,7 +19,7 @@ import oisinKyne from "../assets/people/workshops/Obol_Oisin-Kyne_CTO.jpeg";
 import chrisBattenfield from "../assets/people/workshops/Obol_Chris-Battenfield_Product-Lead.jpg";
 import markNadal from "../assets/people/keynotes/MarkNadal_GUN.jpg";
 import vladyslavBochok from "../assets/people/workshops/zkSync_VladyslavBochok_vladbochok1.jpg";
-
+import alecEmpire from "../assets/people/keynotes/AlecEmpire_AtariTeenageRiot.jpg";
 const currentDate = new Date();
 // const currentDate = new Date("2022-09-17T21:20:00+02:00");
 
@@ -140,16 +140,28 @@ const SpeechItem = ({
             bottom: 0,
             backgroundColor: "rgba(255, 255, 255, 0.5)",
           },
-          content: { zIndex: 40, backgroundColor: "rgba(0, 0, 0, 0.9)" },
+          content: {
+            zIndex: 40,
+            backgroundColor: "rgba(0, 0, 0, 0.9)",
+            margin: "auto",
+          },
         }}
-        overlayClassName="flex items-center z-40 px-4 md:px-16 lg:px-32 xl:px-48 transition-all duration-200 ease-in-out"
-        className="flex flex-col items-center justify-center"
+        overlayClassName="flex items-center z-40 px-4 md:px-16 lg:px-32 xl:px-48 transition-all duration-200 ease-in-out py-8 max-h-screen"
+        className="flex flex-col items-center justify-center max-h-full"
         shouldCloseOnEsc={true}
         shouldCloseOnOverlayClick={true}
         onRequestClose={handleCloseModal}
         closeTimeoutMS={500}
       >
-        <div className="p-8 font-w95 text-center">
+        <div className="p-8 font-w95 text-center overflow-y-auto">
+          <div className="flex justify-end">
+            <button
+              className="text-4xl text-berlin-yellow"
+              onClick={() => setIsModalOpen(false)}
+            >
+              X
+            </button>
+          </div>
           <div className="flex flex-row justify-center p-4 flex-wrap">
             {photo && (
               <img src={photo} className="h-32 md:h-64 self-center mx-4 my-4" />
@@ -573,6 +585,7 @@ Technical requirements: Users should feel comfortable using a terminal & Docker 
               title="Keynote: The Sovereign Creator"
               eventLocations={[locations.lexis]}
               speakerName="Alec Empire - Atari Teenage Riot"
+              photo={alecEmpire}
               description="Alec Empire’s talk about being an artist in web3, how to understand music and hacker culture in cyberspace and why Ethereum will give rise to the Sovereign Creator."
             />
             <SpeechItem
