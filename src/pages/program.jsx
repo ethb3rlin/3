@@ -5,7 +5,6 @@ import groundFloor from "../images/groundFloor.png";
 import thirdFloor from "../images/thirdFloor.png";
 import firstFloor from "../images/firstFloor.png";
 import secondFloor from "../images/secondFloor.png";
-import secondFloorSunday from "../images/secondFloor-sunday.png";
 import fifthFloor from "../images/fifthFloor.png";
 import "../styles/modal.css";
 import "../styles/rooms/groundFloor.css";
