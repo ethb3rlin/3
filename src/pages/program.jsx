@@ -20,6 +20,11 @@ import chrisBattenfield from "../assets/people/workshops/Obol_Chris-Battenfield_
 import markNadal from "../assets/people/keynotes/MarkNadal_GUN.jpg";
 import vladyslavBochok from "../assets/people/workshops/zkSync_VladyslavBochok_vladbochok1.jpg";
 import alecEmpire from "../assets/people/keynotes/AlecEmpire_AtariTeenageRiot.jpg";
+import chelseaManning from "../assets/people/keynotes/ChelseaManning.jpg";
+import jayaKlaraBrekke from "../assets/people/keynotes/JayaKlaraBrekke_Nym.jpg";
+import eGalano from "../assets/people/keynotes/EG_Galano_Infura.jpeg";
+import jarradHope from "../assets/people/keynotes/JarradHope_Status.jpg";
+
 const currentDate = new Date();
 // const currentDate = new Date("2022-09-17T21:20:00+02:00");
 
@@ -328,6 +333,7 @@ const Program = () => {
               endTime="17:30"
               title="Keynote:"
               speakerName="E.G. Galano, Infura, Co-founder"
+              photo={eGalano}
               eventLocations={[locations.lexis]}
             />
             <SpeechItem
@@ -577,6 +583,7 @@ Technical requirements: Users should feel comfortable using a terminal & Docker 
               title="Keynote:"
               eventLocations={[locations.lexis]}
               speakerName="Jarrad Hope - Founder at Status"
+              photo={jarradHope}
             />
             <SpeechItem
               dayStr="2022-09-18"
@@ -594,7 +601,9 @@ Technical requirements: Users should feel comfortable using a terminal & Docker 
               endTime="16:00"
               title="Keynote:"
               eventLocations={[locations.lexis]}
-              speakerName="Jaya and Chelsea Manning - Nym"
+              speakerName="Jaya Klara Brekke & Chelsea Manning - Nym"
+              photo={jayaKlaraBrekke}
+              photo2={chelseaManning}
             />
             <ProgramItem
               dayStr="2022-09-18"
