@@ -183,9 +183,10 @@ const About = () => (
         <h2 className="text-2xl font-bold">Food and Drinks</h2>
         <p>
           ETHBerlin will cover all meals and drinks for the entire Hackathon,
-          and conference coffee breaks. Just come with an open mind, a
-          knowledge-thirsty brain and enthusiasm. Meal and snack times will be
-          on the <a href="/program">program</a>.
+          and conference coffee breaks. There will be vegan and vegetarian
+          options provided. Just come with an open mind, a knowledge-thirsty
+          brain and enthusiasm. Meal and snack times will be on the{" "}
+          <a href="/program">program</a>.
         </p>
       </div>
       <div className="flex justify-center">

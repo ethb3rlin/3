@@ -6,7 +6,6 @@ import secondFloor from "../images/secondFloor.png";
 import thirdFloor from "../images/thirdFloor.png";
 import fourthFloor from "../images/fourthFloor.png";
 import fifthFloor from "../images/fifthFloor.png";
-import ReactTooltip from "react-tooltip";
 
 const About = () => (
   <Layout showEthDiamond={false}>
@@ -71,7 +70,6 @@ const About = () => (
         <img src={fifthFloor} alt="fifth floor"></img>
       </div>
     </div>
-    <ReactTooltip backgroundColor="#000" arrowColor="#000" textColor="#fff" />
   </Layout>
 );
 
