@@ -291,7 +291,9 @@ const Program = () => {
     aeve: {
       name: "ÆVE",
       handler: () => {
-        window.open("https://goo.gl/maps/gRLnWHZapuLgQyQV9", "_blank").focus();
+        window
+          .open("https://www.openstreetmap.org/way/37910362", "_blank")
+          .focus();
       },
     },
   };
