@@ -34,6 +34,7 @@ export default [
       url: "https://www.commonground.cg/",
     },
     image: require("./Florian_CommonGround.jpg"),
+    twitter: "https://twitter.com/heckerhut",
   },
   {
     name: "Gonçalo",
@@ -42,6 +43,7 @@ export default [
       url: "https://consensys.net/diligence/",
     },
     image: require("./Gonçalo_ConsenSys_Diligence.png"),
+    twitter: "https://twitter.com/GNSPS",
   },
   {
     name: "Hilmar",
@@ -50,6 +52,7 @@ export default [
       url: "https://www.gelato.network/",
     },
     image: require("./hilmar_gelato.jpg"),
+    twitter: "https://twitter.com/hilmarxo",
   },
   {
     name: "Joseph Schweitzer",
@@ -133,5 +136,14 @@ export default [
     },
     image: require("./Prestwich_Nomad.jpg"),
     twitter: "https://twitter.com/_prestwich",
+  },
+  {
+    name: "Luis Bezzenberger",
+    organization: {
+      name: "Shutter Network",
+      url: "https://shutter.network/",
+    },
+    image: require("./LuisBezzenberger_ShutterNetwork.jpg"),
+    twitter: "https://twitter.com/bezzenberger",
   },
 ];

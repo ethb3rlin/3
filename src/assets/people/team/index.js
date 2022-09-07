@@ -22,7 +22,7 @@ export default [
     name: "ligi",
     image: require("./ligi.jpg"),
     twitter: "https://twitter.com/mr_ligi",
-    github: "https://github.com/ligi"
+    github: "https://github.com/ligi",
   },
   {
     name: "Nichanan",
@@ -52,7 +52,7 @@ export default [
   {
     name: "Jacob",
     image: require("./jacob_czepluch.jpeg"),
-    twitter: "https://twitter.com/_czepluch"
+    twitter: "https://twitter.com/_czepluch",
   },
   {
     name: "Kaan",
@@ -73,5 +73,15 @@ export default [
     name: "Helena",
     image: require("./Helena.jpg"),
     twitter: "https://twitter.com/helsoftroy",
+  },
+  {
+    name: "MP",
+    image: require("./MP.jpg"),
+    twitter: "https://twitter.com/MPtherealmvp",
+  },
+  {
+    name: "Stina",
+    image: require("./Stina.jpg"),
+    twitter: "https://twitter.com/stinalinneag",
   },
 ];
