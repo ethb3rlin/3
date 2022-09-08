@@ -13,6 +13,7 @@ import zksync from "../assets/sponsors/zksync.svg";
 import swype from "../assets/sponsors/swype.png";
 import nomad from "../assets/sponsors/nomad.png";
 import neonlabs from "../assets/sponsors/neonlabs.png";
+import quantstamp from "../assets/sponsors/quantstamp.png";
 import polygon from "../assets/sponsors/polygon.svg";
 import optimism from "../assets/sponsors/optimism.png";
 import galaxis from "../assets/sponsors/galaxis.png";
@@ -30,7 +31,7 @@ import chainsafe from "../assets/sponsors/chainsafe.png";
 import orchid from "../assets/sponsors/orchid.png";
 import altlayer from "../assets/sponsors/altlayer.png";
 import abacus from "../assets/sponsors/hyperlane.png";
-import lit from "../assets/sponsors/lit.svg";
+import lit from "../assets/sponsors/lit.png";
 import jpg from "../assets/sponsors/jpg.png";
 import dappnode from "../assets/sponsors/dappnode.png";
 import molecule from "../assets/sponsors/molecule.png";
@@ -46,6 +47,7 @@ import onekx from "../assets/sponsors/1kx.png";
 import nobs from "../assets/sponsors/nobs.png";
 import sepana from "../assets/sponsors/sepana.png";
 import atr from "../assets/sponsors/atr.png";
+import radicle from "../assets/sponsors/radicle.png";
 import pengo from "../assets/sponsors/pengo.jpeg";
 import dinar from "../assets/sponsors/dinar.jpeg";
 import drachma from "../assets/sponsors/drachma.jpeg";
@@ -222,6 +224,12 @@ const Sponsor = () => (
         <a href="https://neonlabs.org/" target="_blank">
           <img
             src={neonlabs}
+            className="h-12 md:h-16 sm:mx-8 sm:grayscale hover:grayscale-0 my-4"
+          />
+        </a>
+        <a href="https://quantstamp.com/" target="_blank">
+          <img
+            src={quantstamp}
             className="h-12 md:h-16 sm:mx-8 sm:grayscale hover:grayscale-0 my-4"
           />
         </a>
@@ -414,6 +422,12 @@ const Sponsor = () => (
         <a href="https://www.atari-teenage-riot.com/" target="_blank" rel="noreferrer">
           <img
             src={atr}
+            className="h-10 md:h-14 sm:mx-8 sm:grayscale hover:grayscale-0 my-4"
+          />
+        </a>
+        <a href="https://radicle.network/" target="_blank" rel="noreferrer">
+          <img
+            src={radicle}
             className="h-10 md:h-14 sm:mx-8 sm:grayscale hover:grayscale-0 my-4"
           />
         </a>
