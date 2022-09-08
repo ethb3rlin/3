@@ -84,4 +84,13 @@ export default [
     image: require("./Stina.jpg"),
     twitter: "https://twitter.com/stinalinneag",
   },
+  {
+    name: "Kirill",
+    image: require("./Kirill.jpg"),
+  },
+  {
+    name: "Loie",
+    image: require("./Loie_Taylor.svg"),
+    twitter: "https://twitter.com/loie_low",
+  },
 ];
