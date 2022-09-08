@@ -291,5 +291,9 @@ export default [
     name: "Hany Rizk",
     image: require("./Hany.jpg"),
     twitter: "https://twitter.com/hanyrizk_",
+    organization: {
+      name: "No BS",
+      url: "https://nobsstudio.com/",
+    },
   },
 ];
