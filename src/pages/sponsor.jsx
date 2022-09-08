@@ -230,7 +230,7 @@ const Sponsor = () => (
         <a href="https://quantstamp.com/" target="_blank">
           <img
             src={quantstamp}
-            className="h-12 md:h-16 sm:mx-8 sm:grayscale hover:grayscale-0 my-4"
+            className="h-10 md:h-14 sm:mx-8 sm:grayscale hover:grayscale-0 my-4"
           />
         </a>
       </SponsorContainer>
@@ -325,7 +325,7 @@ const Sponsor = () => (
         <a href="https://litprotocol.com/" target="_blank" rel="noreferrer">
           <img
             src={lit}
-            className="h-28 md:h-36 sm:mx-8 sm:grayscale hover:grayscale-0 my-4 "
+            className="h-12 md:h-16 sm:mx-8 sm:grayscale hover:grayscale-0 my-4 "
           />
         </a>
       </SponsorContainer>
@@ -419,7 +419,11 @@ const Sponsor = () => (
             className="h-10 md:h-14 sm:mx-8 sm:grayscale hover:grayscale-0 my-4"
           />
         </a>
-        <a href="https://www.atari-teenage-riot.com/" target="_blank" rel="noreferrer">
+        <a
+          href="https://www.atari-teenage-riot.com/"
+          target="_blank"
+          rel="noreferrer"
+        >
           <img
             src={atr}
             className="h-10 md:h-14 sm:mx-8 sm:grayscale hover:grayscale-0 my-4"
@@ -428,7 +432,7 @@ const Sponsor = () => (
         <a href="https://radicle.network/" target="_blank" rel="noreferrer">
           <img
             src={radicle}
-            className="h-10 md:h-14 sm:mx-8 sm:grayscale hover:grayscale-0 my-4"
+            className="h-12 md:h-16 sm:mx-8 sm:grayscale hover:grayscale-0 my-4"
           />
         </a>
       </SponsorContainer>
