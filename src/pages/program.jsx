@@ -53,7 +53,8 @@ const ProgramItem = ({
       } list-none text-lg`}
     >
       <span className="fake-bold">
-        {"> " + startTime + (endTime ? "-" + endTime : "") + " -"}
+        <span className="text-berlin-yellow opacity-50">{"> "}</span>
+        {startTime + (endTime ? "-" + endTime : "") + " -"}
       </span>{" "}
       {title}{" "}
       {eventLocations.map((loc) => (
@@ -64,13 +65,13 @@ const ProgramItem = ({
               : currentDate > startDate
               ? "font-bold animate-pulse-faster"
               : "text-berlin-yellow"
-          }`}
+          } text-sm`}
           onClick={() => {
             loc.handler();
           }}
         >
           <span className="align-middle">
-            <span class="material-symbols-outlined text-sm mr-1 ml-2">
+            <span class="material-symbols-outlined text-sm mr-0.5 ml-1">
               my_location
             </span>
           </span>
@@ -115,7 +116,7 @@ const SpeechItem = ({
         endTime={endTime}
       />
       <div
-        className={`ml-8 -mt-2 mb-4 ${
+        className={`ml-8 -mt-2 mb-4 text-sm ${
           currentDate > endDate
             ? "text-gray-700"
             : currentDate > startDate
@@ -123,7 +124,12 @@ const SpeechItem = ({
             : ""
         }`}
       >
-        <span>{speakerName}</span>
+        <span>
+          <span className="text-xs text-berlin-yellow opacity-50 mr-0.5">
+            {"> "}
+          </span>
+          {speakerName}
+        </span>
         <button
           onClick={() => setIsModalOpen(true)}
           className={`underline ${
@@ -310,7 +316,7 @@ const Program = () => {
     <Layout>
       <h1 className="my-4 underline text-secondary">(p)rogram</h1>
       <div className="text-gray-50">
-        <h2 className="text-xl font-bold">Friday, September 16</h2>
+        <h2 className="text-3xl font-bold">Friday, September 16</h2>
         <p className="mt-4">
           Welcome to ETHBerlin³! If you have the chance, please claim your badge
           early during the day outside the venue to avoid long queues in the
@@ -478,7 +484,10 @@ Technical requirements: Users should feel comfortable using a terminal & Docker 
             />
           </ul>
         </p>
-        <h2 className="text-xl font-bold">Saturday, September 17</h2>
+        <div className="flex justify-center">
+          <div className="border-b-[1px] mb-8 mt-4 border-berlin-yellow opacity-40 w-full"></div>
+        </div>
+        <h2 className="text-3xl font-bold">Saturday, September 17</h2>
         <p className="mt-4">Happy hacking, no distractions!</p>
         <p className="mt-4">
           <ProgramItem
@@ -518,7 +527,10 @@ Technical requirements: Users should feel comfortable using a terminal & Docker 
             eventLocations={[locations.restaurant]}
           />
         </p>
-        <h2 className="text-xl font-bold">Sunday, September 18</h2>
+        <div className="flex justify-center">
+          <div className="border-b-[1px] mb-8 mt-4 border-berlin-yellow opacity-40 w-full"></div>
+        </div>
+        <h2 className="text-3xl font-bold">Sunday, September 18</h2>
         <p className="mt-4">
           Don't forget to submit your projects by 11:00 am Berlin time!
         </p>
