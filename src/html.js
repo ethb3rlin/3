@@ -48,6 +48,9 @@ export default function HTML(props) {
                 else if (e.key == 'b' || e.key == 'B') {
                   window.location.href= "https://blog.ethberlin.ooo";
                 }
+                else if (e.key == 'v' || e.key == 'V') {
+                  window.location.href= "/venue";
+                }
             }
             `,
           }}

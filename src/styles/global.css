@@ -225,3 +225,12 @@ body {
 .animate-flicker {
     animation: flickerAnimation 1.5s ease;
 }
+
+@keyframes pulse {
+  50% {
+    opacity: .2;
+  }
+}
+.animate-pulse-faster {
+  animation: pulse 1.25s ease-in-out infinite;
+}

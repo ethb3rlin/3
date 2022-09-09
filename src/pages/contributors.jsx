@@ -5,7 +5,7 @@ import judges from "../assets/people/judges";
 import twitterLogo from "../assets/twitter.png";
 import githubLogo from "../assets/github.png";
 import team from "../assets/people/team";
-import speakers from "../assets/people/speakers";
+import keynotes from "../assets/people/keynotes";
 
 const Person = ({
   name,
@@ -120,9 +120,9 @@ const Contributors = () => {
     setTitle("Team");
   };
 
-  const handleSpeakers = () => {
-    setPeople(speakers);
-    setTitle("Speakers");
+  const handleKeynotes = () => {
+    setPeople(keynotes);
+    setTitle("Keynotes");
   };
 
   return (
@@ -165,12 +165,12 @@ const Contributors = () => {
         </button>
         {/* <button
           className={`${
-            title === "Speakers" ? "bg-berlin-yellow text-black" : ""
+            title === "Keynotes" ? "bg-berlin-yellow text-black" : ""
           } text-xl md:text-2xl mx-4 my-2 
           `}
-          onClick={handleSpeakers}
+          onClick={handleKeynotes}
         >
-          {"< Speakers >"}
+          {"< Keynotes >"}
         </button> */}
       </div>
       <div>
