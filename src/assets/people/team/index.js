@@ -66,7 +66,7 @@ export default [
   },
   {
     name: "Rose",
-    image: require("./Rose.gif"),
+    image: require("./rose.jpg"),
     twitter: "https://twitter.com/roseighteth",
   },
   {
