@@ -86,7 +86,7 @@
   height: 100%;
   background-color: red;
   animation: blinker 1s linear infinite;
-  clip-path:polygon(62% 88%, 73% 88%, 73% 100%, 62% 100%);
+  clip-path:polygon(79% 88%, 89% 88%, 89% 100%, 79% 100%);
 }
 
 .registration {
@@ -98,5 +98,5 @@
   height: 100%;
   background-color: red;
   animation: blinker 1s linear infinite;
-  clip-path:polygon(86% 88%, 98% 88%, 98% 100%, 86% 100%);
+  clip-path:polygon(91% 88%, 100% 88%, 100% 100%, 91% 100%);
 }
