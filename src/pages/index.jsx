@@ -137,10 +137,6 @@ const Home = () => {
           {" "}
           (h)acker manual
         </a>
-        <a className="my-2" href="/sponsor">
-          {" "}
-          (s)ponsors
-        </a>
         <a className="my-2" href="/program">
           {" "}
           (p)rogram
@@ -152,6 +148,10 @@ const Home = () => {
         <a className="my-2" href="/contributors">
           {" "}
           (c)ontributors
+        </a>
+        <a className="my-2" href="/sponsor">
+          {" "}
+          (s)ponsors
         </a>
         <div className="fixed bottom-0 mb-8 text-sm text-center">
           <div className="my-2">

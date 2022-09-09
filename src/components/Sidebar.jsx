@@ -27,10 +27,6 @@ const Sidebar = ({ className, hideLogo }) => {
           {" "}
           (h)acker manual
         </a>
-        <a className="my-2" href="/sponsor">
-          {" "}
-          (s)ponsors
-        </a>
         <a className="my-2" href="/program">
           {" "}
           (p)rogram
@@ -42,6 +38,10 @@ const Sidebar = ({ className, hideLogo }) => {
         <a className="my-2" href="/contributors">
           {" "}
           (c)ontributors
+        </a>
+        <a className="my-2" href="/sponsor">
+          {" "}
+          (s)ponsors
         </a>
       </nav>
       <div className="mt-auto">
