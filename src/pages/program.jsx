@@ -158,7 +158,7 @@ const SpeechItem = ({
         onRequestClose={handleCloseModal}
         closeTimeoutMS={500}
       >
-        <div className="p-8 font-w95 text-center overflow-y-auto">
+        <div className="p-8 font-w95 text-center overflow-y-auto max-w-4xl">
           <div className="flex justify-end">
             <button
               className="text-4xl text-berlin-yellow"
