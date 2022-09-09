@@ -264,6 +264,14 @@ const Program = () => {
         setIsMapModalOpen(true);
       },
     },
+    registration: {
+      name: "Registration",
+      handler: () => {
+        handleGroundFloor();
+        setActiveRoomClass("registration");
+        setIsMapModalOpen(true);
+      },
+    },
     restaurant: {
       name: "Restaurant",
       handler: () => {
@@ -320,8 +328,14 @@ const Program = () => {
             <ProgramItem
               dayStr="2022-09-16"
               startTime="16:00"
-              title="Registration and doors open"
-              eventLocations={[locations.mainEnterence, locations.yard2]}
+              title="Registration"
+              eventLocations={[locations.registration]}
+            />
+            <ProgramItem
+              dayStr="2022-09-16"
+              startTime="16:00"
+              title="Doors open"
+              eventLocations={[locations.mainEnterence]}
             />
             <SpeechItem
               dayStr="2022-09-16"
