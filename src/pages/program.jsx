@@ -23,6 +23,7 @@ import chelseaManning from "../assets/people/keynotes/ChelseaManning.jpg";
 import jayaKlaraBrekke from "../assets/people/keynotes/JayaKlaraBrekke_Nym.jpg";
 import eGalano from "../assets/people/keynotes/EG_Galano_Infura.jpeg";
 import jarradHope from "../assets/people/keynotes/JarradHope_Status.jpg";
+import gillordPisas from "../assets/people/mc/gillord.jpg";
 
 const currentDate = new Date();
 // const currentDate = new Date("2022-09-17T21:20:00+02:00");
@@ -346,11 +347,13 @@ const Program = () => {
               photo={markNadal}
               eventLocations={[locations.lexis]}
             />
-            <ProgramItem
+            <SpeechItem
               dayStr="2022-09-16"
               startTime="18:00"
               endTime="19:00"
               title="Opening Ceremony"
+              speakerName="MC: Gillord Pisas"
+              photo={gillordPisas}
               eventLocations={[locations.lexis]}
             />
             <ProgramItem
