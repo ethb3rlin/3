@@ -20,13 +20,13 @@ import markNadal from "../assets/people/keynotes/MarkNadal_GUN.jpg";
 import vladyslavBochok from "../assets/people/workshops/zkSync_VladyslavBochok_vladbochok1.jpg";
 import alecEmpire from "../assets/people/keynotes/AlecEmpire_AtariTeenageRiot.jpg";
 import chelseaManning from "../assets/people/keynotes/ChelseaManning.jpg";
-import jayaKlaraBrekke from "../assets/people/keynotes/JayaKlaraBrekke_Nym.jpg";
+import jayaKlaraBrekke from "../assets/people/keynotes/JayaBrekke.jpg";
 import eGalano from "../assets/people/keynotes/EG_Galano_Infura.jpeg";
 import jarradHope from "../assets/people/keynotes/JarradHope_Status.jpg";
 import gillordPisas from "../assets/people/mc/gillord.jpg";
-
+import nickAlmond from "../assets/people/keynotes/nickAlmond.jpg";
 const currentDate = new Date();
-// const currentDate = new Date("2022-09-17T21:20:00+02:00");
+// const currentDate = new Date("2022-09-17T00:20:00+02:00");
 
 const ProgramItem = ({
   title,
@@ -257,7 +257,7 @@ const Program = () => {
       },
     },
     mainEnterence: {
-      name: "Main Enterence",
+      name: "Main Enterance",
       handler: () => {
         handleGroundFloor();
         setActiveRoomClass("main-enterence");
@@ -288,11 +288,11 @@ const Program = () => {
         setIsMapModalOpen(true);
       },
     },
-    aeve: {
-      name: "ÆVE",
+    watergate: {
+      name: "Watergate",
       handler: () => {
         window
-          .open("https://www.openstreetmap.org/way/37910362", "_blank")
+          .open("http://water-gate.de/de/contact/contact.html", "_blank")
           .focus();
       },
     },
@@ -312,20 +312,14 @@ const Program = () => {
           <ul>
             <ProgramItem
               dayStr="2022-09-16"
-              startTime="10:00"
-              title="Volunteer Briefing"
-              eventLocations={[locations.lexis]}
-            />
-            <ProgramItem
-              dayStr="2022-09-16"
               startTime="12:00"
+              endTime="16:00"
               title="Pre-registration"
-              eventLocations={[locations.creatorsLab, locations.yard3]}
+              eventLocations={[locations.creatorsLab]}
             />
             <ProgramItem
               dayStr="2022-09-16"
               startTime="16:00"
-              endTime="23:00"
               title="Registration and doors open"
               eventLocations={[locations.mainEnterence, locations.yard2]}
             />
@@ -333,7 +327,7 @@ const Program = () => {
               dayStr="2022-09-16"
               startTime="17:00"
               endTime="17:30"
-              title="Keynote:"
+              title="Keynote"
               speakerName="E.G. Galano, Infura, Co-founder"
               photo={eGalano}
               eventLocations={[locations.lexis]}
@@ -343,7 +337,7 @@ const Program = () => {
               startTime="17:30"
               endTime="18:00"
               title="Keynote: Humanity 3.0: Beyond Blockchains, Planetary Systems, & Infinite Games"
-              speakerName="Mark Nadal, Lead Open Source Engineer at GUN"
+              speakerName="Mark Nadal, GUN, Lead Open Source Engineer"
               photo={markNadal}
               eventLocations={[locations.lexis]}
             />
@@ -359,9 +353,16 @@ const Program = () => {
             <ProgramItem
               dayStr="2022-09-16"
               startTime="19:00"
+              endTime="23:59"
+              title="HACKING"
+              eventLocations={[]} // Location = everywhere
+            />
+            <ProgramItem
+              dayStr="2022-09-16"
+              startTime="19:00"
               endTime="20:00"
-              title="Team Speed Dating"
-              eventLocations={[locations.yard1]}
+              title="Hacker Team Finding Session"
+              eventLocations={[locations.lexis]}
             />
             <ProgramItem
               dayStr="2022-09-16"
@@ -370,39 +371,25 @@ const Program = () => {
               title="Dinner"
               eventLocations={[locations.restaurant]}
             />
-            <ProgramItem
-              dayStr="2022-09-16"
-              startTime="19:00"
-              endTime="23:59"
-              title="HACKING STARTS"
-              eventLocations={[]} // Location = everywhere
-            />
-            <ProgramItem
-              dayStr="2022-09-16"
-              startTime="20:00"
-              endTime="22:00"
-              title="DJ"
-              eventLocations={[locations.yard1]}
-            />
             <SpeechItem
               dayStr="2022-09-16"
               startTime="20:00"
               endTime="20:45"
-              title="Technical Workshop: Abracadabra with Open Data"
+              title="Technical Workshop - Dune: Abracadabra with Open Data"
               eventLocations={[locations.lexis]}
             />
             <SpeechItem
               dayStr="2022-09-16"
               startTime="20:00"
               endTime="20:45"
-              title="Technical Workshop: Manta"
+              title="Technical Workshop - Manta"
               eventLocations={[locations.creatorsLab]}
             />
             <SpeechItem
               dayStr="2022-09-16"
               startTime="20:45"
               endTime="21:30"
-              title="Technical Workshop: How to connect your app with WalletConnect"
+              title="Technical Workshop - WalletConnect: How to connect your app with WalletConnect"
               eventLocations={[locations.lexis]}
               description={
                 "Improve your dapp by integrating WalletConnect with Web3Modal and allow your users to connect to Metamask, Rainbow, Trust Wallet and many more wallets. Including a short introduction to Ethereum libraries such as web3.js and ethers.js followed by a code walkthrough integrating a dapp with Web3Modal supporting WalletConnect. Finally we will cover best practices and UX improvements to really polish your dapp."
@@ -412,7 +399,7 @@ const Program = () => {
               dayStr="2022-09-16"
               startTime="20:45"
               endTime="21:30"
-              title="Technical Workshop: Create a Distributed Validator with your friends and fellow EthBerlin hackers (real time DV creation workshop & ceremony)"
+              title="Technical Workshop - Obol: Create a Distributed Validator with your friends and fellow EthBerlin hackers (real time DV creation workshop & ceremony)"
               eventLocations={[locations.creatorsLab]}
               speakerName="Chris Battenfield - Product Lead at Obol, Oisin Kyne - CTO at Obol"
               photo={chrisBattenfield}
@@ -424,7 +411,7 @@ Technical requirements: Users should feel comfortable using a terminal & Docker 
               dayStr="2022-09-16"
               startTime="21:30"
               endTime="22:15"
-              title="Technical Workshop: Lets be frens through Lens"
+              title="Technical Workshop - Lens: Lets be frens through Lens"
               eventLocations={[locations.lexis]}
               speakerName="Jenny Pollack, Zannis Kalampoukis - Lens"
               photo={jennyPollack}
@@ -435,9 +422,9 @@ Technical requirements: Users should feel comfortable using a terminal & Docker 
               dayStr="2022-09-16"
               startTime="21:30"
               endTime="22:15"
-              title="Technical Workshop: Developing a DAO Contract in Sway, a next-Gen Smart Contract Language"
+              title="Technical Workshop - Fuel: Developing a DAO Contract in Sway, a next-Gen Smart Contract Language"
               eventLocations={[locations.creatorsLab]}
-              speakerName="Alex Hansen"
+              speakerName="Alex Hansen - Fuel"
               photo={alexHansen}
               description="Learn how to develop a performant and safe DAO contract in Sway, the next-generation smart contract language from Fuel Labs. Feel free to bring a laptop, this will be interactive! Install dependencies using this tool: https://github.com/FuelLabs/fuelup"
             />
@@ -445,7 +432,7 @@ Technical requirements: Users should feel comfortable using a terminal & Docker 
               dayStr="2022-09-16"
               startTime="22:15"
               endTime="22:45"
-              title="Technical Workshop: Pinata Workshop"
+              title="Technical Workshop - Pinata: Pinata Workshop"
               eventLocations={[locations.lexis]}
               speakerName=""
             />
@@ -453,11 +440,11 @@ Technical requirements: Users should feel comfortable using a terminal & Docker 
               dayStr="2022-09-16"
               startTime="22:15"
               endTime="22:45"
-              title="Technical Workshop: Building on zkSync 2.0"
+              title="Technical Workshop - zkSync: Building on zkSync 2.0"
               eventLocations={[locations.creatorsLab]}
               photo={vladyslavBochok}
               description="Are you a builder interested in learning more about zkSync 2.0? Join us for this workshop where we will discuss zkSync's user and developer UX, detail what migration from existing protocols generally looks like, what can be implemented on zkSync that can't be on Ethereum, and answer any questions you may have! Dev Docs: https://v2-docs.zksync.io/dev/"
-              speakerName="Vladyslav Bochok"
+              speakerName="Vladyslav Bochok - zkSync"
             />
             <SpeechItem
               dayStr="2022-09-16"
@@ -465,25 +452,15 @@ Technical requirements: Users should feel comfortable using a terminal & Docker 
               endTime="23:30"
               title="Technical Workshop: Solidity for Beginners"
               eventLocations={[locations.lexis]}
-              speakerName="Patrick McCorry"
-            />
-            <SpeechItem
-              dayStr="2022-09-16"
-              startTime="22:45"
-              endTime="23:30"
-              title="Technical Workshop: Infura Workshop"
-              eventLocations={[locations.creatorsLab]}
-              speakerName=""
+              speakerName="Patrick McCorry - Infura"
             />
             <ProgramItem
               dayStr="2022-09-16"
               startTime="23:59"
+              endDayStr="2022-09-17"
+              endTime="01:00"
               title="Midnight Snack"
-              eventLocations={[
-                locations.restaurant,
-                locations.communitySpace1,
-                locations.communitySpace2,
-              ]}
+              eventLocations={[locations.restaurant]}
             />
           </ul>
         </p>
@@ -506,13 +483,6 @@ Technical requirements: Users should feel comfortable using a terminal & Docker 
           />
           <ProgramItem
             dayStr="2022-09-17"
-            startTime="11:00"
-            endTime="17:00"
-            title="Art Exhibition"
-            eventLocations={[]}
-          />
-          <ProgramItem
-            dayStr="2022-09-17"
             startTime="13:00"
             endTime="15:00"
             title="Lunch"
@@ -527,30 +497,11 @@ Technical requirements: Users should feel comfortable using a terminal & Docker 
           />
           <ProgramItem
             dayStr="2022-09-17"
-            startTime="20:00"
-            endTime="22:00"
-            title="DJ"
-            eventLocations={[locations.yard1]}
-          />
-          <ProgramItem
-            dayStr="2022-09-17"
-            startTime="22:00"
-            endDayStr="2022-09-18"
-            endTime="01:00"
-            title="DJ"
-            eventLocations={[locations.creatorsLab]}
-          />
-          <ProgramItem
-            dayStr="2022-09-18"
-            startTime="00:00"
+            startTime="23:59"
             endDayStr="2022-09-18"
             endTime="01:00"
             title="Midnight Snack"
-            eventLocations={[
-              locations.restaurant,
-              locations.communitySpace1,
-              locations.communitySpace2,
-            ]}
+            eventLocations={[locations.restaurant]}
           />
         </p>
         <h2 className="text-xl font-bold">Sunday, September 18</h2>
@@ -582,17 +533,26 @@ Technical requirements: Users should feel comfortable using a terminal & Docker 
             />
             <SpeechItem
               dayStr="2022-09-18"
-              startTime="14:00"
-              endTime="15:00"
-              title="Keynote:"
+              startTime="13:00"
+              endTime="13:30"
+              title="Introduction to Quadratic Voting"
+              eventLocations={[locations.lexis]}
+              speakerName="Nick Almond - Factory DAO"
+              photo={nickAlmond}
+            />
+            <SpeechItem
+              dayStr="2022-09-18"
+              startTime="13:45"
+              endTime="14:15"
+              title="Keynote"
               eventLocations={[locations.lexis]}
               speakerName="Jarrad Hope - Founder at Status"
               photo={jarradHope}
             />
             <SpeechItem
               dayStr="2022-09-18"
-              startTime="15:00"
-              endTime="15:30"
+              startTime="14:30"
+              endTime="15:00"
               title="Keynote: The Sovereign Creator"
               eventLocations={[locations.lexis]}
               speakerName="Alec Empire - Atari Teenage Riot"
@@ -601,40 +561,35 @@ Technical requirements: Users should feel comfortable using a terminal & Docker 
             />
             <SpeechItem
               dayStr="2022-09-18"
-              startTime="15:30"
+              startTime="15:15"
               endTime="16:00"
-              title="Keynote:"
+              title="Fireside Chat"
               eventLocations={[locations.lexis]}
-              speakerName="Jaya Klara Brekke & Chelsea Manning - Nym"
-              photo={jayaKlaraBrekke}
-              photo2={chelseaManning}
+              speakerName="Chelsea Manning & Jaya Klara Brekke - Nym"
+              photo2={jayaKlaraBrekke}
+              photo={chelseaManning}
             />
-            <ProgramItem
+            <SpeechItem
               dayStr="2022-09-18"
               startTime="16:00"
               endTime="17:30"
               title="Closing Ceremony"
+              speakerName="MC: Gillord Pisas"
+              photo={gillordPisas}
               eventLocations={[locations.lexis]}
             />
             <ProgramItem
               dayStr="2022-09-18"
-              startTime="17:00"
-              endTime="18:00"
-              title="Drinks & Closing"
-              eventLocations={[locations.creatorsLab]}
-            />
-            <ProgramItem
-              dayStr="2022-09-18"
               startTime="18:00"
-              title="Doors Close"
+              title="End of Hackathon, see you at the afterparty!"
               eventLocations={[]}
             />
             <ProgramItem
               dayStr="2022-09-18"
-              startTime="19:00"
-              endTime="03:00"
+              startTime="21:00"
+              endTime="06:00"
               title="Afterparty"
-              eventLocations={[locations.aeve]}
+              eventLocations={[locations.watergate]}
             />
           </ul>
         </p>

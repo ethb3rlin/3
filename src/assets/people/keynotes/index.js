@@ -44,7 +44,7 @@ export default [
       name: "Nym",
       url: "https://nymtech.net/",
     },
-    image: require("./JayaKlaraBrekke_Nym.jpg"),
+    image: require("./JayaBrekke.jpg"),
     twitter: "https://twitter.com/jayapapaya",
   },
   {
