@@ -570,7 +570,7 @@ Technical requirements: Users should feel comfortable using a terminal & Docker 
               dayStr="2022-09-18"
               startTime="13:45"
               endTime="14:15"
-              title="Keynote"
+              title="Keynote: Cypherpunk Suprajurisdictions against the Nation-State"
               eventLocations={[locations.lexis]}
               speakerName="Jarrad Hope - Founder at Status"
               photo={jarradHope}
