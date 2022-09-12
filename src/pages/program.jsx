@@ -16,6 +16,9 @@ import jennyPollack from "../assets/people/workshops/Lens_JennyPollack_Head-of-P
 import zannisKalampoukis from "../assets/people/workshops/Lens_Zannis-Kalampoukis_Sr-Software-Eng.jpeg";
 import oisinKyne from "../assets/people/workshops/Obol_Oisin-Kyne_CTO.jpeg";
 import chrisBattenfield from "../assets/people/workshops/Obol_Chris-Battenfield_Product-Lead.jpg";
+import jackieZhang from "../assets/people/workshops/Dune_JackieZhang.jpeg";
+import pedroGomes from "../assets/people/workshops/WalletConnect_PedroGomes.jpeg";
+import steveSimkins from "../assets/people/workshops/Pinata_SteveSimkins.jpg";
 import markNadal from "../assets/people/keynotes/MarkNadal_GUN.jpg";
 import vladyslavBochok from "../assets/people/workshops/zkSync_VladyslavBochok_vladbochok1.jpg";
 import alecEmpire from "../assets/people/keynotes/AlecEmpire_AtariTeenageRiot.jpg";
@@ -359,6 +362,7 @@ const Program = () => {
               endTime="17:30"
               title="Keynote: Points of Centralization and Paths to Decentralization"
               speakerName="E.G. Galano, Infura, Co-founder"
+              description="In his talk, EG will be going over various points of centralization that exist in Web3 and the trade offs we make as an ecosystem on the decentralization spectrum."
               photo={eGalano}
               eventLocations={[locations.lexis]}
             />
@@ -407,12 +411,18 @@ const Program = () => {
               endTime="20:45"
               title="Technical Workshop - Dune: Abracadabra with Open Data"
               eventLocations={[locations.lexis]}
+              speakerName="Jackie Zhang, Wizard Relations at Dune Analytics"
+              photo={jackieZhang}
+              description="🪄 Would you like to wave your wand and speak order into the data chaos as a Dune Wizard?
+🤝 Dune is a crypto data analytics platform, where we are on a mission to make crypto data accessible for all.
+📊 In this workshop, we will walk through how to do crypto data analysis on Dune in an open-source style!
+🧙 Come join us and start your Dune Wizard journey!"
             />
             <SpeechItem
               dayStr="2022-09-16"
               startTime="20:00"
               endTime="20:45"
-              title="Technical Workshop - Manta"
+              title="Technical Workshop - Manta: Bringing programmable privacy to Web3"
               eventLocations={[locations.creatorsLab]}
             />
             <SpeechItem
@@ -421,6 +431,8 @@ const Program = () => {
               endTime="21:30"
               title="Technical Workshop - WalletConnect: How to connect your app with WalletConnect"
               eventLocations={[locations.lexis]}
+              speakerName="Pedro Gomes, Co-Founder of WalletConnect"
+              photo={pedroGomes}
               description={
                 "Improve your dapp by integrating WalletConnect with Web3Modal and allow your users to connect to Metamask, Rainbow, Trust Wallet and many more wallets. Including a short introduction to Ethereum libraries such as web3.js and ethers.js followed by a code walkthrough integrating a dapp with Web3Modal supporting WalletConnect. Finally we will cover best practices and UX improvements to really polish your dapp."
               }
@@ -462,9 +474,11 @@ Technical requirements: Users should feel comfortable using a terminal & Docker 
               dayStr="2022-09-16"
               startTime="22:15"
               endTime="22:45"
-              title="Technical Workshop - Pinata: Pinata Workshop"
+              title="Technical Workshop - Pinata: How To Use Pinata Submarine To Provide Real Utility To Communities"
               eventLocations={[locations.lexis]}
-              speakerName=""
+              speakerName="Steve Simkins"
+              photo={steveSimkins}
+              description="In this workshop, you will learn how to use Submarining and create token gated experiences for your community!"
             />
             <SpeechItem
               dayStr="2022-09-16"
@@ -593,7 +607,7 @@ Technical requirements: Users should feel comfortable using a terminal & Docker 
               eventLocations={[locations.lexis]}
               speakerName="Alec Empire - Atari Teenage Riot"
               photo={alecEmpire}
-              description="Alec Empire’s talk about being an artist in web3, how to understand music and hacker culture in cyberspace and why Ethereum will give rise to the Sovereign Creator."
+              description="Alec Empire's talk about being an artist in web3, how to understand music and hacker culture in cyberspace and why Ethereum will give rise to the Sovereign Creator."
             />
             <SpeechItem
               dayStr="2022-09-18"
