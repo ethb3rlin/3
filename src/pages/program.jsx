@@ -910,7 +910,7 @@ Technical requirements: Users should feel comfortable using a terminal & Docker 
               <ProgramItem
                 dayStr="2022-09-18"
                 startTime="00:00"
-                endTime="15:00"
+                endTime="18:00"
                 title="Crypto-Winter"
                 className="text-purple-300"
                 eventLocations={[locations.xrRoom]}
