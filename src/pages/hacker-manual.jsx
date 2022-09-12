@@ -97,6 +97,14 @@ const HackerManual = () => {
         setIsMapModalOpen(true);
       },
     },
+    watergate: {
+      name: "Watergate",
+      handler: () => {
+        window
+          .open("http://water-gate.de/de/contact/contact.html", "_blank")
+          .focus();
+      },
+    },
     yard1: {
       name: "Yard 1",
       handler: () => {
@@ -508,7 +516,20 @@ const HackerManual = () => {
 
         <div id="submissions">
           <h2 className="text-2xl font-bold">Submissions</h2>
-          <p>To be announced...</p>
+          <p>You have to register and create your project at{" "}
+            <a href="https://ethberlin.devfolio.co/" target="_blank">ethberlin.devfolio.co</a>{" "}
+            for submission before Sunday, 11am.
+          </p>
+          <p>Make sure to provide a link to your open-source repository, a video or a demo,
+            and if applicable, the contract address(es) of your deployed application, either
+            on a testnet of your choice or mainnet of a platform of choice.
+          </p>
+          <p>All submitted projects will be eligible for the main hackathon prize. In addition,
+            you have to select a category (track), which you would like to pitch for, and up to
+            two meta awards.
+          </p>
+          <p>Don't miss the deadline! Sunday 11am!
+          </p>
         </div>
         <div className="flex justify-center">
           <div className="border-b-[1px] mb-8 mt-4 border-berlin-yellow opacity-40 w-full"></div>
@@ -635,7 +656,17 @@ const HackerManual = () => {
         </div>
         <div id="afterparty" className="">
           <h2 className="text-2xl font-bold">Afterparty</h2>
-          <p>To be announced...</p>
+          <LocationButton loc={locations.watergate} />
+          <p>
+            What else is there to be done after 50 hours of hacking?
+            Right, the afterparty! This year we are celebrating our achievements
+            at the Watergate; doors: 21:00.
+          </p>
+          <p>
+            You will receive an afterparty wristband during the hackathon registration.
+            If you don't want to or cannot attend on Sunday evening, you can share
+            it with your friends. There will be no additional tickets or guest lists!
+          </p>
         </div>
       </div>
       <VenueMapModal
