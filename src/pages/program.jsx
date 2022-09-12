@@ -722,7 +722,7 @@ Technical requirements: Users should feel comfortable using a terminal & Docker 
               endTime="23:59"
               title="Art Exhibition: Merkle Root Berlin"
               className="text-purple-300"
-              eventLocations={[locations.xrRoom]}
+              eventLocations={[locations.wildenbruch]}
             />
           )}
           {isExtravaganza && (
@@ -950,7 +950,7 @@ Technical requirements: Users should feel comfortable using a terminal & Docker 
                 endTime="15:00"
                 title="Art Exhibition: Merkle Root Berlin"
                 className="text-purple-300"
-                eventLocations={[locations.xrRoom]}
+                eventLocations={[locations.wildenbruch]}
               />
             )}
             <ProgramItem
