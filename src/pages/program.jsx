@@ -21,6 +21,7 @@ import vladyslavBochok from "../assets/people/workshops/zkSync_VladyslavBochok_v
 import alecEmpire from "../assets/people/keynotes/AlecEmpire_AtariTeenageRiot.jpg";
 import chelseaManning from "../assets/people/keynotes/ChelseaManning.jpg";
 import jayaKlaraBrekke from "../assets/people/keynotes/JayaBrekke.jpg";
+import fredHaga from "../assets/people/keynotes/Fredrik_Haga_Dune.png";
 import eGalano from "../assets/people/keynotes/EG_Galano_Infura.jpeg";
 import jarradHope from "../assets/people/keynotes/JarradHope_Status.jpg";
 import gillordPisas from "../assets/people/mc/gillord.jpg";
@@ -345,9 +346,18 @@ const Program = () => {
             />
             <SpeechItem
               dayStr="2022-09-16"
+              startTime="16:30"
+              endTime="17:00"
+              title="Prequel: Stories from ETHBerlin - How it has shaped our journey"
+              speakerName="Fredrik Haga, Dune Analytics, Co-Founder &amp; CEO"
+              photo={fredHaga}
+              eventLocations={[locations.lexis]}
+            />
+            <SpeechItem
+              dayStr="2022-09-16"
               startTime="17:00"
               endTime="17:30"
-              title="Keynote"
+              title="Keynote: Points of Centralization and Paths to Decentralization"
               speakerName="E.G. Galano, Infura, Co-founder"
               photo={eGalano}
               eventLocations={[locations.lexis]}
@@ -356,7 +366,7 @@ const Program = () => {
               dayStr="2022-09-16"
               startTime="17:30"
               endTime="18:00"
-              title="Keynote: Humanity 3.0: Beyond Blockchains, Planetary Systems, & Infinite Games"
+              title="Keynote: Humanity 3.0: Beyond Blockchains, Planetary Systems, &amp; Infinite Games"
               speakerName="Mark Nadal, GUN, Lead Open Source Engineer"
               photo={markNadal}
               eventLocations={[locations.lexis]}
