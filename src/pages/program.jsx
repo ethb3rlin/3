@@ -576,6 +576,13 @@ Technical requirements: Users should feel comfortable using a terminal & Docker 
             />
             <ProgramItem
               dayStr="2022-09-18"
+              startTime="12:00"
+              endTime="15:00"
+              title="JUDGING"
+              eventLocations={[]}
+            />
+            <ProgramItem
+              dayStr="2022-09-18"
               startTime="13:00"
               endTime="15:00"
               title="Lunch"
