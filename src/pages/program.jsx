@@ -451,6 +451,16 @@ const Program = () => {
               title="Doors open"
               eventLocations={[locations.mainEnterence]}
             />
+            {isExtravaganza && (
+              <ProgramItem
+                dayStr="2022-09-16"
+                startTime="16:00"
+                endTime="23:59"
+                title="Crypto-Winter"
+                className="text-purple-300"
+                eventLocations={[locations.xrRoom]}
+              />
+            )}
             <SpeechItem
               dayStr="2022-09-16"
               startTime="16:30"
@@ -503,16 +513,6 @@ const Program = () => {
                 title="Art Exhibition: Merkle Root Berlin"
                 className="text-purple-300"
                 eventLocations={[locations.wildenbruch]}
-              />
-            )}
-            {isExtravaganza && (
-              <ProgramItem
-                dayStr="2022-09-16"
-                startTime="19:00"
-                endTime="23:59"
-                title="Crypto-Winter"
-                className="text-purple-300"
-                eventLocations={[locations.xrRoom]}
               />
             )}
             <ProgramItem
@@ -575,7 +575,7 @@ const Program = () => {
               <ProgramItem
                 dayStr="2022-09-16"
                 startTime="20:00"
-                endTime="22:00"
+                endTime="23:00"
                 title="Music/DJ - Anthropous Anonymous"
                 className="text-purple-300"
                 eventLocations={[locations.yard1]}
@@ -657,7 +657,7 @@ Technical requirements: Users should feel comfortable using a terminal & Docker 
             {isExtravaganza && (
               <ProgramItem
                 dayStr="2022-09-16"
-                startTime="23:59"
+                startTime="23:00"
                 endTime="02:00"
                 endDayStr="2022-09-17"
                 title="Music/DJ - Michael Yankelev"
@@ -802,16 +802,6 @@ Technical requirements: Users should feel comfortable using a terminal & Docker 
           {isExtravaganza && (
             <ProgramItem
               dayStr="2022-09-17"
-              startTime="20:00"
-              endTime="23:00"
-              title="DJ/Music - DJ Lifestyle aka Ozan"
-              className="text-purple-300"
-              eventLocations={[locations.yard1]}
-            />
-          )}
-          {isExtravaganza && (
-            <ProgramItem
-              dayStr="2022-09-17"
               startTime="19:30"
               endTime="19:45"
               title="Hopium Diaries - Dystopian Dreams (2021, Rekt News)"
@@ -827,6 +817,16 @@ Technical requirements: Users should feel comfortable using a terminal & Docker 
               title="Deep Web - The Untold Story of Bitcoin and the Silk Road (2015, Alex Winter)"
               className="text-purple-300"
               eventLocations={[locations.cinema]}
+            />
+          )}
+          {isExtravaganza && (
+            <ProgramItem
+              dayStr="2022-09-17"
+              startTime="20:00"
+              endTime="23:00"
+              title="DJ/Music - DJ Lifestyle aka Ozan"
+              className="text-purple-300"
+              eventLocations={[locations.yard1]}
             />
           )}
           {isExtravaganza && (
@@ -910,7 +910,7 @@ Technical requirements: Users should feel comfortable using a terminal & Docker 
               <ProgramItem
                 dayStr="2022-09-18"
                 startTime="00:00"
-                endTime="15:00"
+                endTime="18:00"
                 title="Crypto-Winter"
                 className="text-purple-300"
                 eventLocations={[locations.xrRoom]}
@@ -927,7 +927,7 @@ Technical requirements: Users should feel comfortable using a terminal & Docker 
               <ProgramItem
                 dayStr="2022-09-18"
                 startTime="09:00"
-                endTime="16:00"
+                endTime="15:00"
                 title="Escape Room: No time to DAI"
                 className="text-purple-300"
                 eventLocations={[locations.alice]}
@@ -953,13 +953,6 @@ Technical requirements: Users should feel comfortable using a terminal & Docker 
                 eventLocations={[locations.wildenbruch]}
               />
             )}
-            <ProgramItem
-              dayStr="2022-09-18"
-              startTime="12:00"
-              endTime="15:00"
-              title="JUDGING"
-              eventLocations={[]}
-            />
             <ProgramItem
               dayStr="2022-09-18"
               startTime="12:00"
