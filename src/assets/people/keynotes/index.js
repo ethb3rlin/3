@@ -16,6 +16,7 @@ export default [
       url: "https://www.atari-teenage-riot.com/",
     },
     image: require("./AlecEmpire_AtariTeenageRiot.jpg"),
+    twitter: "https://twitter.com/ATRiot_",
   },
   {
     name: "E.G. Galano",
@@ -25,6 +26,7 @@ export default [
     },
     image: require("./EG_Galano_Infura.jpeg"),
     twitter: "https://twitter.com/egalano",
+    github: "https://github.com/egalano",
   },
   {
     name: "Jarrad Hope",
@@ -34,6 +36,7 @@ export default [
     },
     image: require("./JarradHope_Status.jpg"),
     twitter: "https://twitter.com/0xc1c4da",
+    github: "https://github.com/0xc1c4da",
   },
   {
     name: "Jaya Klara Brekke",
@@ -43,6 +46,7 @@ export default [
     },
     image: require("./JayaBrekke.jpg"),
     twitter: "https://twitter.com/jayapapaya",
+    github: "https://github.com/jayapapaya",
   },
   {
     name: "Chelsea Manning",
@@ -52,6 +56,7 @@ export default [
     },
     image: require("./ChelseaManning.jpg"),
     twitter: "https://twitter.com/xychelsea",
+    github: "https://github.com/xychelsea",
   },
   {
     name: "Frederik Haga",
@@ -61,6 +66,7 @@ export default [
     },
     image: require("./frederikHaga.jpg"),
     twitter: "https://twitter.com/hagaetc",
+    github: "https://github.com/hagaetc",
   },
   {
     name: "Nick Almond",
