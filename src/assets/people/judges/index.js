@@ -146,4 +146,31 @@ export default [
     image: require("./LuisBezzenberger_ShutterNetwork.jpg"),
     twitter: "https://twitter.com/bezzenberger",
   },
+  {
+    name: "Aqeel Mohammed",
+    organization: {
+      name: "Ethereum Foundation",
+      url: "https://ethereum.org",
+    },
+    image: require("./aqeelmohammad.jpg"),
+    twitter: "https://twitter.com/qnou",
+  },
+  {
+    name: "Dani Osorio",
+    organization: {
+      name: "MetaWeb Ventures",
+      url: "https://www.metaweb.vc/",
+    },
+    image: require("./DaniOsorio_MetaWebVentures.jpeg"),
+    twitter: "https://twitter.com/waverlymaven",
+  },
+  {
+    name: "Minsi Wang",
+    organization: {
+      name: "Espresso Systems",
+      url: "https://www.espressosys.com/",
+    },
+    image: require("./MinsiWang_EspressoSystem.jpg"),
+    twitter: "https://twitter.com/minsiw",
+  },
 ];

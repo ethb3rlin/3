@@ -18,9 +18,6 @@ export default [
     image: require("./AlecEmpire_AtariTeenageRiot.jpg"),
   },
   {
-    name: "Chelsea Manning",
-  },
-  {
     name: "E.G. Galano",
     organization: {
       name: "Infura",
@@ -55,5 +52,23 @@ export default [
     },
     image: require("./ChelseaManning.jpg"),
     twitter: "https://twitter.com/xychelsea",
+  },
+  {
+    name: "Frederik Haga",
+    organization: {
+      name: "Dune",
+      url: "https://dune.com/",
+    },
+    image: require("./frederikHaga.jpg"),
+    twitter: "https://twitter.com/hagaetc",
+  },
+  {
+    name: "Nick Almond",
+    organization: {
+      name: "Factory DAO",
+      url: "https://www.factorydao.xyz/",
+    },
+    twitter: "https://twitter.com/drnicka",
+    image: require("./nickAlmond.jpg"),
   },
 ];

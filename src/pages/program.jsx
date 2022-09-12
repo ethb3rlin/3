@@ -25,7 +25,12 @@ import eGalano from "../assets/people/keynotes/EG_Galano_Infura.jpeg";
 import jarradHope from "../assets/people/keynotes/JarradHope_Status.jpg";
 import gillordPisas from "../assets/people/mc/gillord.jpg";
 import nickAlmond from "../assets/people/keynotes/nickAlmond.jpg";
+import frederikHaga from "../assets/people/keynotes/frederikHaga.jpg";
+import jackieZhang from "../assets/people/workshops/Dune_JackieZhang.jpeg";
 import VenueMapModal from "../components/VenueMapModal";
+import pedroGomes from "../assets/people/workshops/WalletConnect_PedroGomes.jpeg";
+import steveSimkins from "../assets/people/workshops/Pinata_SteveSimkins.jpg";
+import shumoChu from "../assets/people/workshops/Shumo_Manta.jpg";
 const currentDate = new Date();
 // const currentDate = new Date("2022-09-17T00:20:00+02:00");
 
@@ -36,6 +41,7 @@ const ProgramItem = ({
   endDayStr,
   startTime,
   endTime,
+  className,
 }) => {
   // ISO Format: 2022-09-16T00:09:00+02:00
   const startDate = new Date(dayStr + "T" + startTime + ":00+02:00");
@@ -51,7 +57,7 @@ const ProgramItem = ({
           : currentDate > startDate
           ? "font-bold animate-pulse-faster"
           : ""
-      } list-none text-lg`}
+      } list-none text-lg ${className}`}
     >
       <span className="fake-bold">
         <span className="text-berlin-yellow opacity-50">{"> "}</span>
@@ -201,6 +207,10 @@ const Program = () => {
   const [activeMapName, setActiveMapName] = React.useState(
     "Ground Floor / Floor 0"
   );
+  const [isExtravaganza, setIsExtravaganza] = React.useState(false);
+  const [isSticky, setIsSticky] = React.useState(false);
+
+  let toggleRef = React.useRef(null);
 
   const handleCloseModal = (e) => {
     e.stopPropagation();
@@ -220,6 +230,10 @@ const Program = () => {
   const handleSecondFloor = () => {
     setActiveMap(secondFloor);
     setActiveMapName("Second Floor / Floor 2");
+  };
+  const handleFifthFloor = () => {
+    setActiveMap(fifthFloor);
+    setActiveMapName("Fifth Floor / Floor 5");
   };
 
   const locations = {
@@ -311,7 +325,67 @@ const Program = () => {
           .focus();
       },
     },
+    wildenbruch: {
+      name: "Wildenbruch",
+      handler: () => {
+        handleFifthFloor();
+        setActiveRoomClass("wildenbruch");
+        setIsMapModalOpen(true);
+      },
+    },
+    xrRoom: {
+      name: "XR Room",
+      handler: () => {
+        handleGroundFloor();
+        setActiveRoomClass("xrRoom");
+        setIsMapModalOpen(true);
+      },
+    },
+    alice: {
+      name: "Alice",
+      handler: () => {
+        handleSecondFloor();
+        setActiveRoomClass("alice");
+        setIsMapModalOpen(true);
+      },
+    },
+    persius: {
+      name: "Persius",
+      handler: () => {
+        handleFifthFloor();
+        setActiveRoomClass("persius");
+        setIsMapModalOpen(true);
+      },
+    },
+    cinema: {
+      name: "Cinema",
+      handler: () => {
+        handleFifthFloor();
+        setActiveRoomClass("cinema");
+        setIsMapModalOpen(true);
+      },
+    },
+    yard1: {
+      name: "Yard 1",
+      handler: () => {
+        handleGroundFloor();
+        setActiveRoomClass("yard1");
+        setIsMapModalOpen(true);
+      },
+    },
   };
+
+  React.useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([e]) =>
+        e.intersectionRatio < 1 ? setIsSticky(true) : setIsSticky(false),
+      { threshold: [1] }
+    );
+    if (toggleRef.current) observer.observe(toggleRef.current);
+    return () => {
+      if (toggleRef.current) observer.unobserve(toggleRef.current);
+    };
+  }, [toggleRef]);
 
   return (
     <Layout>
@@ -323,6 +397,38 @@ const Program = () => {
           early during the day outside the venue to avoid long queues in the
           evening.
         </p>
+        {/* Use top: -1px to detect stickyness https://davidwalsh.name/detect-sticky */}
+        <div
+          className={`flex items-center justify-center w-full sticky -top-1 py-4 text-center  ${
+            isSticky ? "bg-black" : ""
+          }`}
+          ref={toggleRef}
+        >
+          <label for="toogleA" className="flex items-center cursor-pointer">
+            <div className="mr-3 ">Hacker Essentials</div>
+            <div className="relative">
+              <input
+                id="toogleA"
+                type="checkbox"
+                className="sr-only"
+                onChange={() => setIsExtravaganza((prev) => !prev)}
+              />
+              <div
+                className={`w-10 h-4 ${
+                  isExtravaganza ? "bg-purple-500" : "bg-gray-400"
+                } rounded-full shadow-inner`}
+              ></div>
+              <div
+                className={`absolute w-6 h-6 rounded-full shadow -left-1 -top-1 transition ${
+                  isExtravaganza
+                    ? "translate-x-full bg-purple-300"
+                    : "bg-gray-200"
+                }`}
+              ></div>
+            </div>
+            <div className="ml-3 text-purple-300">Hacker Extravaganza</div>
+          </label>
+        </div>
         <p className="mt-4">
           <ul>
             <ProgramItem
@@ -346,9 +452,20 @@ const Program = () => {
             />
             <SpeechItem
               dayStr="2022-09-16"
+              startTime="16:30"
+              endTime="17:00"
+              title="Keynote: Stories from ETHBerlin"
+              speakerName="Fredrik Haga, Dune, Co-founder"
+              description="The story of how two Norwegians made their way to Berlin in 2018 with a crypto data startup idea and how ETHBerlin shaped their journey."
+              photo={frederikHaga}
+              eventLocations={[locations.lexis]}
+            />
+            <SpeechItem
+              dayStr="2022-09-16"
               startTime="17:00"
               endTime="17:30"
-              title="Keynote"
+              title="Keynote: Points of Centralization and Paths to Decentralization"
+              description="In his talk, EG will be going over various points of centralization that exist in Web3 and the trade offs we make as an ecosystem on the decentralization spectrum."
               speakerName="E.G. Galano, Infura, Co-founder"
               photo={eGalano}
               eventLocations={[locations.lexis]}
@@ -378,6 +495,26 @@ const Program = () => {
               title="HACKING"
               eventLocations={[]} // Location = everywhere
             />
+            {isExtravaganza && (
+              <ProgramItem
+                dayStr="2022-09-16"
+                startTime="19:00"
+                endTime="23:59"
+                title="Art Exhibition: Merkle Root Berlin"
+                className="text-purple-300"
+                eventLocations={[locations.wildenbruch]}
+              />
+            )}
+            {isExtravaganza && (
+              <ProgramItem
+                dayStr="2022-09-16"
+                startTime="19:00"
+                endTime="23:59"
+                title="Crypto-Winter"
+                className="text-purple-300"
+                eventLocations={[locations.xrRoom]}
+              />
+            )}
             <ProgramItem
               dayStr="2022-09-16"
               startTime="19:00"
@@ -397,15 +534,47 @@ const Program = () => {
               startTime="20:00"
               endTime="20:45"
               title="Technical Workshop - Dune: Abracadabra with Open Data"
+              speakerName="Jackie Zhang, Dune"
+              photo={jackieZhang}
+              description={
+                <>
+                  🪄 Would you like to wave your wand and speak order into the
+                  data chaos as a Dune Wizard?
+                  <br />
+                  <br />
+                  🤝 Dune is a crypto data analytics platform, where we are on a
+                  mission to make crypto data accessible for all.
+                  <br />
+                  <br />
+                  📊 In this workshop, we will walk through how to do crypto
+                  data analysis on Dune in an open-source style!
+                  <br />
+                  <br />
+                  🧙 Come join us and start your Dune Wizard journey!"
+                </>
+              }
               eventLocations={[locations.lexis]}
             />
             <SpeechItem
               dayStr="2022-09-16"
               startTime="20:00"
               endTime="20:45"
-              title="Technical Workshop - Manta"
+              title="Technical Workshop - Manta: Bringing programmable privacy to Web3"
+              speakerName="Shumo Chu, Manta"
+              description="In this workshop, we will be demoing MantaPay, where users can transact popular assets while simultaneously reaping the benefits of on-chain privacy through ZKP. We will also talk about The future of ZK Applications & Poseidon VM: the zkApp friendly VM with EVM Compatibility."
+              photo={shumoChu}
               eventLocations={[locations.creatorsLab]}
             />
+            {isExtravaganza && (
+              <ProgramItem
+                dayStr="2022-09-16"
+                startTime="20:00"
+                endTime="22:00"
+                title="Music/DJ - Anthropous Anonymous"
+                className="text-purple-300"
+                eventLocations={[locations.yard1]}
+              />
+            )}
             <SpeechItem
               dayStr="2022-09-16"
               startTime="20:45"
@@ -415,6 +584,8 @@ const Program = () => {
               description={
                 "Improve your dapp by integrating WalletConnect with Web3Modal and allow your users to connect to Metamask, Rainbow, Trust Wallet and many more wallets. Including a short introduction to Ethereum libraries such as web3.js and ethers.js followed by a code walkthrough integrating a dapp with Web3Modal supporting WalletConnect. Finally we will cover best practices and UX improvements to really polish your dapp."
               }
+              speakerName="Pedro Gomes, WalletConnect, Co-founder"
+              photo={pedroGomes}
             />
             <SpeechItem
               dayStr="2022-09-16"
@@ -453,9 +624,11 @@ Technical requirements: Users should feel comfortable using a terminal & Docker 
               dayStr="2022-09-16"
               startTime="22:15"
               endTime="22:45"
-              title="Technical Workshop - Pinata: Pinata Workshop"
+              title="Technical Workshop - Pinata: How To Use Pinata Submarine To Provide Real Utility To Communities"
               eventLocations={[locations.lexis]}
-              speakerName=""
+              speakerName="Steve Simkins, Pinata"
+              description="In this workshop, you will learn how to use Submarining and create token gated experiences for your community!"
+              photo={steveSimkins}
             />
             <SpeechItem
               dayStr="2022-09-16"
@@ -475,6 +648,17 @@ Technical requirements: Users should feel comfortable using a terminal & Docker 
               eventLocations={[locations.lexis]}
               speakerName="Patrick McCorry - Infura"
             />
+            {isExtravaganza && (
+              <ProgramItem
+                dayStr="2022-09-16"
+                startTime="23:59"
+                endTime="02:00"
+                endDayStr="2022-09-17"
+                title="Music/DJ - Michael Yankelev"
+                className="text-purple-300"
+                eventLocations={[locations.creatorsLab]}
+              />
+            )}
             <ProgramItem
               dayStr="2022-09-16"
               startTime="23:59"
@@ -498,6 +682,16 @@ Technical requirements: Users should feel comfortable using a terminal & Docker 
             title="HACKING"
             eventLocations={[]}
           />
+          {isExtravaganza && (
+            <ProgramItem
+              dayStr="2022-09-17"
+              startTime="00:00"
+              endTime="23:59"
+              title="Crypto-Winter"
+              className="text-purple-300"
+              eventLocations={[locations.xrRoom]}
+            />
+          )}
           <ProgramItem
             dayStr="2022-09-17"
             startTime="09:00"
@@ -505,6 +699,36 @@ Technical requirements: Users should feel comfortable using a terminal & Docker 
             title="Breakfast"
             eventLocations={[locations.restaurant]}
           />
+          {isExtravaganza && (
+            <ProgramItem
+              dayStr="2022-09-17"
+              startTime="09:00"
+              endTime="23:59"
+              title="Escape Room: No time to DAI"
+              className="text-purple-300"
+              eventLocations={[locations.alice]}
+            />
+          )}
+          {isExtravaganza && (
+            <ProgramItem
+              dayStr="2022-09-17"
+              startTime="11:00"
+              endTime="23:59"
+              title="Art Exhibition: Merkle Root Berlin"
+              className="text-purple-300"
+              eventLocations={[locations.xrRoom]}
+            />
+          )}
+          {isExtravaganza && (
+            <ProgramItem
+              dayStr="2022-09-17"
+              startTime="11:00"
+              endTime="19:00"
+              title="Joy Space Zen Den"
+              className="text-purple-300"
+              eventLocations={[locations.persius]}
+            />
+          )}
           <ProgramItem
             dayStr="2022-09-17"
             startTime="13:00"
@@ -512,6 +736,56 @@ Technical requirements: Users should feel comfortable using a terminal & Docker 
             title="Lunch"
             eventLocations={[locations.restaurant]}
           />
+          {isExtravaganza && (
+            <ProgramItem
+              dayStr="2022-09-17"
+              startTime="15:00"
+              endTime="23:59"
+              title="Chess Club"
+              className="text-purple-300"
+              eventLocations={[locations.yard1]}
+            />
+          )}
+          {isExtravaganza && (
+            <ProgramItem
+              dayStr="2022-09-17"
+              startTime="17:00"
+              endTime="17:45"
+              title="Cypherpunks Write Code (2020, Jim Epstein)"
+              className="text-purple-300"
+              eventLocations={[locations.cinema]}
+            />
+          )}
+          {isExtravaganza && (
+            <ProgramItem
+              dayStr="2022-09-17"
+              startTime="17:45"
+              endTime="19:30"
+              title="The Internet's Own Boy - The Story of Aaron Swartz (2014, Brian Knappenberger)"
+              className="text-purple-300"
+              eventLocations={[locations.cinema]}
+            />
+          )}
+          {isExtravaganza && (
+            <ProgramItem
+              dayStr="2022-09-17"
+              startTime="18:00"
+              endTime="23:59"
+              title="ETHBerlin³ Mind Spa by Rawciousness"
+              className="text-purple-300"
+              eventLocations={[locations.persius]}
+            />
+          )}
+          {isExtravaganza && (
+            <ProgramItem
+              dayStr="2022-09-17"
+              startTime="18:00"
+              endTime="20:00"
+              title="Open Mic"
+              className="text-purple-300"
+              eventLocations={[locations.yard1]}
+            />
+          )}
           <ProgramItem
             dayStr="2022-09-17"
             startTime="19:00"
@@ -519,6 +793,88 @@ Technical requirements: Users should feel comfortable using a terminal & Docker 
             title="Dinner"
             eventLocations={[locations.restaurant]}
           />
+          {isExtravaganza && (
+            <ProgramItem
+              dayStr="2022-09-17"
+              startTime="20:00"
+              endTime="23:00"
+              title="DJ/Music - DJ Lifestyle aka Ozan"
+              className="text-purple-300"
+              eventLocations={[locations.yard1]}
+            />
+          )}
+          {isExtravaganza && (
+            <ProgramItem
+              dayStr="2022-09-17"
+              startTime="19:30"
+              endTime="19:45"
+              title="Hopium Diaries - Dystopian Dreams (2021, Rekt News)"
+              className="text-purple-300"
+              eventLocations={[locations.cinema]}
+            />
+          )}
+          {isExtravaganza && (
+            <ProgramItem
+              dayStr="2022-09-17"
+              startTime="19:45"
+              endTime="21:10"
+              title="Deep Web - The Untold Story of Bitcoin and the Silk Road (2015, Alex Winter)"
+              className="text-purple-300"
+              eventLocations={[locations.cinema]}
+            />
+          )}
+          {isExtravaganza && (
+            <ProgramItem
+              dayStr="2022-09-17"
+              startTime="21:10"
+              endTime="21:20"
+              title="Lunarpunk and the Dark Side of the Cycle (2022, Rekt News)"
+              className="text-purple-300"
+              eventLocations={[locations.cinema]}
+            />
+          )}
+          {isExtravaganza && (
+            <ProgramItem
+              dayStr="2022-09-17"
+              startTime="21:20"
+              endTime="23:10"
+              title="Fahrenheit 451 (1966, François Truffaut)"
+              className="text-purple-300"
+              eventLocations={[locations.cinema]}
+            />
+          )}
+          {isExtravaganza && (
+            <ProgramItem
+              dayStr="2022-09-17"
+              startTime="23:00"
+              endDayStr="2022-09-18"
+              endTime="02:00"
+              title="DJ/Music - Michael Yankelev"
+              className="text-purple-300"
+              eventLocations={[locations.creatorsLab]}
+            />
+          )}
+          {isExtravaganza && (
+            <ProgramItem
+              dayStr="2022-09-17"
+              startTime="23:10"
+              endTime="23:15"
+              title="Ape Tax (2022, Rekt News)"
+              className="text-purple-300"
+              eventLocations={[locations.cinema]}
+            />
+          )}
+          {isExtravaganza && (
+            <ProgramItem
+              dayStr="2022-09-17"
+              startTime="23:15"
+              endDayStr="2022-09-18"
+              endTime="02:00"
+              title="Hypernormalization (2016, Adam Curtis)"
+              className="text-purple-300"
+              eventLocations={[locations.cinema]}
+            />
+          )}
           <ProgramItem
             dayStr="2022-09-17"
             startTime="23:59"
@@ -544,12 +900,59 @@ Technical requirements: Users should feel comfortable using a terminal & Docker 
               title="HACKING (Submission deadline at 11:00 am)"
               eventLocations={[]}
             />
+            {isExtravaganza && (
+              <ProgramItem
+                dayStr="2022-09-18"
+                startTime="00:00"
+                endTime="15:00"
+                title="Crypto-Winter"
+                className="text-purple-300"
+                eventLocations={[locations.xrRoom]}
+              />
+            )}
             <ProgramItem
               dayStr="2022-09-18"
               startTime="09:00"
               endTime="11:00"
               title="Breakfast"
               eventLocations={[locations.restaurant]}
+            />
+            {isExtravaganza && (
+              <ProgramItem
+                dayStr="2022-09-18"
+                startTime="09:00"
+                endTime="16:00"
+                title="Escape Room: No time to DAI"
+                className="text-purple-300"
+                eventLocations={[locations.alice]}
+              />
+            )}
+            {isExtravaganza && (
+              <ProgramItem
+                dayStr="2022-09-18"
+                startTime="11:00"
+                endTime="13:00"
+                title="Joy Space Zen Den"
+                className="text-purple-300"
+                eventLocations={[locations.persius]}
+              />
+            )}
+            {isExtravaganza && (
+              <ProgramItem
+                dayStr="2022-09-18"
+                startTime="11:00"
+                endTime="15:00"
+                title="Art Exhibition: Merkle Root Berlin"
+                className="text-purple-300"
+                eventLocations={[locations.xrRoom]}
+              />
+            )}
+            <ProgramItem
+              dayStr="2022-09-18"
+              startTime="12:00"
+              endTime="15:00"
+              title="JUDGING"
+              eventLocations={[]}
             />
             <ProgramItem
               dayStr="2022-09-18"
@@ -563,6 +966,7 @@ Technical requirements: Users should feel comfortable using a terminal & Docker 
               startTime="13:00"
               endTime="13:30"
               title="Introduction to Quadratic Voting"
+              description="Nick will explain how quadratic voting works, why it is important and even do a few fun votes with you to try it out and help you get all set for the big open track winner voting."
               eventLocations={[locations.lexis]}
               speakerName="Nick Almond - Factory DAO"
               photo={nickAlmond}

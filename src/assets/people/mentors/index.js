@@ -296,4 +296,33 @@ export default [
       url: "https://nobsstudio.com/",
     },
   },
+  {
+    name: "Riccardo Biosas",
+    twitter: "https://twitter.com/RBiosas",
+    github: "https://github.com/RiccardoBiosas",
+    organization: {
+      name: "Opium Network",
+      url: "https://opium.finance/",
+    },
+    image: require("./riccardo_opium_network.jpg"),
+  },
+  {
+    name: "Amer Ameen",
+    github: "https://github.com/amerameen",
+    twitter: "https://twitter.com/amer__ameen",
+    organization: {
+      name: "ChainSafe",
+      url: "https://chainsafe.io/",
+    },
+    image: require("./AmerAmeen_ChainSafe.jpg"),
+  },
+  {
+    name: "Manny",
+    twitter: "https://twitter.com/codingwithmanny",
+    organization: {
+      name: "Polygon",
+      url: "https://polygon.technology/",
+    },
+    image: require("./Manny_Polygon.jpeg"),
+  },
 ];
