@@ -474,7 +474,7 @@ Technical requirements: Users should feel comfortable using a terminal & Docker 
               dayStr="2022-09-16"
               startTime="22:15"
               endTime="22:45"
-              title="Technical Workshop - Pinata: How To Use Pinata Submarine To Provide Real Utility To Communities"
+              title="Technical Workshop - Pinata: How to use Pinata Submarine to provide real utility to communities"
               eventLocations={[locations.lexis]}
               speakerName="Steve Simkins"
               photo={steveSimkins}
