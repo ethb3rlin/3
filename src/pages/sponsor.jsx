@@ -49,6 +49,7 @@ import sepana from "../assets/sponsors/sepana.png";
 import atr from "../assets/sponsors/atr.png";
 import radicle from "../assets/sponsors/radicle.png";
 import daoism from "../assets/sponsors/daoism.png";
+import factorydao from "../assets/sponsors/factorydao.png";
 import pengo from "../assets/sponsors/pengo.jpeg";
 import dinar from "../assets/sponsors/dinar.jpeg";
 import drachma from "../assets/sponsors/drachma.jpeg";
@@ -439,6 +440,12 @@ const Sponsor = () => (
         <a href="https://daoism.systems/" target="_blank" rel="noreferrer">
           <img
             src={daoism}
+            className="h-20 md:h-24 sm:mx-8 sm:grayscale hover:grayscale-0 my-4"
+          />
+        </a>
+        <a href="https://www.factorydao.xyz/" target="_blank" rel="noreferrer">
+          <img
+            src={factorydao}
             className="h-20 md:h-24 sm:mx-8 sm:grayscale hover:grayscale-0 my-4"
           />
         </a>
