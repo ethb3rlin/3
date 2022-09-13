@@ -486,6 +486,7 @@ const Program = () => {
               endTime="18:00"
               title="Keynote: Humanity 3.0: Beyond Blockchains, Planetary Systems, &amp; Infinite Games"
               speakerName="Mark Nadal, GUN, Lead Open Source Engineer"
+              description="The internet enables humanity to move beyond its 5000 year story of debt. Like flight seemed impossible, it is now in the light of the everyday. Post-scarcity will be too, it will resurrect humanitarianism as the economic unit for progress."
               photo={markNadal}
               eventLocations={[locations.lexis]}
             />
@@ -614,7 +615,7 @@ Technical requirements: Users should feel comfortable using a terminal & Docker 
               speakerName="Jenny Pollack, Zannis Kalampoukis - Lens"
               photo={jennyPollack}
               photo2={zannisKalampoukis}
-              description="Join the Lens team for a hands on session all about how to set up and integrate the Lens API on any app, creating an API key on Devportal, and choosing a Lens starter boiler plate. We'll walk you through how to hook everything together and demonstrate with a few interesting use cases."
+              description="We're going to walk through choosing a Lens starter boilerplate and hook everything together and post / fetch some data. We'll also discuss some ideas on privacy-oriented use cases that Lens enables that web2 doesn't."
             />
             <SpeechItem
               dayStr="2022-09-16"
@@ -708,8 +709,8 @@ Technical requirements: Users should feel comfortable using a terminal & Docker 
           {isExtravaganza && (
             <ProgramItem
               dayStr="2022-09-17"
-              startTime="09:00"
-              endTime="23:59"
+              startTime="10:00"
+              endTime="22:00"
               title="Escape Room: No time to DAI"
               className="text-purple-300"
               eventLocations={[locations.alice]}
@@ -923,7 +924,7 @@ Technical requirements: Users should feel comfortable using a terminal & Docker 
               title="Breakfast"
               eventLocations={[locations.restaurant]}
             />
-            {isExtravaganza && (
+            {/* {isExtravaganza && (
               <ProgramItem
                 dayStr="2022-09-18"
                 startTime="09:00"
@@ -932,7 +933,7 @@ Technical requirements: Users should feel comfortable using a terminal & Docker 
                 className="text-purple-300"
                 eventLocations={[locations.alice]}
               />
-            )}
+            )} */}
             {isExtravaganza && (
               <ProgramItem
                 dayStr="2022-09-18"
