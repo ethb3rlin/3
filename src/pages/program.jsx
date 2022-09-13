@@ -32,6 +32,7 @@ import nickAlmond from "../assets/people/keynotes/nickAlmond.jpg";
 import frederikHaga from "../assets/people/keynotes/frederikHaga.jpg";
 import VenueMapModal from "../components/VenueMapModal";
 import shumoChu from "../assets/people/workshops/Shumo_Manta.jpg";
+import evinMcmullen from "../assets/people/keynotes/evin.jpg";
 const currentDate = new Date();
 // const currentDate = new Date("2022-09-17T00:20:00+02:00");
 
@@ -101,6 +102,7 @@ const SpeechItem = ({
   speakerName,
   photo,
   photo2,
+  photo3,
 }) => {
   const [isModalOpen, setIsModalOpen] = React.useState(false);
   const handleCloseModal = (e) => {
@@ -188,6 +190,12 @@ const SpeechItem = ({
             {photo2 && (
               <img
                 src={photo2}
+                className="h-32 md:h-64 self-center mx-4 my-4"
+              />
+            )}
+            {photo3 && (
+              <img
+                src={photo3}
                 className="h-32 md:h-64 self-center mx-4 my-4"
               />
             )}
@@ -1001,9 +1009,11 @@ Technical requirements: Users should feel comfortable using a terminal & Docker 
               dayStr="2022-09-18"
               startTime="15:15"
               endTime="16:00"
-              title="Fireside Chat"
+              title="Fireside Chat with Chelsea Manning and Jaya Klara Brekke - moderated by Evin McMullen"
               eventLocations={[locations.lexis]}
-              speakerName="Chelsea Manning & Jaya Klara Brekke - Nym"
+              description="During this fireside chat, Chelsea, Jaya and Evin will talk all things privacy: The urgency of privacy today, cypherpunk vision, and future vision for privacy. They will also touch on the Merge, as well as Chelsea's views on secure hardware and the future vision for privacy as an intervention into the data economy."
+              speakerName="Chelsea Manning & Jaya Klara Brekke - Nym, Evin McMullen - Disco"
+              photo3={evinMcmullen}
               photo2={jayaKlaraBrekke}
               photo={chelseaManning}
             />
