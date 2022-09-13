@@ -325,4 +325,14 @@ export default [
     },
     image: require("./Manny_Polygon.jpeg"),
   },
+  {
+    name: "Jonatan LB",
+    image: require("./Jonatan_LB_Inflection.xyz.png"),
+    organization: {
+      name: "Inflection",
+      url: "https://inflection.xyz/",
+    },
+    twitter: "https://twitter.com/mountbranch",
+    github: "https://github.com/deerdear",
+  },
 ];
