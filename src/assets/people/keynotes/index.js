@@ -77,4 +77,13 @@ export default [
     twitter: "https://twitter.com/drnicka",
     image: require("./nickAlmond.jpg"),
   },
+  {
+    name: "Evin McMullen",
+    organization: {
+      name: "Disco",
+      url: "https://disco.xyz/",
+    },
+    twitter: "https://twitter.com/provenauthority",
+    image: require("./evin.jpg"),
+  },
 ];
