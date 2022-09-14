@@ -516,20 +516,25 @@ const HackerManual = () => {
 
         <div id="submissions">
           <h2 className="text-2xl font-bold">Submissions</h2>
-          <p>You have to register and create your project at{" "}
-            <a href="https://ethberlin.devfolio.co/" target="_blank">ethberlin.devfolio.co</a>{" "}
+          <p>
+            You have to register and create your project at{" "}
+            <a href="https://ethberlin.devfolio.co/" target="_blank">
+              ethberlin.devfolio.co
+            </a>{" "}
             for submission before Sunday, 11am.
           </p>
-          <p>Make sure to provide a link to your open-source repository, a video or a demo,
-            and if applicable, the contract address(es) of your deployed application, either
-            on a testnet of your choice or mainnet of a platform of choice.
+          <p>
+            Make sure to provide a link to your open-source repository, a video
+            or a demo, and if applicable, the contract address(es) of your
+            deployed application, either on a testnet of your choice or mainnet
+            of a platform of choice.
           </p>
-          <p>All submitted projects will be eligible for the main hackathon prize. In addition,
-            you have to select a category (track), which you would like to pitch for, and up to
-            two meta awards.
+          <p>
+            All submitted projects will be eligible for the main hackathon
+            prize. In addition, you have to select a category (track), which you
+            would like to pitch for, and up to two meta awards.
           </p>
-          <p>Don't miss the deadline! Sunday 11am!
-          </p>
+          <p>Don't miss the deadline! Sunday 11am!</p>
         </div>
         <div className="flex justify-center">
           <div className="border-b-[1px] mb-8 mt-4 border-berlin-yellow opacity-40 w-full"></div>
@@ -553,12 +558,21 @@ const HackerManual = () => {
               <LocationButton loc={locations.wildenbruch} />
               <div>
                 Art exhibition curated by Stina Gustafsson and María Paula
-                Fernández
+                Fernández.
               </div>
               <ul className="mt-2">
                 <li className="mb-1">Friday: 19:00-23:59</li>
                 <li className="mb-1">
-                  Saturday: 11:00-23:59 for hackers, 13:00-17:00 for public
+                  Saturday: 11:00-23:59 for hackers, 13:00-17:00 for public.
+                  Public tickets available{" "}
+                  <a
+                    href="https://www.eventbrite.com/e/merkle-root-berlin-tickets-415231547737"
+                    target="_blank"
+                    rel="noopener"
+                  >
+                    here
+                  </a>
+                  .
                 </li>
                 <li className="mb-1">Sunday 11:00-15:00</li>
               </ul>
@@ -658,14 +672,15 @@ const HackerManual = () => {
           <h2 className="text-2xl font-bold">Afterparty</h2>
           <LocationButton loc={locations.watergate} />
           <p>
-            What else is there to be done after 50 hours of hacking?
-            Right, the afterparty! This year we are celebrating our achievements
-            at the Watergate; doors: 21:00.
+            What else is there to be done after 50 hours of hacking? Right, the
+            afterparty! This year we are celebrating our achievements at the
+            Watergate; doors: 21:00.
           </p>
           <p>
-            You will receive an afterparty wristband during the hackathon registration.
-            If you don't want to or cannot attend on Sunday evening, you can share
-            it with your friends. There will be no additional tickets or guest lists!
+            You will receive an afterparty wristband during the hackathon
+            registration. If you don't want to or cannot attend on Sunday
+            evening, you can share it with your friends. There will be no
+            additional tickets or guest lists!
           </p>
         </div>
       </div>
