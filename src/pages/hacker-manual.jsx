@@ -431,7 +431,7 @@ const HackerManual = () => {
               <span className="fake-bold">
                 Infrastructure: Providing distributed public goods.
               </span>{" "}
-              Topcis: Protocols, Networks, Infrastructure, Developer Tools,
+              Topics: Protocols, Networks, Infrastructure, Developer Tools,
               Hardware.
             </li>
           </ul>
@@ -541,7 +541,82 @@ const HackerManual = () => {
         </div>
         <div id="judging">
           <h2 className="text-2xl font-bold">Judging</h2>
-          <p>To be announced...</p>
+          <p>
+            You can find the prizes and bounties in the{" "}
+            <a href="#prizes-bounties">above section</a>.
+          </p>
+          <p>
+            This year, we will use a different platform for your submissions. We
+            decided not to use devpost for this edition, since they are sadly
+            excluding participation from some regions by default. This
+            discriminatory and overly compliant behavior is kind of a "no" for
+            us, so instead we shall be collaborating with the much more
+            decentralised crew at{" "}
+            <a href="https://devfolio.co/home/" target="_blank" rel="noopener">
+              Devfolio
+            </a>
+            .
+          </p>
+
+          <p>
+            We aim to continuously improve the process. This is why this year we
+            will have three different approaches to judging:
+          </p>
+
+          <ul>
+            <li>
+              "Traditional judging": Judges watch live pitches & Judges check
+              submissions async digitally
+            </li>
+            <li>Community judging powered by quadratic voting</li>
+          </ul>
+          <p>
+            Overall, we also want to increase the transparency of the judging.
+            This is why all judge voting sheets will be made publicly available
+            after the winning ceremony.
+          </p>
+          <p>
+            Judging will take place on Sunday 18th September and the judges will
+            be reviewing project submissions, and watching pitches, from the
+            11am deadline until just before the closing ceremony. Note: we will
+            also be shuffling the judging teams halfway through just to make
+            sure there is no relative bias.
+          </p>
+
+          <p>
+            The track specific judges will watch live pitches, while the judges
+            allocated to the meta awards will review the submissions digitally.
+            There will be 24 track judges (8 groups of three), and each group
+            will include one technical person, one product/wildcard and one
+            business/VC judge.
+          </p>
+
+          <p>
+            As mentioned above, the meta specific judges will review submissions
+            digitally and there will be two pairs of judges per meta award.
+          </p>
+
+          <p>
+            The judges will be reviewing each submission with the following
+            criteria in mind.
+          </p>
+
+          <ul>
+            <li>
+              Technicality: How hard was it to build this and how does the
+              quality of the codebase compare? Originality: Is this something
+              completely new or are there already projects with grant funding
+              working on a similar scope?
+            </li>
+            <li>
+              Practicality: How would this submission survive in the real world,
+              outside of the crypto community? Or, if the project were to be
+              specifically targeted to the crypto community, how correctly
+              targeted is it? WOW Factor: What else is there about the
+              submission? Has this project and/or team defied expectations,
+              based on timing, efforts, etc.?
+            </li>
+          </ul>
         </div>
         <div className="flex justify-center">
           <div className="border-b-[1px] mb-8 mt-4 border-berlin-yellow opacity-40 w-full"></div>
