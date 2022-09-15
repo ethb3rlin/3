@@ -335,4 +335,23 @@ export default [
     twitter: "https://twitter.com/mountbranch",
     github: "https://github.com/deerdear",
   },
+  {
+    name: "Todd Norton",
+    image: require("./Todd.jpeg"),
+    organization: {
+      name: "Manta Network",
+      url: "https://manta.network/",
+    },
+    github: "https://github.com/GhostOfGauss",
+  },
+  {
+    name: "Brandon Gomes",
+    image: require("./brandon.jpeg"),
+    organization: {
+      name: "Manta Network",
+      url: "https://manta.network/",
+    },
+    github: "https://github.com/bhgomes",
+    twitter: "https://twitter.com/brandonhgomes",
+  },
 ];

@@ -173,4 +173,21 @@ export default [
     image: require("./MinsiWang_EspressoSystem.jpg"),
     twitter: "https://twitter.com/minsiw",
   },
+  {
+    name: "Kenny Li",
+    organization: {
+      name: "Manta Network",
+      url: "https://manta.network/",
+    },
+    image: require("./KennyProfile.jpeg"),
+    twitter: "https://twitter.com/superanonymousk",
+  },
+  // {
+  //   name: "Maya Zehavi",
+  //   organization: {
+  //     name:
+  //   },
+  //   image: require("./maya.jpeg"),
+  //   twitter: "https://twitter.com/mayazi"
+  // }
 ];
