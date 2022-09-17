@@ -616,8 +616,8 @@ const HackerManual = () => {
               quality of the codebase compare? 
             </li>
             <li>
-              Originality: Is this something completely new or are there already projects with grant funding
-              working on a similar scope?
+              Originality: Is this something completely new or are there 
+              already projects with grant funding working on a similar scope?
             </li>
             <li>
               Practicality: How would this submission survive in the real world,
