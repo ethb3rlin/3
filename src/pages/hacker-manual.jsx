@@ -627,6 +627,9 @@ const HackerManual = () => {
               targeted is it?
             </li>
             <li>
+             
+            </li>
+            <li>
               WOW Factor: What else is there about the
               submission? Has this project and/or team defied expectations,
               based on timing, efforts, etc.?
