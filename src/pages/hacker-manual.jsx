@@ -667,7 +667,8 @@ const HackerManual = () => {
               <b>No time to DAI</b>
               <LocationButton loc={locations.alice} />
               <div>
-                Escape Room and Treasure Hunt by the Social Dist0rtion Protocol
+                Escape Room and <a href="https://ethberlin3.dist0rtion.com" target="_blank> Treasure Hunt </a>
+                by the Social Dist0rtion Protocol                
               </div>
               <ul>
                 <li>Starting from Saturday</li>
