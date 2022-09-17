@@ -559,6 +559,15 @@ const HackerManual = () => {
           </p>
 
           <p>
+            Each team will have one person pitch their project for 3 minutes
+            followed by a 2 minutes Q&A session. The pitch will be in front
+            of three judges each with different areas of exptertise. 
+            All judging will take place on the second floor. A schedule will be 
+            shared after 11:30 Sunday. Please be there at least 5 minutes
+            before your allocated timeslot. 
+          </p>
+
+          <p>
             We aim to continuously improve the process. This is why this year we
             will have three different approaches to judging:
           </p>
@@ -604,15 +613,20 @@ const HackerManual = () => {
           <ul>
             <li>
               Technicality: How hard was it to build this and how does the
-              quality of the codebase compare? Originality: Is this something
-              completely new or are there already projects with grant funding
+              quality of the codebase compare? 
+            </li>
+            <li>
+              Originality: Is this something completely new or are there already projects with grant funding
               working on a similar scope?
             </li>
             <li>
               Practicality: How would this submission survive in the real world,
               outside of the crypto community? Or, if the project were to be
               specifically targeted to the crypto community, how correctly
-              targeted is it? WOW Factor: What else is there about the
+              targeted is it?
+            </li>
+            <li>
+              WOW Factor: What else is there about the
               submission? Has this project and/or team defied expectations,
               based on timing, efforts, etc.?
             </li>
