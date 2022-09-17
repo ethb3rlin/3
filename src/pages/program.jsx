@@ -724,6 +724,23 @@ Technical requirements: Users should feel comfortable using a terminal & Docker 
               eventLocations={[locations.alice]}
             />
           )}
+
+          {isExtravaganza && (
+            <ProgramItem
+              dayStr="2022-09-17"
+              startTime="10:00"
+              endTime="22:00"
+              title="Treasure hunt"
+              className="text-purple-300"
+              eventLocations={[
+                {
+                  name: "ethberlin3.dist0rtion.com",
+                  handler: () =>
+                    window.open("https://ethberlin3.dist0rtion.com", "_blank"),
+                },
+              ]}
+            />
+          )}
           {isExtravaganza && (
             <ProgramItem
               dayStr="2022-09-17"
@@ -932,16 +949,6 @@ Technical requirements: Users should feel comfortable using a terminal & Docker 
               title="Breakfast"
               eventLocations={[locations.restaurant]}
             />
-            {/* {isExtravaganza && (
-              <ProgramItem
-                dayStr="2022-09-18"
-                startTime="09:00"
-                endTime="15:00"
-                title="Escape Room: No time to DAI"
-                className="text-purple-300"
-                eventLocations={[locations.alice]}
-              />
-            )} */}
             {isExtravaganza && (
               <ProgramItem
                 dayStr="2022-09-18"
