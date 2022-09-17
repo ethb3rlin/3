@@ -58,8 +58,8 @@ const ProgramItem = ({
           ? "text-gray-700"
           : currentDate > startDate
           ? "font-bold animate-pulse-faster"
-          : ""
-      } list-none text-lg ${className}`}
+          : className
+      } list-none text-lg`}
     >
       <span className="fake-bold">
         <span className="text-berlin-yellow opacity-50">{"> "}</span>
