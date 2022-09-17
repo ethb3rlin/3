@@ -561,7 +561,8 @@ const HackerManual = () => {
           <p>
             Each team will have one person pitch their project for 3 minutes
             followed by a 2 minutes Q&A session. The pitch will be in front
-            of three judges each with different areas of exptertise. 
+            of three judges each with different areas of exptertise.
+            The presenter should bring their laptop and use it for the pitch.
             All judging will take place on the second floor. A schedule will be 
             shared after 11:30 Sunday. Please be there at least 5 minutes
             before your allocated timeslot. 
