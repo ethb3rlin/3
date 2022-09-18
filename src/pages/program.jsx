@@ -1042,6 +1042,7 @@ Technical requirements: Users should feel comfortable using a terminal & Docker 
             <ProgramItem
               dayStr="2022-09-18"
               startTime="21:00"
+              endDayStr="2022-09-19"
               endTime="06:00"
               title="Afterparty"
               eventLocations={[locations.watergate]}
