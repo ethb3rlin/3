@@ -188,19 +188,22 @@ const Home = () => {
           style={{ backgroundColor: "rgba(0, 0, 0, 0.45)" }}
         >
           <p className="mt-4">
-            ETHBerlin³ was a hackathon, a cultural festival, an educational
-            event, a platform for hacktivism, and a community initiative to push
-            the decentralized ecosystem forward.
+            ETHBerlin³ (2022) was a hackathon, a cultural festival, an
+            educational event, a platform for hacktivism, and a community
+            initiative to push the decentralized ecosystem forward.
           </p>
           <p className="mt-4">
-            In the 2 years before ETHBerlin³, the global crackdown on privacy, freedom of
-            movement, and the right to transact by governments worldwide was putting us
-            on the edge of a new dark age of regression. So it was time to hack
-            the system, more than ever.
+            In the 2 years before ETHBerlin³, the global crackdown on privacy,
+            freedom of movement, and the right to transact by governments
+            worldwide was putting us on the edge of a new dark age of
+            regression. So it was the time to hack the system, more than ever.
           </p>
           <p className="mt-4">
-            You can find <a href="https://ethberlin.devfolio.co">the hacks here.</a>
-            And <a href="https://watch.ethberlin.ooo/schedule">the recordings here.</a>
+            You can find{" "}
+            <a href="https://ethberlin.devfolio.co">the hacks here.</a> And{" "}
+            <a href="https://watch.ethberlin.ooo/schedule">
+              the recordings here.
+            </a>
           </p>
           <p className="mt-4 text-center">
             Press <a href="/about">(a)</a> to get started.
