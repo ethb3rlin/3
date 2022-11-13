@@ -51,6 +51,9 @@ export default function HTML(props) {
                 else if (e.key == 'v' || e.key == 'V') {
                   window.location.href= "/venue";
                 }
+                else if (e.key == 'g' || e.key == 'G') {
+                  window.location.href= "/gallery";
+                }
             }
             `,
           }}
