@@ -133,6 +133,10 @@ const Home = () => {
           {" "}
           (m)anifesto
         </a>
+        <a className="my-2" href="/gallery">
+          {" "}
+          (g)allery
+        </a>
         <a className="my-2" href="/hacker-manual">
           {" "}
           (h)acker manual
@@ -152,10 +156,6 @@ const Home = () => {
         <a className="my-2" href="/sponsor">
           {" "}
           (s)ponsors
-        </a>
-        <a className="my-2" href="/gallery">
-          {" "}
-          (g)allery
         </a>
         <div className="fixed bottom-0 mb-8 text-sm text-center">
           <div className="my-2">
