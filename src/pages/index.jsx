@@ -203,14 +203,12 @@ const Home = () => {
             regression. So it was the time to hack the system, more than ever.
           </p>
           <p className="mt-4">
-            You can find{" "}
-            <a href="https://ethberlin.devfolio.co">the hacks here.</a> And{" "}
+            It was a blast! You can find {" "}
+            <a href="https://ethberlin.devfolio.co">the hacks</a>, {" "}
             <a href="https://watch.ethberlin.ooo/schedule">
-              the recordings here.
-            </a>
-          </p>
-          <p className="mt-4 text-center">
-            Press <a href="/about">(a)</a> to get started.
+              the recordings
+            </a>, and the {" "}
+            <a href="/gallery">the photos</a> here.
           </p>
           <p className="mt-4">
             To learn more about our vision &amp; mission, press{" "}
