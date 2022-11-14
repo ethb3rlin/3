@@ -204,8 +204,10 @@ const Home = () => {
           </p>
           <p className="mt-4">
             It was a blast! You can find {" "}
-            <a href="https://ethberlin.devfolio.co">the hacks</a>, {" "}
-            <a href="https://watch.ethberlin.ooo/schedule">
+            <a href="https://ethberlin.devfolio.co/projects" target="_blank">
+              the hacks
+            </a>, {" "}
+            <a href="https://watch.ethberlin.ooo/schedule" target="_blank">
               the recordings
             </a>, and the {" "}
             <a href="/gallery">the photos</a> here.
