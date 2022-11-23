@@ -22,14 +22,14 @@ const decentralization = () => (
       <ul>
         <li>
           <span className="fake-bold">ETHBerlin (2018):</span> Hackathon,
-          conference and the first event ran almost entirely using decentralized
-          applications:{" "}
-          <a href="https://ethberlin.com/about" target="_blank">
-            ethberlin.com/about
+          conference, and the first event that ran almost entirely using
+          decentralized applications:{" "}
+          <a href="https://ethberlin.com" target="_blank">
+            ethberlin.com
           </a>
         </li>
         <li>
-          <span className="fake-bold">G&ouml;rliCon (2019): </span>The Ethereum
+          <span className="fake-bold">GoerliCon 0 (2019): </span>The Ethereum
           testnet and infrastructure conference where the Goerli Testnet was
           launched live on stage: <a href="https://goerli.net/" target="_blank">
             goerli.net
@@ -37,7 +37,7 @@ const decentralization = () => (
         </li>
         <li>
           <span className="fake-bold">Goerli Testnet (2019): </span>Born at
-          ETHBerlin and launched at G&ouml;rliCon, the Goerli Testnet is now one of
+          ETHBerlin and launched at GoerliCon, the Goerli Testnet is now one of
           the most important public-facing Ethereum testnets after the Merge.
         </li>
         <li>
@@ -56,9 +56,9 @@ const decentralization = () => (
         </li>
         <li>
           <span className="fake-bold">ETHBerlin ZWEI (2019): </span>hackathon,
-          conference and cultural festival, second edition:{" "}
-          <a href="https://ethberlinzwei.com/about.html" target="_blank">
-            ethberlinzwei.com/about.html
+          conference, and cultural festival, second edition:{" "}
+          <a href="https://ethberlinzwei.com" target="_blank">
+            ethberlinzwei.com
           </a>
         </li>
         <li>
@@ -67,11 +67,21 @@ const decentralization = () => (
         </li>
         <li>
           <span className="fake-bold">
+            ETHParis 2 (2020) - The Un-Hackathon:{" "}
+          </span>
+          ETHParis 2 was hosted by the Department of Decentralization and
+          Ethereum France as an unconference-style hackathon in the
+          engineering school l'ESGI: {" "}
+          <a href="https://web.archive.org/web/20200318163540/https://www.hackparis.io/" target="_blank">hackparis.com</a>
+        </li>
+        <li>
+          <span className="fake-bold">
             TwoPointFive (2020) - The Talk Show:{" "}
           </span>
           TwoPointFive was a white-label virtual conference. No shill, no
           sponsors, from the community for the community and truly in it for the
-          tech: <a href="https://twopointfive.online" target="_blank">twopointfive.online</a>
+          tech:{" "}
+          <a href="https://web.archive.org/web/20220426113132/https://twopointfive.online/" target="_blank">twopointfive.online</a>
         </li>
         <li>
           <span className="fake-bold">StrikeDAO (2022): </span>The Ethereum
@@ -79,6 +89,13 @@ const decentralization = () => (
           DoD. The StrikeDAO voted on three models of future governance of this
           squatted domain, quadratically:{" "}
           <a href="https://strikedao.com" target="_blank">strikedao.com</a>
+        </li>
+        <li>
+          <span className="fake-bold">ETHBerlin³ (2022): </span>hackathon,
+          conference, and cultural festival, third edition:{" "}
+          <a href="https://ethberlin.ooo" target="_blank">
+            ethberlin.ooo
+          </a>
         </li>
       </ul>
 
