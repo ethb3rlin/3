@@ -86,7 +86,7 @@ const CoC = () => (
         other concerns, you can always notify a project lead, event organizer,
         or member of the core group. Anytime. We will do everything to help and
         support you. If you can't find anyone in person, reach out via email:{" "}
-        <a href="mailto:escalate@ethberlin.ooo">escalate@ethberlin.ooo</a>
+        <a href="mailto:escalate@ethberlin.org">escalate@ethberlin.org</a>
       </p>
     </div>
   </Layout>

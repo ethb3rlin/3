@@ -46,7 +46,7 @@ const Contribute = () => (
         ETHBerlin³ is and has always been a non-profit event without any venture
         capital or company backing. If you want to financially support the event
         through sponsorships or donations, please message us at{" "}
-        <a href="mailto:sponsors@ethberlin.ooo" target="_blank">sponsors@ethberlin.ooo</a>.
+        <a href="mailto:sponsors@ethberlin.org" target="_blank">sponsors@ethberlin.org</a>.
       </p>
       <p>
         The sponsorship deck is available{" "}
@@ -63,7 +63,7 @@ const Contribute = () => (
         to be creative and create experiences that we can host during the event.
         Do you have an idea? Propose it directly to our experiences team by
         emailing them to{" "}
-        <a href="mailto:experiences@ethberlin.ooo" target="_blank">experiences@ethberlin.ooo</a>
+        <a href="mailto:experiences@ethberlin.org" target="_blank">experiences@ethberlin.org</a>
         .
       </p>
       <p>
@@ -74,7 +74,7 @@ const Contribute = () => (
         <a href="https://blockchainweek.berlin" target="_blank">Berlin Blockchain Week</a>, e.g.,
         at the <a href="https://github.com/ChainAgnostic/Gatherings/tree/main/2022-09-15-BLN-blockchainweek.berlin" target="_blank">CASA gathering</a>,
         DAppCon, DuneCon,
-        <a href="https://ethereum-magicians.org/t/eth-station-upcoming-event-in-berlin-call-for-action/10415" target="_blank">ETH Station (Ethereum Magicians)</a>  
+        <a href="https://ethereum-magicians.org/t/eth-station-upcoming-event-in-berlin-call-for-action/10415" target="_blank">ETH Station (Ethereum Magicians)</a>
         or the EVM Summit.
       </p>
     </div>

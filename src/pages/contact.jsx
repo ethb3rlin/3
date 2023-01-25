@@ -15,15 +15,15 @@ const Impressum = () => {
               <ul>
                 <li>
                   send us an email:{" "}
-                  <a href="mailto:henlo@ethberlin.ooo">henlo@ethberlin.ooo</a>{" "}
+                  <a href="mailto:goerli@ethberlin.org">goerli@ethberlin.org</a>{" "}
                 </li>
                 <li>
                   sponsors contact:{" "}
-                  <a href="mailto:sponsors@ethberlin.ooo">sponsors@ethberlin.ooo</a>{" "}
+                  <a href="mailto:sponsors@ethberlin.org">sponsors@ethberlin.org</a>{" "}
                 </li>
                 <li>
                   press enquiries:{" "}
-                  <a href="mailto:press@ethberlin.ooo">press@ethberlin.ooo</a>{" "}
+                  <a href="mailto:press@ethberlin.org">press@ethberlin.org</a>{" "}
                 </li>
                 <li>
                   join our{" "}
@@ -47,7 +47,7 @@ const Impressum = () => {
           </div>
           <div className="mt-4">
             Vertreten durch A. Schoedon, Telefon: +49 (0) 30 20613410, E-Mail:{" "}
-            <a href="mailto:schoedon@ethberlin.ooo">schoedon@ethberlin.ooo</a>
+            <a href="mailto:schoedon@ethberlin.org">schoedon@ethberlin.org</a>
           </div>
           <div className="mt-4">
             Goerli Dezentral gGmbH is a non-profit organization serving

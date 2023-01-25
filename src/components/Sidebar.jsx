@@ -63,7 +63,7 @@ const Sidebar = ({ className, hideLogo }) => {
           or{" "}
           <a
             className="underline"
-            href="mailto:henlo@ethberlin.ooo"
+            href="mailto:goerli@ethberlin.org"
             target="_blank"
             rel="noreferrer"
           >
