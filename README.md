@@ -12,7 +12,7 @@ Install dependencies
 npm install
 ```
 
-use npx to run without the global dependency
+Use npx to run without the global dependency
 
 ```
 npx gatsby develop
