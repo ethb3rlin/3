@@ -4,27 +4,15 @@ Join the ETHBerlin Matrix space to contribute: [https://matrix.to/#/#ethberlin:m
 
 # Run
 
+The website is built with Gatsby
+
 Install dependencies
 
 ```
 npm install
 ```
 
-The website is built with Gatsby
-
-Install gatsby globally with
-
-```
-npm i -g gatsby
-```
-
-and run with
-
-```
-gatsby develop
-```
-
-or you can use npx to run without the global dependency
+use npx to run without the global dependency
 
 ```
 npx gatsby develop
