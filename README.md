@@ -1,8 +1,6 @@
-# ETHBerlin³ (2022) Website
+# ETHBerlin4 (2024) Website
 
-> - https://ethberlin.ooo
-
-Join the ETHBerlin³ Matrix space to contribute: https://matrix.to/#/#ethberlin:matrix.org
+Join the ETHBerlin Matrix space to contribute: [https://matrix.to/#/#ethberlin:matrix.org](https://matrix.to/#/%23ethberlin:dod.ngo)
 
 # Run
 
@@ -32,3 +30,10 @@ or you can use npx to run without the global dependency
 npx gatsby develop
 ```
 
+# Build
+
+Build with
+
+```
+npm run build
+```
