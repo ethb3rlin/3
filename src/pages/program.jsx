@@ -413,7 +413,7 @@ const Program = () => {
           }`}
           ref={toggleRef}
         >
-          <label for="toogleA" className="flex items-center cursor-pointer">
+          {/* <label for="toogleA" className="flex items-center cursor-pointer">
             <div className="mr-3 ">Hacker Essentials</div>
             <div className="relative">
               <input
@@ -436,8 +436,9 @@ const Program = () => {
               ></div>
             </div>
             <div className="ml-3 text-purple-300">Hacker Extravaganza</div>
-          </label>
+          </label> */}
         </div>
+        
         <p className="mt-4">
           <ul>
             <ProgramItem

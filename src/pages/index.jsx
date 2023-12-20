@@ -203,14 +203,15 @@ const Home = () => {
             regression. So it was the time to hack the system, more than ever.
           </p>
           <p className="mt-4">
-            It was a blast! You can find {" "}
+            It was a blast! You can find{" "}
             <a href="https://ethberlin.devfolio.co/projects" target="_blank">
               the hacks
-            </a>, {" "}
+            </a>
+            ,{" "}
             <a href="https://watch.ethberlin.ooo/schedule" target="_blank">
               the recordings
-            </a>, and the {" "}
-            <a href="/gallery">the photos</a> here.
+            </a>
+            , and the <a href="/gallery">the photos</a> here.
           </p>
           <p className="mt-4">
             To learn more about our vision &amp; mission, press{" "}
@@ -235,19 +236,18 @@ const Home = () => {
         noReveal
       />
       {/* Scroll indicator */}
+
       <button
         className={`hidden ${
           showSidebar ? "hidden" : "sm:flex"
-        } text-berlin-yellow  fixed left-1/2 bottom-0 blur-text font-light flex-col -translate-x-1/2 z-20`}
+        } text-black font-ocra fixed left-1/2 bottom-0 font-light flex-col -translate-x-1/2 z-20`}
         onClick={sendToTopLeft}
       >
-        <span className="material-symbols-outlined text-6xl -mb-4 light-up">
-          expand_more
-        </span>
-        <span className="material-symbols-outlined text-6xl -mt-5 light-up-delayed">
-          expand_more
-        </span>
+        <div class="mouse">
+          <div class="scrollWheel"></div>
+        </div>
       </button>
+
       {/* Mobile and small ETH on bottom*/}
       <div className="flex justify-center lg:hidden sm:ml-60">
         <EthDiamond

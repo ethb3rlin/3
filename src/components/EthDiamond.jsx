@@ -81,7 +81,7 @@ const ETHDiamondString = `
 const EthDiamond = ({ className, isPrimaryColor, smallScreen }) => {
   return (
     <div
-      className={`whitespace-pre font-mono text-[4px] xl:text-[6px] tracking-wider ${className}`}
+      className={`whitespace-pre font-mono font-bold text-[4px] xl:text-[6px] tracking-wider ${className}`}
       style={{
         color: isPrimaryColor
           ? "rgba(255, 210, 0, 0.5)"

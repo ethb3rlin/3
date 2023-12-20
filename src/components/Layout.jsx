@@ -43,7 +43,7 @@ const Layout = ({ children, showEthDiamond }) => {
           </a>
           <div className=" flex flex-col flex-grow-0 font-bundessans  text-black text-2xl leading-3 justify-center">
             <button
-              className="p-2 blur-text-smaller"
+              className="p-2"
               style={{ backgroundColor: "rgba(0, 0, 0, 0.45)" }}
               onClick={() => setShowNav((prev) => !prev)}
             >
@@ -55,7 +55,7 @@ const Layout = ({ children, showEthDiamond }) => {
         </div>
       </div>
       {/* Open/close nav menu */}
-      <nav
+      {/* <nav
         className={`flex ${
           showNav ? "visible opacity-95" : "invisible opacity-0"
         } flex-col items-center transition-all duration-200 ease-in-out text-xl fixed z-50 bg-black top-0 left-0 w-screen h-screen justify-center text-black`}
@@ -121,7 +121,7 @@ const Layout = ({ children, showEthDiamond }) => {
             </a>
           </div>
         </div>
-      </nav>
+      </nav> */}
       {/* Main content */}
       <div className="flex flex-row flex-1 ml-4 mr-4 sm:ml-64 sm:mr-8">
         {children && (
@@ -131,6 +131,8 @@ const Layout = ({ children, showEthDiamond }) => {
           >
             {children}
           </div>
+
+          
         )}
         {/* Large screen ETH */}
         <div
@@ -138,9 +140,10 @@ const Layout = ({ children, showEthDiamond }) => {
         >
           <EthDiamond className="sticky top-16 mx-4  flex justify-end" />
         </div>
+
       </div>
       {/* Mobile ETH */}
-      <div className="flex justify-center sm:hidden sm:ml-60">
+      <div className="flex justify-center sm:hidden sm:ml-60 text-black">
         <EthDiamond
           className="flex justify-end"
           smallScreen={true}
@@ -149,7 +152,7 @@ const Layout = ({ children, showEthDiamond }) => {
       </div>
       {/* Top right items mobile only, on bottom */}
       <div
-        className={`sm:hidden z-10 flex justify-evenly my-6 sm:mr-12 font-bundessans`}
+        className={`sm:hidden z-10 flex justify-evenly my-6 sm:mr-12 font-bundessans text-black `}
       >
         <div>September 16-18, 2022</div>
         <div className="sm:ml-8">
