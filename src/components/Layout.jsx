@@ -10,13 +10,14 @@ import SvgBackground from './SvgBackground';
 const Layout = ({ children, showEthDiamond }) => {
   const [showNav, setShowNav] = useState(false);
   return (
-    <SvgBackground>  {/* This adds the SVG background */}
-    <div className="flex-1 flex flex-col  min-h-full font-w95">
+    
+    <div className="flex-1 flex flex-col  min-h-full font-bundessans">
       <Seo />
       
+
       <Sidebar className={`hidden sm:flex z-10`} hideLogo={false} />
       {/* Top Right items Desktop only */}
-      <div className={`z-10 hidden sm:flex justify-end my-6 sm:mr-12 font-w95`}>
+      <div className={`z-10 hidden sm:flex justify-end my-6 sm:mr-12 font-bundessans`}>
         <div>September 16-18, 2022</div>
         <div className="sm:ml-8">
           <a
@@ -30,7 +31,7 @@ const Layout = ({ children, showEthDiamond }) => {
         </div>
       </div>
       {/* Non-moving logo navbar for mobile */}
-      <div className="sm:hidden text-berlin-yellow my-8 mx-4">
+      <div className="sm:hidden text-black my-8 mx-4">
         {/* Header */}
         <div className="flex justify-between">
           <a style={{ textDecoration: "none" }} href="/">
@@ -40,7 +41,7 @@ const Layout = ({ children, showEthDiamond }) => {
               subtitleClassName={`text-lg `}
             />
           </a>
-          <div className=" flex flex-col flex-grow-0 font-w95  text-berlin-yellow text-2xl leading-3 justify-center">
+          <div className=" flex flex-col flex-grow-0 font-bundessans  text-black text-2xl leading-3 justify-center">
             <button
               className="p-2 blur-text-smaller"
               style={{ backgroundColor: "rgba(0, 0, 0, 0.45)" }}
@@ -57,7 +58,7 @@ const Layout = ({ children, showEthDiamond }) => {
       <nav
         className={`flex ${
           showNav ? "visible opacity-95" : "invisible opacity-0"
-        } flex-col items-center transition-all duration-200 ease-in-out text-xl fixed z-50 bg-black top-0 left-0 w-screen h-screen justify-center text-berlin-yellow`}
+        } flex-col items-center transition-all duration-200 ease-in-out text-xl fixed z-50 bg-black top-0 left-0 w-screen h-screen justify-center text-black`}
       >
         <button
           className="fixed top-8 right-8 text-4xl p-8"
@@ -125,8 +126,8 @@ const Layout = ({ children, showEthDiamond }) => {
       <div className="flex flex-row flex-1 ml-4 mr-4 sm:ml-64 sm:mr-8">
         {children && (
           <div
-            className="mt-16 sm:mt-32 mb-16 w-full sm:mr-8 p-6 text-gray-50 self-start"
-            style={{ backgroundColor: "rgba(0, 0, 0, 0.45)" }}
+            className="mt-16 sm:mt-32 mb-16 w-full sm:mr-8 p-6 text-black self-start"
+            style={{ backgroundColor: "rgba(255, 255, 255, 0.45)" }}
           >
             {children}
           </div>
@@ -148,7 +149,7 @@ const Layout = ({ children, showEthDiamond }) => {
       </div>
       {/* Top right items mobile only, on bottom */}
       <div
-        className={`sm:hidden z-10 flex justify-evenly my-6 sm:mr-12 font-w95`}
+        className={`sm:hidden z-10 flex justify-evenly my-6 sm:mr-12 font-bundessans`}
       >
         <div>September 16-18, 2022</div>
         <div className="sm:ml-8">
@@ -164,31 +165,31 @@ const Layout = ({ children, showEthDiamond }) => {
       </div>
       {/* Bottom Right fixed items */}
       <div
-        className={`flex flex-wrap justify-evenly items-center text-center sm:justify-end my-4 sm:mr-12 z-20 text-sm font-w95`}
+        className={`flex flex-wrap justify-evenly items-center text-center sm:justify-end my-4 sm:mr-12 z-20 text-sm font-bundessans`}
       >
         <a
-          className="mx-4 my-2 sm:ml-8 text-berlin-yellow"
+          className="mx-4 my-2 sm:ml-8 text-black"
           href="https://blog.ethberlin.ooo"
         >
           (b)log
         </a>
         <a
-          className="mx-4 my-2 sm:ml-8 text-berlin-yellow"
+          className="mx-4 my-2 sm:ml-8 text-black"
           href="/decentralization"
         >
           department of (d)ecentralization
         </a>
-        <a className="mx-4 my-2 sm:ml-8 text-berlin-yellow" href="/contact">
+        <a className="mx-4 my-2 sm:ml-8 text-black" href="/contact">
           contact & (i)mpressum
         </a>
         <a
-          className="mx-4 my-2 sm:ml-8 text-berlin-yellow"
+          className="mx-4 my-2 sm:ml-8 text-black"
           href="/code-of-conduct"
         >
           code (o)f conduct
         </a>
         <a
-          className="mx-4 my-2 sm:ml-8 text-berlin-yellow"
+          className="mx-4 my-2 sm:ml-8 text-black"
           href="https://github.com/Department-of-Decentralization/3"
           target="_blank"
           rel="noreferrer"
@@ -197,7 +198,6 @@ const Layout = ({ children, showEthDiamond }) => {
         </a>
       </div>
     </div>
-    </SvgBackground>
   );
 };
 

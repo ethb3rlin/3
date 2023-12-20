@@ -2,7 +2,7 @@ import React from "react";
 import { RandomReveal } from "react-random-reveal";
 
 const NotFound = () => (
-  <div className="flex flex-col justify-center items-center min-h-screen font-digi text-berlin-yellow">
+  <div className="flex flex-col justify-center items-center min-h-screen font-ocra text-black">
     <div className={`flex blur-text m-0 text-[96pt]`}>
       <div className=" layers" data-text={`404`}>
         <RandomReveal isPlaying duration={1} characters="404" />

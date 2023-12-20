@@ -9,9 +9,14 @@
 
 @layer base {
   @font-face {
-    font-family: DS-Digital;
+    font-family: OCR-A;
     font-weight: 400;
     src: url(../assets/fonts/OCR-A/OCR-AStd-Regular.ttf);
+  }
+  @font-face {
+    font-family: BundesSans;
+    font-weight: 400;
+    src: url(../assets/fonts/BundesSans/BundesSans-Regular.ttf);
   }
 
   .material-symbols-outlined {
@@ -91,11 +96,23 @@ body {
   -moz-osx-font-smoothing: grayscale;
   min-height: 100vh;
   color: white;
-  background-image: url("bg.png");
-  background-size: cover;
-  /* Overscroll contain to avoid  the browser trackpad gesture backward navigating the history */
+  position: relative;
   overscroll-behavior-x: contain;
 }
+
+body::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url("bg.png");
+  background-size: repeat;
+  opacity: 0.5;
+  z-index: -1;
+}
+
 
 /* 
 #__gatsby, #gatsby-focus-wrapper {
@@ -120,7 +137,7 @@ body {
 
 .decorate-links a {
   text-decoration: underline;
-  color: theme("colors.black");
+  /* color: theme("colors.black"); */
 }
 
 .blink {

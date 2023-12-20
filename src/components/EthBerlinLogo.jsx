@@ -2,14 +2,14 @@ import React, { useEffect, useState } from "react";
 import { useRandomReveal } from "react-random-reveal";
 
 const EthBerlinLogo = React.forwardRef((props, ref) => {
-  const [letter, setLetter] = useState("4");
+  const [letter, setLetter] = useState("0004");
   const [animate, setAnimate] = useState(false);
   const [revealed, setRevealed] = useState(false);
   const [invisibleLetter, setInvisibleLetter] = useState(false);
   // Change letter regularly
   const toggleLetter = () => {
     setLetter((prev) => {
-      if (prev === "<<<<") return "4";
+      if (prev === "<<<<") return "0004";
       else return "<<<<";
     });
   };
@@ -45,7 +45,7 @@ const EthBerlinLogo = React.forwardRef((props, ref) => {
   return (
     <div
       ref={ref}
-      className={`font-digi text-black ${props.className}`}
+      className={`font-ocra text-black ${props.className}`}
     >
       <div className={`flex m-0 ${props.titleClassName}`}>
         <div
@@ -75,7 +75,7 @@ const EthBerlinLogo = React.forwardRef((props, ref) => {
         }`}
         data-text="identity crisis"
       >
-        identity crisis
+        &lt;&lt;&lt;&lt;identity&lt;&lt;crisis&lt;&lt;
       </div>
     </div>
   );

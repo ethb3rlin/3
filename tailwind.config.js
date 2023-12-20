@@ -12,8 +12,9 @@ module.exports = {
     },
     extend: {
       fontFamily: {
-        digi: ["DS-Digital", ...defaultTheme.fontFamily.mono],
-        w95: ["W95FA", ...defaultTheme.fontFamily.sans],
+        ocra: ["OCR-A", ...defaultTheme.fontFamily.mono],
+        bundessans: ["BundesSans", ...defaultTheme.fontFamily.mono],
+        // w95: ["W95FA", ...defaultTheme.fontFamily.sans],
       },
       colors: {
         "berlin-yellow": "#FFD200",

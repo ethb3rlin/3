@@ -4,7 +4,7 @@ import EthBerlinLogo from "./EthBerlinLogo";
 const Sidebar = ({ className, hideLogo }) => {
   return (
     <div
-      className={`h-screen flex flex-col py-8 px-6 font-w95 fixed w-60 left-0 top-0 text-berlin-yellow ${className}`}
+      className={`h-screen flex flex-col py-8 px-6 fixed w-60 left-0 top-0 text-black font-ocra ${className}`}
     >
       <a
         style={{ textDecoration: "none" }}
