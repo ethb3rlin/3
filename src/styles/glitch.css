@@ -16,13 +16,13 @@
 .layers::before {
   top: 10px;
   left: 15px;
-  color: #e0287d;
+  color: white;
 }
 
 .layers::after {
   top: 5px;
   left: -10px;
-  color: #1bc7fb;
+  color: black;
 }
 
 .single-path {
@@ -413,7 +413,7 @@
 @keyframes font {
   0% {
     font-weight: 100;
-    color: #e0287d;
+    color: black;
     filter: blur(3px);
   }
 
@@ -425,7 +425,7 @@
 
   50% {
     font-weight: 300;
-    color: #1bc7fb;
+    color: black;
     filter: blur(2px);
   }
 
@@ -437,7 +437,7 @@
 
   90% {
     font-weight: 500;
-    color: #e0287d;
+    color: black;
     filter: blur(6px);
   }
 }

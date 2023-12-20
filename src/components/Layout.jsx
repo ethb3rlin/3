@@ -3,12 +3,17 @@ import EthBerlinLogo from "./EthBerlinLogo";
 import EthDiamond from "./EthDiamond";
 import Seo from "./seo";
 import Sidebar from "./Sidebar";
+import SvgBackground from './SvgBackground'; 
+
+
 
 const Layout = ({ children, showEthDiamond }) => {
   const [showNav, setShowNav] = useState(false);
   return (
+    <SvgBackground>  {/* This adds the SVG background */}
     <div className="flex-1 flex flex-col  min-h-full font-w95">
       <Seo />
+      
       <Sidebar className={`hidden sm:flex z-10`} hideLogo={false} />
       {/* Top Right items Desktop only */}
       <div className={`z-10 hidden sm:flex justify-end my-6 sm:mr-12 font-w95`}>
@@ -192,6 +197,7 @@ const Layout = ({ children, showEthDiamond }) => {
         </a>
       </div>
     </div>
+    </SvgBackground>
   );
 };
 

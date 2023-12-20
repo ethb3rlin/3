@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<div id="svgContainer" style="width:100%; height:100%;"></div>
+
+<script>
+function createSinusLine(yOffset, startX, endX) {
+    var path = document.createElementNS("http://www.w3.org/2000/svg", "path");
+    var d = `M ${startX} ${100 + yOffset}`;
+    for (var x = startX; x < endX; x += 400) {
+        d += ` Q ${x + 50} ${50 + yOffset}, ${x + 100} ${100 + yOffset}`;
+        d += ` T ${x + 200} ${100 + yOffset}`;
+        d += ` T ${x + 300} ${100 + yOffset}`;
+        d += ` T ${x + 400} ${100 + yOffset}`;
+    }
+    path.setAttribute("d", d);
+    path.setAttribute("stroke", "url(#pinkToBlueGradient)");
+    path.setAttribute("fill", "none");
+    path.setAttribute("stroke-width", "2");
+    return path;
+}
+
+function createSVG() {
+    var svgNS = "http://www.w3.org/2000/svg";
+    var svg = document.createElementNS(svgNS, "svg");
+    
+    // Set SVG width and height to window size
+    var width = window.innerWidth;
+    var height = window.innerHeight;
+    svg.setAttribute("width", width.toString());
+    svg.setAttribute("height", height.toString());
+
+    var defs = document.createElementNS(svgNS, "defs");
+    var gradient = document.createElementNS(svgNS, "linearGradient");
+    gradient.setAttribute("id", "pinkToBlueGradient");
+    gradient.innerHTML = `
+        <stop offset="0%" style="stop-color:rgb(255,182,193);stop-opacity:1" />
+        <stop offset="100%" style="stop-color:rgb(173,216,230);stop-opacity:1" />
+    `;
+    defs.appendChild(gradient);
+    svg.appendChild(defs);
+
+    // Create sinusoidal lines
+    var linesCount = Math.ceil(height / 10); // Calculate number of lines based on height
+    for (var i = 0; i < linesCount; i++) {
+        svg.appendChild(createSinusLine(i * 10, 0, width));  // Repeat pattern across full width
+        svg.appendChild(createSinusLine(i * 10, 100, width)); // Repeat pattern across full width starting at x=100
+    }
+
+    document.getElementById("svgContainer").appendChild(svg);
+}
+
+createSVG();
+</script>
+
+</body>
+</html>

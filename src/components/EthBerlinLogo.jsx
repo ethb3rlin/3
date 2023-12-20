@@ -2,15 +2,15 @@ import React, { useEffect, useState } from "react";
 import { useRandomReveal } from "react-random-reveal";
 
 const EthBerlinLogo = React.forwardRef((props, ref) => {
-  const [letter, setLetter] = useState("3");
+  const [letter, setLetter] = useState("4");
   const [animate, setAnimate] = useState(false);
   const [revealed, setRevealed] = useState(false);
   const [invisibleLetter, setInvisibleLetter] = useState(false);
   // Change letter regularly
   const toggleLetter = () => {
     setLetter((prev) => {
-      if (prev === "3") return "E";
-      else return "3";
+      if (prev === "<<<<") return "4";
+      else return "<<<<";
     });
   };
 
@@ -38,31 +38,31 @@ const EthBerlinLogo = React.forwardRef((props, ref) => {
   const revealCharacters = useRandomReveal({
     isPlaying: true,
     duration: 2,
-    characters: "ETHB3RLIN",
+    characters: "EthBerlin<<<<",
     onComplete: () => setRevealed(true),
   });
 
   return (
     <div
       ref={ref}
-      className={`font-digi text-berlin-yellow ${props.className}`}
+      className={`font-digi text-black ${props.className}`}
     >
       <div className={`flex m-0 ${props.titleClassName}`}>
         <div
           className={`${
             animate && "glitch layers"
-          } blur-text-smaller sm:blur-text-small`}
-          data-text={`ETHB${letter}rlin`}
+          } `}
+          data-text={`ETHBerlin${letter}`}
         >
           {revealed || props.noReveal ? (
             <span>
-              ETHB
+              EthBerlin
               {
                 <span className={`${invisibleLetter ? "invisible" : ""}`}>
                   {letter}
                 </span>
               }
-              rlin
+              
             </span>
           ) : (
             revealCharacters
@@ -70,12 +70,12 @@ const EthBerlinLogo = React.forwardRef((props, ref) => {
         </div>
       </div>
       <div
-        className={`${animate && "glitch"} font-w95 blur-text-smaller ${
+        className={`${animate && "glitch"} ${
           props.subtitleClassName
         }`}
-        data-text="to the power of 3"
+        data-text="identity crisis"
       >
-        to the power of 3
+        identity crisis
       </div>
     </div>
   );
