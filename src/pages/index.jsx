@@ -240,8 +240,8 @@ const Home = () => {
           <div className="flex flex-col items-center justify-center">
       <img 
         src={imageSrcPass} 
-        className="glitch w-50 h-50 object-cover" 
-        alt="Fake passport glitch image"
+        className=" w-48 h-48 object-cover" 
+        alt="Fake passport image"
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}
       />
@@ -303,9 +303,9 @@ const Home = () => {
       <div
         className={`z-10 ${
           showSidebar ? "fade-in-right" : "fade-out-right"
-        } sm:fixed sm:top-0 sm:right-0 flex justify-evenly sm:justify-end my-6 sm:mr-12 font-w95`}
+        } sm:fixed sm:top-0 sm:right-0 flex justify-evenly sm:justify-end my-6 sm:mr-12 font-ocra text-black`}
       >
-        <div>September 16-18, 2022</div>
+        <div>May 24-26, 2024</div>
         <div className="sm:ml-8">
           <a
             style={{ textDecoration: "none" }}

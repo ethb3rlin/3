@@ -4,7 +4,7 @@ module.exports = {
     siteUrl: `https://ethberlin.ooo`,
     url: `https://ethberlin.ooo`,
     description:
-      "ETHBerlin 3: three-day hackathon extravaganza, September 16-18, 2022",
+      "ETHBerlin 3: three-day hackathon extravaganza, May 24-26, 2024",
     twitterUsername: "@ETHBerlin",
     image: `/ETHBerlin.gif`,
   },

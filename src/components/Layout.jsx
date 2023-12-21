@@ -24,7 +24,7 @@ const Layout = ({ children, showEthDiamond }) => {
       <div
         className={`z-10 hidden sm:flex justify-end my-6 sm:mr-12 font-ocra text-black`}
       >
-        <div>September 16-18, 2022</div>
+        <div>May 24-26, 2024</div>
         <div className="sm:ml-8">
           <a
             style={{ textDecoration: "none" }}
@@ -159,7 +159,7 @@ const Layout = ({ children, showEthDiamond }) => {
       </div>
       {/* Top right items mobile only, on bottom */}
       <div
-        className={`sm:hidden z-10 flex justify-evenly my-6 sm:mr-12 font-bundessans text-black `}
+        className={`sm:hidden z-10 flex justify-evenly my-6 sm:mr-12 font-ocra text-black `}
       >
         <div>September 16-18, 2022</div>
         <div className="sm:ml-8">

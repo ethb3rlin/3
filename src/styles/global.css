@@ -112,12 +112,11 @@ body::before {
   left: 0;
   right: 0;
   bottom: 0;
-  background-image: url("bg.png");
-  background-size: repeat;
+  background-image: url("bg.png"); 
+  background-size: 100%; /* Adjust this value to change tile size */
   opacity: 0.5;
   z-index: -1;
 }
-
 
 
 .mouse {
