@@ -194,7 +194,7 @@ const Layout = ({ children, showEthDiamond }) => {
         </a>
         <a
           className="mx-4 my-2 sm:ml-8 text-black"
-          href="https://github.com/Department-of-Decentralization/3"
+          href="https://github.com/ethb3rlin/4"
           target="_blank"
           rel="noreferrer"
         >
