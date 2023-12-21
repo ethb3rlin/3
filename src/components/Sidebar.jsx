@@ -23,27 +23,27 @@ const Sidebar = ({ className, hideLogo }) => {
           {" "}
           (m)anifesto
         </a>
-        <a className="my-2" href="/gallery">
+        <a className="my-2 hidden" href="/gallery">
           {" "}
           (g)allery
         </a>
-        <a className="my-2" href="/hacker-manual">
+        <a className="my-2 hidden" href="/hacker-manual">
           {" "}
           (h)acker manual
         </a>
-        <a className="my-2" href="/program">
+        <a className="my-2 hidden" href="/program">
           {" "}
           (p)rogram
         </a>
-        <a className="my-2" href="/venue">
+        <a className="my-2 hidden" href="/venue">
           {" "}
           (v)enue
         </a>
-        <a className="my-2" href="/contributors">
+        <a className="my-2 hidden" href="/contributors">
           {" "}
           (c)ontributors
         </a>
-        <a className="my-2" href="/sponsor">
+        <a className="my-2 hidden" href="/sponsor">
           {" "}
           (s)ponsors
         </a>
