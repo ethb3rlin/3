@@ -240,7 +240,7 @@ const Home = () => {
           <div className="flex flex-col items-center justify-center">
       <img 
         src={imageSrcPass} 
-        className="glitch w-48 h-48 object-cover" 
+        className="glitch w-50 h-50 object-cover" 
         alt="Fake passport glitch image"
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}
