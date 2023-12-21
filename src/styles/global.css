@@ -18,6 +18,11 @@
     font-weight: 400;
     src: url(../assets/fonts/BundesSans/BundesSans-Regular.ttf);
   }
+  @font-face {
+    font-family: DotPassport;
+    font-weight: 400;
+    src: url(../assets/fonts/dot/dot.ttf);
+  }
 
   .material-symbols-outlined {
     font-family: "Material Symbols Outlined";

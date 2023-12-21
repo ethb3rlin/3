@@ -17,7 +17,7 @@ const Person = ({
 }) => {
   return (
     <div
-      className="mx-4 my-6 w-48 hover:text-berlin-yellow animate-flicker"
+      className="mx-4 my-6 w-48 hover:text-berlin-yellow animate-flicker "
       style={{ animationDuration: Math.random() * 2 + "s" }}
     >
       <div className="flex flex-col justify-center items-center h-48 w-full relative break-words">
@@ -127,7 +127,7 @@ const Contributors = () => {
 
   return (
     <Layout showEthDiamond={false}>
-      <h1 className="my-4 underline text-secondary">(c)ontributors</h1>
+      <h1 className="my-4 underline text-secondary font-ocra">(c)ontributors</h1>
       <p>
         These are the amazing people that made ETHBerlin³ possible.{" "}
         <span className="text-sm text-gray-500 italic">

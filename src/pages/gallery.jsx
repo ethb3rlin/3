@@ -30,7 +30,7 @@ const Photos = () => {
 
   return (
     <Layout showEthDiamond={false}>
-      <h1 className="my-4 underline text-secondary">(g)allery</h1>
+      <h1 className="my-4 underline text-secondary font-ocra">(g)allery</h1>
 
       <div>
         <Gallery

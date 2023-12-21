@@ -10,7 +10,7 @@ import fifthFloor from "../images/fifthFloor.png";
 const Venue = () => {
   return (
     <Layout showEthDiamond={false}>
-      <h1 className="my-4 underline text-secondary">(v)enue</h1>
+      <h1 className="my-4 underline text-secondary font-ocra">(v)enue</h1>
       <div className="decorate-links flex flex-col items-center text-berlin-yellow mt-16">
         <div className="my-4 italic text-gray-300">
           Gray marked areas and the 4th floor are not available for ETHBerlin³

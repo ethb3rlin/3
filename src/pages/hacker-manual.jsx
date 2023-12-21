@@ -117,7 +117,7 @@ const HackerManual = () => {
 
   return (
     <Layout>
-      <h1 className="my-4 underline text-secondary">(h)acker manual</h1>
+      <h1 className="my-4 underline text-secondary font-ocra">(h)acker manual</h1>
       <div className="text-justify decorate-links">
         <p>This section aims to help you better prepare for the hackathon.</p>
         <div className="mb-16">
@@ -481,7 +481,7 @@ const HackerManual = () => {
           </p>
         </div>
         <div className="flex justify-center">
-          <div className="border-b-[1px] mb-8 mt-4 border-berlin-yellow opacity-40 w-full"></div>
+          <div className="border-b-[1px] mb-8 mt-4 border-berlin-yellow  opacity-40 w-full"></div>
         </div>
         <div id="mentors">
           <h2 className="text-2xl font-bold">Getting Help from Mentors</h2>

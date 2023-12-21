@@ -14,11 +14,12 @@ module.exports = {
       fontFamily: {
         ocra: ["OCR-A", ...defaultTheme.fontFamily.mono],
         bundessans: ["BundesSans", ...defaultTheme.fontFamily.mono],
+        dotpassport: ["DotPassport", ...defaultTheme.fontFamily.mono],
         // w95: ["W95FA", ...defaultTheme.fontFamily.sans],
       },
       colors: {
         "berlin-yellow": "#FFD200",
-        secondary: "#9E8DE2",
+        secondary: "#FFD200",
       },
     },
   },

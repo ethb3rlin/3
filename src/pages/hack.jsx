@@ -3,7 +3,7 @@ import React from "react";
 
 const Hack = () => (
   <Layout>
-    <h1 className="my-4 underline text-secondary">(h)ack</h1>
+    <h1 className="my-4 underline text-secondary font-ocra">(h)ack</h1>
     <div className="text-gray-50 text-justify decorate-links">
       <p>
         ETHBerlin³ is and has always been a hackathon first. By giving attendees

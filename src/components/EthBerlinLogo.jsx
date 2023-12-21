@@ -45,12 +45,12 @@ const EthBerlinLogo = React.forwardRef((props, ref) => {
   return (
     <div
       ref={ref}
-      className={`font-ocra text-black ${props.className}`}
+      className={`font-dotpassport text-black ${props.className}`}
     >
       <div className={`flex m-0 ${props.titleClassName}`}>
         <div
           className={`${
-            animate && "glitch layers"
+            animate && "glitch "
           } `}
           data-text={`ETHBerlin${letter}`}
         >
@@ -76,9 +76,12 @@ const EthBerlinLogo = React.forwardRef((props, ref) => {
         data-text="identity crisis"
       >
         &lt;&lt;&lt;&lt;identity&lt;&lt;crisis&lt;&lt;
+
+
       </div>
     </div>
+    
   );
 });
 
-export default EthBerlinLogo;
+export default EthBerlinLogo; 

@@ -3,7 +3,7 @@ import React from "react";
 
 const Contribute = () => (
   <Layout>
-    <h1 className="my-4 underline text-secondary">(c)ontribute</h1>
+    <h1 className="my-4 underline text-secondary font-ocra">(c)ontribute</h1>
     <div className="text-justify decorate-links">
       <p>
         ETHBerlin³ is a hackathon and cultural festival that is entirely

@@ -14,7 +14,7 @@ const About = () => {
 
   return (
     <Layout>
-      <h1 className="my-4 underline text-secondary">(a)bout</h1>
+      <h1 className="my-4 underline font-ocra text-berlin-yellow">(a)bout</h1>
       <div className="text-justify decorate-links">
         <p>
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae, tempora molestias repellat illum tempore illo nemo vero aliquam officia vitae iusto dolores! Nemo est dignissimos deserunt possimus dolore eius beatae.

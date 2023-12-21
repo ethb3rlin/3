@@ -455,3 +455,20 @@
   animation: paths 2s step-end infinite, opacity 1.5s step-end infinite,
     font 3s step-end infinite, movement 2.5s step-end infinite;
 }
+
+
+
+
+/* Animation */
+.typewriter{
+animation: typewriter 4s steps(54) 1s 1 normal both,
+           blinkTextCursor 500ms steps(54) infinite normal;
+}
+@keyframes typewriter{
+from{width: 0;}
+to{width: 45em;}
+}
+@keyframes blinkTextCursor{
+from{border-right-color: rgba(255,255,255,.75);}
+to{border-right-color: transparent;}
+}

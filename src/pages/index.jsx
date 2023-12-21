@@ -4,6 +4,8 @@ import EthDiamond from "../components/EthDiamond";
 import Seo from "../components/seo";
 import Sidebar from "../components/Sidebar";
 import { useBreakpoint } from "../components/useBreakpoint";
+import passface from "../assets/passface/passface.gif";
+import dod from "../assets/passface/dod.png";
 
 const Home = () => {
   const [showSidebar, setShowSidebar] = useState(false);
@@ -11,6 +13,15 @@ const Home = () => {
   const ethBerlinTextSizeRef = useRef();
   const { isSm } = useBreakpoint("sm");
   const [showNav, setShowNav] = useState(false);
+
+  // mouseover image passport
+  const [imageSrcPass, setImageSrcPass] = useState(dod);
+  const handleMouseEnter = () => {
+    setImageSrcPass(passface);
+  };
+  const handleMouseLeave = () => {
+    setImageSrcPass(dod);
+  };
 
   // https://medium.com/autodesk-tlv/smooth-text-scaling-in-javascript-css-a817ae8cc4c9
   useEffect(() => {
@@ -86,7 +97,8 @@ const Home = () => {
     setShowSidebar(true);
   }
   return (
-    <div className="flex flex-col lg:flex-row sm:justify-center sm:items-center min-h-screen font-w95">
+    <div className="flex flex-col lg:flex-row sm:justify-center sm:items-center min-h-screen font-bundessans">
+      
       <Seo />
       <Sidebar
         className={`hidden sm:flex z-10 ${
@@ -101,7 +113,7 @@ const Home = () => {
           titleClassName="text-4xl"
           subtitleClassName={`text-lg `}
         />
-        <div className=" flex flex-col flex-grow-0 font-w95  text-2xl leading-3 justify-center z-30">
+        <div className=" flex flex-col flex-grow-0 font-bundessans  text-2xl leading-3 justify-center z-30">
           <button
             className="p-2 blur-text-smaller"
             style={{ backgroundColor: "rgba(0, 0, 0, 0.45)" }}
@@ -182,26 +194,26 @@ const Home = () => {
         </div>
       </nav>
       <div
-        className={`static lg:fixed max-w-xl flex flex-col left-0 top-0 mt-16 sm:mt-48 flex-1 ml-4 sm:ml-64 mr-4 z-10 ${
+        className={`static lg:fixed flex flex-row left-0 top-0 mt-16 sm:mt-48 flex-1 ml-4 sm:ml-64 mr-4 z-10 ${
           showSidebar ? "fade-in-left " : "fade-out-left"
         }
         `}
       >
         <div
-          className="w-full mr-8 p-6 text-black decorate-links"
+          className="w-1/2 mr-8 p-6 text-black decorate-links"
           style={{ backgroundColor: "rgba(255, 255, 255, 0.45)" }}
         >
           <p className="mt-4">
-            ETHBerlin³ (2022) was a hackathon, a cultural festival, an
-            educational event, a platform for hacktivism, and a community
-            initiative to push the decentralized ecosystem forward.
+          The situation is dire. We have been operating in crisis mode for years now. Established systems are failing, new and old imperialist powers are throwing continents into wars of attrition, global supply chains are collapsing, financial markets are tumbling, healthcare systems are falling apart, education is on a consistent downward spiral — the list goes on.
           </p>
           <p className="mt-4">
-            In the 2 years before ETHBerlin³, the global crackdown on privacy,
-            freedom of movement, and the right to transact by governments
-            worldwide was putting us on the edge of a new dark age of
-            regression. So it was the time to hack the system, more than ever.
+          But there is hope: The soils to grow new ideas have never been more nutritious. It has never been more urgent to double down on new revolutionary concepts and ideas. It is high time to change the world.
           </p>
+          <p className="mt-4">
+          Reflecting on the decentralized ecosystems — the very systems designed to solve some of the underlying problems of the failing society — we realize that instead of creating actionable alternatives, we seemingly are:
+
+</p>
+
           <p className="mt-4">
             It was a blast! You can find{" "}
             <a href="https://ethberlin.devfolio.co/projects" target="_blank">
@@ -218,7 +230,32 @@ const Home = () => {
             <a href="/manifesto">(m)</a>.
           </p>
         </div>
+
+        <div
+          className="w-1/4 mr-8 p-6 text-black decorate-links flex justify-center items-center justify-center"
+          style={{ backgroundColor: "rgba(255, 255, 255, 0.45)" }}
+        >
+          <p className="mt-4 text-center">
+            
+          <div className="flex flex-col items-center justify-center">
+      <img 
+        src={imageSrcPass} 
+        className="glitch w-48 h-48 object-cover" 
+        alt="Fake passport glitch image"
+        onMouseEnter={handleMouseEnter}
+        onMouseLeave={handleMouseLeave}
+      />
       </div>
+           <p className="font-ocra my-0"> Event: ETHBerlin 4</p>
+           <p className="font-ocra my-0"> Theme: Identity Crisis</p>
+            <p className="font-ocra my-0"> Dates: May 24-26, 2024
+              </p> 
+
+          </p>
+        </div>
+      </div>
+
+      
 
       {/* Moving logo not shown on mobile */}
       <EthBerlinLogo
@@ -281,33 +318,33 @@ const Home = () => {
         </div>
       </div>
       <div
-        className={`sm:fixed sm:bottom-0 sm:right-0 flex flex-wrap justify-evenly items-center text-center sm:justify-end my-4 sm:mr-12 z-20 text-sm font-w95 ${
+        className={`sm:fixed sm:bottom-0 sm:right-0 flex flex-wrap justify-evenly items-center text-center sm:justify-end my-4 sm:mr-12 z-20 text-sm font-ocra ${
           showSidebar ? "fade-in-right" : "fade-out-right"
         } `}
       >
         <a
-          className="mx-4 my-2 sm:ml-8 text-berlin-yellow"
+          className="mx-4 my-2 sm:ml-8 text-black"
           href="https://blog.ethberlin.ooo"
         >
           (b)log
         </a>
         <a
-          className="mx-4 my-2 sm:ml-8 text-berlin-yellow"
+          className="mx-4 my-2 sm:ml-8 text-black"
           href="/decentralization"
         >
           department of (d)ecentralization
         </a>
-        <a className="mx-4 my-2 sm:ml-8 text-berlin-yellow" href="/contact">
+        <a className="mx-4 my-2 sm:ml-8 text-black" href="/contact">
           contact & (i)mpressum
         </a>
         <a
-          className="mx-4 my-2 sm:ml-8 text-berlin-yellow"
+          className="mx-4 my-2 sm:ml-8 text-black"
           href="/code-of-conduct"
         >
           code (o)f conduct
         </a>
         <a
-          className="mx-4 my-2 sm:ml-8 text-berlin-yellow"
+          className="mx-4 my-2 sm:ml-8 text-black"
           href="https://github.com/Department-of-Decentralization/3"
           target="_blank"
           rel="noreferrer"

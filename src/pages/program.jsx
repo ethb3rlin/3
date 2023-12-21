@@ -398,7 +398,7 @@ const Program = () => {
 
   return (
     <Layout>
-      <h1 className="my-4 underline text-secondary">(p)rogram</h1>
+      <h1 className="my-4 underline text-secondary font-ocra">(p)rogram</h1>
       <div className="text-gray-50">
         <h2 className="text-3xl font-bold">Friday, September 16</h2>
         <p className="mt-4">

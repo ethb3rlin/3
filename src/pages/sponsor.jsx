@@ -90,7 +90,7 @@ const SponsorContainer = ({ children, tier, tierName, description, image }) => {
 
 const Sponsor = () => (
   <Layout showEthDiamond={false}>
-    <h1 className="my-4 underline text-secondary">(s)ponsors</h1>
+    <h1 className="my-4 underline text-secondary font-ocra">(s)ponsors</h1>
     <div className="mt-8">
       <div className="text-xl decorate-links">
         <p>Please, give a warm welcome to all of our 2022 sponsors!</p>

@@ -3,21 +3,27 @@ import EthBerlinLogo from "./EthBerlinLogo";
 import EthDiamond from "./EthDiamond";
 import Seo from "./seo";
 import Sidebar from "./Sidebar";
-import SvgBackground from './SvgBackground'; 
-
-
+import SvgBackground from "./SvgBackground";
+import SecurityStrip from "./SecurityStrip";
 
 const Layout = ({ children, showEthDiamond }) => {
   const [showNav, setShowNav] = useState(false);
   return (
-    
-    <div className="flex-1 flex flex-col  min-h-full font-bundessans">
+    <div className="flex-1 flex flex-col min-h-full font-bundessans">
+      {/* SecurityStrip*/}
+      <div
+        className={`mx-auto -z-10 hidden ${showEthDiamond ? "lg:block" : "hidden"}`}
+      >
+        <SecurityStrip className="fixed -top-24 left-2/3 transform -translate-x-1/3 -translate-y-1/2" />
+      </div>
+
       <Seo />
-      
 
       <Sidebar className={`hidden sm:flex z-10`} hideLogo={false} />
       {/* Top Right items Desktop only */}
-      <div className={`z-10 hidden sm:flex justify-end my-6 sm:mr-12 font-bundessans`}>
+      <div
+        className={`z-10 hidden sm:flex justify-end my-6 sm:mr-12 font-ocra text-black`}
+      >
         <div>September 16-18, 2022</div>
         <div className="sm:ml-8">
           <a
@@ -122,7 +128,9 @@ const Layout = ({ children, showEthDiamond }) => {
           </div>
         </div>
       </nav> */}
+
       {/* Main content */}
+
       <div className="flex flex-row flex-1 ml-4 mr-4 sm:ml-64 sm:mr-8">
         {children && (
           <div
@@ -131,16 +139,15 @@ const Layout = ({ children, showEthDiamond }) => {
           >
             {children}
           </div>
-
-          
         )}
-        {/* Large screen ETH */}
-        <div
-          className={`mx-4 hidden ${showEthDiamond ? "lg:block" : "hidden"}`}
-        >
-          <EthDiamond className="sticky top-16 mx-4  flex justify-end" />
-        </div>
+      </div>
 
+      {/* Large screen fixed ETH */}
+      <div className="hidden lg:block fixed right-0 top-0 bottom-0 overflow-none w-full">
+        <EthDiamond
+          className="sticky top-16 mx-4 -z-10 flex justify-end -translate-y-1/2"
+          isPrimaryColor={true}
+        />
       </div>
       {/* Mobile ETH */}
       <div className="flex justify-center sm:hidden sm:ml-60 text-black">
@@ -168,7 +175,7 @@ const Layout = ({ children, showEthDiamond }) => {
       </div>
       {/* Bottom Right fixed items */}
       <div
-        className={`flex flex-wrap justify-evenly items-center text-center sm:justify-end my-4 sm:mr-12 z-20 text-sm font-bundessans`}
+        className={`sm:fixed sm:bottom-0 sm:right-0 flex flex-wrap justify-evenly items-center text-center sm:justify-end my-4 sm:mr-12 z-20 text-sm font-ocra`}
       >
         <a
           className="mx-4 my-2 sm:ml-8 text-black"
@@ -176,19 +183,13 @@ const Layout = ({ children, showEthDiamond }) => {
         >
           (b)log
         </a>
-        <a
-          className="mx-4 my-2 sm:ml-8 text-black"
-          href="/decentralization"
-        >
+        <a className="mx-4 my-2 sm:ml-8 text-black" href="/decentralization">
           department of (d)ecentralization
         </a>
         <a className="mx-4 my-2 sm:ml-8 text-black" href="/contact">
           contact & (i)mpressum
         </a>
-        <a
-          className="mx-4 my-2 sm:ml-8 text-black"
-          href="/code-of-conduct"
-        >
+        <a className="mx-4 my-2 sm:ml-8 text-black" href="/code-of-conduct">
           code (o)f conduct
         </a>
         <a

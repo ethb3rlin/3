@@ -49,7 +49,7 @@ const Sidebar = ({ className, hideLogo }) => {
         </a>
       </nav>
       <div className="mt-auto">
-        <div className="my-2">
+        <div className="my-2 text-sm">
           join our{" "}
           <a
             className="underline"
@@ -58,9 +58,8 @@ const Sidebar = ({ className, hideLogo }) => {
             rel="noreferrer"
           >
             matrix space
-          </a>
-          <br />
-          or{" "}
+          </a> 
+          &nbsp;or{" "}
           <a
             className="underline"
             href="mailto:goerli@ethberlin.org"
