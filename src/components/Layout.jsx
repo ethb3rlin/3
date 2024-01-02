@@ -181,16 +181,16 @@ const Layout = ({ children, showEthDiamond }) => {
           className="mx-4 my-2 sm:ml-8 text-black"
           href="https://blog.ethberlin.ooo"
         >
-          (b)log
+          &lt;b&gt;log
         </a>
         <a className="mx-4 my-2 sm:ml-8 text-black" href="/decentralization">
-          department of (d)ecentralization
+          department of &lt;d&gt;ecentralization
         </a>
         <a className="mx-4 my-2 sm:ml-8 text-black" href="/contact">
-          contact & (i)mpressum
+          contact & &lt;i&gt;mpressum
         </a>
         <a className="mx-4 my-2 sm:ml-8 text-black" href="/code-of-conduct">
-          code (o)f conduct
+          code &lt;o&gt;f conduct
         </a>
         <a
           className="mx-4 my-2 sm:ml-8 text-black"
