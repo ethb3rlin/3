@@ -193,13 +193,13 @@ const Home = () => {
         </div>
       </nav>
       <div
-        className={`static lg:fixed flex flex-col left-0 top-0 mt-16 sm:mt-48 flex-1 ml-4 sm:ml-64 mr-4 z-10 ${
+        className={`static lg:fixed flex flex-col lg:flex-row left-0 top-0 mt-16 sm:mt-48 flex-1 ml-4 sm:ml-64 mr-4 z-10 ${
           showSidebar ? "fade-in-left " : "fade-out-left"
         }
         `}
       >
         <div
-          className="w-1/2 mr-8 p-6 text-black decorate-links"
+          className="lg:w-1/2 mr-8 p-6 text-black decorate-links"
           style={{ backgroundColor: "rgba(255, 255, 255, 0.45)" }}
         >
           <p className="mt-4">
@@ -255,7 +255,7 @@ const Home = () => {
         </div>
 
         <div
-          className="w-1/4 mr-8 p-6 text-black decorate-links flex justify-center items-center"
+          className="lg:w-1/4 mr-8 p-6 text-black decorate-links flex justify-center items-center"
           style={{ backgroundColor: "rgba(255, 255, 255, 0.45)" }}
         >
           <p className="mt-4 text-center">

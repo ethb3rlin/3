@@ -16,18 +16,23 @@ const Manifesto = () => {
 <li>recreating existing failures,</li>
 <li>and hence, are more and more part of the problem.</li>
 </ul>
+
 <p><strong>The blockchain space is going through a multi-dimensional identity crisis.</strong></p>
 <blockquote>
-<p><em>&quot;It is not surprising that the crypto space has also become overrun by unscrupulous marketing, theft, and scams. The problem is real, but it isn&#39;t a new one. Capitalism has ruined crypto, but that shouldn&#39;t be the end of it.&quot;</em>​​​​  </p>
-</blockquote>
-<p><em>~~~ Joshua Dávila, <a href="https://repeaterbooks.com/product/blockchain-radicals-how-capitalism-ruined-crypto-and-how-to-fix-it/">Blockchain Radicals: How Capitalism Ruined Crypto and How to Fix It</a></em></p>
+
+<p><em>&quot; It is not surprising that the crypto space has also become overrun by unscrupulous marketing, theft, and scams. The problem is real, but it isn&#39;t a new one. Capitalism has ruined crypto, but that shouldn&#39;t be the end of it.&quot;</em>​​​​  </p>
+~~~ Joshua Dávila, <a href="https://repeaterbooks.com/product/blockchain-radicals-how-capitalism-ruined-crypto-and-how-to-fix-it/">Blockchain Radicals: How Capitalism Ruined Crypto and How to Fix It</a></blockquote>
+
     
 <p>Arguably, on a philosophical level, the ecosystem lost its shared identity long ago. Do we know what we want to achieve, and are we working towards the same thing? What are our shared values? Where are the red lines? All seems a blur, and everything goes in the always-online, never-stopping economic game machine.</p>
 <blockquote>
+
 <p>&quot;The folly was in thinking that, in a system that allows for almost anything, people would *not* maximize for their own utility over believing in the mission. To be fair though (and I mean this very seriously) a lot of us aren’t exactly clear on *what* the mission is. It seems like it’s mainly a lot of people trading shitcoins and jpegs, but we’re told this isn’t what we’re trying to do.&quot;  </p>
-</blockquote>
-<pre><code>    <span class="hljs-selector-tag">_</span>~~~ <span class="hljs-selector-tag">Gwart</span>, <span class="hljs-selector-attr">[on X]</span>(<span class="hljs-attribute">https</span>:<span class="hljs-comment">//x.com/GwartyGwart/status/1729837401122406435?s=20)_</span>
-</code></pre><p>The lack of shared vision or values also results in an identity crisis in the truest sense of the word: How do we deal with identities in decentralized communities? Are personhood verification, KYC, and AML necessary evils? Or are they the hill we are going to die on?</p>
+~~~ Gwart, <a href="https://x.com/GwartyGwart/status/1729837401122406435?s=20">on X</a> </blockquote>
+
+
+
+<p>The lack of shared vision or values also results in an identity crisis in the truest sense of the word: How do we deal with identities in decentralized communities? Are personhood verification, KYC, and AML necessary evils? Or are they the hill we are going to die on?</p>
 <p><strong>On the Internet, nobody knows you&#39;re a dog — On the Blockchain, everybody sees everything.</strong>  </p>
 
 <p>And again, instead of creating solid alternatives, we seem to be part of the problem. We are developing systems with complex social graphs and are considering incorporating the <a href="https://privacyinternational.org/explainer/5126/identity-crisis-around-world">most private biometrics</a> to prove we are humans. But what for? Universal basic &quot;income&quot; that is funded through venture capital snowball systems that sustain no one except the investors?</p>
@@ -62,7 +67,6 @@ const Manifesto = () => {
 <li><strong>Libre</strong>: It will be free, both as in free speech and free lemonade.</li>
 </ul>
 <p>We may only have this one last shot. Let&#39;s conspire in Berlin and build the change we want to see!</p>
-<p><strong>ETHBerlin 4 - Identity Crisis - May 24-26, 2024</strong>Factory Görlitzer Park, Berlin</p>
 
         </div>
       </div>
