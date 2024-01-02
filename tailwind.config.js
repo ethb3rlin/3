@@ -15,6 +15,7 @@ module.exports = {
         ocra: ["OCR-A", ...defaultTheme.fontFamily.mono],
         bundessans: ["BundesSans", ...defaultTheme.fontFamily.mono],
         dotpassport: ["DotPassport", ...defaultTheme.fontFamily.mono],
+        dotcapital: ["DotCapital", ...defaultTheme.fontFamily.mono],
         // w95: ["W95FA", ...defaultTheme.fontFamily.sans],
       },
       colors: {

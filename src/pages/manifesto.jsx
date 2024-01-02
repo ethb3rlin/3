@@ -5,163 +5,65 @@ const Manifesto = () => {
   return (
     <Layout>
       <div className="text-base decorate-links">
-        <h1 className="mb-4 text-berlin-yellow font-ocra underline">(m)anifesto</h1>
+        <h1 className="mb-4 text-berlin-yellow font-ocra underline">&lt;m&gt;anifesto</h1>
         <div>
-          <p>Hey friend! Remember us? We know it has been a while.</p>
+        <p>The situation is dire. We have been operating in crisis mode for years now. Established systems are failing, new and old imperialist powers are throwing continents into wars of attrition, global supply chains are collapsing, financial markets are tumbling, healthcare systems are falling apart, education is on a consistent downward spiral — the list goes on.</p>
+        <p>But there is hope: The soils to grow new ideas have never been more nutritious. It has never been more urgent to double down on new revolutionary concepts and ideas. It is high time to change the world.  </p>
+<p>Reflecting on the decentralized ecosystems — the very systems designed to solve some of the underlying problems of the failing society — we realize that instead of creating actionable alternatives, we seemingly are:</p>
+<ul>
+<li>reinvigorating hierarchical power structures,</li>
+<li>setting questionable incentives,</li>
+<li>recreating existing failures,</li>
+<li>and hence, are more and more part of the problem.</li>
+</ul>
+<p><strong>The blockchain space is going through a multi-dimensional identity crisis.</strong></p>
+<blockquote>
+<p><em>&quot;It is not surprising that the crypto space has also become overrun by unscrupulous marketing, theft, and scams. The problem is real, but it isn&#39;t a new one. Capitalism has ruined crypto, but that shouldn&#39;t be the end of it.&quot;</em>​​​​  </p>
+</blockquote>
+<p><em>~~~ Joshua Dávila, <a href="https://repeaterbooks.com/product/blockchain-radicals-how-capitalism-ruined-crypto-and-how-to-fix-it/">Blockchain Radicals: How Capitalism Ruined Crypto and How to Fix It</a></em></p>
+    
+<p>Arguably, on a philosophical level, the ecosystem lost its shared identity long ago. Do we know what we want to achieve, and are we working towards the same thing? What are our shared values? Where are the red lines? All seems a blur, and everything goes in the always-online, never-stopping economic game machine.</p>
+<blockquote>
+<p>&quot;The folly was in thinking that, in a system that allows for almost anything, people would *not* maximize for their own utility over believing in the mission. To be fair though (and I mean this very seriously) a lot of us aren’t exactly clear on *what* the mission is. It seems like it’s mainly a lot of people trading shitcoins and jpegs, but we’re told this isn’t what we’re trying to do.&quot;  </p>
+</blockquote>
+<pre><code>    <span class="hljs-selector-tag">_</span>~~~ <span class="hljs-selector-tag">Gwart</span>, <span class="hljs-selector-attr">[on X]</span>(<span class="hljs-attribute">https</span>:<span class="hljs-comment">//x.com/GwartyGwart/status/1729837401122406435?s=20)_</span>
+</code></pre><p>The lack of shared vision or values also results in an identity crisis in the truest sense of the word: How do we deal with identities in decentralized communities? Are personhood verification, KYC, and AML necessary evils? Or are they the hill we are going to die on?</p>
+<p><strong>On the Internet, nobody knows you&#39;re a dog — On the Blockchain, everybody sees everything.</strong>  </p>
 
-          <p>
-            In fact, the world seems to have changed drastically since we last
-            met in Berlin in{" "}
-            <a href="https://ethberlin.com/about/" target="_blank">
-              2018 for ETHBerlin
-            </a>{" "}
-            and in{" "}
-            <a href="https://ethberlinzwei.com/about.html" target="_blank">
-              2019 for ETHBerlin ZWEI
-            </a>
-            .
-          </p>
+<p>And again, instead of creating solid alternatives, we seem to be part of the problem. We are developing systems with complex social graphs and are considering incorporating the <a href="https://privacyinternational.org/explainer/5126/identity-crisis-around-world">most private biometrics</a> to prove we are humans. But what for? Universal basic &quot;income&quot; that is funded through venture capital snowball systems that sustain no one except the investors?</p>
+<p>Vitalik Buterin argues <a href="https://vitalik.ca/general/2023/07/24/biometric.html">in his blog</a>: <em>&quot;The concept of proof-of-personhood in principle seems very valuable, and while the various implementations have their risks, not having any proof-of-personhood at all has its risks too:</em> <em>A world with no proof-of-personhood seems more likely to be a world dominated by centralized identity solutions, money, small closed communities, or some combination of all three.</em>&quot; — But do we give up so easily?  </p>
+<p>It seems the community is breaking off into different silos: How important is privacy? Is something like proof-of-personhood on the blockchain a desirable goal, and, how should it be implemented and enforced?</p>
+<p>We want to use our voice in the community to remind everyone that privacy should be a core feature of the technologies we are building.</p>
+<ul>
+<li>Identity is arbitrary.</li>
+<li>Biometrics are not keys.
+</li>
+<li>Sybils are friends.
+</li>
+<li>Anonymity loves company.</li>
+</ul>
+<p>We find ourselves at the intersection of decentralization, privacy and security research: zero-knowlegde cryptography, fully homomorphic encryption, secure multi-party computation – the list goes on. Let&#39;s put it to use!  </p>
+<p><strong>For this year&#39;s ETHBerlin hackathon, we invite you to join the discussion and hack on anti-identity features instead of identity anti-features that boost the individual&#39;s privacy.</strong>  </p>
+<blockquote>
+<p><em>&quot;The magic of cryptography gives us privacy, while the resilience of blockchains allows for global, coordinated, coercion-resistant institutions.&quot;</em>  </p>
+</blockquote>
 
-          <p>
-            Central-bank-issued fiat currencies devalue faster every year, with
-            annual inflation rates of supposedly stable currencies like EUR or
-            USD hitting new highs each month. Over the last two years, the
-            global crackdown on privacy, freedom of movement, and the right to
-            transact by governments worldwide put us on the edge of a new dark
-            age of regression.
-          </p>
+<p>And, just like last year, we encourage hackers, workshop hosts, and supporters at ETHBerlin 4 to focus on the following key attributes:</p>
+<ul>
+<li><strong>Private</strong>: There is no need for your name, data, or ID.</li>
+<li><strong>Usable</strong>: It has to be accessible and user-friendly.</li>
+<li><strong>Direct</strong>: It does not ask for permission.</li>
+<li><strong>Subversive</strong>: It transforms established orders and structures of power.</li>
+<li><strong>Social</strong>: It empowers people and makes a difference in somebody&#39;s life.</li>
+<li><strong>Clandestine</strong>: It will not comply.</li>
+<li><strong>Independent</strong>: It will not rely on governments, corporates, or investors.</li>
+<li><strong>Impactful</strong>: It intends to make a difference.</li>
+<li><strong>Secure</strong>: It does not put anyone at risk.</li>
+<li><strong>Libre</strong>: It will be free, both as in free speech and free lemonade.</li>
+</ul>
+<p>We may only have this one last shot. Let&#39;s conspire in Berlin and build the change we want to see!</p>
+<p><strong>ETHBerlin 4 - Identity Crisis - May 24-26, 2024</strong>Factory Görlitzer Park, Berlin</p>
 
-          <quote>
-            <p>
-              "Without the freedom to transact, you have no other constitutional
-              rights."
-            </p>
-            <p>
-              {" "}
-              Punk6529:{" "}
-              <a
-                href="https://twitter.com/punk6529/status/1494444624630403083"
-                target="_blank"
-              >
-                On the freedom to transact
-              </a>
-              .
-            </p>
-          </quote>
-
-          <p>
-            We are seriously concerned about the state of the world, but equally
-            so about the state of the blockchain space. While we are absolutely
-            over the moon for the ever-growing mainstream adoption of
-            cryptocurrencies and blockchain technology, certain developments
-            leave a bitter aftertaste, and we fear that the most essential
-            values are about to get lost along the way. We take this as a call
-            to action and want to do our part
-          </p>
-          <p>Please welcome ETHBerlin's official third edition:</p>
-
-          <div className="my-8 text-center">
-            <span className=" font-bold text-xl">
-              ETHBerlin³ - ETHBerlin, to the power of 3.
-            </span>
-          </div>
-
-          <p>
-            With ETHBerlin³, we aim to go back to the roots and remind our
-            community what it's all about: We want to invite you to Berlin to
-            hack the system, now more than ever. We want to emphasize the
-            original cypherpunk vision and build on it. In addition, we aim to
-            teach and educate a new generation of hackers about what you can
-            achieve with cryptography, blockchain, and peer-to-peer network
-            technologies.
-          </p>
-
-          <quote>
-            <p>
-              "We must defend our own privacy if we expect to have any. We must
-              come together and create systems which allow anonymous
-              transactions to take place. People have been defending their own
-              privacy for centuries with whispers, darkness, envelopes, closed
-              doors, secret handshakes, and couriers. The technologies of the
-              past did not allow for strong privacy, but electronic technologies
-              do."
-            </p>
-            <p>
-              {" "}
-              Eric Hughes:{" "}
-              <a
-                href="https://nakamotoinstitute.org/cypherpunk-manifesto/"
-                target="_blank"
-              >
-                A Cypherpunk's Manifesto
-              </a>
-              .
-            </p>
-          </quote>
-
-          <p>
-            Our big question for you is: How do we get from yield farming fruit
-            tokens, VC chains, making the rich richer and a never-ending race to
-            the top to an open and an inclusive system that makes a difference
-            in people's lives? Which anarchist and privacy-preserving tools can
-            we build that enable independence from governments and mega corps?
-          </p>
-
-          <p>
-            We will encourage hackathon tracks, workshops, and supporters at
-            ETHBerlin³ to focus on the following key aspects:
-          </p>
-
-          <ul className="ml-8 my-4">
-            <li>Private: there is no need for your name, data, or ID.</li>
-            <li>Usable: it has to be accessible and user-friendly.</li>
-            <li>Direct: it does not ask for permission.</li>
-            <li>
-              Subversive: it transforms established orders and structures of
-              power.
-            </li>
-            <li>
-              Social: it empowers people and makes a difference in somebody's
-              life.
-            </li>
-            <li>Clandestine: it will not comply.</li>
-            <li>Independent: it will not rely on governments or corporates.</li>
-            <li>Impactful: it intends to make a difference.</li>
-            <li>Secure: it does not put anyone at risk.</li>
-            <li>
-              Libre: it will be free both as in free speech and free beer.
-            </li>
-          </ul>
-
-          <p>
-            Berlin has a dark history of financial scandals, hyperinflation, and
-            bank runs. Since inflation is again about to eat the world, we'd
-            like to use this as a reminder that the system we live in is not
-            infallible, and it's up to us to progress towards change. The fiat
-            currencies we use every day are hardly backed by anything at this
-            point (money printer goes brrr); we just choose to believe in one
-            thing over another. We can choose to build the (financial) future we
-            want to live in; nothing really hinders us!
-          </p>
-          <p>
-            In the previous years, ETHBerlin always tried to make a difference
-            by pioneering the use of decentralized technologies and nurturing
-            the ecosystem. Significant projects emerged from our hackathons,
-            such as{" "}
-            <a href="https://www.pinata.cloud/" target="_blank">
-              IPFS Pinata
-            </a>{" "}
-            or the{" "}
-            <a href="https://goerli.net/" target="_blank">
-              Goerli Testnet
-            </a>
-            . And legend has it that even the Dune Analytics founders{" "}
-            <a href="https://dune.com/blog/money-aint-a-thang" target="_blank">
-              started their career
-            </a>{" "}
-            at ETHBerlin.
-          </p>
-          <p>Are you committed to making a difference? Expect us.</p>
         </div>
       </div>
     </Layout>

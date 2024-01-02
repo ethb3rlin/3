@@ -56,7 +56,7 @@ const EthBerlinLogo = React.forwardRef((props, ref) => {
         >
           {revealed || props.noReveal ? (
             <span>
-              EthBerlin
+              ETHBerlin
               {
                 <span className={`${invisibleLetter ? "invisible" : ""}`}>
                   {letter}

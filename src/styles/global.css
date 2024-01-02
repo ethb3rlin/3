@@ -23,6 +23,11 @@
     font-weight: 400;
     src: url(../assets/fonts/dot/dot.ttf);
   }
+  @font-face {
+    font-family: DotCapital;
+    font-weight: 400;
+    src: url(../assets/fonts/dot2/dot2.ttf);
+  }
 
   .material-symbols-outlined {
     font-family: "Material Symbols Outlined";
@@ -113,7 +118,6 @@ body::before {
   right: 0;
   bottom: 0;
   background-image: url("bg.png"); 
-  background-size: 100%; /* Adjust this value to change tile size */
   opacity: 0.5;
   z-index: -1;
 }

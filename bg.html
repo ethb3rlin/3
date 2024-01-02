@@ -7,17 +7,18 @@
 <script>
 function createSinusLine(yOffset, startX, endX) {
     var path = document.createElementNS("http://www.w3.org/2000/svg", "path");
+    var amplitude = 25; // Reduced amplitude for flatter waves
     var d = `M ${startX} ${100 + yOffset}`;
-    for (var x = startX; x < endX; x += 400) {
-        d += ` Q ${x + 50} ${50 + yOffset}, ${x + 100} ${100 + yOffset}`;
+    for (var x = startX; x < endX; x += 200) {
+        d += ` Q ${x + 25} ${100 - amplitude + yOffset}, ${x + 50} ${100 + yOffset}`;
+        d += ` T ${x + 100} ${100 + yOffset}`;
+        d += ` T ${x + 150} ${100 + yOffset}`;
         d += ` T ${x + 200} ${100 + yOffset}`;
-        d += ` T ${x + 300} ${100 + yOffset}`;
-        d += ` T ${x + 400} ${100 + yOffset}`;
     }
     path.setAttribute("d", d);
     path.setAttribute("stroke", "url(#pinkToBlueGradient)");
     path.setAttribute("fill", "none");
-    path.setAttribute("stroke-width", "2");
+    path.setAttribute("stroke-width", "1");
     return path;
 }
 
@@ -25,7 +26,6 @@ function createSVG() {
     var svgNS = "http://www.w3.org/2000/svg";
     var svg = document.createElementNS(svgNS, "svg");
     
-    // Set SVG width and height to window size
     var width = window.innerWidth;
     var height = window.innerHeight;
     svg.setAttribute("width", width.toString());
@@ -41,11 +41,10 @@ function createSVG() {
     defs.appendChild(gradient);
     svg.appendChild(defs);
 
-    // Create sinusoidal lines
-    var linesCount = Math.ceil(height / 10); // Calculate number of lines based on height
+    var linesCount = Math.ceil(height / 5); 
     for (var i = 0; i < linesCount; i++) {
-        svg.appendChild(createSinusLine(i * 10, 0, width));  // Repeat pattern across full width
-        svg.appendChild(createSinusLine(i * 10, 100, width)); // Repeat pattern across full width starting at x=100
+        svg.appendChild(createSinusLine(i * 5, 0, width));  
+        svg.appendChild(createSinusLine(i * 5, 50, width)); 
     }
 
     document.getElementById("svgContainer").appendChild(svg);

@@ -98,7 +98,6 @@ const Home = () => {
   }
   return (
     <div className="flex flex-col lg:flex-row sm:justify-center sm:items-center min-h-screen font-bundessans">
-      
       <Seo />
       <Sidebar
         className={`hidden sm:flex z-10 ${
@@ -139,35 +138,35 @@ const Home = () => {
         </button>
         <a className="my-2" href="/about">
           {" "}
-          (a)bout
+          &lt;a&gt;bout
         </a>
         <a className="my-2" href="/manifesto">
           {" "}
-          (m)anifesto
+          &lt;m&gt;anifesto
         </a>
         <a className="my-2" href="/gallery">
           {" "}
-          (g)allery
+          &lt;h&gt;allery
         </a>
         <a className="my-2" href="/hacker-manual">
           {" "}
-          (h)acker manual
+          &lt;ah&gt;acker manual
         </a>
         <a className="my-2" href="/program">
           {" "}
-          (p)rogram
+          &lt;p&gt;rogram
         </a>
         <a className="my-2" href="/venue">
           {" "}
-          (v)enue
+          &lt;v&gt;enue
         </a>
         <a className="my-2" href="/contributors">
           {" "}
-          (c)ontributors
+          &lt;c&gt;ontributors
         </a>
         <a className="my-2" href="/sponsor">
           {" "}
-          (s)ponsors
+          &lt;s&gt;ponsors
         </a>
         <div className="fixed bottom-0 mb-8 text-sm text-center">
           <div className="my-2">
@@ -194,7 +193,7 @@ const Home = () => {
         </div>
       </nav>
       <div
-        className={`static lg:fixed flex flex-row left-0 top-0 mt-16 sm:mt-48 flex-1 ml-4 sm:ml-64 mr-4 z-10 ${
+        className={`static lg:fixed flex flex-col left-0 top-0 mt-16 sm:mt-48 flex-1 ml-4 sm:ml-64 mr-4 z-10 ${
           showSidebar ? "fade-in-left " : "fade-out-left"
         }
         `}
@@ -204,15 +203,39 @@ const Home = () => {
           style={{ backgroundColor: "rgba(255, 255, 255, 0.45)" }}
         >
           <p className="mt-4">
-          The situation is dire. We have been operating in crisis mode for years now. Established systems are failing, new and old imperialist powers are throwing continents into wars of attrition, global supply chains are collapsing, financial markets are tumbling, healthcare systems are falling apart, education is on a consistent downward spiral — the list goes on.
+            ETHBerlin is a hackathon, a cultural festival, an educational event,
+            a platform for hacktivism, and a community initiative to push the
+            decentralized ecosystem forward.{" "}
           </p>
-          <p className="mt-4">
-          But there is hope: The soils to grow new ideas have never been more nutritious. It has never been more urgent to double down on new revolutionary concepts and ideas. It is high time to change the world.
-          </p>
-          <p className="mt-4">
-          Reflecting on the decentralized ecosystems — the very systems designed to solve some of the underlying problems of the failing society — we realize that instead of creating actionable alternatives, we seemingly are:
 
-</p>
+          <p className="mt-4 font-ocra">
+            ETHBerlin4 &lt;&lt;&lt;Identity Crisis&lt;&lt;&gt;&gt;&gt;{" "}
+            <p> May 24-26, 2024, Berlin, Germany.</p>{" "}
+          </p>
+
+          <p className="mt-4">
+            The situation is dire. We have been operating in crisis mode for
+            years now. Established systems are failing, new and old imperialist
+            powers are throwing continents into wars of attrition, global supply
+            chains are collapsing, financial markets are tumbling, healthcare
+            systems are falling apart, education is on a consistent downward
+            spiral — the list goes on.
+          </p>
+          <p className="mt-4">
+            But there is hope: The soils to grow new ideas have never been more
+            nutritious. It has never been more urgent to double down on new
+            revolutionary concepts and ideas. It is high time to change the
+            world.
+          </p>
+          <p className="mt-4 font-black ">
+            For this year's ETHBerlin hackathon, we invite you to join the
+            discourse and hack on anti-identity features instead of identity
+            anti-features that boost the individual's privacy.
+          </p>
+
+          <p className="mt-4 ">
+            To learn more about our vision and mission, press &lt;m&gt;
+          </p>
 
           <p className="mt-4">
             It was a blast! You can find{" "}
@@ -232,30 +255,25 @@ const Home = () => {
         </div>
 
         <div
-          className="w-1/4 mr-8 p-6 text-black decorate-links flex justify-center items-center justify-center"
+          className="w-1/4 mr-8 p-6 text-black decorate-links flex justify-center items-center"
           style={{ backgroundColor: "rgba(255, 255, 255, 0.45)" }}
         >
           <p className="mt-4 text-center">
-            
-          <div className="flex flex-col items-center justify-center">
-      <img 
-        src={imageSrcPass} 
-        className=" w-48 h-48 object-cover" 
-        alt="Fake passport image"
-        onMouseEnter={handleMouseEnter}
-        onMouseLeave={handleMouseLeave}
-      />
-      </div>
-           <p className="font-ocra my-0"> Event: ETHBerlin 4</p>
-           <p className="font-ocra my-0"> Theme: Identity Crisis</p>
-            <p className="font-ocra my-0"> Dates: May 24-26, 2024
-              </p> 
-
+            <div className="flex flex-col items-center justify-center">
+              <img
+                src={imageSrcPass}
+                className=" w-48 h-48 object-cover"
+                alt="Fake passport image"
+                onMouseEnter={handleMouseEnter}
+                onMouseLeave={handleMouseLeave}
+              />
+            </div>
+            <p className="font-ocra my-0"> Event: ETHBerlin 4</p>
+            <p className="font-ocra my-0"> Theme: Identity Crisis</p>
+            <p className="font-ocra my-0"> Dates: May 24-26, 2024</p>
           </p>
         </div>
       </div>
-
-      
 
       {/* Moving logo not shown on mobile */}
       <EthBerlinLogo
@@ -328,19 +346,13 @@ const Home = () => {
         >
           (b)log
         </a>
-        <a
-          className="mx-4 my-2 sm:ml-8 text-black"
-          href="/decentralization"
-        >
+        <a className="mx-4 my-2 sm:ml-8 text-black" href="/decentralization">
           department of (d)ecentralization
         </a>
         <a className="mx-4 my-2 sm:ml-8 text-black" href="/contact">
           contact & (i)mpressum
         </a>
-        <a
-          className="mx-4 my-2 sm:ml-8 text-black"
-          href="/code-of-conduct"
-        >
+        <a className="mx-4 my-2 sm:ml-8 text-black" href="/code-of-conduct">
           code (o)f conduct
         </a>
         <a

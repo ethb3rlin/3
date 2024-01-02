@@ -17,11 +17,11 @@ const Sidebar = ({ className, hideLogo }) => {
       <nav className="flex flex-col mt-[5.5rem] text-xl text-left">
         <a className="my-2" href="/about">
           {" "}
-          (a)bout
+          &lt;a&gt;bout
         </a>
         <a className="my-2" href="/manifesto">
           {" "}
-          (m)anifesto
+          &lt;m&gt;anifesto
         </a>
         <a className="my-2 hidden" href="/gallery">
           {" "}
