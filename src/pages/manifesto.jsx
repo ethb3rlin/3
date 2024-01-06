@@ -20,15 +20,15 @@ const Manifesto = () => {
 <p><strong>The blockchain space is going through a multi-dimensional identity crisis.</strong></p>
 <blockquote>
 
-<p><em>&quot; It is not surprising that the crypto space has also become overrun by unscrupulous marketing, theft, and scams. The problem is real, but it isn&#39;t a new one. Capitalism has ruined crypto, but that shouldn&#39;t be the end of it.&quot;</em>​​​​  </p>
-<p align="right">~~~ Joshua Dávila, <a href="https://repeaterbooks.com/product/blockchain-radicals-how-capitalism-ruined-crypto-and-how-to-fix-it/">Blockchain Radicals: How Capitalism Ruined Crypto and How to Fix It</a></p></blockquote>
+<p><em>&quot; It is not surprising that the crypto space has also become overrun by unscrupulous marketing, theft, and scams. The problem is real, but it isn&#39;t a new one. Capitalism has ruined crypto, but that shouldn&#39;t be the end of it.&quot;</em>
+<p align="right">~~~ Joshua Dávila, <a href="https://repeaterbooks.com/product/blockchain-radicals-how-capitalism-ruined-crypto-and-how-to-fix-it/">Blockchain Radicals: How Capitalism Ruined Crypto and How to Fix It</a></p> </p></blockquote>
 
     
 <p>Arguably, on a philosophical level, the ecosystem lost its shared identity long ago. Do we know what we want to achieve, and are we working towards the same thing? What are our shared values? Where are the red lines? All seems a blur, and everything goes in the always-online, never-stopping economic game machine.</p>
 <blockquote>
 
-<p>&quot;The folly was in thinking that, in a system that allows for almost anything, people would *not* maximize for their own utility over believing in the mission. To be fair though (and I mean this very seriously) a lot of us aren’t exactly clear on *what* the mission is. It seems like it’s mainly a lot of people trading shitcoins and jpegs, but we’re told this isn’t what we’re trying to do.&quot;  </p>
-<p align="right">~~~ Gwart, <a href="https://x.com/GwartyGwart/status/1729837401122406435?s=20">on X</a></p></blockquote>
+<p>&quot;The folly was in thinking that, in a system that allows for almost anything, people would *not* maximize for their own utility over believing in the mission. To be fair though (and I mean this very seriously) a lot of us aren’t exactly clear on *what* the mission is. It seems like it’s mainly a lot of people trading shitcoins and jpegs, but we’re told this isn’t what we’re trying to do.&quot;
+<p align="right">~~~ Gwart, <a href="https://x.com/GwartyGwart/status/1729837401122406435?s=20">on X</a></p></p></blockquote>
 
 <p>The lack of shared vision or values also results in an identity crisis in the truest sense of the word: How do we deal with identities in decentralized communities? Are personhood verification, KYC, and AML necessary evils? Or are they the hill we are going to die on?</p>
 <p><strong>On the Internet, nobody knows you&#39;re a dog — On the Blockchain, everybody sees everything.</strong>  </p>
