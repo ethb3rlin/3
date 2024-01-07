@@ -22,9 +22,24 @@ const Home = () => {
 
   return (
     <Layout>
-      <div className="flex flex-row">
+      <div className="flex flex-col xl:flex-row-reverse">
+        {/* Right side Wolpy and faces */}
+        <div className="textbox my-8 xl:w-1/4 xl:ml-8 text-black decorate-links flex justify-center items-center">
+          <p className="mt-4 text-center">
+            <div className="flex flex-col items-center justify-center mb-4">
+              <img
+                src={imageSrcPass}
+                className=" w-48 h-48 object-cover"
+                alt="Fake passport image"
+              />
+            </div>
+            <p className="font-ocra my-0"> Event: ETHBerlin 4</p>
+            <p className="font-ocra my-0"> Theme: Identity Crisis</p>
+            <p className="font-ocra my-0"> Dates: May 24-26, 2024</p>
+          </p>
+        </div>
         {/* Left side text box */}
-        <div className="textbox w-2/3">
+        <div className="textbox xl:w-2/3">
           <p>
             ETHBerlin is a hackathon, a cultural festival, an educational event,
             a platform for hacktivism, and a community initiative to push the
@@ -62,22 +77,6 @@ const Home = () => {
             <span className="font-ocra text-sm">&lt;&lt;M&lt;</span>, to apply
             for a hacker visa, press{" "}
             <span className="font-ocra text-sm">&lt;&lt;V&lt;</span>.
-          </p>
-        </div>
-
-        {/* Right side Wolpy and faces */}
-        <div className="textbox sm:w-1/4 ml-8 text-black decorate-links flex justify-center items-center">
-          <p className="mt-4 text-center">
-            <div className="flex flex-col items-center justify-center mb-4">
-              <img
-                src={imageSrcPass}
-                className=" w-48 h-48 object-cover"
-                alt="Fake passport image"
-              />
-            </div>
-            <p className="font-ocra my-0"> Event: ETHBerlin 4</p>
-            <p className="font-ocra my-0"> Theme: Identity Crisis</p>
-            <p className="font-ocra my-0"> Dates: May 24-26, 2024</p>
           </p>
         </div>
       </div>

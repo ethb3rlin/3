@@ -112,7 +112,11 @@ const Manifesto = () => {
             And again, instead of creating solid alternatives, we seem to be
             part of the problem. We are developing systems with complex social
             graphs and are considering incorporating the{" "}
-            <a href="https://privacyinternational.org/explainer/5126/identity-crisis-around-world">
+            <a
+              href="https://privacyinternational.org/explainer/5126/identity-crisis-around-world"
+              target="_blank"
+              rel="noreferrer"
+            >
               most private biometrics
             </a>{" "}
             to prove we are humans. But what for? Universal basic
@@ -121,7 +125,11 @@ const Manifesto = () => {
           </p>
           <p>
             Vitalik Buterin argues{" "}
-            <a href="https://vitalik.ca/general/2023/07/24/biometric.html">
+            <a
+              href="https://vitalik.ca/general/2023/07/24/biometric.html"
+              target="_blank"
+              rel="noreferrer"
+            >
               in his blog
             </a>
             <em>

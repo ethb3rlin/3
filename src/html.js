@@ -21,18 +21,6 @@ export default function HTML(props) {
                 if (e.key == 'a' || e.key == 'A') {
                     window.location.href= "/about";
                 }
-                else if (e.key == 'h' || e.key == 'H') {
-                  window.location.href= "/hacker-manual";
-                }
-                else if (e.key == 'p' || e.key == 'P') {
-                  window.location.href= "/program";
-                }
-                else if (e.key == 'c' || e.key == 'C') {
-                   window.location.href= "/contributors";
-                }
-                else if (e.key == 's' || e.key == 'S') {
-                  window.location.href= "/sponsor";
-                }
                 else if (e.key == 'm' || e.key == 'M') {
                   window.location.href= "/manifesto";
                 }
@@ -44,15 +32,6 @@ export default function HTML(props) {
                 }
                 else if (e.key == 'o' || e.key == 'O') {
                   window.location.href= "/code-of-conduct";
-                }
-                else if (e.key == 'b' || e.key == 'B') {
-                  window.location.href= "https://blog.ethberlin.ooo";
-                }
-                else if (e.key == 'v' || e.key == 'V') {
-                  window.location.href= "/venue";
-                }
-                else if (e.key == 'g' || e.key == 'G') {
-                  window.location.href= "/gallery";
                 }
             }
             `,

@@ -45,7 +45,8 @@
     -webkit-font-smoothing: antialiased;
   }
   h1 {
-    @apply text-3xl;
+    @apply sm:text-3xl;
+    @apply text-xl;
   }
   h2 {
     @apply text-2xl;
