@@ -119,6 +119,10 @@ body::before {
   right: 0;
   bottom: 0;
   background-image: url("bg.png");
+  /* cover horizontally and repeat vertically https://stackoverflow.com/questions/41025630/css-background-image-stretch-horizontally-and-repeat-vertically */
+  background-size: 100% auto;
+  background-repeat: repeat-y;
+
   /* background-size: cover; */
   opacity: 0.5;
   z-index: -1;
