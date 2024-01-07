@@ -4,36 +4,33 @@ import Layout from "../components/Layout";
 const Impressum = () => {
   return (
     <Layout>
-      <div className="decorate-links">
-        <div>
-          <h1 className="text-3xl text-secondary underline font-ocra">
-            contact &amp; (i)mpressum
-          </h1>
-          <div className="mt-4">
-            <p>
-              If you want to reach out:
-              <ul>
-                <li>
-                  send us an email:{" "}
-                  <a href="mailto:goerli@ethberlin.org">goerli@ethberlin.org</a>{" "}
-                </li>
-                <li>
-                  sponsors contact:{" "}
-                  <a href="mailto:sponsors@ethberlin.org">sponsors@ethberlin.org</a>{" "}
-                </li>
-                <li>
-                  press enquiries:{" "}
-                  <a href="mailto:press@ethberlin.org">press@ethberlin.org</a>{" "}
-                </li>
-                <li>
-                  join our{" "}
-                  <a href="https://matrix.to/#/%23ethberlin:matrix.org">
-                    matrix space
-                  </a>
-                </li>
-              </ul>
-            </p>
-          </div>
+      <div className="textbox decorate-links">
+        <h1 className="text-3xl text-secondary underline font-ocra">
+          contact &amp; (i)mpressum
+        </h1>
+        <div className="mt-4">
+          <p>
+            Thoughts, questions, input or inquieries? We look forward to hearing
+            from you!
+            <ul className="mt-4 leading-4">
+              <li>
+                send us an email:{" "}
+                <a href="mailto:contact@ethberlin.org">contact@ethberlin.org</a>{" "}
+              </li>
+              <li>
+                sponsors contact:{" "}
+                <a href="mailto:sponsors@ethberlin.org">
+                  sponsors@ethberlin.org
+                </a>{" "}
+              </li>
+              <li>
+                join our{" "}
+                <a href="https://matrix.to/#/%23ethberlin:dod.ngo">
+                  matrix space
+                </a>
+              </li>
+            </ul>
+          </p>
         </div>
         <div className="text-sm">
           <h1 className="text-xl font-bold ">Impressum</h1>
@@ -52,8 +49,8 @@ const Impressum = () => {
           <div className="mt-4">
             Goerli Dezentral gGmbH is a non-profit organization serving
             tax-privileged purposes, according to the articles of association.
-            The organization meets the statutory requirements under
-            &sect;&sect; 51, 59, 60, and 61 AO.
+            The organization meets the statutory requirements under &sect;&sect;
+            51, 59, 60, and 61 AO.
           </div>
         </div>
       </div>

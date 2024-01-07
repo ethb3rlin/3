@@ -1,51 +1,25 @@
 import React from "react";
 import EthBerlinLogo from "./EthBerlinLogo";
 
-const Sidebar = ({ className, hideLogo }) => {
+const Sidebar = ({ className }) => {
   return (
-    <div
-      className={`h-screen flex flex-col py-8 px-6 fixed w-60 left-0 top-0 text-black font-ocra ${className}`}
+    <nav
+      className={`h-screen flex flex-col py-6 px-6 fixed w-72 text-black font-ocra ${className}`}
     >
-      <a
-        style={{ textDecoration: "none" }}
-        href="/"
-        className={`${hideLogo && "invisible"}`}
-      >
-        <EthBerlinLogo titleClassName="text-5xl" subtitleClassName="" />
-      </a>
+      <EthBerlinLogo
+        className="hidden sm:flex flex-col justify-center origin-center"
+        titleClassName="text-3xl"
+        subtitleClassName={`text-xs`}
+      />
       {/* 5.5rem to align with the Latout main content box */}
       <nav className="flex flex-col mt-[5.5rem] text-xl text-left">
         <a className="my-2" href="/about">
           {" "}
-          &lt;a&gt;bout
+          &lt;&lt;a&lt;bout
         </a>
         <a className="my-2" href="/manifesto">
           {" "}
-          &lt;m&gt;anifesto
-        </a>
-        <a className="my-2 hidden" href="/gallery">
-          {" "}
-          (g)allery
-        </a>
-        <a className="my-2 hidden" href="/hacker-manual">
-          {" "}
-          (h)acker manual
-        </a>
-        <a className="my-2 hidden" href="/program">
-          {" "}
-          (p)rogram
-        </a>
-        <a className="my-2 hidden" href="/venue">
-          {" "}
-          (v)enue
-        </a>
-        <a className="my-2 hidden" href="/contributors">
-          {" "}
-          (c)ontributors
-        </a>
-        <a className="my-2 hidden" href="/sponsor">
-          {" "}
-          (s)ponsors
+          &lt;&lt;m&lt;anifesto
         </a>
       </nav>
       <div className="mt-auto">
@@ -58,7 +32,7 @@ const Sidebar = ({ className, hideLogo }) => {
             rel="noreferrer"
           >
             matrix space
-          </a> 
+          </a>
           &nbsp;or{" "}
           <a
             className="underline"
@@ -70,7 +44,7 @@ const Sidebar = ({ className, hideLogo }) => {
           </a>
         </div>
       </div>
-    </div>
+    </nav>
   );
 };
 

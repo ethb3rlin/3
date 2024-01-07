@@ -67,22 +67,19 @@
   .blur-text {
     color: transparent;
     /* text-shadow: <blur>, <outer-glow> */
-    text-shadow: 0 0 5px rgb(255 210 0 / 75%),
-      theme("colors.black") 0 0 15px;
+    text-shadow: 0 0 5px rgb(255 210 0 / 75%), theme("colors.black") 0 0 15px;
   }
 
   .blur-text-small {
     color: transparent;
     /* text-shadow: <blur>, <outer-glow> */
-    text-shadow: 0 0 7px rgb(255 210 0 / 75%),
-      theme("colors.black") 0 0 2px;
+    text-shadow: 0 0 7px rgb(255 210 0 / 75%), theme("colors.black") 0 0 2px;
   }
 
   .blur-text-smaller {
     color: transparent;
     /* text-shadow: <blur>, <outer-glow> */
-    text-shadow: 0 0 5px rgb(255 210 0 / 75%),
-      theme("colors.black") 0 0 1.5px;
+    text-shadow: 0 0 5px rgb(255 210 0 / 75%), theme("colors.black") 0 0 1.5px;
   }
   .bright-gray {
     --tw-grayscale: grayscale(100%);
@@ -98,6 +95,10 @@
       var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert)
       var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
   }
+}
+
+.textbox {
+  @apply bg-[rgba(255,255,255,0.65)] p-6; /* Customize as needed */
 }
 
 body {
@@ -117,12 +118,11 @@ body::before {
   left: 0;
   right: 0;
   bottom: 0;
-  background-image: url("bg.png"); 
+  background-image: url("bg.png");
   /* background-size: cover; */
   opacity: 0.5;
   z-index: -1;
 }
-
 
 .mouse {
   height: 60px;
@@ -166,7 +166,6 @@ body::before {
     transform-origin: bottom;
   }
 }
-
 
 /* 
 #__gatsby, #gatsby-focus-wrapper {
