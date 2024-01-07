@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: "ETHBerlin³ 2022",
+    title: "ETHBerlin4 2024",
     siteUrl: `https://ethberlin.ooo`,
     url: `https://ethberlin.ooo`,
     description:
