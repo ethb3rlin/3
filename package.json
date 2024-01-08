@@ -13,7 +13,7 @@
     "build": "gatsby build",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
-    "deploy": "echo 'https://ethberlin.ooo' > ./build/CNAME && gh-pages -d build"
+    "deploy": "echo 'https://ethberlin.org' > ./build/CNAME && gh-pages -d build"
   },
   "dependencies": {
     "@mdx-js/mdx": "^1.6.22",
@@ -42,5 +42,5 @@
     "postcss": "^8.4.14",
     "tailwindcss": "^3.1.6"
   },
-  "homepage": "https://ethberlin.ooo"
+  "homepage": "https://ethberlin.org"
 }
