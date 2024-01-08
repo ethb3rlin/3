@@ -15,16 +15,7 @@ const Layout = ({ children, showEthDiamond }) => {
           className={`z-10 hidden md:flex justify-end my-9 sm:mr-12 font-ocra text-black`}
         >
           <div>May 24-26, 2024</div>
-          <div className="sm:ml-8">
-            <a
-              style={{ textDecoration: "none" }}
-              href="https://factoryberlin.com/"
-              target="_blank"
-              rel="noreferrer"
-            >
-              Factory Görlitzer Park
-            </a>
-          </div>
+          <div className="sm:ml-8">Kreuzberg, Berlin</div>
         </div>
         {/* SecurityStrip*/}
         <div

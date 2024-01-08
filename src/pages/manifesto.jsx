@@ -244,7 +244,7 @@ const Manifesto = () => {
             <ETHBerlin />
           </div>
           <div className="font-bold">May 24-26, 2024</div>
-          <div>Factory Görlitzer Park, Berlin</div>
+          <div>Kreuzberg, Berlin</div>
           <div>
             <a href="https://ethberlin.org">ethberlin.org</a>
           </div>
