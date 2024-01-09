@@ -5,7 +5,7 @@ const CoC = () => (
   <Layout>
     <div className="textbox">
       <h1 className="my-4 underline text-secondary font-ocra">
-        code (o)f conduct
+        code &lt;&lt;o&lt;f conduct
       </h1>
       <div className="text-justify decorate-links">
         <p className="mt-2">

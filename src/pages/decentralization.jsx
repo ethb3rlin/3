@@ -6,7 +6,7 @@ const decentralization = () => (
   <Layout>
     <div className="textbox">
       <h1 className="my-4 underline text-secondary font-ocra">
-        department of &lt;d&gt;ecentralization
+        department of &lt;&lt;d&lt;ecentralization
       </h1>
       <div className="text-justify decorate-links">
         <p>
@@ -155,9 +155,8 @@ const decentralization = () => (
         </ul>
 
         <p className="mt-8">
-          Currently, the Department is primarily run from Berlin. We are around
-          a dozen members and currently take collective decisions using rough
-          consensus.
+          The Department is primarily run from Berlin. We are around a dozen
+          members and currently take collective decisions using rough consensus.
         </p>
       </div>
     </div>

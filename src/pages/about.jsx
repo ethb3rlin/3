@@ -33,7 +33,7 @@ const About = () => {
     <Layout>
       <div className="text-justify decorate-links textbox">
         <h1 className="my-4 underline font-ocra text-berlin-yellow">
-          &lt;a&gt;bout
+          &lt;&lt;a&lt;bout
         </h1>
         <p>
           ETHBerlin is known as the hackathon extravaganza, a cultural festival,
