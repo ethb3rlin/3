@@ -17,10 +17,6 @@ const Sidebar = ({ className }) => {
           <div>X</div>
         </button>
       )}
-      <a className="my-2" href="/about">
-        {" "}
-        &lt;&lt;a&lt;bout
-      </a>
       <a className="my-2" href="/manifesto">
         {" "}
         &lt;&lt;m&lt;anifesto
@@ -46,7 +42,7 @@ const Sidebar = ({ className }) => {
             join our{" "}
             <a
               className="underline"
-              href="https://matrix.to/#/%23ethberlin:matrix.org"
+              href="https://matrix.to/#/%23ethberlin:dod.ngo"
               target="_blank"
               rel="noreferrer"
             >
@@ -55,7 +51,7 @@ const Sidebar = ({ className }) => {
             &nbsp;or{" "}
             <a
               className="underline"
-              href="mailto:goerli@ethberlin.org"
+              href="mailto:contact@ethberlin.org"
               target="_blank"
               rel="noreferrer"
             >

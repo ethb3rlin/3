@@ -1,6 +1,6 @@
-# ETHBerlin4 (2024) Website
+# ETHBerlin04 Website
 
-Join the ETHBerlin Matrix space to contribute: [https://matrix.to/#/#ethberlin:matrix.org](https://matrix.to/#/%23ethberlin:dod.ngo)
+Join the ETHBerlin Matrix space to contribute: [#ethberlin:dod.ngo](https://matrix.to/#/%23ethberlin:dod.ngo)
 
 # Run
 
@@ -25,4 +25,3 @@ Build with
 ```
 npm run build
 ```
-npx ga
