@@ -24,25 +24,6 @@ const Manifesto = () => {
             revolutionary concepts and ideas. It is high time to change the
             world.{" "}
           </p>
-          <quote>
-            <p>
-              "The magic of cryptography gives us privacy, while the resilience
-              of blockchains allows for global, coordinated, coercion-resistant
-              institutions."
-            </p>
-            <p>
-              {" "}
-              Jarrad Hope:{" "}
-              <a
-                href="https://logos.co/manifesto/"
-                target="_blank"
-                rel="noreferrer"
-              >
-                Logos Manifesto
-              </a>
-              .
-            </p>
-          </quote>
           <p>
             Reflecting on the decentralized ecosystems — the very systems
             designed to solve some of the underlying problems of the failing
@@ -165,24 +146,21 @@ const Manifesto = () => {
           </p>
           <quote>
             <p>
-              &quot;The growing awareness that unchecked centralization and
-              over-financialization cannot be what 'crypto is about,' and the
-              key technologies [...] coming to fruition, together present us
-              with an opportunity to take things in a different direction.
-              Namely, to make at least a part of the Ethereum ecosystem actually
-              be the permissionless, decentralized, censorship resistant, open
-              source ecosystem that we originally came to build.&quot;
+              "The magic of cryptography gives us privacy, while the resilience
+              of blockchains allows for global, coordinated, coercion-resistant
+              institutions."
             </p>
             <p>
               {" "}
-              Vitalik Buterin,{" "}
+              Jarrad Hope:{" "}
               <a
-                href="https://vitalik.eth.limo/general/2023/12/28/cypherpunk.html"
+                href="https://logos.co/manifesto/"
                 target="_blank"
                 rel="noreferrer"
               >
-                Make Ethereum Cypherpunk Again
+                Logos Manifesto
               </a>
+              .
             </p>
           </quote>
           <p>
