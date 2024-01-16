@@ -18,12 +18,6 @@ const Impressum = () => {
                 <a href="mailto:contact@ethberlin.org">contact@ethberlin.org</a>{" "}
               </li>
               <li>
-                sponsors contact:{" "}
-                <a href="mailto:sponsors@ethberlin.org">
-                  sponsors@ethberlin.org
-                </a>{" "}
-              </li>
-              <li>
                 join our{" "}
                 <a href="https://matrix.to/#/%23ethberlin:dod.ngo">
                   matrix space
@@ -43,7 +37,7 @@ const Impressum = () => {
             Charlottenburg, Berlin, Umstatzsteuer-ID: DE325917754
           </div>
           <div className="mt-4">
-            Vertreten durch A. Schoedon, Telefon: +49 (0) 30 20613410, E-Mail:{" "}
+            Vertreten durch A. Schoedon, E-Mail:{" "}
             <a href="mailto:schoedon@ethberlin.org">schoedon@ethberlin.org</a>
           </div>
           <div className="mt-4">

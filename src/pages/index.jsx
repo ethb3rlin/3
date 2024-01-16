@@ -33,7 +33,7 @@ const Home = () => {
                 alt="Fake passport image"
               />
             </div>
-            <p className="font-ocra my-0"> Event: ETHBerlin 4</p>
+            <p className="font-ocra my-0"> Event: ETHBerlin04</p>
             <p className="font-ocra my-0"> Theme: Identity Crisis</p>
             <p className="font-ocra my-0"> Dates: May 24-26, 2024</p>
           </p>
@@ -55,8 +55,8 @@ const Home = () => {
             years now. Established systems are failing, new and old imperialist
             powers are throwing continents into wars of attrition, global supply
             chains are collapsing, financial markets are tumbling, healthcare
-            systems are falling apart, education is on a consistent downward
-            spiral — the list goes on.
+            systems are falling apart, education is on a consistent downward
+            spiral — the list goes on.
           </p>
 
           <p>

@@ -56,9 +56,9 @@ const Manifesto = () => {
               &quot;The folly was in thinking that, in a system that allows for
               almost anything, people would *not* maximize for their own utility
               over believing in the mission. To be fair though (and I mean this
-              very seriously) a lot of us aren’t exactly clear on *what* the
-              mission is. It seems like it’s mainly a lot of people trading
-              shitcoins and jpegs, but we’re told this isn’t what we’re trying
+              very seriously) a lot of us aren't exactly clear on *what* the
+              mission is. It seems like it's mainly a lot of people trading
+              shitcoins and jpegs, but we're told this isn't what we're trying
               to do.&quot;
             </p>
             <p>
@@ -115,7 +115,7 @@ const Manifesto = () => {
             </a>
             <em>
               &quot;The concept of proof-of-personhood in principle seems very
-              valuable [...]. A world with no proof-of-personhood seems more
+              valuable [...]. A world with no proof-of-personhood seems more
               likely to be a world dominated by centralized identity solutions,
               money, small closed communities, or some combination of all three.
             </em>
@@ -141,7 +141,7 @@ const Manifesto = () => {
           <p>
             We find ourselves at the intersection of decentralization, privacy
             and security research: zero-knowlegde cryptography, fully
-            homomorphic encryption, secure multi-party computation – the list
+            homomorphic encryption, secure multi-party computation — the list
             goes on. Let&#39;s put it to use!{" "}
           </p>
           <quote>
@@ -172,7 +172,7 @@ const Manifesto = () => {
           </p>
           <p>
             And, just like last year, we encourage hackers, workshop hosts, and
-            supporters at ETHBerlin 4 to focus on the following key attributes:
+            supporters at ETHBerlin04 to focus on the following key attributes:
           </p>
           <ul>
             <li>

@@ -18,9 +18,6 @@ export default function HTML(props) {
 
             function checkKey(e) {
                 e = e || window.event;
-                if (e.key == 'a' || e.key == 'A') {
-                    window.location.href= "/about";
-                }
                 else if (e.key == 'm' || e.key == 'M') {
                   window.location.href= "/manifesto";
                 }
