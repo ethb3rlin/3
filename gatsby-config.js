@@ -3,9 +3,9 @@ module.exports = {
     title: "ETHBerlin4 2024",
     siteUrl: `https://ethberlin.org`,
     url: `https://ethberlin.org`,
-    description: "ETHBerlin 3: three-day hackathon extravaganza, May 24-26, 2024",
+    description: "ETHBerlin04: identity crisis, May 24-26, 2024, Kreuzberg, Berlin",
     twitterUsername: "@ETHBerlin",
-    image: `/ETHBerlin.gif`,
+    image: `/card.png`,
   },
   plugins: [
     "gatsby-plugin-image",
@@ -19,11 +19,6 @@ module.exports = {
           {
             src: `/src/assets/icons/android-chrome-192x192.png`,
             sizes: `192x192`,
-            type: `image/png`,
-          },
-          {
-            src: `/src/assets/icons/android-chrome-512x512.png`,
-            sizes: `512x512`,
             type: `image/png`,
           },
         ], // Add or remove icon sizes as desired
