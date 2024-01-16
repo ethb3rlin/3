@@ -25,3 +25,4 @@ Build with
 ```
 npm run build
 ```
+npx ga

@@ -9,7 +9,7 @@ const EthBerlinLogo = React.forwardRef((props, ref) => {
     >
       <div className={`${props.titleClassName}`}>ETHBerlin04</div>
       <div className={`${props.subtitleClassName}`}>
-        &lt;&lt;&lt;&lt;identity&lt;&lt;crisis&lt;&lt;
+      <span className={`font-ocra`}>  &lt;&lt;&lt;&lt;identity&lt;&lt;crisis&lt;&lt; </span>
       </div>
     </a>
   );
