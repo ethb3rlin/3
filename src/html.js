@@ -18,7 +18,7 @@ export default function HTML(props) {
 
             function checkKey(e) {
                 e = e || window.event;
-                else if (e.key == 'm' || e.key == 'M') {
+                if (e.key == 'm' || e.key == 'M') {
                   window.location.href= "/manifesto";
                 }
                 else if (e.key == 'i' || e.key == 'I') {
