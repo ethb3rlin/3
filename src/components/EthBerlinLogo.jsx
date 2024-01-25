@@ -4,12 +4,12 @@ const EthBerlinLogo = React.forwardRef((props, ref) => {
   return (
     <a
       ref={ref}
-      className={`font-ocra text-black hover:no-underline ${props.className} text-right `}
+      className={`font-dotpassport tracking-widest	 text-black hover:no-underline ${props.className} text-right `}
       href="/"
     >
       <div className={`${props.titleClassName}`}>ETHBerlin04</div>
       <div className={`${props.subtitleClassName}`}>
-      <span className={`font-ocra`}>  &lt;&lt;&lt;&lt;identity&lt;&lt;crisis&lt;&lt; </span>
+      <span className={`font-ocra`}>  &lt;&lt;&lt;&lt;IDENTITY&lt;&lt;CRISIS&lt;&lt; </span>
       </div>
     </a>
   );
