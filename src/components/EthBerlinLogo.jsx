@@ -4,7 +4,7 @@ const EthBerlinLogo = React.forwardRef((props, ref) => {
   return (
     <a
       ref={ref}
-      className={`font-dotpassport tracking-widest	 text-black hover:no-underline ${props.className} text-right `}
+      className={`font-ocra tracking-widest	 text-black hover:no-underline ${props.className} text-right `}
       href="/"
     >
       <div className={`${props.titleClassName}`}>ETHBerlin4</div>
