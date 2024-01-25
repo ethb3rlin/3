@@ -1,4 +1,4 @@
-# ETHBerlin04 Website
+# ETHBerlin4 Website
 
 Join the ETHBerlin Matrix space to contribute: [#ethberlin:dod.ngo](https://matrix.to/#/%23ethberlin:dod.ngo)
 
