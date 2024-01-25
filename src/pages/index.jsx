@@ -1,23 +1,39 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useState, useEffect } from "react";
 import passface from "../assets/passface/passface.gif";
 import dod from "../assets/passface/dod.png";
 import Layout from "../components/Layout";
 import ETHBerlin from "../components/ETHBerlin";
 
 const Home = () => {
-  // mouseover image passport
   const [imageSrcPass, setImageSrcPass] = useState(dod);
 
+  // Function to toggle the image
+  const toggleImage = () => {
+    setImageSrcPass(current => current === dod ? passface : dod);
+  };
+
+  // Detect if the device is mobile based on the window's width
+  const isMobile = () => {
+    return window.innerWidth <= 768;
+  };
+
+  // Effect to add event listeners based on the device type
   useEffect(() => {
-    const MAX_TIME = 2000; // Maximum interval between image changes
-    const changeImage = () => {
-      setImageSrcPass((current) => (current === dod ? passface : dod));
-      setTimeout(changeImage, Math.random() * MAX_TIME); // Reschedule with a new random interval
+    const imageElement = document.querySelector('.passport-image');
+    
+    if (isMobile()) {
+      // Mobile: Change image on click
+      imageElement.addEventListener('click', toggleImage);
+    } else {
+      // Desktop: Change image on hover
+      imageElement.addEventListener('mouseenter', toggleImage);
+    }
+
+    // Cleanup function to remove event listeners
+    return () => {
+      imageElement.removeEventListener('click', toggleImage);
+      imageElement.removeEventListener('mouseenter', toggleImage);
     };
-
-    const timeoutId = setTimeout(changeImage, Math.random() * MAX_TIME); // Initial scheduling
-
-    return () => clearTimeout(timeoutId); // Clear timeout on component unmount
   }, []);
 
   return (
@@ -29,11 +45,11 @@ const Home = () => {
             <div className="flex flex-col items-center justify-center mb-4">
               <img
                 src={imageSrcPass}
-                className=" w-48 h-48 object-cover"
+                className="passport-image w-48 h-48 object-cover"
                 alt="Fake passport image"
               />
             </div>
-            <p className="font-ocra my-0"> Event: ETHBerlin4</p>
+            <p className="font-ocra my-0"> Event: ETHBerlin04</p>
             <p className="font-ocra my-0"> Theme: Identity Crisis</p>
             <p className="font-ocra my-0"> Dates: May 24-26, 2024</p>
           </p>
@@ -45,11 +61,9 @@ const Home = () => {
             a platform for hacktivism, and a community initiative to push the
             decentralized ecosystem forward.
           </p>
-
           <p>
             Loading <ETHBerlin />: May 24-26, 2024, Berlin, Germany.
           </p>
-
           <p>
             The situation is dire. We have been operating in crisis mode for
             years now. Established systems are failing, new and old imperialist
@@ -58,20 +72,17 @@ const Home = () => {
             systems are falling apart, education is on a consistent downward
             spiral — the list goes on.
           </p>
-
           <p>
             But there is hope: The soils to grow new ideas have never been more
             nutritious. It has never been more urgent to double down on new
             revolutionary concepts and ideas. It is high time to change the
             world.
           </p>
-
           <p>
             For this year's ETHBerlin hackathon, we invite you to join the
             discourse and hack on anti-identity features instead of identity
             anti-features that boost the individual's privacy.
           </p>
-
           <p>
             To learn more about our vision & mission, press{" "}
             <span className="font-ocra text-sm">&lt;&lt;M&lt;</span>
