@@ -140,7 +140,7 @@ const Manifesto = () => {
           </ul>
           <p>
             We find ourselves at the intersection of decentralization, privacy
-            and security research: zero-knowlegde cryptography, fully
+            and security research: zero-knowledge cryptography, fully
             homomorphic encryption, secure multi-party computation — the list
             goes on. Let&#39;s put it to use!{" "}
           </p>
