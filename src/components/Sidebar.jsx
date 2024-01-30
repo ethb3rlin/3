@@ -65,15 +65,19 @@ const Sidebar = ({ className }) => {
         {/* Non-moving logo navbar for mobile */}
         <div className=" text-black my-8 mx-4">
           {/* Header */}
-          <div className="flex justify-between">
-            <a style={{ textDecoration: "none" }} href="/">
+          <div className="flex items-center justify-between">
+            <a
+              style={{ textDecoration: "none" }}
+              href="/"
+              className="mr-8 max-w-[300px]"
+            >
               <EthBerlinLogo
                 className=""
                 titleClassName="text-2xl"
                 subtitleClassName={`text-xs `}
               />
             </a>
-            <div className=" flex flex-col flex-grow-0 font-bundessans text-black bg-white text-2xl leading-3 justify-center">
+            <div className=" flex flex-col flex-grow-0 font-bundessans whitespace-nowrap text-black bg-white text-2xl leading-3 justify-center">
               <button
                 className="p-2"
                 onClick={() => setShowNav((prev) => !prev)}
