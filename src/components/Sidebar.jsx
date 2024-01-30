@@ -6,7 +6,7 @@ const Sidebar = ({ className }) => {
 
   const MenuItems = ({ className, style, mobile, setShowNav }) => (
     <nav
-      className={`flex flex-col gap-2 text-xl font-ocra ${className}`}
+      className={`flex flex-col gap-2 text-lg font-ocra ${className}`}
       style={style}
     >
       {mobile && (
