@@ -40,7 +40,7 @@ const About = () => {
           an educational event, a platform for hacktivism, and a community
           initiative to push the decentralized ecosystem forward.{" "}
           <span className="font-ocra text-sm">
-            ETHBerlin4 &lt;&lt;&lt;Identity Crisis&lt;&lt;&gt;&gt;&gt;
+            ETHBerlin04 &lt;&lt;&lt;Identity Crisis&lt;&lt;&gt;&gt;&gt;
           </span>{" "}
           is the fourth edition, and we've come a long way since we hosted our
           first hackathon in 2018.{" "}

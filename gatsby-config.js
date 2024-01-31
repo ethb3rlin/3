@@ -1,9 +1,9 @@
 module.exports = {
   siteMetadata: {
-    title: "ETHBerlin4",
+    title: "ETHBerlin04",
     siteUrl: `https://ethberlin.org`,
     url: `https://ethberlin.org`,
-    description: "ETHBerlin4: Identity Crisis, May 24-26, 2024, Kreuzberg, Berlin",
+    description: "ETHBerlin04: Identity Crisis, May 24-26, 2024, Kreuzberg, Berlin",
     twitterUsername: "@ETHBerlin",
     image: `/card.png`,
   },

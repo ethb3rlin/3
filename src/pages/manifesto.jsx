@@ -172,7 +172,7 @@ const Manifesto = () => {
           </p>
           <p>
             And, just like last year, we encourage hackers, workshop hosts, and
-            supporters at ETHBerlin4 to focus on the following key attributes:
+            supporters at ETHBerlin04 to focus on the following key attributes:
           </p>
           <ul>
             <li>
