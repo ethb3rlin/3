@@ -33,7 +33,7 @@ const Home = () => {
                 alt="Fake passport image"
               />
             </div>
-            <p className="font-ocra my-0"> Event: ETHBerlin4</p>
+            <p className="font-ocra my-0"> Event: ETHBerlin04</p>
             <p className="font-ocra my-0"> Theme: Identity Crisis</p>
             <p className="font-ocra my-0"> Dates: May 24-26, 2024</p>
           </p>
