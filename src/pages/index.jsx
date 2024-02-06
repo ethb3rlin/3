@@ -74,7 +74,9 @@ const Home = () => {
 
           <p>
             To learn more about our vision & mission, press{" "}
-            <span className="font-ocra text-sm">&lt;&lt;M&lt;</span>
+            <span className="font-ocra text-sm">&lt;&lt;M&lt;</span>, to apply
+            for a hacker visa, press{" "}
+            <span className="font-ocra text-sm">&lt;&lt;V&lt;</span>
           </p>
         </div>
       </div>
