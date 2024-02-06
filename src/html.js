@@ -30,6 +30,9 @@ export default function HTML(props) {
                 else if (e.key == 'o' || e.key == 'O') {
                   window.location.href= "/code-of-conduct";
                 }
+                else if (e.key == 'v' || e.key == 'V') {
+                  window.location.href= "https://visas.ethberlin.org/ethberlin/4/";
+                }
             }
             `,
           }}
