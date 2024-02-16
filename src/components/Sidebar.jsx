@@ -19,7 +19,11 @@ const Sidebar = ({ className }) => {
       )}
       <a className="my-2" href="/manifesto">
         {" "}
-        &lt;&lt;m&lt;anifesto
+        &lt;&lt;M&lt;ANIFESTO
+      </a>
+      <a className="my-2" href="/hack">
+        {" "}
+        &lt;&lt;H&lt;ACK
       </a>
     </nav>
   );

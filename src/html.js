@@ -21,6 +21,9 @@ export default function HTML(props) {
                 if (e.key == 'm' || e.key == 'M') {
                   window.location.href= "/manifesto";
                 }
+                else if (e.key == 'h' || e.key == 'H') {
+                  window.location.href= "/hack";
+                }
                 else if (e.key == 'i' || e.key == 'I') {
                   window.location.href= "/contact";
                 }
