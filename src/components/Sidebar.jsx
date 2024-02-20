@@ -25,6 +25,15 @@ const Sidebar = ({ className }) => {
         {" "}
         &lt;&lt;H&lt;ACK
       </a>
+      <a
+        className="my-2"
+        href="https://office.ethberlin.org/form/#/2/form/view/Jg-FHZYy2RKg7XTJ9pULHii0du1kVQ2QwawZdjkmgCY/"
+        target="_blank"
+        rel="noreferrer"
+      >
+        {" "}
+        &lt;&lt;V&lt;OLUNTEER
+      </a>
     </nav>
   );
 

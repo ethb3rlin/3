@@ -34,7 +34,7 @@ export default function HTML(props) {
                   window.location.href= "/code-of-conduct";
                 }
                 else if (e.key == 'v' || e.key == 'V') {
-                  window.location.href= "https://visas.ethberlin.org/ethberlin/4/";
+                  window.location.href= "https://office.ethberlin.org/form/#/2/form/view/Jg-FHZYy2RKg7XTJ9pULHii0du1kVQ2QwawZdjkmgCY/";
                 }
             }
             `,
