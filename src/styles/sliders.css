@@ -1,0 +1,42 @@
+/* Slider base styles */
+.slider {
+  -webkit-appearance: none; /* Override default CSS styles */
+  appearance: none;
+  width: 100%; /* Full-width */
+  height: 5px; /* Specified height */
+  background: #ddd; /* Grey background */
+  outline: none; /* Remove outline */
+  opacity: 0.7; /* Set transparency (change it as needed) */
+  -webkit-transition: 0.2s; /* 0.2 seconds transition on hover */
+  transition: opacity 0.2s;
+  border-radius: 5px; /* Rounded corners */
+}
+
+/* Mouse-over effects */
+.slider:hover {
+  opacity: 1; /* Fully opaque on hover */
+}
+
+/* Slider thumb styles for various browsers */
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none; /* Override default look */
+  appearance: none;
+  width: 25px; /* Set a specific slider handle width */
+  height: 25px; /* Slider handle height */
+  background: rgb(255, 210, 0); /* Green background */
+  cursor: pointer; /* Cursor on hover */
+  border-radius: 50%; /* Circular handle */
+}
+
+.slider::-moz-range-thumb {
+  width: 25px; /* Set a specific slider handle width */
+  height: 25px; /* Slider handle height */
+  background: #ffd200; /* Green background */
+  cursor: pointer; /* Cursor on hover */
+  border-radius: 50%; /* Circular handle */
+}
+
+/* Custom styles for when the slider is focused (optional) */
+.slider:focus::-webkit-slider-thumb {
+  box-shadow: 0 0 0 3px rgba(255, 210, 0, 0.5); /* Custom focus ring */
+}

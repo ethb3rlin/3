@@ -3,6 +3,7 @@ import React, { useState, useRef } from "react";
 import ReactCrop from "react-image-crop";
 import "react-image-crop/dist/ReactCrop.css";
 import { LuScanFace } from "react-icons/lu";
+import "../styles/sliders.css";
 
 const FaceRecognition = () => {
   const [src, setSrc] = useState(null);
@@ -15,6 +16,8 @@ const FaceRecognition = () => {
   const [imageRef, setImageRef] = useState(null);
   const [previewImage, setPreviewImage] = useState(null);
   const [resultImage, setResultImage] = useState(null);
+  const [lineThickness, setLineThickness] = useState(2);
+  const [pointSize, setPointSize] = useState(3);
 
   const handleFileChange = (e) => {
     if (e.target.files && e.target.files.length > 0) {
@@ -90,7 +93,12 @@ const FaceRecognition = () => {
     const formData = new FormData();
     formData.append("file", blob, "croppedImage.jpeg");
 
-    const endpoint = "http://localhost:8080/";
+    const params = new URLSearchParams({
+      line_thickness: lineThickness,
+      point_size: pointSize,
+    });
+    const endpoint = `http://localhost:8080/?${params.toString()}`;
+
     try {
       const response = await fetch(endpoint, {
         method: "POST",
@@ -134,6 +142,37 @@ const FaceRecognition = () => {
               >
                 Submit
               </button>
+            </div>
+            <div>
+              {/* Sliders for lineThickness and pointSize */}
+              <div className="my-4">
+                <label>
+                  Line Thickness: {lineThickness}
+                  <input
+                    type="range"
+                    min="1"
+                    max="20"
+                    value={lineThickness}
+                    onChange={(e) =>
+                      setLineThickness(parseInt(e.target.value, 10))
+                    }
+                    className="slider"
+                  />
+                </label>
+              </div>
+              <div className="my-4">
+                <label>
+                  Point Size: {pointSize}
+                  <input
+                    type="range"
+                    min="1"
+                    max="20"
+                    value={pointSize}
+                    onChange={(e) => setPointSize(parseInt(e.target.value, 10))}
+                    className="slider"
+                  />
+                </label>
+              </div>
             </div>
 
             {/* Hidden file input */}
