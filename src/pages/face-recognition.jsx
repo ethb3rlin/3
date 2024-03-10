@@ -18,6 +18,7 @@ const FaceRecognition = () => {
   const [resultImage, setResultImage] = useState(null);
   const [lineThickness, setLineThickness] = useState(2);
   const [pointSize, setPointSize] = useState(3);
+  const [errorMessage, setErrorMessage] = useState(""); // New state variable for error messages
 
   const handleFileChange = (e) => {
     if (e.target.files && e.target.files.length > 0) {
@@ -84,10 +85,15 @@ const FaceRecognition = () => {
       width: 50,
       height: 50,
     });
+    setLineThickness(2);
+    setPointSize(3);
+    setErrorMessage("");
   };
   const handleSubmit = async (event) => {
     event.preventDefault();
     if (!crop.width || !crop.height) return; // Ensure crop dimensions are valid
+
+    setErrorMessage(""); // Clear any existing error messages
 
     const blob = await getCroppedImg(imageRef, crop);
     const formData = new FormData();
@@ -97,9 +103,9 @@ const FaceRecognition = () => {
       line_thickness: lineThickness,
       point_size: pointSize,
     });
-    // const baseUrl = 'http://localhost:8080'
-    const baseUrl =
-      "https://europe-west4-ethberlin-dystopian-faces.cloudfunctions.net/dystopian-faces-test";
+    const baseUrl = "http://localhost:8080";
+    // const baseUrl =
+    //   "https://europe-west4-ethberlin-dystopian-faces.cloudfunctions.net/dystopian-faces-test";
     const endpoint = `${baseUrl}/?${params.toString()}`;
 
     try {
@@ -108,15 +114,27 @@ const FaceRecognition = () => {
         body: formData,
       });
 
+      // Check if the response is not OK (non-2xx HTTP status code)
       if (!response.ok) {
-        throw new Error(`HTTP error! Status: ${response.status}`);
+        // Try to parse the response as JSON to get the error message
+        let errorMessage = "Error processing the request";
+        try {
+          const errorResponse = await response.json();
+          errorMessage = errorResponse.error || "Unknown error occurred";
+          setErrorMessage(errorMessage);
+        } catch (jsonError) {
+          console.error("Error parsing the error response as JSON:", jsonError);
+        }
+        return;
       }
 
       const resultBlob = await response.blob();
       const resultImageUrl = URL.createObjectURL(resultBlob);
       setResultImage(resultImageUrl);
+      setErrorMessage(""); // Clear any existing error messages
     } catch (error) {
       console.error("Error submitting form:", error);
+      setErrorMessage(error.message); // Update the state with the error message
     }
   };
 
@@ -126,6 +144,12 @@ const FaceRecognition = () => {
         <h1 className="my-4 underline font-ocra text-berlin-yellow">
           &lt;&lt;f&lt;ace recognition
         </h1>
+        {/* Display error message if present */}
+        {errorMessage && (
+          <div className="text-rose-700 text-xl font-bold" role="alert">
+            {errorMessage}
+          </div>
+        )}
         <div className="grid grid-cols-2 gap-12">
           <form
             onSubmit={handleSubmit}
