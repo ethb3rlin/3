@@ -103,9 +103,9 @@ const FaceRecognition = () => {
       line_thickness: lineThickness,
       point_size: pointSize,
     });
-    const baseUrl = "http://localhost:8080";
-    // const baseUrl =
-    //   "https://europe-west4-ethberlin-dystopian-faces.cloudfunctions.net/dystopian-faces-test";
+    // const baseUrl = "http://localhost:8080";
+    const baseUrl =
+      "https://europe-west4-ethberlin-dystopian-faces.cloudfunctions.net/dystopian-faces-test";
     const endpoint = `${baseUrl}/?${params.toString()}`;
 
     try {
