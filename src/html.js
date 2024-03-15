@@ -33,6 +33,9 @@ export default function HTML(props) {
                 else if (e.key == 'o' || e.key == 'O') {
                   window.location.href= "/code-of-conduct";
                 }
+                else if (e.key == 'b' || e.key == 'B') {
+                  window.location.href= "https://blog.dod.ngo/";
+                }
                 else if (e.key == 'v' || e.key == 'V') {
                   window.location.href= "https://office.ethberlin.org/form/#/2/form/view/Jg-FHZYy2RKg7XTJ9pULHii0du1kVQ2QwawZdjkmgCY/";
                 }

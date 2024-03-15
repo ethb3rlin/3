@@ -11,18 +11,18 @@ const Hack = () => {
         </h1>
         <div>
           <p>
-            Hacking at <ETHBerlin /> will be subject to strict access control. To
-            enter the event premises, a valid hacker visa is required.
+            Hacking at <ETHBerlin /> will be subject to strict access control.
+            To enter the event premises, a valid hacker visa is required.
           </p>
           <p>
-            To start the application process for a hacker visa, press{" "}
-            <span className="font-ocra text-sm">&lt;&lt;V&lt;</span>.
+            To start the application process for a hacker visa, follow the link:{" "}
           </p>
-          <div className="text-center">
+          <div className="text-center text-xl">
             <a
-            href="https://visas.ethberlin.org/ethberlin/4/"
-            target="_blank"
-            rel="noreferrer">
+              href="https://visas.ethberlin.org/ethberlin/4/"
+              target="_blank"
+              rel="noreferrer"
+            >
               visas.ethberlin.org/ethberlin/4
             </a>
           </div>
