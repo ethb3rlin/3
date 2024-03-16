@@ -4,6 +4,7 @@ import ReactCrop from "react-image-crop";
 import "react-image-crop/dist/ReactCrop.css";
 import { LuScanFace } from "react-icons/lu";
 import "../styles/sliders.css";
+import { AiOutlineLoading3Quarters } from "react-icons/ai";
 
 const FaceRecognition = () => {
   const [src, setSrc] = useState(null);
@@ -19,6 +20,7 @@ const FaceRecognition = () => {
   const [lineThickness, setLineThickness] = useState(2);
   const [pointSize, setPointSize] = useState(3);
   const [errorMessage, setErrorMessage] = useState(""); // New state variable for error messages
+  const [isLoading, setIsLoading] = useState(false);
 
   const handleFileChange = (e) => {
     if (e.target.files && e.target.files.length > 0) {
@@ -109,10 +111,12 @@ const FaceRecognition = () => {
     const endpoint = `${baseUrl}/?${params.toString()}`;
 
     try {
+      setIsLoading(true); // Start loading
       const response = await fetch(endpoint, {
         method: "POST",
         body: formData,
       });
+      setIsLoading(false); // Stop loading
 
       // Check if the response is not OK (non-2xx HTTP status code)
       if (!response.ok) {
@@ -164,10 +168,15 @@ const FaceRecognition = () => {
                 Reset
               </button>
               <button
-                className="bg-berlin-yellow font-bold py-2 px-4 rounded hover:brightness-105"
+                className="bg-berlin-yellow font-bold py-2 px-4 rounded hover:brightness-105 flex items-center justify-center disabled:opacity-50 w-20"
                 type="submit"
+                disabled={isLoading} // Disable the button while loading
               >
-                Submit
+                {isLoading ? (
+                  <AiOutlineLoading3Quarters className="animate-spin h-5 w-5" />
+                ) : (
+                  "Submit"
+                )}
               </button>
             </div>
             <div>
