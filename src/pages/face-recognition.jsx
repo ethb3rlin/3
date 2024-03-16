@@ -5,6 +5,8 @@ import "react-image-crop/dist/ReactCrop.css";
 import { LuScanFace } from "react-icons/lu";
 import "../styles/sliders.css";
 import { AiOutlineLoading3Quarters } from "react-icons/ai";
+import { CiFaceMeh } from "react-icons/ci";
+import { FiRefreshCcw } from "react-icons/fi";
 
 const FaceRecognition = () => {
   const [src, setSrc] = useState(null);
@@ -21,6 +23,7 @@ const FaceRecognition = () => {
   const [pointSize, setPointSize] = useState(3);
   const [errorMessage, setErrorMessage] = useState(""); // New state variable for error messages
   const [isLoading, setIsLoading] = useState(false);
+  const [isFaceLoading, setIsFaceLoading] = useState(false);
 
   const handleFileChange = (e) => {
     if (e.target.files && e.target.files.length > 0) {
@@ -142,6 +145,25 @@ const FaceRecognition = () => {
     }
   };
 
+  const handleRandomFace = async () => {
+    setIsFaceLoading(true); // Start loading indicator
+    try {
+      const response = await fetch(
+        "https://europe-west4-ethberlin-dystopian-faces.cloudfunctions.net/random-faces"
+      );
+      if (!response.ok) throw new Error("Failed to fetch a random face");
+      const blob = await response.blob();
+      const imageUrl = URL.createObjectURL(blob);
+      setImageRef(imageUrl); // Assuming setImageRef is the method to set the face image
+      setErrorMessage(""); // Clear any existing error messages
+    } catch (error) {
+      console.error("Error fetching a random face:", error);
+      setErrorMessage(error.message); // Update the state with the error message
+    } finally {
+      setIsFaceLoading(false); // Stop loading indicator
+    }
+  };
+
   return (
     <Layout>
       <div className="decorate-links textbox">
@@ -157,29 +179,48 @@ const FaceRecognition = () => {
         <div className="grid grid-cols-2 gap-12">
           <form
             onSubmit={handleSubmit}
-            className="flex flex-col justify-center"
+            className="flex flex-col justify-center items-center"
           >
-            <div className="flex justify-center my-4">
-              <button
-                type="button"
-                onClick={handleReset}
-                className="borde text-berlin-yellow brightness-75 hover:brightness-90  font-bold py-2 px-4 rounded cursor-pointer"
-              >
-                Reset
-              </button>
-              <button
-                className="bg-berlin-yellow font-bold py-2 px-4 rounded hover:brightness-105 flex items-center justify-center disabled:opacity-50 w-20"
-                type="submit"
-                disabled={isLoading} // Disable the button while loading
-              >
-                {isLoading ? (
-                  <AiOutlineLoading3Quarters className="animate-spin h-5 w-5" />
-                ) : (
-                  "Submit"
-                )}
-              </button>
+            <div className="flex flex-col justify-center items-center my-4 w-full">
+              <div className="flex flex-row mb-4">
+                <button
+                  type="button"
+                  onClick={handleReset}
+                  className="flex flex-col items-center text-berlin-yellow brightness-75 hover:brightness-90 font-bold py-2 px-4 rounded cursor-pointer"
+                >
+                  <FiRefreshCcw />
+                  Reset
+                </button>
+                <button
+                  type="button"
+                  className="flex flex-col items-center text-berlin-yellow brightness-75 hover:brightness-90 font-bold py-2 px-4 rounded cursor-pointer"
+                  onClick={handleRandomFace}
+                >
+                  {isFaceLoading ? (
+                    <AiOutlineLoading3Quarters className="animate-spin h-5 w-5" />
+                  ) : (
+                    <>
+                      <CiFaceMeh />
+                      <span>Random Face</span>
+                    </>
+                  )}
+                </button>
+              </div>
+              <div className="w-20">
+                <button
+                  className="bg-berlin-yellow font-bold py-2 px-4 rounded hover:brightness-105 flex items-center justify-center disabled:opacity-50 w-full"
+                  type="submit"
+                  disabled={isLoading} // Disable the button while loading
+                >
+                  {isLoading ? (
+                    <AiOutlineLoading3Quarters className="animate-spin h-5 w-5" />
+                  ) : (
+                    "Submit"
+                  )}
+                </button>
+              </div>
             </div>
-            <div>
+            <div className="w-full">
               {/* Sliders for lineThickness and pointSize */}
               <div className="my-4">
                 <label>
