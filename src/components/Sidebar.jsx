@@ -27,15 +27,6 @@ const Sidebar = ({ className }) => {
       </a>
       <a
         className="my-2"
-        href="https://office.ethberlin.org/form/#/2/form/view/Jg-FHZYy2RKg7XTJ9pULHii0du1kVQ2QwawZdjkmgCY/"
-        target="_blank"
-        rel="noreferrer"
-      >
-        {" "}
-        &lt;&lt;V&lt;OLUNTEER
-      </a>
-      <a
-        className="my-2"
         href="https://office.ethberlin.org/form/#/2/form/view/Kdkhj-5k69Uqyk33yxFjl2MFVFQd-QlBihjVdJatle8/"
         target="_blank"
         rel="noreferrer"
