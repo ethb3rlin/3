@@ -1,5 +1,5 @@
 import Layout from "../components/Layout";
-import React, { useState, useRef } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import ReactCrop from "react-image-crop";
 import "react-image-crop/dist/ReactCrop.css";
 import { LuScanFace } from "react-icons/lu";
@@ -9,14 +9,17 @@ import { CiFaceMeh } from "react-icons/ci";
 import { FiRefreshCcw } from "react-icons/fi";
 
 const FaceRecognition = () => {
-  const [src, setSrc] = useState(null);
   const [crop, setCrop] = useState({
-    aspect: 1,
+    x: 0,
+    y: 0,
     unit: "px",
     width: 50,
     height: 50,
+    aspect: 1,
   });
-  const [imageRef, setImageRef] = useState(null);
+  const [image, setImage] = useState(null);
+  const [imageSrc, setImageSrc] = useState(null);
+  const imgRef = useRef(null);
   const [previewImage, setPreviewImage] = useState(null);
   const [resultImage, setResultImage] = useState(null);
   const [lineThickness, setLineThickness] = useState(2);
@@ -25,36 +28,47 @@ const FaceRecognition = () => {
   const [isLoading, setIsLoading] = useState(false);
   const [isFaceLoading, setIsFaceLoading] = useState(false);
 
+  // Set imageSrc always when image changes
+  useEffect(() => {
+    if (!image) {
+      setImageSrc(null);
+    } else {
+      const imageUrl = URL.createObjectURL(image);
+      setImageSrc(imageUrl);
+    }
+  }, [image]);
+
   const handleFileChange = (e) => {
-    if (e.target.files && e.target.files.length > 0) {
-      const reader = new FileReader();
-      reader.addEventListener("load", () => setSrc(reader.result));
-      reader.readAsDataURL(e.target.files[0]);
+    if (e.target.files) {
+      if (e.target.files.length > 1) return alert("Only select 1 file");
+      setImage(e.target.files[0]);
+    } else {
+      alert("No file selected");
     }
   };
+
   const handleOnCropComplete = async (crop) => {
     if (!crop.width || !crop.height) return; // Ensure crop dimensions are valid
-    await getCroppedImg(imageRef, crop);
+    const croppedImg = await getCroppedImg();
+    const croppedImageUrl = URL.createObjectURL(croppedImg);
+    setPreviewImage(croppedImageUrl); // Update the state to show the preview
   };
 
-  const onImageLoaded = (image) => {
-    setImageRef(image);
-  };
-
-  const getCroppedImg = async (image, crop) => {
+  const getCroppedImg = () => {
+    const htmlImg = imgRef.current;
     const canvas = document.createElement("canvas");
-    console.log(image);
-    const scaleX = image.naturalWidth / image.width;
-    console.log("scaleX", scaleX);
-    const scaleY = image.naturalHeight / image.height;
-    console.log("scaleY", scaleY);
+    const scaleX = htmlImg.naturalWidth / htmlImg.width;
+    const scaleY = htmlImg.naturalHeight / htmlImg.height;
     canvas.width = crop.width * scaleX;
     canvas.height = crop.height * scaleY;
     const ctx = canvas.getContext("2d");
 
-    console.log("crop", crop);
+    if (!ctx) {
+      throw new Error("No 2d context");
+    }
+
     ctx.drawImage(
-      image,
+      htmlImg,
       crop.x * scaleX,
       crop.y * scaleY,
       crop.width * scaleX,
@@ -72,37 +86,37 @@ const FaceRecognition = () => {
           return;
         }
         blob.name = "croppedImage.jpeg";
-        window.URL.revokeObjectURL(croppedImageUrl);
-        const croppedImageUrl = window.URL.createObjectURL(blob);
-        setPreviewImage(croppedImageUrl); // Update the state to show the preview
         resolve(blob);
       }, "image/jpeg");
     });
   };
 
   const handleReset = () => {
-    setSrc(null);
+    setImage(null);
     setPreviewImage(null);
     setResultImage(null);
     setCrop({
-      aspect: 1,
+      x: 0,
+      y: 0,
       unit: "px",
       width: 50,
       height: 50,
+      aspect: 1,
     });
     setLineThickness(2);
     setPointSize(3);
     setErrorMessage("");
   };
+
   const handleSubmit = async (event) => {
     event.preventDefault();
     if (!crop.width || !crop.height) return; // Ensure crop dimensions are valid
 
     setErrorMessage(""); // Clear any existing error messages
 
-    const blob = await getCroppedImg(imageRef, crop);
+    const croppedImage = await getCroppedImg();
     const formData = new FormData();
-    formData.append("file", blob, "croppedImage.jpeg");
+    formData.append("file", croppedImage, "croppedImage.jpeg");
 
     const params = new URLSearchParams({
       line_thickness: lineThickness,
@@ -153,14 +167,13 @@ const FaceRecognition = () => {
       );
       if (!response.ok) throw new Error("Failed to fetch a random face");
       const blob = await response.blob();
-      const imageUrl = URL.createObjectURL(blob);
-      setImageRef(imageUrl); // Assuming setImageRef is the method to set the face image
-      setErrorMessage(""); // Clear any existing error messages
+      setImage(blob);
+      setErrorMessage("");
     } catch (error) {
       console.error("Error fetching a random face:", error);
-      setErrorMessage(error.message); // Update the state with the error message
+      setErrorMessage(error.message);
     } finally {
-      setIsFaceLoading(false); // Stop loading indicator
+      setIsFaceLoading(false);
     }
   };
 
@@ -260,11 +273,10 @@ const FaceRecognition = () => {
               name="file"
               accept="image/*"
               onChange={handleFileChange}
-              required
             />
             {/* Styled label as a button */}
             {/* Show crop tool if image is selected */}
-            {!src ? (
+            {!imageSrc ? (
               <label
                 htmlFor="fileInput"
                 className="flex items-center justify-center text-center w-full h-full border-dashed border-2 rounded-md border-berlin-yellow bg-gray-200 bg-opacity-30 hover:bg-opacity-70 cursor-pointer"
@@ -288,17 +300,15 @@ const FaceRecognition = () => {
             ) : (
               <div className="overflow-hidden relative">
                 <ReactCrop
-                  src={src}
                   crop={crop}
                   aspect={1}
-                  onImageLoaded={onImageLoaded}
                   onComplete={handleOnCropComplete}
                   onChange={(newCrop) => setCrop(newCrop)}
                 >
                   <img
-                    src={src}
+                    src={imageSrc}
+                    ref={imgRef}
                     alt="Source Image"
-                    ref={setImageRef}
                     style={{ maxWidth: "100%" }}
                   />
                 </ReactCrop>
