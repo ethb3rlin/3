@@ -20,10 +20,12 @@ const FaceRecognition = () => {
   });
   const [image, setImage] = useState(null);
   const [imageSrc, setImageSrc] = useState(null);
-  const [previewImage, setPreviewImage] = useState(null);
   const [resultImage, setResultImage] = useState(null);
+
   const [lineThickness, setLineThickness] = useState(2);
   const [pointSize, setPointSize] = useState(3);
+  const [selectedColor, setSelectedColor] = useState("#FFD200"); // New state variable for selected color
+
   const [errorMessage, setErrorMessage] = useState(""); // New state variable for error messages
   const [isLoading, setIsLoading] = useState(false);
   const [isFaceLoading, setIsFaceLoading] = useState(false);
@@ -51,13 +53,6 @@ const FaceRecognition = () => {
     } else {
       alert("No file selected");
     }
-  };
-
-  const handleOnCropComplete = async (crop) => {
-    if (!crop.width || !crop.height) return; // Ensure crop dimensions are valid
-    const croppedImg = await getCroppedImg();
-    const croppedImageUrl = URL.createObjectURL(croppedImg);
-    setPreviewImage(croppedImageUrl); // Update the state to show the preview
   };
 
   const getCroppedImg = () => {
@@ -99,7 +94,6 @@ const FaceRecognition = () => {
 
   const handleReset = () => {
     setImage(null);
-    setPreviewImage(null);
     setResultImage(null);
     setCrop({
       x: 0,
@@ -110,6 +104,7 @@ const FaceRecognition = () => {
     });
     setLineThickness(2);
     setPointSize(3);
+    setSelectedColor("#FFD200"); // Reset the color to default
     setErrorMessage("");
   };
 
@@ -126,6 +121,7 @@ const FaceRecognition = () => {
     const params = new URLSearchParams({
       line_thickness: lineThickness,
       point_size: pointSize,
+      color: selectedColor, // Add the selected color here
     });
     // const baseUrl = "http://localhost:8080";
     const baseUrl =
@@ -234,11 +230,12 @@ const FaceRecognition = () => {
                   </a>
                 </div>
               </div>
+
               <div className="w-20">
                 <button
                   className="bg-berlin-yellow font-bold py-2 px-4 rounded hover:brightness-105 flex items-center justify-center disabled:opacity-50 w-full"
                   type="submit"
-                  disabled={isLoading || !previewImage} // Disable the button while loading
+                  disabled={isLoading || !image} // Disable the button while loading
                 >
                   {isLoading ? (
                     <AiOutlineLoading3Quarters className="animate-spin h-5 w-5" />
@@ -278,6 +275,25 @@ const FaceRecognition = () => {
                   />
                 </label>
               </div>
+              {/* color selection  */}
+              <div className="flex flex-row items-center">
+                <span>Line Color:</span>
+                <div className="inline">
+                  {["#FFD200", "#2334CD", "#23CD76"].map((color) => (
+                    <button
+                      key={color}
+                      onClick={(e) => {
+                        e.preventDefault(); // Don't submit the form
+                        setSelectedColor(color);
+                      }}
+                      className={`inline-block w-8 h-8 rounded-full cursor-pointer mx-2 my-1 transition-opacity duration-200 hover:scale-110 ${
+                        selectedColor === color ? "opacity-100" : "opacity-20"
+                      }`}
+                      style={{ backgroundColor: color }}
+                    />
+                  ))}
+                </div>
+              </div>
             </div>
 
             {/* Hidden file input */}
@@ -314,11 +330,7 @@ const FaceRecognition = () => {
               </label>
             ) : (
               <div className="overflow-hidden relative">
-                <ReactCrop
-                  crop={crop}
-                  onComplete={handleOnCropComplete}
-                  onChange={(newCrop) => setCrop(newCrop)}
-                >
+                <ReactCrop crop={crop} onChange={(newCrop) => setCrop(newCrop)}>
                   <img
                     src={imageSrc}
                     ref={imgRef}
