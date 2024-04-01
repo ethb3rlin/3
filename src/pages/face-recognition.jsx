@@ -182,7 +182,7 @@ const FaceRecognition = () => {
     <Layout>
       <div className="decorate-links textbox">
         <h1 className="my-4 underline font-ocra text-berlin-yellow">
-          &lt;&lt;f&lt;ace recognition
+          &lt;&lt;f&lt;ace IDon't
         </h1>
         {/* Display error message if present */}
         {errorMessage && (
