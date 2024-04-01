@@ -7,19 +7,19 @@ import "../styles/sliders.css";
 import { AiOutlineLoading3Quarters } from "react-icons/ai";
 import { CiFaceMeh } from "react-icons/ci";
 import { FiRefreshCcw } from "react-icons/fi";
+import { FaDownload } from "react-icons/fa";
 
 const FaceRecognition = () => {
+  const imgRef = useRef(null);
   const [crop, setCrop] = useState({
     x: 0,
     y: 0,
     unit: "px",
     width: 50,
     height: 50,
-    aspect: 1,
   });
   const [image, setImage] = useState(null);
   const [imageSrc, setImageSrc] = useState(null);
-  const imgRef = useRef(null);
   const [previewImage, setPreviewImage] = useState(null);
   const [resultImage, setResultImage] = useState(null);
   const [lineThickness, setLineThickness] = useState(2);
@@ -37,6 +37,12 @@ const FaceRecognition = () => {
       setImageSrc(imageUrl);
     }
   }, [image]);
+
+  // set crop to full image when img loads
+  const onImgLoad = ({ target: img }) => {
+    const { width, height } = img;
+    setCrop((prev) => ({ ...prev, width, height }));
+  };
 
   const handleFileChange = (e) => {
     if (e.target.files) {
@@ -101,7 +107,6 @@ const FaceRecognition = () => {
       unit: "px",
       width: 50,
       height: 50,
-      aspect: 1,
     });
     setLineThickness(2);
     setPointSize(3);
@@ -204,26 +209,36 @@ const FaceRecognition = () => {
                   <FiRefreshCcw />
                   Reset
                 </button>
-                <button
-                  type="button"
-                  className="flex flex-col items-center text-berlin-yellow brightness-75 hover:brightness-90 font-bold py-2 px-4 rounded cursor-pointer"
-                  onClick={handleRandomFace}
-                >
-                  {isFaceLoading ? (
-                    <AiOutlineLoading3Quarters className="animate-spin h-5 w-5" />
-                  ) : (
-                    <>
-                      <CiFaceMeh />
-                      <span>Random Face</span>
-                    </>
-                  )}
-                </button>
+                <div className="flex flex-col justify-center items-center">
+                  <button
+                    type="button"
+                    className="flex flex-col items-center text-berlin-yellow brightness-75 hover:brightness-90 font-bold pt-2 px-4 rounded cursor-pointer"
+                    onClick={handleRandomFace}
+                  >
+                    {isFaceLoading ? (
+                      <AiOutlineLoading3Quarters className="animate-spin h-5 w-5" />
+                    ) : (
+                      <>
+                        <CiFaceMeh />
+                        <span>Random Face</span>
+                      </>
+                    )}
+                  </button>
+                  <a
+                    href="https://thispersondoesnotexist.com/"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="text-[0.5rem] text-gray-400"
+                  >
+                    thispersondoesnotexist.com
+                  </a>
+                </div>
               </div>
               <div className="w-20">
                 <button
                   className="bg-berlin-yellow font-bold py-2 px-4 rounded hover:brightness-105 flex items-center justify-center disabled:opacity-50 w-full"
                   type="submit"
-                  disabled={isLoading} // Disable the button while loading
+                  disabled={isLoading || !previewImage} // Disable the button while loading
                 >
                   {isLoading ? (
                     <AiOutlineLoading3Quarters className="animate-spin h-5 w-5" />
@@ -301,13 +316,13 @@ const FaceRecognition = () => {
               <div className="overflow-hidden relative">
                 <ReactCrop
                   crop={crop}
-                  aspect={1}
                   onComplete={handleOnCropComplete}
                   onChange={(newCrop) => setCrop(newCrop)}
                 >
                   <img
                     src={imageSrc}
                     ref={imgRef}
+                    onLoad={onImgLoad}
                     alt="Source Image"
                     style={{ maxWidth: "100%" }}
                   />
@@ -315,16 +330,25 @@ const FaceRecognition = () => {
               </div>
             )}
           </form>
+
           <div>
             <div className="h-full">
               <h2 className="text-center">Result</h2>
-              <div className="flex items-center justify-center h-full">
+              <div className="flex flex-col items-center justify-center h-full">
                 {resultImage ? (
-                  <img
-                    src={resultImage}
-                    alt="Processed result"
-                    className="my-4"
-                  />
+                  <>
+                    <img
+                      src={resultImage}
+                      alt="Processed result"
+                      className="my-4"
+                    />
+                    <a href={resultImage} download="resultImage.jpeg">
+                      <button className="my-4 text-berlin-yellow font-semibold inline-flex items-center">
+                        <FaDownload className="mr-2" />
+                        Download
+                      </button>
+                    </a>
+                  </>
                 ) : (
                   <div> The result will appear here </div>
                 )}
@@ -332,13 +356,6 @@ const FaceRecognition = () => {
             </div>
           </div>
         </div>
-
-        {previewImage && (
-          <div>
-            <h2>Preview:</h2>
-            <img src={previewImage} alt="Preview" className="my-4" />
-          </div>
-        )}
       </div>
     </Layout>
   );
