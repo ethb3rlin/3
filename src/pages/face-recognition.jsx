@@ -190,7 +190,7 @@ const FaceRecognition = () => {
             {errorMessage}
           </div>
         )}
-        <div className="grid grid-cols-2 gap-12">
+        <div className="md:grid grid-cols-2 gap-12">
           <form
             onSubmit={handleSubmit}
             className="flex flex-col justify-center items-center"
@@ -343,7 +343,7 @@ const FaceRecognition = () => {
             )}
           </form>
 
-          <div>
+          <div className="my-12">
             <div className="h-full">
               <h2 className="text-center">Result</h2>
               <div className="flex flex-col items-center justify-center h-full">
