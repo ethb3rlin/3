@@ -34,6 +34,10 @@ const Sidebar = ({ className }) => {
         {" "}
         &lt;&lt;V&lt;OLUNTEER
       </a>
+      <a className="my-2" href="/face-idont">
+        {" "}
+        &lt;&lt;F&lt;ACE I&lt;DON'T
+      </a>
     </nav>
   );
 
