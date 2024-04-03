@@ -2,12 +2,11 @@ import Layout from "../components/Layout";
 import React, { useState, useRef, useEffect } from "react";
 import ReactCrop from "react-image-crop";
 import "react-image-crop/dist/ReactCrop.css";
-import { LuScanFace } from "react-icons/lu";
 import "../styles/sliders.css";
 import { AiOutlineLoading3Quarters } from "react-icons/ai";
 import { CiFaceMeh } from "react-icons/ci";
 import { FiRefreshCcw } from "react-icons/fi";
-import { FaDownload } from "react-icons/fa";
+import { FaDownload, FaUpload } from "react-icons/fa";
 
 const FaceRecognition = () => {
   const imgRef = useRef(null);
@@ -197,19 +196,19 @@ const FaceRecognition = () => {
             className="flex flex-col justify-center items-center"
           >
             <div className="flex flex-col justify-center items-center my-4 w-full">
-              <div className="flex flex-row mb-4">
-                <button
-                  type="button"
-                  onClick={handleReset}
-                  className="flex flex-col items-center text-berlin-yellow brightness-75 hover:brightness-90 font-bold py-2 px-4 rounded cursor-pointer"
-                >
-                  <FiRefreshCcw />
-                  Reset
-                </button>
+              <button
+                type="button"
+                onClick={handleReset}
+                className="flex flex-col items-center text-berlin-yellow brightness-90 hover:brightness-110 font-bold py-2 px-4 rounded cursor-pointer"
+              >
+                <FiRefreshCcw />
+                Reset
+              </button>
+              <div className="flex flex-row flex-wrap items-center justify-center mb-3">
                 <div className="flex flex-col justify-center items-center">
                   <button
                     type="button"
-                    className="flex flex-col items-center text-berlin-yellow brightness-75 hover:brightness-90 font-bold pt-2 px-4 rounded cursor-pointer"
+                    className="flex flex-col items-center text-berlin-yellow brightness-90 hover:brightness-110 font-bold pt-2 px-4 rounded cursor-pointer"
                     onClick={handleRandomFace}
                   >
                     {isFaceLoading ? (
@@ -230,6 +229,13 @@ const FaceRecognition = () => {
                     thispersondoesnotexist.com
                   </a>
                 </div>
+                <label
+                  htmlFor="fileInput"
+                  className=" flex flex-col items-center text-berlin-yellow brightness-90 hover:brightness-110 font-bold pt-2 px-4 rounded cursor-pointer mb-3"
+                >
+                  <FaUpload className="text-base" />
+                  Upload Face
+                </label>
               </div>
 
               <div className="w-20">
@@ -325,7 +331,7 @@ const FaceRecognition = () => {
                     left: 0,
                   }}
                 >
-                  <LuScanFace className="text-6xl " />
+                  <FaUpload className="text-3xl mb-2" />
                   Upload face
                 </span>
               </label>
