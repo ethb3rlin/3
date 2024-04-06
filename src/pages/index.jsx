@@ -207,7 +207,9 @@ const Home = () => {
             <a href="https://ethberlin.devfolio.co/projects" target="_blank">
               the hacks
             </a>, {" "}
-            <a href="https://watch.ethberlin.ooo/schedule" target="_blank">
+            <a
+              href="https://www.youtube.com/watch?v=uwenC-zB1eo&list=PLjOcf_IVqERn4x-1ZSYEE8zxTee002_2k&index=8"
+              target="_blank">
               the recordings
             </a>, and the {" "}
             <a href="/gallery">the photos</a> here.
