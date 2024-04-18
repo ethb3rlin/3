@@ -25,15 +25,6 @@ const Sidebar = ({ className }) => {
         {" "}
         &lt;&lt;H&lt;ACK
       </a>
-      <a
-        className="my-2"
-        href="https://office.ethberlin.org/form/#/2/form/view/Kdkhj-5k69Uqyk33yxFjl2MFVFQd-QlBihjVdJatle8/"
-        target="_blank"
-        rel="noreferrer"
-      >
-        {" "}
-        &lt;&lt;M&lt;ENTOR
-      </a>
       <a className="my-2" href="/face-idont">
         {" "}
         &lt;&lt;F&lt;ACE I&lt;DON'T
