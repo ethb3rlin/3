@@ -1,10 +1,18 @@
 import React from "react";
-import logo from "../images/ethberlin4-logo.png";
 
 const EthBerlinLogo = React.forwardRef((props, ref) => {
   return (
-    <a ref={ref} className={`${props.className}`} href="/">
-      <img src={logo} alt="EthBerlin" />
+    <a
+      ref={ref}
+      className={`text-black hover:no-underline ${props.className}`}
+      href="/"
+    >
+      <div className="font-dotpassport text-3xl tracking-widest">
+        ETHBerlin04
+      </div>
+      <div className="font-ocra text-[.63rem] uppercase">
+        {"<<<<<<<<<<<<<identity<<crisis<<<"}
+      </div>
     </a>
   );
 });

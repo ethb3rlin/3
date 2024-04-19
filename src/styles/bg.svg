@@ -10,15 +10,16 @@
     </linearGradient>
 
     <!-- Define a pattern with a subtle wavy line -->
-    <pattern id="Pattern" x="0" y="0" width="50" height="10" patternUnits="userSpaceOnUse" patternTransform="scale(0.5)">
+    <pattern id="Pattern" x="0" y="0" width="50" height="10" patternUnits="userSpaceOnUse"
+      patternTransform="scale(0.5)">
 
       <!-- Adjust control points and end points for a slight wave -->
-        <path d="M0 0 Q 25 -20 50 0 T 100 0" stroke="pink" fill="none"/>
+      <path d="M0 0 Q 25 -20 50 0 T 100 0" stroke="pink" fill="none" />
 
-        <path d="M0 10 Q 25 -10 50 10 T 100 10" stroke="pink" fill="none"/>
+      <path d="M0 10 Q 25 -10 50 10 T 100 10" stroke="pink" fill="none" />
 
-        <path d="M0 0 Q 25 20 50 0 T 100 0" stroke="pink" fill="none"/>
-        <path d="M0 10 Q 25 30 50 10 T 100 10" stroke="pink" fill="none"/>
+      <path d="M0 0 Q 25 20 50 0 T 100 0" stroke="pink" fill="none" />
+      <path d="M0 10 Q 25 30 50 10 T 100 10" stroke="pink" fill="none" />
 
     </pattern>
   </defs>

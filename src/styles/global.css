@@ -28,7 +28,12 @@
     font-weight: 400;
     src: url(../assets/fonts/dotCapital/dotCapital.ttf);
   }
-
+  @font-face {
+    font-family: "Material Symbols Outlined";
+    font-style: normal;
+    font-weight: 400;
+    src: url(../assets/fonts/google-icons.woff2) format("woff2");
+  }
   .material-symbols-outlined {
     font-family: "Material Symbols Outlined";
     font-weight: normal;
@@ -67,19 +72,19 @@
   .blur-text {
     color: transparent;
     /* text-shadow: <blur>, <outer-glow> */
-    text-shadow: 0 0 5px rgb(255 210 0 / 75%), theme("colors.black") 0 0 15px;
+    text-shadow: 0 0 5px theme("colors.black"), theme("colors.black") 0 0 15px;
   }
 
   .blur-text-small {
     color: transparent;
     /* text-shadow: <blur>, <outer-glow> */
-    text-shadow: 0 0 7px rgb(255 210 0 / 75%), theme("colors.black") 0 0 2px;
+    text-shadow: 0 0 7px theme("colors.black"), theme("colors.black") 0 0 2px;
   }
 
   .blur-text-smaller {
     color: transparent;
     /* text-shadow: <blur>, <outer-glow> */
-    text-shadow: 0 0 5px rgb(255 210 0 / 75%), theme("colors.black") 0 0 1.5px;
+    text-shadow: 0 0 5px theme("colors.black"), theme("colors.black") 0 0 1.5px;
   }
   .bright-gray {
     --tw-grayscale: grayscale(100%);
@@ -218,7 +223,6 @@ body::before {
 }
 
 .fade-in-left {
-  transform: translateX(0);
   opacity: 1;
   visibility: visible;
   transition: opacity 0.5s, visibility 0.5s;
