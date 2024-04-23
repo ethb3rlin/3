@@ -286,7 +286,7 @@ const FaceRecognition = () => {
               <div className="flex flex-row items-center">
                 <span>Line Color:</span>
                 <div className="inline">
-                  {["#FFD200", "#394DFF", "#23CD76"].map((color) => (
+                  {["#FFD200", "#394DFF", "#23CD76", "#E65B54"].map((color) => (
                     <button
                       key={color}
                       onClick={(e) => {
