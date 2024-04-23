@@ -78,6 +78,9 @@ const Layout = ({ children, showEthDiamond, className, hidden }) => {
           <a className="mx-4 my-2 sm:ml-4 text-black" href="/code-of-conduct">
             code &lt;&lt;o&lt;f conduct
           </a>
+          <a className="mx-4 my-2 sm:ml-4 text-black" href="/privacy-policy">
+            privacy &lt;&lt;p&lt;olicy
+          </a>
           <a
             className="mx-4 my-2 sm:ml-4 text-black"
             href="https://github.com/ethb3rlin/4"

@@ -41,6 +41,9 @@ export default function HTML(props) {
                     case 'o':
                         window.location.href= "/code-of-conduct";
                         break;
+                    case 'p':
+                        window.location.href= "/privacy-policy";
+                        break;
                     case 'f':
                         window.location.href= "/face-idont";
                         break;
