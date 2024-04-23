@@ -9,6 +9,7 @@ const Hack = () => {
         <h1 className="mb-4 font-ocra underline text-berlin-yellow">
           &lt;&lt;H&lt;ACKER MANUAL
         </h1>
+        <p>This section aims to help you better prepare for the hackathon.</p>
         <div className="mb-8">
           <h3 className="text-xl">TL;DR</h3>
           <ul>
