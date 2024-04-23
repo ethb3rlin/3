@@ -17,6 +17,10 @@ const Sidebar = ({ className }) => {
           <div>X</div>
         </button>
       )}
+      <a className="my-2" href="/about">
+        {" "}
+        &lt;&lt;A&lt;BOUT
+      </a>
       <a className="my-2" href="/manifesto">
         {" "}
         &lt;&lt;M&lt;ANIFESTO

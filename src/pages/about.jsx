@@ -1,5 +1,6 @@
 import Layout from "../components/Layout";
 import React, { useState, useEffect } from "react";
+import ETHBerlin from "../components/ETHBerlin";
 
 const About = () => {
   const [randomizedNames, setRandomizedNames] = useState([]);
@@ -20,7 +21,10 @@ const About = () => {
       "Lea",
       "Raul",
       "Konrad",
-      "Hany",
+      "Kirill",
+      "Yaron",
+      "Lea",
+      "Carl",
       "Peter",
     ];
 
@@ -33,15 +37,13 @@ const About = () => {
     <Layout>
       <div className="text-justify decorate-links textbox">
         <h1 className="my-4 underline font-ocra text-berlin-yellow">
-          &lt;&lt;a&lt;bout
+          &lt;&lt;A&lt;BOUT
         </h1>
         <p>
           ETHBerlin is known as the hackathon extravaganza, a cultural festival,
           an educational event, a platform for hacktivism, and a community
           initiative to push the decentralized ecosystem forward.{" "}
-          <span className="font-ocra text-sm">
-            ETHBerlin04 &lt;&lt;&lt;Identity Crisis&lt;&lt;&gt;&gt;&gt;
-          </span>{" "}
+          <ETHBerlin />{" "}
           is the fourth edition, and we've come a long way since we hosted our
           first hackathon in 2018.{" "}
         </p>
@@ -50,8 +52,8 @@ const About = () => {
           reaffirm its commitment with the ecosystem and founded the{" "}
           <a href="https://dod.ngo" target="_blank" rel="noreferrer">
             Department of Decentralization
-          </a>
-          . The DoD is responsible for initiatives that go beyond organizing
+          </a> (DoD).
+          The DoD is responsible for initiatives that go beyond organizing
           hackathons and seek to also support the projects coming from our
           events and community. ETHBerlin 2018 and ETHBerlinZwei 2019 sought to
           marry the culture and values of Berlin with those of the builder
@@ -64,7 +66,7 @@ const About = () => {
         </p>
         <p>
           2024 will be the year of bringing all what we've learned and
-          experienced over the years together: We find ourselves at the
+          experienced over the years together: We find ourselves at the
           intersection of decentralization, privacy and security - let's put it
           to use.
         </p>

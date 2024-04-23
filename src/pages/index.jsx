@@ -186,13 +186,17 @@ const Home = () => {
             </p>
 
             <p>
-              To learn more about our vision & mission, press{" "}
-              <span className="font-ocra text-sm">&lt;&lt;M&lt;</span>, to apply
-              for a hacker visa, press{" "}
-              <span className="font-ocra text-sm">&lt;&lt;H&lt;</span>.
+              To learn more about the hackathon, press{" "}
+              <span className="font-ocra text-sm">&lt;&lt;A&lt;</span>, and to
+              read our manifesto, press{" "}
+              <span className="font-ocra text-sm">&lt;&lt;M&lt;</span>.
             </p>
 
-            <p>Volunteer and mentor applications are closed</p>
+            <p>
+              ETHBerlin is not a conference but a hackathon. Every attendee
+              plays an active role in the event. All applications are closed.
+              See you in Berlin!
+            </p>
           </div>
         </div>
       </Layout>

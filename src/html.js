@@ -26,6 +26,9 @@ export default function HTML(props) {
                 }
 
                 switch (e.key.toLowerCase()) {
+                    case 'a':
+                        window.location.href= "/about";
+                        break;
                     case 'm':
                         window.location.href= "/manifesto";
                         break;
