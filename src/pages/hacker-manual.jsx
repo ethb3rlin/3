@@ -9,7 +9,7 @@ const Hack = () => {
         <h1 className="mb-4 font-ocra underline text-berlin-yellow">
           &lt;&lt;H&lt;ACKER MANUAL
         </h1>
-        <p>This section aims to help you better prepare for the hackathon.</p>
+        <p>This section aims to help you to prepare for the hackathon.</p>
         <div className="mb-8">
           <h3 className="text-xl">TL;DR</h3>
           <ul>
@@ -18,6 +18,7 @@ const Hack = () => {
               <a
                 href="https://matrix.to/#/%23ethberlin:dod.ngo"
                 target="_blank"
+                rel="noreferrer noopener"
               >
                 #ethberlin:dod.ngo
               </a>
@@ -27,19 +28,23 @@ const Hack = () => {
               <a
                 href="https://github.com/ethb3rlin/find-a-team"
                 target="_blank"
+                rel="noreferrer noopener"
               >
                 github.com/ethb3rlin/find-a-team
               </a>
             </li>
             <li>
+              Visit this page frequently as we update the manual regularly.
+            </li>
+            {/* <li>
               ??? Bookmark the Mentor Helpdesk:{" "}
               <a href="https://ask.ethberlin.ooo" target="_blank">
                 ask.ethberlin.ooo
               </a>
-            </li>
+            </li> */}
           </ul>
         </div>
-        <h2 className="text-2xl font-bold">Overview</h2>
+        {/* <h2 className="text-2xl font-bold">Overview</h2>
         <div className="mb-8">
           <h3 className="text-xl">Before the Hackathon</h3>
           <ul>
@@ -80,7 +85,7 @@ const Hack = () => {
               <a href="#experiences">Experiences</a>
             </li>
           </ul>
-        </div>
+        </div> */}
         <div className="flex justify-center">
           <div className="border-b-[1px] mb-8 mt-8 border-gray-300 opacity-40 w-full"></div>
         </div>
@@ -90,8 +95,8 @@ const Hack = () => {
           <p>
             Berlin has one airport called Berlin Brandenburg Airport "Willy
             Brandt" (BER) and is well connected with railway. You can take a
-            train from European cities such as Amsterdam and Paris to travel
-            with the convenience of comfortable high-speed trains with internet
+            train from European cities such as Stockholm or Paris to travel with
+            the convenience of comfortable high-speed trains with internet
             access, avoid the long security lines, missing luggages, and
             decrease your CO2 footprint. Check the{" "}
             <a
@@ -108,51 +113,102 @@ const Hack = () => {
             Berlin is a bike friendly city. Most of the times the quickest and
             easiest way to getting from A to B is by bike. If you are staying
             longer than just a few days, you might want to consider renting a
-            bike from <a href="https://swapfiets.de/en-DE/berlin">Swapfiets</a>{" "}
+            bike from{" "}
+            <a
+              href="https://swapfiets.de/en-DE/berlin"
+              target="_blank"
+              rel="noreferrer noopener"
+            >
+              Swapfiets
+            </a>{" "}
             or buying daily/monthly subscription from{" "}
-            <a href="https://www.nextbike.de/en/#tariffs">nextbike</a> (bike
-            sharing). You will also find many scooters and bikes that you can
-            grab around the city.
+            <a
+              href="https://www.nextbike.de/en/#tariffs"
+              target="_blank"
+              rel="noreferrer noopener"
+            >
+              nextbike
+            </a>{" "}
+            (bike sharing). You will also find many scooters and bikes that you
+            can grab around the city.
           </p>
           <p>
-            On the <a href="https://www.jelbi.de/en/home/">Jelbi App</a> you can
-            conveniently find the public transportation tickets and info as well
-            as carsharing, scooters, bikes etc.
+            On the{" "}
+            <a
+              href="https://www.jelbi.de/en/home/"
+              target="_blank"
+              rel="noreferrer noopener"
+            >
+              Jelbi App
+            </a>{" "}
+            you can conveniently find the public transportation tickets and info
+            as well as carsharing, scooters, bikes etc.
           </p>
           <h3 className="text-xl">Accomodation</h3>
+
           <p>
-            The hackathon has a nap room where you can rest, but not make it
-            your home. Beanbags are provided, but sleeping bags are not allowed.
-            If you want a good sleep, then you need to find somewhere else.
-          </p>
-          <p>
-            Join the{" "}
-            <a href="https://matrix.to/#/#eb4-couches:dod.ngo">#couchsurfing</a>{" "}
-            chat and fill in the{" "}
-            <a href="https://office.ethberlin.org/sheet/#/2/sheet/edit/NYEjPNvPzIxa0k5mcXTCZUrH/">
-              couchsurfing sheet
-            </a>{" "}
-            if you are offering or looking for a couch
-          </p>
-          <p>
-            Since this year's ETHBerlin is coinciding with the{" "}
-            <a href="https://olympiastadion.berlin/en/term/dfb-pokal-final-2024/">
+            Finding a hotel or other affordable accommodation in Berlin can be
+            quite a challenge in itself. Since this year's ETHBerlin is
+            coinciding with the{" "}
+            <a
+              href="https://olympiastadion.berlin/en/term/dfb-pokal-final-2024/"
+              target="_blank"
+              rel="noreferrer noopener"
+            >
               German Cup Final
             </a>{" "}
             and the{" "}
-            <a href="https://www.euroleaguebasketball.net/euroleague/final-four/">
+            <a
+              href="https://www.euroleaguebasketball.net/euroleague/final-four/"
+              target="_blank"
+              rel="noreferrer noopener"
+            >
               Euroleague Final Four
             </a>
-            , it can be particularly difficult to find a place. Aside from
-            hotels and AirBnbs, you can try to find someone in Berlin renting
-            out temporarily for cheaper options. You can check{" "}
-            <a href="https://www.wg-gesucht.de/en/">WG-Gesucht</a> and Facebook
-            groups for offers and can place your own request post there.
-            However, please be wary of the risks and potential scams.
+            , it can be particularly difficult to find a place. We recommend you
+            to look for a suitable shelter as soon as you receive your hacker
+            confirmation! If you haven't booked anything yet, best do so asap.
           </p>
+
           <p>
-            We recommend the districts Treptow, Kreuzberg, Neuk&ouml;lln, or
-            Friedrichshain due to their proximity to the venue.
+            Aside from hotels and Airbnbs, you can check offers on local options
+            like{" "}
+            <a
+              href="https://www.wg-gesucht.de/en/"
+              target="_blank"
+              rel="noreferrer noopener"
+            >
+              WG-Gesucht
+            </a>{" "}
+            and Facebook groups or post your own requests post there. However,
+            please be wary of the risks and potential scams.
+          </p>
+
+          <p>
+            Join our{" "}
+            <a
+              href="https://matrix.to/#/%23eb4-couches:dod.ngo"
+              target="_blank"
+              rel="noreferrer noopener"
+            >
+              #couchsurfing
+            </a>{" "}
+            chat and fill in the{" "}
+            <a
+              href="https://office.ethberlin.org/sheet/#/2/sheet/edit/NYEjPNvPzIxa0k5mcXTCZUrH/"
+              target="_blank"
+              rel="noreferrer noopener"
+            >
+              couchsurfing sheet
+            </a>
+            if you are offering or looking for a place to sleep.
+          </p>
+
+          <p>
+            Our venue is open 24/7 and welcomes hacking through the night. There
+            are many cozy corners with sofas, beanbags etc. However, we still
+            would recommend to look for a place to leave your stuff, sleep, and
+            take a shower.
           </p>
         </div>
         <div className="flex justify-center">
@@ -183,10 +239,15 @@ const Hack = () => {
             The only official communication channel is the ETHBerlin Matrix
             space. Use it to connect with hackers and mentors, and to get
             updates from the organizers throughout the hackathon:{" "}
-            <a href="https://matrix.to/#/%23ethberlin:dod.ngo">
+            <a
+              href="https://matrix.to/#/%23ethberlin:dod.ngo"
+              target="_blank"
+              rel="noreferrer noopener"
+            >
               #ethberlin:dod.ngo
             </a>
           </p>
+          <p>There is no Discord or Telegram.</p>
         </div>
         <div className="flex justify-center">
           <div className="border-b-[1px] mb-8 mt-4 border-gray-300 opacity-40 w-full"></div>
@@ -194,10 +255,13 @@ const Hack = () => {
         <div id="food">
           <h2 className="text-2xl font-bold">Food and Drinks</h2>
           <p>
-            ETHBerlin will cover all meals and drinks for the entire Hackathon,
-            and conference coffee breaks. There will be vegan and vegetarian
-            options provided. Just come with an open mind, a knowledge-thirsty
-            brain and enthusiasm. Meal and snack times will be on the program.
+            As per usual, this one is on us! ETHBerlin will cover all meals and
+            drinks for the entire hackathon! This includes breakfasts, lunches,
+            dinners, and midnight snacks as well as various soft drinks, mate
+            (of course!), water, coffee and beer. There will be vegan and
+            vegetarian options provided. Just come with an open mind, a
+            knowledge-thirsty brain and enthusiasm. Meal and snack times will be
+            on the program.
           </p>
         </div>
         <div className="flex justify-center">
@@ -205,42 +269,32 @@ const Hack = () => {
         </div>
         <div id="hack">
           <h2 className="text-2xl font-bold">Hacking and Rules</h2>
-          <p>
-            Hacker teams are made up of maximum of 5 people. You can find some
-            rules and resources useful while you are hacking here.
-          </p>
+          <p>Read the fine manual or regret it later.</p>
           <h3 className="text-xl">Hacking Rules</h3>
           <ul>
+            <li>A team can not be more than five people.</li>
             <li>
-              You must be at ETHBerlin to work on a project for submission
-            </li>
-            <li>
-              Your hack must be related to decentralization, cryptography, or
-              privacy
+              You must be present at the ETHBerlin venue for your project to be
+              eligible for submission.
             </li>
             <li>
               You can plan ahead of time, but all code for your project has to
-              be written during the event
+              be written during the event. Code can only be committed after
+              hacking officially starts and only until the submission deadline.
             </li>
-            <li>You cannot use another team's source code</li>
+            <li>You cannot use another team's source code.</li>
             <li>
-              The decision of judges is final for determining prizes and awards
-            </li>
-            <li>
-              Please comply with all instructions from ETHBerlin organizers
+              The decision of judges is final for determining prizes and awards.
             </li>
             <li>
-              (Added this) Your project cannot be focused on distributing the
-              prize to event participants
-            </li>
-            <li>
-              Please respect our <a href="/code-of-conduct">Code of Conduct</a>!
+              Breaking our <a href="/code-of-conduct">Code of Conduct</a> leads
+              to the exclusion from the event.
             </li>
           </ul>
-          <h3 className="text-xl">Minimum requirements to be judged</h3>
+          <h3 className="text-xl">Minimum Submission Requirements</h3>
           <ul>
-            <li>A link to the open-source code must be provided</li>
-            <li>A short presentation file must describe your project</li>
+            <li>A link to the open-source code must be provided.</li>
+            <li>A short presentation file must describe your project.</li>
             <li>
               If applicable, the contract address(es) of your deployed demo must
               be provided, either on a testnet of your choice or mainnet of a
@@ -276,7 +330,8 @@ const Hack = () => {
             <li>
               <b>Freedom to Transact:</b> This track is for you if you want to
               ensure that anyone, anywhere, anytime can facilitate unrestricted
-              transactions. <br />
+              transactions.
+              <br />
               We're looking for projects that enable people to access and send
               money, or value, across borders without restrictions, promoting
               financial inclusion. This track is for those who want to hack on
@@ -334,23 +389,24 @@ const Hack = () => {
             an ode to ETHBerlin being powered by many awesome open-source
             projects. So for this one we invite you to go meta by building
             contributions that improve the ETHBerlin experience itself! Projects
-            eligible for this award can either pick from our wishlist (coming
-            soon™) of contributions, or can build an entirely new thing that
-            they consider to be a positive impact for future versions of
-            ETHBerlin. The winner of this track will receive 4,000 DAI.
+            eligible for this award can either pick from our wishlist{" "}
+            <i>(coming soon™)</i> of contributions, or can build an entirely new
+            thing that they consider to be a positive impact for future versions
+            of ETHBerlin. The winner of this track will receive 4,000 DAI.
           </div>
           <h3 className="text-xl font-bold mt-6">The Hacker's Choice Award</h3>
           <div className="mt-2">
             A prize to be picked by the ETHBerlin hackers. After the hackathon
             weekend, hackers will review all the projects and cast their votes
-            for their favorite project. The winner of this award will receive
+            for their favorite project. Redistribution of the prize money cannot
+            be the essence of the project. The winner of this award will receive
             7,000 DAI.
           </div>
         </div>
         <div className="flex justify-center">
           <div className="border-b-[1px] mb-8 mt-4 border-gray-300 opacity-40 w-full"></div>
         </div>
-        <div id="mentors">
+        {/* <div id="mentors">
           <h2 className="text-2xl font-bold">??? Getting Help from Mentors</h2>
           <p>
             Ooops! You had an amazing idea, but now you are stuck? No worries,
@@ -360,13 +416,21 @@ const Hack = () => {
           <ul>
             <li>
               Reach all of our mentors via the simple ticket system, HELPq:{" "}
-              <a href="https://ask.ethberlin.ooo" target="_blank">
+              <a
+                href="https://ask.ethberlin.ooo"
+                target="_blank"
+                rel="noreferrer noopener"
+              >
                 ask.ethberlin.ooo
               </a>
             </li>
             <li>
               Discuss your issues in the{" "}
-              <a href="https://matrix.to/#/#mentors:tchncs.de">
+              <a
+                href="https://matrix.to/#/%23eb4-mentors:dod.ngo"
+                target="_blank"
+                rel="noreferrer noopener"
+              >
                 Ask-our-mentors
               </a>{" "}
               channel.
@@ -379,13 +443,17 @@ const Hack = () => {
         </div>
         <div className="flex justify-center">
           <div className="border-b-[1px] mb-8 mt-4 border-gray-300 opacity-40 w-full"></div>
-        </div>
+        </div> */}
 
-        <div id="submissions">
+        {/* <div id="submissions">
           <h2 className="text-2xl font-bold">??? Submissions</h2>
           <p>
             You have to register and create your project at{" "}
-            <a href="https://ethberlin.devfolio.co/" target="_blank">
+            <a
+              href="https://ethberlin.devfolio.co/"
+              target="_blank"
+              rel="noreferrer noopener"
+            >
               ethberlin.devfolio.co
             </a>{" "}
             for submission before Sunday, 11am.
@@ -405,8 +473,8 @@ const Hack = () => {
         </div>
         <div className="flex justify-center">
           <div className="border-b-[1px] mb-8 mt-4 border-gray-300 opacity-40 w-full"></div>
-        </div>
-        <div id="judging">
+        </div> */}
+        {/* <div id="judging">
           <h2 className="text-2xl font-bold">??? Judging</h2>
           <p>
             You can find the prizes and bounties in the{" "}
@@ -500,7 +568,7 @@ const Hack = () => {
               etc.?
             </li>
           </ul>
-        </div>
+        </div> */}
       </div>
     </Layout>
   );
