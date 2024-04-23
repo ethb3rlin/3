@@ -21,9 +21,9 @@ const Sidebar = ({ className }) => {
         {" "}
         &lt;&lt;M&lt;ANIFESTO
       </a>
-      <a className="my-2" href="/hack">
+      <a className="my-2" href="/hacker-manual">
         {" "}
-        &lt;&lt;H&lt;ACK
+        &lt;&lt;H&lt;ACKER MANUAL
       </a>
       <a className="my-2" href="/face-idont">
         {" "}

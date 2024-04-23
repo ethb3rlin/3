@@ -18,26 +18,38 @@ export default function HTML(props) {
 
             function checkKey(e) {
                 e = e || window.event;
-                if (e.key == 'm' || e.key == 'M') {
-                  window.location.href= "/manifesto";
+
+                // Check if any modifier keys are pressed
+                if (e.ctrlKey || e.shiftKey || e.altKey || e.metaKey) {
+                  // Exit the function if any modifier keys are pressed
+                  return;
                 }
-                else if (e.key == 'h' || e.key == 'H') {
-                  window.location.href= "/hack";
-                }
-                else if (e.key == 'i' || e.key == 'I') {
-                  window.location.href= "/contact";
-                }
-                else if (e.key == 'd' || e.key == 'D') {
-                  window.location.href= "/decentralization";
-                }
-                else if (e.key == 'o' || e.key == 'O') {
-                  window.location.href= "/code-of-conduct";
-                }
-                else if (e.key == 'f' || e.key == 'F') {
-                  window.location.href= "/face-idont";
-                }
-                else if (e.key == 'b' || e.key == 'B') {
-                  window.location.href= "https://blog.dod.ngo/";
+
+                switch (e.key.toLowerCase()) {
+                    case 'm':
+                        window.location.href= "/manifesto";
+                        break;
+                    case 'h':
+                        window.location.href= "/hacker-manual";
+                        break;
+                    case 'i':
+                        window.location.href= "/contact";
+                        break;
+                    case 'd':
+                        window.location.href= "/decentralization";
+                        break;
+                    case 'o':
+                        window.location.href= "/code-of-conduct";
+                        break;
+                    case 'f':
+                        window.location.href= "/face-idont";
+                        break;
+                    case 'b':
+                        window.location.href= "https://blog.dod.ngo/";
+                        break;
+                    default:
+                        // If key doesn't match any case, do nothing
+                        break;
                 }
             }
             `,

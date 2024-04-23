@@ -4,9 +4,13 @@ import Sidebar from "./Sidebar";
 import SecurityStrip from "./SecurityStrip";
 import ethLogo from "../assets/ethereum.png";
 
-const Layout = ({ children, showEthDiamond }) => {
+const Layout = ({ children, showEthDiamond, className, hidden }) => {
   return (
-    <div className="flex flex-col min-h-screen min-w-screen">
+    <div
+      className={`${
+        className ? className : ""
+      } flex flex-col min-h-screen min-w-screen`}
+    >
       <div className="flex-1 flex flex-col min-h-full font-bundessans text-black max-w-[100rem] m-auto">
         <Sidebar />
         <Seo />
@@ -15,7 +19,11 @@ const Layout = ({ children, showEthDiamond }) => {
           className={`z-10 hidden md:flex justify-end my-9 sm:mr-12 font-ocra text-black`}
         >
           <div>May 24-26, 2024</div>
-          <div className="sm:ml-8">Kreuzberg, Berlin</div>
+          <div className="sm:ml-8">
+            <a href="https://cic.com/berlin/" target="_blank">
+              CIC Innovation Campus, Berlin
+            </a>
+          </div>
         </div>
         {/* SecurityStrip*/}
         <div
@@ -43,7 +51,7 @@ const Layout = ({ children, showEthDiamond }) => {
 
         <div className="flex flex-row flex-1 ml-4 mr-4 sm:mr-8  sm:ml-72">
           {children && (
-            <div className="flex-grow sm:mt-24 mb-16 w-full sm:mr-8">
+            <div className="flex-grow sm:mt-16 mb-16 w-full sm:mr-8">
               {children}
             </div>
           )}
