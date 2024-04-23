@@ -6,7 +6,7 @@ const Impressum = () => {
     <Layout>
       <div className="textbox decorate-links">
         <h1 className="text-secondary underline font-ocra">
-          contact &amp; &lt;&lt;i&lt;mpressum
+          CONTACT &amp; &lt;&lt;I&lt;MPRESSUM
         </h1>
         <div className="mt-4">
           <p>

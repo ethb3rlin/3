@@ -199,8 +199,8 @@ const Hack = () => {
               target="_blank"
               rel="noreferrer noopener"
             >
-              couchsurfing sheet
-            </a>
+              coordination sheet
+            </a>{" "}
             if you are offering or looking for a place to sleep.
           </p>
 

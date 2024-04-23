@@ -5,7 +5,7 @@ const Privacy = () => (
   <Layout>
     <div className="textbox">
       <h1 className="my-4 underline text-secondary font-ocra">
-        privacy &lt;&lt;p&lt;olicy
+        PRIVACY &lt;&lt;P&lt;OLICY
       </h1>
       <div className="text-justify decorate-links">
         <p className="mt-2">

@@ -181,7 +181,7 @@ const FaceRecognition = () => {
     <Layout>
       <div className="decorate-links textbox font-ocra">
         <h1 className="my-4 underline font-ocra text-berlin-yellow">
-          &lt;&lt;f&lt;ace IDon't
+          &lt;&lt;F&lt;ACE IDON'T
         </h1>
         <div>Generate your ETHBerlin04 profile picture</div>
         {/* Display error message if present */}

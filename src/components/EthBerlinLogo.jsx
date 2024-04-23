@@ -20,12 +20,12 @@ const EthBerlinLogo = React.forwardRef((props, ref) => {
         /> */}
         ETHBerlin04
       </div>
-      <div className="font-ocra text-[.63rem] uppercase">
+      <div className="font-ocra text-[.91rem] uppercase">
         {
           <Typewriter
             options={{
               cursor: null,
-              strings: ["<<<<<<<<<<<<<identity<<crisis<<<"],
+              strings: ["<<<<IDENTITY<<CRISIS<<"],
               autoStart: true,
               loop: true,
               delay: 30,

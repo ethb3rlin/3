@@ -6,7 +6,7 @@ const decentralization = () => (
   <Layout>
     <div className="textbox">
       <h1 className="my-4 underline text-secondary font-ocra">
-        department of &lt;&lt;d&lt;ecentralization
+        DEPARTMENT OF &lt;&lt;D&lt;ECENTRALIZATION
       </h1>
       <div className="text-justify decorate-links">
         <p>
