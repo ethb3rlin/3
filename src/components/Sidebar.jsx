@@ -19,19 +19,19 @@ const Sidebar = ({ className }) => {
       )}
       <a className="my-2" href="/about">
         {" "}
-        &lt;&lt;A&lt;BOUT
+        &lt;&lt;<span className="text-berlin-red">A</span>&lt;BOUT
       </a>
       <a className="my-2" href="/manifesto">
         {" "}
-        &lt;&lt;M&lt;ANIFESTO
+        &lt;&lt;<span className="text-berlin-red">M</span>&lt;ANIFESTO
       </a>
       <a className="my-2" href="/hacker-manual">
         {" "}
-        &lt;&lt;H&lt;ACKER MANUAL
+        &lt;&lt;<span className="text-berlin-red">H</span>&lt;ACKER MANUAL
       </a>
       <a className="my-2" href="/face-idont">
         {" "}
-        &lt;&lt;F&lt;ACE I&lt;DON'T
+        &lt;&lt;<span className="text-berlin-red">F</span>&lt;ACE I&lt;DON'T
       </a>
     </nav>
   );

@@ -187,9 +187,14 @@ const Home = () => {
 
             <p>
               To learn more about the hackathon, press{" "}
-              <span className="font-ocra text-sm">&lt;&lt;A&lt;</span>, and to
-              read our manifesto, press{" "}
-              <span className="font-ocra text-sm">&lt;&lt;M&lt;</span>.
+              <span className="font-ocra text-sm">
+                &lt;&lt;<span className="text-berlin-red">A</span>&lt;
+              </span>
+              , and to read our manifesto, press{" "}
+              <span className="font-ocra text-sm">
+                &lt;&lt;<span className="text-berlin-red">M</span>&lt;
+              </span>
+              .
             </p>
 
             <p>

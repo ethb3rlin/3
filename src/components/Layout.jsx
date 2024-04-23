@@ -1,8 +1,7 @@
 import React, { useState } from "react";
 import Seo from "./seo";
 import Sidebar from "./Sidebar";
-import SecurityStrip from "./SecurityStrip";
-import ethLogo from "../assets/ethereum.png";
+import wolpy from "../assets/wolpy_transparent_red.png";
 
 const Layout = ({ children, showEthDiamond, className, hidden }) => {
   return (
@@ -25,28 +24,16 @@ const Layout = ({ children, showEthDiamond, className, hidden }) => {
             </a>
           </div>
         </div>
-        {/* SecurityStrip*/}
-        <div
-          className={`mx-auto -z-10 hidden ${
-            showEthDiamond ? "lg:block" : "hidden"
-          }`}
-        >
-          <SecurityStrip className="fixed -top-24 left-[66%] transform -translate-x-1/3 -translate-y-1/2" />
-        </div>
 
-        {/* ETH Logo */}
-        <div>
+        <div></div>
+
+        <div className="hidden md:block fixed -bottom-10 -right-10">
           <img
-            src={ethLogo}
-            className="hidden sm:block fixed -bottom-36 left-2/3 -z-40 opacity-10"
-            style={{
-              filter:
-                "invert(83%) sepia(47%) saturate(1247%) hue-rotate(353deg) brightness(97%) contrast(109%)",
-            }}
-            alt="Ethereum Logo"
+            src={wolpy}
+            alt="Wolpy logo"
+            className="w-56 h-56 opacity-25 xl:opacity-50 -rotate-12"
           />
         </div>
-
         {/* Main content */}
 
         <div className="flex flex-row flex-1 ml-4 mr-4 sm:mr-8  sm:ml-72">
@@ -59,10 +46,11 @@ const Layout = ({ children, showEthDiamond, className, hidden }) => {
 
         {/* Footer */}
         <footer
-          className={`flex flex-col md:flex-row flex-wrap justify-evenly items-center text-center sm:justify-end my-4 z-20 sm:mr-6 text-sm font-ocra sm:ml-72 leading-3`}
+          className={`flex flex-col md:flex-row flex-wrap justify-evenly items-center text-center sm:justify-end my-4 z-20 sm:mr-6 text-xs font-ocra sm:ml-72 leading-3`}
         >
           <a className="mx-4 my-2 sm:ml-4 text-black" href="/decentralization">
-            department of &lt;&lt;d&lt;ecentralization
+            department of &lt;&lt;<span className="text-berlin-red">d</span>
+            &lt;ecentralization
           </a>
           <a
             className="mx-4 my-2 sm:ml-4 text-black"
@@ -70,16 +58,17 @@ const Layout = ({ children, showEthDiamond, className, hidden }) => {
             target="_blank"
             rel="noreferrer"
           >
-            &lt;&lt;b&lt;log
+            &lt;&lt;<span className="text-berlin-red">b</span>&lt;log
           </a>
           <a className="mx-4 my-2 sm:ml-4 text-black" href="/contact">
-            contact & &lt;&lt;i&lt;mpressum
+            contact & &lt;&lt;<span className="text-berlin-red">i</span>
+            &lt;mpressum
           </a>
           <a className="mx-4 my-2 sm:ml-4 text-black" href="/code-of-conduct">
-            code &lt;&lt;o&lt;f conduct
+            code &lt;&lt;<span className="text-berlin-red">o</span>&lt;f conduct
           </a>
           <a className="mx-4 my-2 sm:ml-4 text-black" href="/privacy-policy">
-            privacy &lt;&lt;p&lt;olicy
+            privacy &lt;&lt;<span className="text-berlin-red">p</span>&lt;olicy
           </a>
           <a
             className="mx-4 my-2 sm:ml-4 text-black"
@@ -94,7 +83,6 @@ const Layout = ({ children, showEthDiamond, className, hidden }) => {
     </div>
   );
 };
-
 Layout.defaultProps = {
   showEthDiamond: true,
 };

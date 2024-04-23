@@ -6,7 +6,7 @@ const Manifesto = () => {
   return (
     <Layout>
       <div className="textbox text-base decorate-links">
-        <h1 className="mb-4 font-ocra underline text-berlin-yellow">
+        <h1 className="mb-4 font-ocra underline text-berlin-red">
           &lt;&lt;M&lt;ANIFESTO
         </h1>
         <div>

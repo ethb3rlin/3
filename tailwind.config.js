@@ -17,8 +17,9 @@ module.exports = {
       },
       colors: {
         "berlin-yellow": "#FFD200",
-        secondary: "#FFD200",
+        secondary: "#E65B54",
         butter: "#F3E4BD",
+        "berlin-red": "#E65B54",
       },
     },
   },

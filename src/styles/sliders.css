@@ -23,7 +23,7 @@
   appearance: none;
   width: 25px; /* Set a specific slider handle width */
   height: 25px; /* Slider handle height */
-  background: rgb(255, 210, 0); /* Green background */
+  background: #e65b54; /* Green background */
   cursor: pointer; /* Cursor on hover */
   border-radius: 50%; /* Circular handle */
 }
@@ -31,12 +31,12 @@
 .slider::-moz-range-thumb {
   width: 25px; /* Set a specific slider handle width */
   height: 25px; /* Slider handle height */
-  background: #ffd200; /* Green background */
+  background: #e65b54; /* Green background */
   cursor: pointer; /* Cursor on hover */
   border-radius: 50%; /* Circular handle */
 }
 
 /* Custom styles for when the slider is focused (optional) */
 .slider:focus::-webkit-slider-thumb {
-  box-shadow: 0 0 0 3px rgba(255, 210, 0, 0.5); /* Custom focus ring */
+  box-shadow: 0 0 0 3px #e65b54; /* Custom focus ring */
 }

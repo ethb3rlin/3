@@ -180,7 +180,7 @@ const FaceRecognition = () => {
   return (
     <Layout>
       <div className="decorate-links textbox font-ocra">
-        <h1 className="my-4 underline font-ocra text-berlin-yellow">
+        <h1 className="my-4 underline font-ocra text-berlin-red">
           &lt;&lt;F&lt;ACE IDON'T
         </h1>
         <div>Generate your ETHBerlin04 profile picture</div>
@@ -199,7 +199,7 @@ const FaceRecognition = () => {
               <button
                 type="button"
                 onClick={handleReset}
-                className="flex flex-col items-center text-berlin-yellow brightness-90 hover:brightness-110 font-bold py-2 px-4 rounded cursor-pointer"
+                className="flex flex-col items-center text-berlin-red brightness-90 hover:brightness-110 font-bold py-2 px-4 rounded cursor-pointer"
               >
                 <FiRefreshCcw />
                 Reset
@@ -208,7 +208,7 @@ const FaceRecognition = () => {
                 <div className="flex flex-col justify-center items-center">
                   <button
                     type="button"
-                    className="flex flex-col items-center text-berlin-yellow brightness-90 hover:brightness-110 font-bold pt-2 px-4 rounded cursor-pointer"
+                    className="flex flex-col items-center text-berlin-red brightness-90 hover:brightness-110 font-bold pt-2 px-4 rounded cursor-pointer"
                     onClick={handleRandomFace}
                   >
                     {isFaceLoading ? (
@@ -231,7 +231,7 @@ const FaceRecognition = () => {
                 </div>
                 <label
                   htmlFor="fileInput"
-                  className=" flex flex-col items-center text-berlin-yellow brightness-90 hover:brightness-110 font-bold pt-2 px-4 rounded cursor-pointer mb-3"
+                  className=" flex flex-col items-center text-berlin-red brightness-90 hover:brightness-110 font-bold pt-2 px-4 rounded cursor-pointer mb-3"
                 >
                   <FaUpload className="text-base" />
                   Upload Face
@@ -240,7 +240,7 @@ const FaceRecognition = () => {
 
               <div className="w-20">
                 <button
-                  className="bg-berlin-yellow font-bold py-2 px-4 rounded hover:brightness-105 flex items-center justify-center disabled:opacity-50 w-full"
+                  className="bg-berlin-red font-bold py-2 px-4 rounded hover:brightness-105 flex items-center justify-center disabled:opacity-50 w-full"
                   type="submit"
                   disabled={isLoading || !image} // Disable the button while loading
                 >
@@ -286,7 +286,7 @@ const FaceRecognition = () => {
               <div className="flex flex-row items-center">
                 <span>Line Color:</span>
                 <div className="inline">
-                  {["#FFD200", "#394DFF", "#23CD76", "#E65B54"].map((color) => (
+                  {["#FFD200", "#E65B54", "#394DFF", "#23CD76"].map((color) => (
                     <button
                       key={color}
                       onClick={(e) => {
@@ -317,14 +317,14 @@ const FaceRecognition = () => {
             {!imageSrc ? (
               <label
                 htmlFor="fileInput"
-                className="flex items-center justify-center text-center w-full h-full border-dashed border-2 rounded-md border-berlin-yellow bg-gray-200 bg-opacity-30 hover:bg-opacity-70 cursor-pointer"
+                className="flex items-center justify-center text-center w-full h-full border-dashed border-2 rounded-md border-berlin-red bg-gray-200 bg-opacity-30 hover:bg-opacity-70 cursor-pointer"
                 style={{
                   paddingTop: "100%", // This will make the height equal to 100% of the width
                   position: "relative", // Position relative to enable absolute positioning of the content inside
                 }}
               >
                 <span
-                  className="flex flex-col items-center justify-center text-center w-full h-full text-berlin-yellow"
+                  className="flex flex-col items-center justify-center text-center w-full h-full text-berlin-red"
                   style={{
                     position: "absolute", // Absolutely position the content to be centered
                     top: 0,
@@ -362,7 +362,7 @@ const FaceRecognition = () => {
                       className="my-4"
                     />
                     <a href={resultImage} download="resultImage.jpeg">
-                      <button className="my-4 text-berlin-yellow font-semibold inline-flex items-center">
+                      <button className="my-4 text-berlin-red font-semibold inline-flex items-center">
                         <FaDownload className="mr-2" />
                         Download
                       </button>

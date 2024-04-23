@@ -6,7 +6,7 @@ const Hack = () => {
   return (
     <Layout>
       <div className="textbox text-base decorate-links">
-        <h1 className="mb-4 font-ocra underline text-berlin-yellow">
+        <h1 className="mb-4 font-ocra underline text-berlin-red">
           &lt;&lt;H&lt;ACKER MANUAL
         </h1>
         <p>This section aims to help you to prepare for the hackathon.</p>
