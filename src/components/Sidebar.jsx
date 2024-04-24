@@ -31,7 +31,18 @@ const Sidebar = ({ className }) => {
       </a>
       <a className="my-2" href="/face-idont">
         {" "}
-        &lt;&lt;<span className="text-berlin-red">F</span>&lt;ACE I&lt;DON'T
+        &lt;&lt;<span className="text-berlin-red">F</span>&lt;ACE IDON'T
+      </a>
+      <a className="my-2" href="/decentralization">
+        {" "}
+        &lt;&lt;<span className="text-berlin-red">D</span>&lt;EPARTMENT
+      </a>
+      <a className="my-2"
+        href="https://blog.dod.ngo/"
+        target="_blank"
+        rel="noreferrer">
+        {" "}
+        &lt;&lt;<span className="text-berlin-red">B</span>&lt;LOG (&#94;)
       </a>
     </nav>
   );
@@ -51,23 +62,22 @@ const Sidebar = ({ className }) => {
         <MenuItems className="mt-16" />
         <div className="mt-auto">
           <div className="my-2 text-sm">
-            join our{" "}
             <a
               className="underline"
               href="https://matrix.to/#/%23ethberlin:dod.ngo"
               target="_blank"
               rel="noreferrer"
             >
-              matrix space
+              #ethberlin:dod.ngo
             </a>
-            &nbsp;or{" "}
+            <br />
             <a
               className="underline"
               href="mailto:contact@ethberlin.org"
               target="_blank"
               rel="noreferrer"
             >
-              e-mail us
+              contact@ethberlin.org
             </a>
           </div>
         </div>
@@ -100,9 +110,8 @@ const Sidebar = ({ className }) => {
               </button>
             </div>
             <MenuItems
-              className={`flex z-30 ${
-                showNav ? "visible opacity-95" : "invisible opacity-0"
-              } flex-col items-center transition-all duration-200 ease-in-out text-xl fixed bg-black top-0 left-0 w-screen h-screen justify-center`}
+              className={`flex z-30 ${showNav ? "visible opacity-95" : "invisible opacity-0"
+                } flex-col items-center transition-all duration-200 ease-in-out text-xl fixed bg-black top-0 left-0 w-screen h-screen justify-center`}
               style={{ backgroundColor: "rgba(255, 255, 255, 0.95)" }}
               setShowNav={setShowNav}
               mobile

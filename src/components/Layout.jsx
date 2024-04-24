@@ -6,9 +6,8 @@ import wolpy from "../assets/wolpy_transparent_red.png";
 const Layout = ({ children, showEthDiamond, className, hidden }) => {
   return (
     <div
-      className={`${
-        className ? className : ""
-      } flex flex-col min-h-screen min-w-screen`}
+      className={`${className ? className : ""
+        } flex flex-col min-h-screen min-w-screen`}
     >
       <div className="flex-1 flex flex-col min-h-full font-bundessans text-black max-w-[100rem] m-auto">
         <Sidebar />
@@ -48,7 +47,13 @@ const Layout = ({ children, showEthDiamond, className, hidden }) => {
         <footer
           className={`flex flex-col md:flex-row flex-wrap justify-evenly items-center text-center sm:justify-end my-4 z-20 sm:mr-6 text-xs font-ocra sm:ml-72 leading-3`}
         >
-          <a className="mx-4 my-2 sm:ml-4 text-black" href="/decentralization">
+          <a className="mx-4 my-2 sm:ml-4 text-black" href="/code-of-conduct">
+            CODE &lt;&lt;<span className="text-berlin-red">O</span>&lt;F CONDUCT
+          </a>
+          <a className="mx-4 my-2 sm:ml-4 text-black" href="/privacy-policy">
+            PRIVACY &lt;&lt;<span className="text-berlin-red">P</span>&lt;OLICY
+          </a>
+          {/* <a className="mx-4 my-2 sm:ml-4 text-black" href="/decentralization">
             department of &lt;&lt;<span className="text-berlin-red">d</span>
             &lt;ecentralization
           </a>
@@ -58,17 +63,11 @@ const Layout = ({ children, showEthDiamond, className, hidden }) => {
             target="_blank"
             rel="noreferrer"
           >
-            &lt;&lt;<span className="text-berlin-red">b</span>&lt;log
-          </a>
+            &lt;&lt;<span className="text-berlin-red">b</span>&lt;log[&#94;]
+          </a> */}
           <a className="mx-4 my-2 sm:ml-4 text-black" href="/contact">
-            contact & &lt;&lt;<span className="text-berlin-red">i</span>
-            &lt;mpressum
-          </a>
-          <a className="mx-4 my-2 sm:ml-4 text-black" href="/code-of-conduct">
-            code &lt;&lt;<span className="text-berlin-red">o</span>&lt;f conduct
-          </a>
-          <a className="mx-4 my-2 sm:ml-4 text-black" href="/privacy-policy">
-            privacy &lt;&lt;<span className="text-berlin-red">p</span>&lt;olicy
+            CONTACT &amp; &lt;&lt;<span className="text-berlin-red">I</span>
+            &lt;MPRESSUM
           </a>
           <a
             className="mx-4 my-2 sm:ml-4 text-black"
@@ -76,7 +75,7 @@ const Layout = ({ children, showEthDiamond, className, hidden }) => {
             target="_blank"
             rel="noreferrer"
           >
-            source
+            &lt;&lt;<span className="text-berlin-red">S</span>&lt;OURCE CODE (&#94;)
           </a>
         </footer>
       </div>

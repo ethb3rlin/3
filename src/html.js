@@ -50,6 +50,9 @@ export default function HTML(props) {
                     case 'f':
                         window.location.href= "/face-idont";
                         break;
+                    case 's':
+                        window.location.href= "https://github.com/ethb3rlin/4";
+                        break;
                     case 'b':
                         window.location.href= "https://blog.dod.ngo/";
                         break;
