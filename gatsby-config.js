@@ -5,7 +5,7 @@ module.exports = {
     url: `https://ethberlin.org`,
     description: "ETHBerlin04: Identity Crisis, May 24-26, 2024, Kreuzberg, Berlin",
     twitterUsername: "@ETHBerlin",
-    image: `/card.png`,
+    image: `/card.png?cache-break`,
   },
   plugins: [
     "gatsby-plugin-image",
