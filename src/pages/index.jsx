@@ -5,6 +5,7 @@ import Layout from "../components/Layout";
 import ETHBerlin from "../components/ETHBerlin";
 import { useBreakpoint } from "../components/useBreakpoint";
 import EthBerlinLogo from "../components/EthBerlinLogo";
+import SEO from "../components/seo";
 
 const Home = () => {
   // mouseover image passport
@@ -109,13 +110,15 @@ const Home = () => {
     <>
       <EthBerlinLogo
         ref={ethBerlinTextRef}
-        className={`${showSidebar ? "hidden" : "sm:flex"
-          } flex-col top-0 left-0 px-6 py-8 fixed w-auto  justify-center origin-center`}
+        className={`${
+          showSidebar ? "hidden" : "sm:flex"
+        } flex-col top-0 left-0 px-6 py-8 fixed w-auto  justify-center origin-center`}
       />
       {/* Scroll indicator */}
       <button
-        className={`hidden ${showSidebar ? "hidden" : "sm:flex"
-          } text-black  fixed left-1/2 bottom-0 font-light flex-col -translate-x-1/2 z-20`}
+        className={`hidden ${
+          showSidebar ? "hidden" : "sm:flex"
+        } text-black  fixed left-1/2 bottom-0 font-light flex-col -translate-x-1/2 z-20`}
         onClick={sendToTopLeft}
       >
         <span className="material-symbols-outlined text-6xl -mb-4 light-up">
@@ -126,10 +129,11 @@ const Home = () => {
         </span>
       </button>
       <Layout
-        className={` ${!showSidebar
+        className={` ${
+          !showSidebar
             ? "invisible opacity-0"
             : "fade-in-left visible opacity-100"
-          } transition-opacity duration-2000 ease-in-out`}
+        } transition-opacity duration-2000 ease-in-out`}
       >
         {/* Page content */}
         <div className={`flex flex-col xl:flex-row-reverse`}>
@@ -158,7 +162,8 @@ const Home = () => {
             </p>
 
             <p>
-              Loading <ETHBerlin />: May 24-26, 2024, CIC Innovation Campus, Berlin, Germany.
+              Loading <ETHBerlin />: May 24-26, 2024, CIC Innovation Campus,
+              Berlin, Germany.
             </p>
 
             <p>
@@ -206,5 +211,11 @@ const Home = () => {
     </>
   );
 };
+
+export const Head = () => (
+  <>
+    <SEO />
+  </>
+);
 
 export default Home;

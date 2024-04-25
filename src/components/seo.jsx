@@ -1,6 +1,5 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { Helmet } from "react-helmet";
 import { useStaticQuery, graphql } from "gatsby";
 
 const query = graphql`
@@ -36,7 +35,7 @@ export default function SEO({ title, description, image, article }) {
   };
 
   return (
-    <Helmet title={seo.title}>
+    <>
       <meta name="description" content={seo.description} />
       <meta name="image" content={seo.image} />
 
@@ -65,7 +64,7 @@ export default function SEO({ title, description, image, article }) {
       )}
 
       {seo.image && <meta name="twitter:image" content={seo.image} />}
-    </Helmet>
+    </>
   );
 }
 
