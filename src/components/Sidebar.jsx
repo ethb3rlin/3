@@ -50,6 +50,10 @@ const Sidebar = ({ className }) => {
         {" "}
         &lt;&lt;<span className="text-berlin-red">B</span>&lt;LOG (&#94;)
       </a>
+      <a className="my-2" href="/contributors">
+        {" "}
+        &lt;&lt;<span className="text-berlin-red">C</span>&lt;ONTRIBUTORS
+      </a>
     </nav>
   );
 
