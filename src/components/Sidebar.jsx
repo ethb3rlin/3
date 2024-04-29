@@ -29,6 +29,10 @@ const Sidebar = ({ className }) => {
         {" "}
         &lt;&lt;<span className="text-berlin-red">H</span>&lt;ACKER MANUAL
       </a>
+      <a className="my-2" href="/schedule">
+        {" "}
+        &lt;&lt;<span className="text-berlin-red">S</span>&lt;CHEDULE
+      </a>
       <a className="my-2" href="/face-idont">
         {" "}
         &lt;&lt;<span className="text-berlin-red">F</span>&lt;ACE IDON'T
@@ -36,10 +40,6 @@ const Sidebar = ({ className }) => {
       <a className="my-2" href="/decentralization">
         {" "}
         &lt;&lt;<span className="text-berlin-red">D</span>&lt;EPARTMENT
-      </a>
-      <a className="my-2" href="/schedule">
-        {" "}
-        &lt;&lt;<span className="text-berlin-red">S</span>&lt;CHEDULE
       </a>
       <a
         className="my-2"
