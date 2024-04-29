@@ -6,10 +6,11 @@ import wolpy from "../assets/wolpy_transparent_red.png";
 const Layout = ({ children, showEthDiamond, className, hidden }) => {
   return (
     <div
-      className={`${className ? className : ""
-        } flex flex-col min-h-screen min-w-screen`}
+      className={`${
+        className ? className : ""
+      } flex flex-col min-h-screen min-w-screen`}
     >
-      <div className="flex-1 flex flex-col min-h-full font-bundessans text-black max-w-[100rem] m-auto">
+      <div className="flex-1 flex flex-col min-h-full font-bundessans text-black max-w-[100rem] min-w-full m-auto">
         <Sidebar />
         <Seo />
         {/* Top Right items Desktop only */}
@@ -26,7 +27,7 @@ const Layout = ({ children, showEthDiamond, className, hidden }) => {
 
         <div></div>
 
-        <div className="hidden md:block fixed -bottom-10 -right-10">
+        <div className="hidden md:block fixed -bottom-10 -right-10 -z-50">
           <img
             src={wolpy}
             alt="Wolpy logo"
@@ -75,7 +76,7 @@ const Layout = ({ children, showEthDiamond, className, hidden }) => {
             target="_blank"
             rel="noreferrer"
           >
-            &lt;&lt;<span className="text-berlin-red">S</span>&lt;OURCE CODE (&#94;)
+            SOURCE CODE (&#94;)
           </a>
         </footer>
       </div>

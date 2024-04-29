@@ -47,11 +47,12 @@ export default function HTML(props) {
                     case 'p':
                         window.location.href= "/privacy-policy";
                         break;
+
                     case 'f':
                         window.location.href= "/face-idont";
                         break;
                     case 's':
-                        window.location.href= "https://github.com/ethb3rlin/4";
+                        window.location.href= "/schedule";
                         break;
                     case 'b':
                         window.location.href= "https://blog.dod.ngo/";

@@ -29,6 +29,10 @@ const Sidebar = ({ className }) => {
         {" "}
         &lt;&lt;<span className="text-berlin-red">H</span>&lt;ACKER MANUAL
       </a>
+      <a className="my-2" href="/schedule">
+        {" "}
+        &lt;&lt;<span className="text-berlin-red">S</span>&lt;CHEDULE
+      </a>
       <a className="my-2" href="/face-idont">
         {" "}
         &lt;&lt;<span className="text-berlin-red">F</span>&lt;ACE IDON'T
@@ -37,10 +41,12 @@ const Sidebar = ({ className }) => {
         {" "}
         &lt;&lt;<span className="text-berlin-red">D</span>&lt;EPARTMENT
       </a>
-      <a className="my-2"
+      <a
+        className="my-2"
         href="https://blog.dod.ngo/"
         target="_blank"
-        rel="noreferrer">
+        rel="noreferrer"
+      >
         {" "}
         &lt;&lt;<span className="text-berlin-red">B</span>&lt;LOG (&#94;)
       </a>
@@ -110,8 +116,9 @@ const Sidebar = ({ className }) => {
               </button>
             </div>
             <MenuItems
-              className={`flex z-30 ${showNav ? "visible opacity-95" : "invisible opacity-0"
-                } flex-col items-center transition-all duration-200 ease-in-out text-xl fixed bg-black top-0 left-0 w-screen h-screen justify-center`}
+              className={`flex z-30 ${
+                showNav ? "visible opacity-95" : "invisible opacity-0"
+              } flex-col items-center transition-all duration-200 ease-in-out text-xl fixed bg-black top-0 left-0 w-screen h-screen justify-center`}
               style={{ backgroundColor: "rgba(255, 255, 255, 0.95)" }}
               setShowNav={setShowNav}
               mobile
