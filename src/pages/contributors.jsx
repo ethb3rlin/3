@@ -174,7 +174,7 @@ const Contributors = () => {
           `}
             onClick={handleKeynotes}
           >
-            {"<<<Keynotes<"}
+            {"<<Speakers<<"}
           </button>
         </div>
         <div>
