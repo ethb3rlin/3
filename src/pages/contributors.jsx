@@ -156,7 +156,7 @@ const Contributors = () => {
           `}
             onClick={handleMentors}
           >
-            {"<<<Mentors<"}
+            {"<<Mentors<<<"}
           </button>
           <button
             className={`${
@@ -165,7 +165,7 @@ const Contributors = () => {
           `}
             onClick={handleJudges}
           >
-            {"<<<Judges<"}
+            {"<<Judges<<<<"}
           </button>
           <button
             className={`${
