@@ -388,8 +388,15 @@ const Program = () => {
             badge early during the day outside the venue to avoid long queues in
             the evening.
           </p>
+          <p>
+            This is a just an OVERVIEW of the schedule. Full schedule will be
+            released.{" "}
+          </p>
           {/* Use top: -1px to detect stickyness https://davidwalsh.name/detect-sticky */}
-          <div
+
+          {/* Hacker Essentials vs Extravaganza */}
+
+          {/* <div
             className={`flex items-center justify-center w-full sticky -top-1 py-4 text-center  ${
               isSticky ? "bg-white" : ""
             }`}
@@ -419,7 +426,7 @@ const Program = () => {
               </div>
               <div className="ml-3 text-red-300">Hacker Extravaganza</div>
             </label>
-          </div>
+          </div> */}
           <h2 className="text-xl font-bold font-ocra mt-4">Friday, May 24</h2>
           <p className="mt-4">
             <ul>
