@@ -27,7 +27,7 @@ const Layout = ({ children, showEthDiamond, className, hidden }) => {
 
         <div></div>
 
-        <div className="hidden md:block fixed -bottom-10 -right-10">
+        <div className="hidden md:block fixed -bottom-10 -right-10 -z-50">
           <img
             src={wolpy}
             alt="Wolpy logo"
