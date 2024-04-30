@@ -53,6 +53,7 @@ export default [
     name: "Jacob",
     image: require("./jacob_czepluch.jpeg"),
     twitter: "https://twitter.com/_czepluch",
+    github: "https://github.com/czepluch",
   },
   {
     name: "Kaan",
