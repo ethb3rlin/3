@@ -35,8 +35,13 @@ export default [
   },
   {
     name: "Kirill",
-    maskImage: require("./Kirill-mask.jpeg"),
-    image: require("./Kirill.jpeg"),
+    maskImage: require("./kirill-mask.jpeg"),
+    image: require("./kirill.jpeg"),
+  },
+  {
+    name: "Raul",
+    image: require("./raul.jpeg"),
+    maskImage: require("./raul-mask.jpeg"),
   },
   {
     name: "Stina",
