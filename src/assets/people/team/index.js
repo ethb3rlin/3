@@ -44,4 +44,10 @@ export default [
     maskImage: require("./stina-mask.jpeg"),
     twitter: "https://twitter.com/stinalinneag",
   },
+  {
+    name: "Lea",
+    image: require("./lea.jpeg"),
+    maskImage: require("./lea-mask.jpeg"),
+    twitter: "https://twitter.com/_schmitted",
+  },
 ];
