@@ -586,9 +586,7 @@ const Program = () => {
           <div className="flex justify-center">
             <div className="border-b-[1px] mb-8 mt-4 border-berlin-red opacity-40 w-full"></div>
           </div>
-          <h2 className="text-xl font-bold font-ocra">
-            Saturday, September 17
-          </h2>
+          <h2 className="text-xl font-bold font-ocra">Saturday, May 25th</h2>
           <p className="mt-4">Happy hacking, no distractions!</p>
           <p className="mt-4">
             <ProgramItem
@@ -631,7 +629,7 @@ const Program = () => {
           <div className="flex justify-center">
             <div className="border-b-[1px] mb-8 mt-4 border-berlin-red opacity-40 w-full"></div>
           </div>
-          <h2 className="text-xl font-bold font-ocra">Sunday, September 18</h2>
+          <h2 className="text-xl font-bold font-ocra">Sunday, May 26th</h2>
           <p className="mt-4">
             Don't forget to submit your projects by 11:00 am Berlin time!
           </p>
