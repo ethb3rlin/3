@@ -56,8 +56,8 @@ const decentralization = () => (
           <li>
             <span className="font-bold">ETHBerlin³ (2022): </span>hackathon,
             conference, and cultural festival, third edition:{" "}
-            <a href="https://ethberlin.org" target="_blank" rel="noreferrer">
-              ethberlin.org
+            <a href="https://ethberlin.ooo" target="_blank" rel="noreferrer">
+              ethberlin.ooo
             </a>
           </li>
           <li>
