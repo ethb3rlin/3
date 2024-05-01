@@ -183,12 +183,6 @@ const Home = () => {
             </p>
 
             <p>
-              For this year's ETHBerlin hackathon, we invite you to join the
-              discourse and hack on anti-identity features instead of identity
-              anti-features that boost the individual's privacy.
-            </p>
-
-            <p>
               To learn more about the hackathon, press{" "}
               <span className="font-ocra text-sm">
                 &lt;&lt;<span className="text-berlin-red">A</span>&lt;
@@ -202,7 +196,7 @@ const Home = () => {
 
             <p>
               ETHBerlin is not a conference but a hackathon. Every attendee
-              plays an active role in the event. All applications are closed.
+              plays an active role in the event. <b>All applications are closed</b>.
               See you in Berlin!
             </p>
           </div>
