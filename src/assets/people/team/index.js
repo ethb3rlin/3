@@ -55,4 +55,10 @@ export default [
     maskImage: require("./lea-mask.jpeg"),
     twitter: "https://twitter.com/_schmitted",
   },
+  {
+    name: "Rose",
+    image: require("./rose.gif"),
+    maskImage: require("./rose-mask.gif"),
+    twitter: "https://twitter.com/roseighteth",
+  },
 ];
