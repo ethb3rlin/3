@@ -205,7 +205,7 @@ const Hack = () => {
           </p>
 
           <p>
-            Our venue is open 24/7 and welcomes hacking through the night. There
+            Our venue is open 24/2 and welcomes hacking through the night. There
             are many cozy corners with sofas, beanbags etc. However, we still
             would recommend to look for a place to leave your stuff, sleep, and
             take a shower.
