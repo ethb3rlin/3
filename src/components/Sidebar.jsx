@@ -37,6 +37,10 @@ const Sidebar = ({ className }) => {
         {" "}
         &lt;&lt;<span className="text-berlin-red">F</span>&lt;ACE IDON'T
       </a>
+      <a className="my-2" href="/contributors">
+        {" "}
+        &lt;&lt;<span className="text-berlin-red">C</span>&lt;ONTRIBUTORS
+      </a>
       <a className="my-2" href="/decentralization">
         {" "}
         &lt;&lt;<span className="text-berlin-red">D</span>&lt;EPARTMENT
@@ -49,10 +53,6 @@ const Sidebar = ({ className }) => {
       >
         {" "}
         &lt;&lt;<span className="text-berlin-red">B</span>&lt;LOG (&#94;)
-      </a>
-      <a className="my-2" href="/contributors">
-        {" "}
-        &lt;&lt;<span className="text-berlin-red">C</span>&lt;ONTRIBUTORS
       </a>
     </nav>
   );
