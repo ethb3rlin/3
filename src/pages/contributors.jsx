@@ -149,7 +149,7 @@ const Contributors = () => {
           >
             {"<<Team<<<<<<"}
           </button>
-          <button
+          {/* <button
             className={`${
               title === "Mentors" ? "text-berlin-red underline" : ""
             } text-xl md:text-2xl mx-4 my-2 
@@ -175,7 +175,7 @@ const Contributors = () => {
             onClick={handleKeynotes}
           >
             {"<<Speakers<<"}
-          </button>
+          </button> */}
         </div>
         <div>
           <div className="text-4xl mt-8 font-ocra">{title}</div>
