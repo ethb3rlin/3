@@ -73,4 +73,10 @@ export default [
     maskImage: require("./martin-mask.jpeg"),
     twitter: "https://twitter.com/MartinBreiten",
   },
+  {
+    name: "MP",
+    image: require("./MP.jpeg"),
+    maskImage: require("./mp-mask.jpeg"),
+    twitter: "https://twitter.com/MPtherealmvp",
+  },
 ];
