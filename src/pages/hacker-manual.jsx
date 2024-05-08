@@ -406,44 +406,54 @@ const Hack = () => {
         <div className="flex justify-center">
           <div className="border-b-[1px] mb-8 mt-4 border-gray-300 opacity-40 w-full"></div>
         </div>
-        {/* <div id="mentors">
-          <h2 className="text-2xl font-bold">??? Getting Help from Mentors</h2>
-          <p>
-            Ooops! You had an amazing idea, but now you are stuck? No worries,
-            our experienced mentors will help you as best as they can. And
-            here's how to get in touch:
-          </p>
+        <div id="mentors">
+          <h2 className="text-2xl font-bold">Help from Mentors</h2>
+          <b>TL;DR</b>
           <ul>
             <li>
-              Reach all of our mentors via the simple ticket system, HELPq:{" "}
-              <a
-                href="https://ask.ethberlin.ooo"
+              To get help ask questions in the Mentor Matrix room:{" "}
+              <a 
+                href="https://matrix.to/#/#eb4-mentors:dod.ngo"
                 target="_blank"
                 rel="noreferrer noopener"
               >
-                ask.ethberlin.ooo
+                #eb4-mentors:dod.ngo
               </a>
             </li>
             <li>
-              Discuss your issues in the{" "}
-              <a
-                href="https://matrix.to/#/%23eb4-mentors:dod.ngo"
-                target="_blank"
-                rel="noreferrer noopener"
-              >
-                Ask-our-mentors
-              </a>{" "}
-              channel.
+               Or go to the Mentor Helpdesk located in the Career Foundry next to the big tent in Yard 1  
+               {/* TODO: Could you add a link to the map here, please */}
             </li>
             <li>
-              Spot our mentors at the venue! They are wearing yellow t-shirts
-              and mentor buttons!
+              Helpdesk open Friday from hacking starts until midnight, Saturday from 08:00 to midnight and Sunday from 08:00 to submission deadline(12:00)
             </li>
           </ul>
+          <h3> Details </h3>
+          <p>
+            As with all previous ETHBerlins we've made sure to have a team of amazing
+             mentors ready to help you build the best possible projects throughout the 
+             weekend. No questions are too small or too big to ask. As a hacker you can 
+             find the mentors in person as per the TL;DR above. You can also contact 
+             them with any questions you might have in the Matrix room that's also 
+             listed in the TL;DR. If you ask the question in the middle of the night 
+             you might not get a reply right away, but we will make sure to address 
+             it first thing in the morning.
+          </p>
+          <p>
+            We encounrage hackers to help each other out and keep an eye on the 
+            mentoring matrix channel. There might be some hackers with very specific 
+            expert knowledge and it would be great if this could be shared.
+          </p>
+          <p>
+            You might also see the mentors througout the venue. They'll be wearing 
+            a button/badge on their shirt saying "Mentor". They're all very friendly 
+            so don't hesitate to ask them a question or get their feedback on something.
+          </p>
+
         </div>
         <div className="flex justify-center">
           <div className="border-b-[1px] mb-8 mt-4 border-gray-300 opacity-40 w-full"></div>
-        </div> */}
+        </div> 
 
         {/* <div id="submissions">
           <h2 className="text-2xl font-bold">??? Submissions</h2>
