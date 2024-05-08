@@ -7,6 +7,7 @@ import githubLogo from "../assets/github.png";
 import team from "../assets/people/team";
 // import keynotes from "../assets/people/keynotes";
 import ETHBerlin from "../components/ETHBerlin";
+import { TbWorldWww } from "react-icons/tb";
 
 const Person = ({
   name,
@@ -15,6 +16,7 @@ const Person = ({
   image,
   twitter,
   github,
+  website,
   organization2,
 }) => {
   return (
@@ -65,6 +67,14 @@ const Person = ({
               className="mx-2 h-5 opacity-40 hover:opacity-100 "
               style={{ filter: "invert(1) grayscale(1)" }}
               alt="github"
+            />
+          </a>
+        )}
+        {website && (
+          <a href={website} rel="noopener noreferrer" target="_blank">
+            <TbWorldWww
+              className="mx-2 w-6 h-6 opacity-40 hover:opacity-100"
+              alt="website"
             />
           </a>
         )}
