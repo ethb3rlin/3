@@ -201,7 +201,7 @@ body::before {
 
 .decorate-links a {
   text-decoration: underline;
-  /* color: theme("colors.black"); */
+  color: theme("colors.berlin-red");
 }
 
 .blink {
