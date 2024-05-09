@@ -1,8 +1,17 @@
 import React from "react";
 import Layout from "../components/Layout";
 import ETHBerlin from "../components/ETHBerlin";
+import VenueMapModal from "../components/VenueMapModal";
+import groundFloor from "../images/groundFloor.png";
 
 const Hack = () => {
+  const [isMapModalOpen, setIsMapModalOpen] = React.useState(false);
+
+  const handleCloseModal = (e) => {
+    e.stopPropagation();
+    setIsMapModalOpen(false);
+  };
+
   return (
     <Layout>
       <div className="textbox text-base decorate-links">
@@ -412,7 +421,7 @@ const Hack = () => {
           <ul>
             <li>
               To get help ask questions in the Mentor Matrix room:{" "}
-              <a 
+              <a
                 href="https://matrix.to/#/#eb4-mentors:dod.ngo"
                 target="_blank"
                 rel="noreferrer noopener"
@@ -421,164 +430,68 @@ const Hack = () => {
               </a>
             </li>
             <li>
-               Or go to the Mentor Helpdesk located in the Career Foundry next to the big tent in Yard 1  
-               {/* TODO: Could you add a link to the map here, please */}
+              Or go to the Mentor Helpdesk located in the Career Foundry next to
+              the big tent in Yard 1
+              <button
+                className={"font-bold  text-berlin-red text-sm"}
+                onClick={() => setIsMapModalOpen(true)}
+              >
+                <span className="align-middle">
+                  <span class="material-symbols-outlined text-sm mr-0.5 ml-1">
+                    my_location
+                  </span>
+                </span>
+                <span className="underline">Helpdesk Location</span>
+              </button>
             </li>
             <li>
-              Helpdesk open Friday from hacking starts until midnight, Saturday from 08:00 to midnight and Sunday from 08:00 to submission deadline(12:00)
+              Helpdesk opening hours:
+              <ul className="leading-none">
+                <li className="mt-2">
+                  Friday from hacking starts until midnight
+                </li>
+                <li>Saturday from 08:00 to midnight </li>
+                <li> Sunday from 08:00 to submission deadline (12:00)</li>
+              </ul>
             </li>
           </ul>
-          <h3> Details </h3>
+          <h3 className="text-xl font-bold"> Details </h3>
           <p>
-            As with all previous ETHBerlins we've made sure to have a team of amazing
-             mentors ready to help you build the best possible projects throughout the 
-             weekend. No questions are too small or too big to ask. As a hacker you can 
-             find the mentors in person as per the TL;DR above. You can also contact 
-             them with any questions you might have in the Matrix room that's also 
-             listed in the TL;DR. If you ask the question in the middle of the night 
-             you might not get a reply right away, but we will make sure to address 
-             it first thing in the morning.
+            As with all previous ETHBerlins we've made sure to have a team of
+            amazing mentors ready to help you build the best possible projects
+            throughout the weekend. No questions are too small or too big to
+            ask. As a hacker you can find the mentors in person as per the TL;DR
+            above. You can also contact them with any questions you might have
+            in the Matrix room that's also listed in the TL;DR. If you ask the
+            question in the middle of the night you might not get a reply right
+            away, but we will make sure to address it first thing in the
+            morning.
           </p>
           <p>
-            We encounrage hackers to help each other out and keep an eye on the 
-            mentoring matrix channel. There might be some hackers with very specific 
-            expert knowledge and it would be great if this could be shared.
+            We encounrage hackers to help each other out and keep an eye on the
+            mentoring matrix channel. There might be some hackers with very
+            specific expert knowledge and it would be great if this could be
+            shared.
           </p>
           <p>
-            You might also see the mentors througout the venue. They'll be wearing 
-            a button/badge on their shirt saying "Mentor". They're all very friendly 
-            so don't hesitate to ask them a question or get their feedback on something.
+            You might also see the mentors througout the venue. They'll be
+            wearing a button/badge on their shirt saying "Mentor". They're all
+            very friendly so don't hesitate to ask them a question or get their
+            feedback on something.
           </p>
-
         </div>
+
+        <VenueMapModal
+          isOpen={isMapModalOpen}
+          handleCloseModal={handleCloseModal}
+          activeMapName={"Ground Floor / Floor 0"}
+          activeMap={groundFloor} // only ground floor
+          activeRoomClass={"yard1"}
+        />
+
         <div className="flex justify-center">
           <div className="border-b-[1px] mb-8 mt-4 border-gray-300 opacity-40 w-full"></div>
-        </div> 
-
-        {/* <div id="submissions">
-          <h2 className="text-2xl font-bold">??? Submissions</h2>
-          <p>
-            You have to register and create your project at{" "}
-            <a
-              href="https://ethberlin.devfolio.co/"
-              target="_blank"
-              rel="noreferrer noopener"
-            >
-              ethberlin.devfolio.co
-            </a>{" "}
-            for submission before Sunday, 11am.
-          </p>
-          <p>
-            Make sure to provide a link to your open-source repository, a video
-            or a demo, and if applicable, the contract address(es) of your
-            deployed application, either on a testnet of your choice or mainnet
-            of a platform of choice.
-          </p>
-          <p>
-            All submitted projects will be eligible for the main hackathon
-            prize. In addition, you have to select a category (track), which you
-            would like to pitch for, and up to two meta awards.
-          </p>
-          <p>Don't miss the deadline! Sunday 11am!</p>
         </div>
-        <div className="flex justify-center">
-          <div className="border-b-[1px] mb-8 mt-4 border-gray-300 opacity-40 w-full"></div>
-        </div> */}
-        {/* <div id="judging">
-          <h2 className="text-2xl font-bold">??? Judging</h2>
-          <p>
-            You can find the prizes and bounties in the{" "}
-            <a href="#prizes-bounties">above section</a>.
-          </p>
-          <p>
-            This year, we will use a different platform for your submissions. We
-            decided not to use devpost for this edition, since they are sadly
-            excluding participation from some regions by default. This
-            discriminatory and overly compliant behavior is kind of a "no" for
-            us, so instead we shall be collaborating with the much more
-            decentralised crew at{" "}
-            <a href="https://devfolio.co/home/" target="_blank" rel="noopener">
-              Devfolio
-            </a>
-            .
-          </p>
-
-          <p>
-            Each team will have one person pitch their project for 3 minutes
-            followed by a 2 minutes Q&A session. The pitch will be in front of
-            three judges each with different areas of exptertise. The presenter
-            should bring their laptop and use it for the pitch. All judging will
-            take place on the second floor. A schedule will be shared after
-            11:30 Sunday. Please be there at least 5 minutes before your
-            allocated timeslot.
-          </p>
-
-          <p>
-            We aim to continuously improve the process. This is why this year we
-            will have three different approaches to judging:
-          </p>
-
-          <ul>
-            <li>
-              "Traditional judging": Judges watch live pitches & Judges check
-              submissions async digitally
-            </li>
-            <li>Community judging powered by quadratic voting</li>
-          </ul>
-          <p>
-            Overall, we also want to increase the transparency of the judging.
-            This is why all judge voting sheets will be made publicly available
-            after the winning ceremony.
-          </p>
-          <p>
-            Judging will take place on Sunday 18th September and the judges will
-            be reviewing project submissions, and watching pitches, from the
-            11am deadline until just before the closing ceremony. Note: we will
-            also be shuffling the judging teams halfway through just to make
-            sure there is no relative bias.
-          </p>
-
-          <p>
-            The track specific judges will watch live pitches, while the judges
-            allocated to the meta awards will review the submissions digitally.
-            There will be 24 track judges (8 groups of three), and each group
-            will include one technical person, one product/wildcard and one
-            business/VC judge.
-          </p>
-
-          <p>
-            As mentioned above, the meta specific judges will review submissions
-            digitally and there will be two pairs of judges per meta award.
-          </p>
-
-          <p>
-            The judges will be reviewing each submission with the following
-            criteria in mind.
-          </p>
-
-          <ul>
-            <li>
-              Technicality: How hard was it to build this and how does the
-              quality of the codebase compare?
-            </li>
-            <li>
-              Originality: Is this something completely new or are there already
-              projects with grant funding working on a similar scope?
-            </li>
-            <li>
-              Practicality: How would this submission survive in the real world,
-              outside of the crypto community? Or, if the project were to be
-              specifically targeted to the crypto community, how correctly
-              targeted is it?
-            </li>
-            <li></li>
-            <li>
-              WOW Factor: What else is there about the submission? Has this
-              project and/or team defied expectations, based on timing, efforts,
-              etc.?
-            </li>
-          </ul>
-        </div> */}
       </div>
     </Layout>
   );
