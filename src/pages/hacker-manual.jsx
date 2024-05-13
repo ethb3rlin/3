@@ -556,7 +556,7 @@ const Hack = () => {
         <VenueMapModal
           isOpen={isMapModalOpen}
           handleCloseModal={handleCloseModal}
-          activeMapName={"Ground Floor / Floor 0"}
+          activeMapName={"Ground Floor (#0)"}
           activeMap={groundFloor} // only ground floor
           activeRoomClass={"yard1"}
         />

@@ -7,9 +7,10 @@ import "../styles/rooms/firstFloor.css";
 import "../styles/rooms/secondFloor.css";
 import "../styles/rooms/fifthFloor.css";
 import groundFloor from "../images/groundFloor.png";
-import thirdFloor from "../images/thirdFloor.png";
 import firstFloor from "../images/firstFloor.png";
 import secondFloor from "../images/secondFloor.png";
+import thirdFloor from "../images/thirdFloor.png";
+import fourthFloor from "../images/fourthFloor.png";
 import fifthFloor from "../images/fifthFloor.png";
 import ETHBerlin from "../components/ETHBerlin";
 import VenueMapModal from "../components/VenueMapModal";
@@ -215,9 +216,7 @@ const Program = () => {
   const [isMapModalOpen, setIsMapModalOpen] = React.useState(false);
   const [activeMap, setActiveMap] = React.useState(groundFloor);
   const [activeRoomClass, setActiveRoomClass] = React.useState("lexis");
-  const [activeMapName, setActiveMapName] = React.useState(
-    "Ground Floor / Floor 0"
-  );
+  const [activeMapName, setActiveMapName] = React.useState("Ground Floor (#0)");
   const [isExtravaganza, setIsExtravaganza] = React.useState(false);
   const [isSticky, setIsSticky] = React.useState(false);
 
@@ -230,21 +229,32 @@ const Program = () => {
 
   const handleGroundFloor = () => {
     setActiveMap(groundFloor);
-    setActiveMapName("Ground Floor / Floor 0");
+    setActiveMapName("Ground Floor (#0)");
   };
 
   const handleFirstFloor = () => {
     setActiveMap(firstFloor);
-    setActiveMapName("First Floor / Floor 1");
+    setActiveMapName("First Floor (#1)");
   };
 
   const handleSecondFloor = () => {
     setActiveMap(secondFloor);
-    setActiveMapName("Second Floor / Floor 2");
+    setActiveMapName("Second Floor (#2)");
   };
+
+  const handleThirdFloor = () => {
+    setActiveMap(thirdFloor);
+    setActiveMapName("Third Floor (#3)");
+  };
+
+  const handleFourthFloor = () => {
+    setActiveMap(fourthFloor);
+    setActiveMapName("Fourth Floor (#4)");
+  };
+
   const handleFifthFloor = () => {
     setActiveMap(fifthFloor);
-    setActiveMapName("Fifth Floor / Floor 5");
+    setActiveMapName("Fifth Floor (#5)");
   };
 
   const locations = {
@@ -264,6 +274,14 @@ const Program = () => {
         setIsMapModalOpen(true);
       },
     },
+    yard0: {
+      name: "Yard 0",
+      handler: () => {
+        handleGroundFloor();
+        setActiveRoomClass("yard0");
+        setIsMapModalOpen(true);
+      },
+    },
     yard1: {
       name: "Yard 1",
       handler: () => {
@@ -277,14 +295,6 @@ const Program = () => {
       handler: () => {
         handleGroundFloor();
         setActiveRoomClass("yard2");
-        setIsMapModalOpen(true);
-      },
-    },
-    yard3: {
-      name: "Yard 3",
-      handler: () => {
-        handleGroundFloor();
-        setActiveRoomClass("yard3");
         setIsMapModalOpen(true);
       },
     },
@@ -328,14 +338,6 @@ const Program = () => {
         setIsMapModalOpen(true);
       },
     },
-    watergate: {
-      name: "Watergate",
-      handler: () => {
-        window
-          .open("http://water-gate.de/de/contact/contact.html", "_blank")
-          .focus();
-      },
-    },
     wildenbruch: {
       name: "Wildenbruch",
       handler: () => {
@@ -373,14 +375,6 @@ const Program = () => {
       handler: () => {
         handleFifthFloor();
         setActiveRoomClass("cinema");
-        setIsMapModalOpen(true);
-      },
-    },
-    yard1: {
-      name: "Yard 1",
-      handler: () => {
-        handleGroundFloor();
-        setActiveRoomClass("yard1");
         setIsMapModalOpen(true);
       },
     },
@@ -531,7 +525,7 @@ const Program = () => {
                 startTime="19:00"
                 endTime="21:00"
                 title="Dinner"
-                eventLocations={[locations.restaurant]}
+                eventLocations={[locations.lexis]}
               />
               {isExtravaganza && (
                 <ProgramItem
@@ -727,7 +721,7 @@ const Program = () => {
               endDayStr="2024-05-26"
               endTime="01:00"
               title="DJs in Courtyard 1"
-              eventLocations={[locations.yard1]}
+              eventLocations={[locations.yard0]}
             />
             <ProgramItem
               dayStr="2024-05-25"
@@ -746,7 +740,7 @@ const Program = () => {
                   </a>
                 </span>
               }
-              eventLocations={[locations.yard1]}
+              eventLocations={[locations.yard0]}
               className="ml-12"
             />
             <ProgramItem
@@ -774,7 +768,7 @@ const Program = () => {
                   </a>
                 </span>
               }
-              eventLocations={[locations.yard1]}
+              eventLocations={[locations.yard0]}
               className="ml-12"
             />
             <ProgramItem
@@ -794,7 +788,7 @@ const Program = () => {
                   </a>
                 </span>
               }
-              eventLocations={[locations.yard1]}
+              eventLocations={[locations.yard0]}
               className="ml-12"
             />
             <ProgramItem
@@ -815,7 +809,7 @@ const Program = () => {
                   </a>
                 </span>
               }
-              eventLocations={[locations.yard1]}
+              eventLocations={[locations.yard0]}
               className="ml-12"
             />
             <ProgramItem
