@@ -10,7 +10,7 @@ import groundFloor from "../images/groundFloor.png";
 import firstFloor from "../images/firstFloor.png";
 import secondFloor from "../images/secondFloor.png";
 import thirdFloor from "../images/thirdFloor.png";
-import fourthFloor from "../images/fourthFlour.png";
+import fourthFloor from "../images/fourthFloor.png";
 import fifthFloor from "../images/fifthFloor.png";
 import ETHBerlin from "../components/ETHBerlin";
 import VenueMapModal from "../components/VenueMapModal";
