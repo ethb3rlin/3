@@ -216,9 +216,7 @@ const Program = () => {
   const [isMapModalOpen, setIsMapModalOpen] = React.useState(false);
   const [activeMap, setActiveMap] = React.useState(groundFloor);
   const [activeRoomClass, setActiveRoomClass] = React.useState("lexis");
-  const [activeMapName, setActiveMapName] = React.useState(
-    "Ground Floor (#0)"
-  );
+  const [activeMapName, setActiveMapName] = React.useState("Ground Floor (#0)");
   const [isExtravaganza, setIsExtravaganza] = React.useState(false);
   const [isSticky, setIsSticky] = React.useState(false);
 
@@ -246,12 +244,12 @@ const Program = () => {
 
   const handleThirdFloor = () => {
     setActiveMap(thirdFloor);
-    setActiveMapName("Third Floor (#2)");
+    setActiveMapName("Third Floor (#3)");
   };
 
   const handleFourthFloor = () => {
     setActiveMap(fourthFloor);
-    setActiveMapName("Fourth Floor (#2)");
+    setActiveMapName("Fourth Floor (#4)");
   };
 
   const handleFifthFloor = () => {
@@ -338,14 +336,6 @@ const Program = () => {
         handleSecondFloor();
         setActiveRoomClass("community-space-second-floor");
         setIsMapModalOpen(true);
-      },
-    },
-    watergate: {
-      name: "Watergate",
-      handler: () => {
-        window
-          .open("http://water-gate.de/de/contact/contact.html", "_blank")
-          .focus();
       },
     },
     wildenbruch: {
@@ -543,7 +533,7 @@ const Program = () => {
                 startTime="19:00"
                 endTime="21:00"
                 title="Dinner"
-                eventLocations={[locations.restaurant]}
+                eventLocations={[locations.lexis]}
               />
               {isExtravaganza && (
                 <ProgramItem
