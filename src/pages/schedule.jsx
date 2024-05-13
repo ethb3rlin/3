@@ -217,7 +217,7 @@ const Program = () => {
   const [activeMap, setActiveMap] = React.useState(groundFloor);
   const [activeRoomClass, setActiveRoomClass] = React.useState("lexis");
   const [activeMapName, setActiveMapName] = React.useState(
-    "Ground Floor / Floor 0"
+    "Ground Floor (#0)"
   );
   const [isExtravaganza, setIsExtravaganza] = React.useState(false);
   const [isSticky, setIsSticky] = React.useState(false);
@@ -231,21 +231,32 @@ const Program = () => {
 
   const handleGroundFloor = () => {
     setActiveMap(groundFloor);
-    setActiveMapName("Ground Floor / Floor 0");
+    setActiveMapName("Ground Floor (#0)");
   };
 
   const handleFirstFloor = () => {
     setActiveMap(firstFloor);
-    setActiveMapName("First Floor / Floor 1");
+    setActiveMapName("First Floor (#1)");
   };
 
   const handleSecondFloor = () => {
     setActiveMap(secondFloor);
-    setActiveMapName("Second Floor / Floor 2");
+    setActiveMapName("Second Floor (#2)");
   };
+
+  const handleThirdFloor = () => {
+    setActiveMap(thirdFloor);
+    setActiveMapName("Third Floor (#2)");
+  };
+
+  const handleFourthFloor = () => {
+    setActiveMap(fourthFloor);
+    setActiveMapName("Fourth Floor (#2)");
+  };
+
   const handleFifthFloor = () => {
     setActiveMap(fifthFloor);
-    setActiveMapName("Fifth Floor / Floor 5");
+    setActiveMapName("Fifth Floor (#5)");
   };
 
   const locations = {
