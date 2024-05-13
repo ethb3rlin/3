@@ -497,6 +497,7 @@ const Program = () => {
                 startTime="17:30"
                 endTime="18:00"
                 title="Talk: Are there limits to the reach of US Sanctions laws?"
+                description="The US Treasury's decision to sanction Tornado Cash, including the immutable pool contracts, has set off a wave of criminal and civil litigation. Do these sanctions go too far, can similar sanctions be used to effectively outlaw crypto all together, and how can we fight back?"
                 speakerName="Peter van Valkenburg (Coin Center)"
                 photo={peter}
                 eventLocations={[]}
@@ -892,6 +893,7 @@ const Program = () => {
                 speakerName={
                   "Kat Young (EthEvacuations), Joshua Dávila (The Blockchain Socialist)"
                 }
+                description="Kat Young recently left her crypto job to start Ethevacuations when the ongoing conflict in Gaza began as she learned that crypto was a useful tool to help those suffering under the bombardment. Kat will be interviewed by Joshua Dávila to talk about her experience and the reality of using crypto to help those evacuate from Gaza during one of the most difficult humanitarian crises imaginable. Crypto was made for this and there are important lessons to be had."
                 photo={kat}
                 photo2={josh}
                 eventLocations={[]}
@@ -909,6 +911,9 @@ const Program = () => {
                 startTime="15:15"
                 endTime="15:45"
                 title="Talk: Anarchy, Truth and Justice"
+                description={`We are building systems that resist coercion and promote freedom. We are not the first people in history to try that, so what happened before? 
+This talk will look at some historical attempts to create systems and societies that do not depend on government or institutional power, from the Diggers to the Free Software movement.
+Then we will look at tools and techniques we can use to govern and sustain crypto-economic systems and talk about how to increase their impact and protect them against bribery, cooption and destruction.`}
                 speakerName={"Edmund Edgar (RealityETH)"}
                 photo={edmundedgar}
                 eventLocations={[]}
@@ -918,6 +923,38 @@ const Program = () => {
                 startTime="15:50"
                 endTime="16:20"
                 title="Talk: The Silent Strings of Proof of Personhood"
+                description={
+                  <>
+                    <p>
+                      Experiments in Proof of Personhood—where each person has a
+                      single, unique identity—have increasingly been touted as a
+                      mechanism for tracing information provenance, distributing
+                      Universal Basic Income, and facilitating democratic
+                      governance over systems of artificial intelligence.
+                    </p>
+                    <p>
+                      {" "}
+                      This talk chronicles Idena’s experiment in Proof of
+                      Personhood from launch in August 2019 to a crisis in May
+                      2022. We show how despite verifying humans, hidden pools
+                      rapidly emerged—some cooperative, but most controlled by
+                      “puppeteers” who, at best, remunerated participants for
+                      periodically proving their uniqueness in exchange for
+                      access to their secret keys and controlling their
+                      accounts. Instead of fostering an egalitarian network of
+                      unique identities, the protocol fractured into hidden
+                      subnetworks vying for control over an economic pie with
+                      economies of scale trending towards oligopoly, undermining
+                      the protocol’s security and ambitions for democratic
+                      governance (one-person, one-vote) and UBI rewards
+                      (one-person, one reward). By giving humans economic
+                      incentives to periodically differentiate themselves from
+                      bots, the protocol gave more informed, resourceful humans
+                      financial incentives to puppeteer less informed humans
+                      like bots.
+                    </p>
+                  </>
+                }
                 speakerName={
                   "Puja Ohlhaver (Lawyer & Researcher), Mikhail Nikulin (Idena)"
                 }
@@ -939,6 +976,27 @@ const Program = () => {
                 startTime="17:00"
                 endTime="17:30"
                 title="Talk: The Challenge of Decentralised Communication"
+                description={
+                  <>
+                    <p>
+                      Decentralised communication tools are at least 10x harder
+                      to build than their mainstream centralised equivalents,
+                      and in a world where Discord, Slack, Telegram and WhatsApp
+                      have billions of dollars of funding and have created
+                      incredibly polished products, it can be hard for
+                      decentralised alternatives to compete. However:
+                      centralisation lasts until the next Elon, whereas
+                      decentralisation can last forever.
+                    </p>
+                    <p>
+                      In this talk, I'll explain the challenges we've hit in
+                      building Matrix to compete with the mainstream
+                      alternatives, how we're solving them, why it's taken so
+                      long, and why it's more important than ever to keep the
+                      ideal of decentralised communication alive.
+                    </p>
+                  </>
+                }
                 speakerName={"Matthew Hodgson (Matrix)"}
                 photo={matthew}
                 eventLocations={[]}
