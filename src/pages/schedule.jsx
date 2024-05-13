@@ -32,6 +32,9 @@ import nick from "../assets/people/speakers/nick.jpeg";
 import peter from "../assets/people/speakers/peter.jpeg";
 import puja from "../assets/people/speakers/puja.jpeg";
 
+import { FaTwitter } from "react-icons/fa";
+import { ImSoundcloud } from "react-icons/im";
+
 const currentDate = new Date();
 // const currentDate = new Date("2024-05-25T00:20:00+02:00");
 
@@ -716,6 +719,103 @@ const Program = () => {
               title="Mentoring Expert Office Hours"
               description="Check mentor area for detailed schedule!"
               eventLocations={[]}
+            />
+            <ProgramItem
+              dayStr="2024-05-25"
+              startTime="17:00"
+              endDayStr="2024-05-26"
+              endTime="01:00"
+              title="DJs in Courtyard 1"
+              eventLocations={[locations.yard1]}
+            />
+            <ProgramItem
+              dayStr="2024-05-25"
+              startTime="17:00"
+              endTime="19:00"
+              title={
+                <span className="inline-flex items-center">
+                  Jommi{" "}
+                  <a
+                    href="https://twitter.com/joakimhi"
+                    className="ml-2 inline-block opacity-70 hover:opacity-100 text-berlin-red hover:text-berlin-red"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <FaTwitter />
+                  </a>
+                </span>
+              }
+              eventLocations={[locations.yard1]}
+              className="ml-12"
+            />
+            <ProgramItem
+              dayStr="2024-05-25"
+              startTime="19:00"
+              endTime="21:00"
+              title={
+                <span className="inline-flex items-center">
+                  Anna{" "}
+                  <a
+                    href="https://soundcloud.com/innermost3000"
+                    className="ml-2 inline-block opacity-70 hover:opacity-100 text-berlin-red hover:text-berlin-red"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <ImSoundcloud />
+                  </a>
+                  <a
+                    href="https://twitter.com/annmehr"
+                    className="ml-2 inline-block opacity-70 hover:opacity-100 text-berlin-red hover:text-berlin-red"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <FaTwitter />
+                  </a>
+                </span>
+              }
+              eventLocations={[locations.yard1]}
+              className="ml-12"
+            />
+            <ProgramItem
+              dayStr="2024-05-25"
+              startTime="21:00"
+              endTime="23:00"
+              title={
+                <span className="inline-flex items-center">
+                  Manu +{" "}
+                  <a
+                    href="https://twitter.com/joakimhi"
+                    className="ml-2 inline-flex items-center opacity-70 hover:opacity-100 text-berlin-red hover:text-berlin-red"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    @blockravers <FaTwitter className="ml-2" />
+                  </a>
+                </span>
+              }
+              eventLocations={[locations.yard1]}
+              className="ml-12"
+            />
+            <ProgramItem
+              dayStr="2024-05-25"
+              endDayStr="2024-05-26"
+              startTime="23:00"
+              endTime="01:00"
+              title={
+                <span className="inline-flex items-center">
+                  Manuel{" "}
+                  <a
+                    href="https://soundcloud.com/umcharra"
+                    className="ml-2 inline-block opacity-70 hover:opacity-100 text-berlin-red hover:text-berlin-red"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <ImSoundcloud />
+                  </a>
+                </span>
+              }
+              eventLocations={[locations.yard1]}
+              className="ml-12"
             />
             <ProgramItem
               dayStr="2024-05-25"
