@@ -10,8 +10,11 @@ const Privacy = () => (
       <div className="text-justify decorate-links">
         <p className="mt-2">
           We are delighted that you have chosen to visit our website or take part
-          at one of our events. We take our data protection responsibilities with
-          the utmost seriousness and we have designed our website so that you may
+          at one of our events. We take our data protection responsibilities{" "}
+          <strong>
+            with the utmost seriousness
+          </strong>{" "}
+          and we have designed our website so that you may
           navigate and use our website without having to provide any data.
         </p>
         <p className="mt-2">
@@ -21,7 +24,7 @@ const Privacy = () => (
         </p>
         <h2 className="text-xl font-bold">How we use data</h2>
         <p className="mt-2">We may collect and process data that you provide to us for the purpose
-          of onboarding you as an attendee. This data may include:
+          of onboarding you as an attendee of one of our events. This data may include:
         </p>
         <ol>
           <li>Your email address; that&apos;s all we need.</li>
@@ -35,11 +38,19 @@ const Privacy = () => (
         <p className="mt-2">We use the following third party applications:</p>
         <ul>
           <li>
-            GitHub: used to host our websites through GitHub pages. GitHub might
+            GitHub is used to host our websites through GitHub pages. GitHub might
             see your IP address if you read this. <a
-            href="https://docs.github.com/en/site-policy/privacy-policies/github-privacy-statement"
-            target="_blank"
-            rel="noreferrer">GitHub Privacy Statement</a>.
+              href="https://docs.github.com/en/site-policy/privacy-policies/github-privacy-statement"
+              target="_blank"
+              rel="noreferrer">GitHub Privacy Statement</a>.
+          </li>
+          <li>
+            ZuPass is used to provide cryptographic credentials to allow you to access
+            our events. Therefore, Zupass is privileged to query your email address and
+            ticket status from ETHBerlin.{" "}
+            <a href="https://zupass.org/#/terms">
+              ZuPass Privacy Notice
+            </a>.
           </li>
         </ul>
         <h2 className="text-xl font-bold">Sharing your data</h2>
@@ -72,9 +83,9 @@ const Privacy = () => (
           under Regulation EU 2016/679 (General Data Protection Regulation or &apos;GDPR&apos;).
           We explain these below. You can find out more about the GDPR and your rights
           by accessing the <a
-          href="https://ec.europa.eu/info/law/law-topic/data-protection_en"
-          target="_blank"
-          rel="noreferrer">European Commission&apos;s website</a>.
+            href="https://ec.europa.eu/info/law/law-topic/data-protection_en"
+            target="_blank"
+            rel="noreferrer">European Commission&apos;s website</a>.
         </p>
         <p className="mt-2">
           You have a right to be informed about the processing of your personal
@@ -102,7 +113,7 @@ const Privacy = () => (
         </p>
         <p className="mt-2">
           You have a right to restrict processing of your personal information.
-          </p>
+        </p>
         <p className="mt-2">
           You also have the right to object to processing of your personal
           information under certain circumstances, such as where the processing is
@@ -131,7 +142,7 @@ const Privacy = () => (
         </p>
         <p className="mt-2">
           You also have a right to access information we hold about you.
-          </p>
+        </p>
         <p className="mt-2">
           You have the right to withdraw consent at any time by contacting
           us on the above details.
