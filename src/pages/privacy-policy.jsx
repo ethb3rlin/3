@@ -45,11 +45,11 @@ const Privacy = () => (
               rel="noreferrer">GitHub Privacy Statement</a>.
           </li>
           <li>
-            ZuPass is used to provide cryptographic credentials to allow you to access
+            Zupass is used to provide cryptographic credentials to allow you to access
             our events. Therefore, Zupass is privileged to query your email address and
             ticket status from ETHBerlin.{" "}
             <a href="https://zupass.org/#/terms">
-              ZuPass Privacy Notice
+              Zupass Privacy Notice
             </a>.
           </li>
         </ul>
