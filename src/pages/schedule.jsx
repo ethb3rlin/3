@@ -274,6 +274,14 @@ const Program = () => {
         setIsMapModalOpen(true);
       },
     },
+    yard0: {
+      name: "Yard 0",
+      handler: () => {
+        handleGroundFloor();
+        setActiveRoomClass("yard0");
+        setIsMapModalOpen(true);
+      },
+    },
     yard1: {
       name: "Yard 1",
       handler: () => {
@@ -287,14 +295,6 @@ const Program = () => {
       handler: () => {
         handleGroundFloor();
         setActiveRoomClass("yard2");
-        setIsMapModalOpen(true);
-      },
-    },
-    yard3: {
-      name: "Yard 3",
-      handler: () => {
-        handleGroundFloor();
-        setActiveRoomClass("yard3");
         setIsMapModalOpen(true);
       },
     },
@@ -375,14 +375,6 @@ const Program = () => {
       handler: () => {
         handleFifthFloor();
         setActiveRoomClass("cinema");
-        setIsMapModalOpen(true);
-      },
-    },
-    yard1: {
-      name: "Yard 1",
-      handler: () => {
-        handleGroundFloor();
-        setActiveRoomClass("yard1");
         setIsMapModalOpen(true);
       },
     },
@@ -729,7 +721,7 @@ const Program = () => {
               endDayStr="2024-05-26"
               endTime="01:00"
               title="DJs in Courtyard 1"
-              eventLocations={[locations.yard1]}
+              eventLocations={[locations.yard0]}
             />
             <ProgramItem
               dayStr="2024-05-25"
@@ -748,7 +740,7 @@ const Program = () => {
                   </a>
                 </span>
               }
-              eventLocations={[locations.yard1]}
+              eventLocations={[locations.yard0]}
               className="ml-12"
             />
             <ProgramItem
@@ -776,7 +768,7 @@ const Program = () => {
                   </a>
                 </span>
               }
-              eventLocations={[locations.yard1]}
+              eventLocations={[locations.yard0]}
               className="ml-12"
             />
             <ProgramItem
@@ -796,7 +788,7 @@ const Program = () => {
                   </a>
                 </span>
               }
-              eventLocations={[locations.yard1]}
+              eventLocations={[locations.yard0]}
               className="ml-12"
             />
             <ProgramItem
@@ -817,7 +809,7 @@ const Program = () => {
                   </a>
                 </span>
               }
-              eventLocations={[locations.yard1]}
+              eventLocations={[locations.yard0]}
               className="ml-12"
             />
             <ProgramItem
