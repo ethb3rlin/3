@@ -13,6 +13,25 @@ import secondFloor from "../images/secondFloor.png";
 import fifthFloor from "../images/fifthFloor.png";
 import ETHBerlin from "../components/ETHBerlin";
 import VenueMapModal from "../components/VenueMapModal";
+import austin from "../assets/people/workshops/austin.jpeg";
+import sergei from "../assets/people/workshops/sergei.jpeg";
+import tino from "../assets/people/workshops/tino.jpeg";
+import odysseas from "../assets/people/workshops/odysseas.jpeg";
+import greg from "../assets/people/workshops/greg.jpeg";
+import pedro from "../assets/people/workshops/pedro.jpeg";
+import richard from "../assets/people/workshops/richard.jpeg";
+import ivan from "../assets/people/workshops/ivan.jpeg";
+import ameen from "../assets/people/speakers/ameen.jpeg";
+import edmundedgar from "../assets/people/speakers/edmundedgar.jpeg";
+import fat from "../assets/people/speakers/fat.jpeg";
+import josh from "../assets/people/speakers/josh.jpeg";
+import kat from "../assets/people/speakers/kat.jpeg";
+import matthew from "../assets/people/speakers/matthew.jpeg";
+import mikhail from "../assets/people/speakers/mikhail.jpeg";
+import nick from "../assets/people/speakers/nick.jpeg";
+import peter from "../assets/people/speakers/peter.jpeg";
+import puja from "../assets/people/speakers/puja.jpeg";
+
 const currentDate = new Date();
 // const currentDate = new Date("2024-05-25T00:20:00+02:00");
 
@@ -396,7 +415,7 @@ const Program = () => {
 
           {/* Hacker Essentials vs Extravaganza */}
 
-          {/* <div
+          <div
             className={`flex items-center justify-center w-full sticky -top-1 py-4 text-center  ${
               isSticky ? "bg-white" : ""
             }`}
@@ -426,7 +445,7 @@ const Program = () => {
               </div>
               <div className="ml-3 text-red-300">Hacker Extravaganza</div>
             </label>
-          </div> */}
+          </div>
           <h2 className="text-xl font-bold font-ocra mt-4">Friday, May 24</h2>
           <p className="mt-4">
             <ul>
@@ -453,27 +472,30 @@ const Program = () => {
                 dayStr="2024-05-24"
                 startTime="16:30"
                 endTime="17:00"
-                title="Talk"
-                speakerName="TBA"
-                // photo={frederikHaga}
+                title="Talk: Title TBA"
+                speakerName="Fatemeh Fannizadeh (Swarm)"
+                photo={fat}
                 eventLocations={[]}
               />
               <SpeechItem
                 dayStr="2024-05-24"
                 startTime="17:00"
                 endTime="17:30"
-                title="Talk"
-                speakerName="TBA"
-                // photo={frederikHaga}
+                title="Talk: Building for Big V Value"
+                speakerName="Nick Almond (FactoryDAO)"
+                description={
+                  "Crypto was meant to be different. This was the technological frontier for a new world, away from the banks, centralised rent seeking and maximally extractive business models. So what happened? This talk lays out some home truths, discusses where we've gone wrong and what we can do to steer the industry into a better direction."
+                }
+                photo={nick}
                 eventLocations={[]}
               />
               <SpeechItem
                 dayStr="2024-05-24"
                 startTime="17:30"
                 endTime="18:00"
-                title="Talk"
-                speakerName="TBA"
-                // photo={frederikHaga}
+                title="Talk: Are there limits to the reach of US Sanctions laws?"
+                speakerName="Peter van Valkenburg (Coin Center)"
+                photo={peter}
                 eventLocations={[]}
               />{" "}
               <SpeechItem
@@ -489,7 +511,8 @@ const Program = () => {
                 dayStr="2024-05-24"
                 startTime="19:00"
                 endTime="23:59"
-                title="HACKING"
+                title="Hacking begins"
+                className={"font-bold italic"}
                 eventLocations={[]} // Location = everywhere
               />
               <ProgramItem
@@ -506,70 +529,127 @@ const Program = () => {
                 title="Dinner"
                 eventLocations={[locations.restaurant]}
               />
+              {isExtravaganza && (
+                <ProgramItem
+                  dayStr="2024-05-24"
+                  className={"text-berlin-red"}
+                  startTime="19:00"
+                  endTime="23:59"
+                  title="Art Exhibition: Co-Create"
+                  eventLocations={[]}
+                />
+              )}
               <SpeechItem
                 dayStr="2024-05-24"
-                startTime="20:00"
-                endTime="20:45"
-                title="Technical Workshop"
-                speakerName="TBA"
+                startTime="19:30"
+                endTime="20:15"
+                title="Technical Workshop: Build an Ethereum dApp in 40 mins"
+                speakerName="Austin Griffith (Ethereum Foundation)"
+                photo={austin}
                 eventLocations={[]}
-
-                // photo={jackieZhang}
-                // description={
-                //   <>
-                //     🪄 Would you like to wave your wand and speak order into the
-                //     data chaos as a Dune Wizard?
-                //     <br />
-                //     <br />
-                //     🤝 Dune is a crypto data analytics platform, where we are on a
-                //     mission to make crypto data accessible for all.
-                //     <br />
-                //     <br />
-                //     📊 In this workshop, we will walk through how to do crypto
-                //     data analysis on Dune in an open-source style!
-                //     <br />
-                //     <br />
-                //     🧙 Come join us and start your Dune Wizard journey!"
-                //   </>
-                // }
               />
               <SpeechItem
                 dayStr="2024-05-24"
-                startTime="20:45"
-                endTime="21:30"
-                title="Technical Workshop"
-                speakerName="TBA"
+                startTime="20:15"
+                endTime="21:00"
+                title="Technical Workshop: Re-inventing login with Sign-in-with-Ethereum"
+                speakerName="Pedro Gomes (WalletConnect)"
+                description={
+                  <>
+                    <div>
+                      We will learn how powerful SIWE can be used as a tool for
+                      building different use-cases such as identity,
+                      attestations, permissions and messaging. For example
+                      WalletConnect built this app called Web3Inbox to aggregate
+                      notifications for multiple dapps and it’s based on SIWE.
+                      Additionally there are other systems where you can use
+                      attestations to build roots of trust with SIWE that
+                      generate CACAOs (CAIP-74) to build dapps offchain. Finally
+                      we are working on Session Keys which also uses SIWE to
+                      empower key delegation for transaction signing for Smart
+                      Accounts
+                    </div>
+                  </>
+                }
+                photo={pedro}
+                eventLocations={[]}
+              />
+              <SpeechItem
+                dayStr="2024-05-24"
+                startTime="21:00"
+                endTime="21:45"
+                title="Technical Workshop: Integrating RPCh in your Dapp to privately connect to RPC endpoints
+"
+                speakerName="Tino Breddin (HOPR)"
                 description="TBA"
+                photo={tino}
+                eventLocations={[]}
+              />
+              <SpeechItem
+                dayStr="2024-05-24"
+                startTime="21:45"
+                endTime="22:30"
+                title="Technical Workshop: Secure communications with Waku"
+                speakerName="Sergei Tikhomirov (Waku)"
+                description="TBA"
+                photo={sergei}
+                eventLocations={[]}
+              />
+              <SpeechItem
+                dayStr="2024-05-24"
+                startTime="22:30"
+                endTime="23:15"
+                title="Technical Workshop: ZK vs TEE: Wat do (as a product builder)?"
+                speakerName="Odysseas (Phylax Systems), GregTheGreek (ChainSafe)"
+                photo={odysseas}
+                photo2={greg}
+                description={
+                  <>
+                    <div>
+                      This session delves into Trusted Execution Environments
+                      (TEEs) and Zero-Knowledge (ZK) for Ethereum product
+                      builders with limited technical depth in these areas. We
+                      will examine key considerations such as performance, trust
+                      assumptions, cost efficiency, and the complexity of
+                      integration to determine their suitability for privacy and
+                      verifiable computation in applications.
+                    </div>{" "}
+                    <br />
+                    <div>
+                      Participants will learn about the security
+                      vulnerabilities, scalability potential, and regulatory
+                      compliance aspects of each technology. The talk will also
+                      highlight the support available through developer
+                      ecosystems and the maturity of existing libraries and
+                      tools. By the end, attendees will be equipped to make
+                      informed decisions on which technology best meets their
+                      project's needs and understand the resources available for
+                      implementation.
+                    </div>
+                  </>
+                }
                 // photo={shumoChu}
                 eventLocations={[]}
               />
               <SpeechItem
                 dayStr="2024-05-24"
-                startTime="21:30"
-                endTime="22:15"
-                title="Technical Workshop"
-                speakerName="TBA"
-                description="TBA"
-                // photo={shumoChu}
-                eventLocations={[]}
-              />
-              <SpeechItem
-                dayStr="2024-05-24"
-                startTime="22:15"
-                endTime="23:00"
-                title="Technical Workshop"
-                speakerName="TBA"
-                description="TBA"
-                // photo={shumoChu}
-                eventLocations={[]}
-              />
-              <SpeechItem
-                dayStr="2024-05-24"
-                startTime="23:00"
-                endTime="23:45"
-                title="Technical Workshop"
-                speakerName="TBA"
-                description="TBA"
+                startTime="22:30"
+                endTime="23:15"
+                title="Technical Workshop: How to add ZKPs to your app (with Zupass)?"
+                speakerName="Richard Liu (0xPARC), Ivan Chub (0xPARC)"
+                photo={richard}
+                photo2={ivan}
+                description={
+                  <>
+                    <div>
+                      No prior circom or ZK experience needed for this workshop,
+                      where we'll run through a simple example of a
+                      sybil-resistant app that requests a "proof of ETHBerlin
+                      hacker visa". Hackers may receive a *cryptographic
+                      surprise* during this workshop.
+                    </div>
+                  </>
+                }
                 // photo={shumoChu}
                 eventLocations={[]}
               />
@@ -593,7 +673,8 @@ const Program = () => {
               dayStr="2024-05-25"
               startTime="00:00"
               endTime="23:59"
-              title="HACKING"
+              title="Hacking"
+              className={"font-bold italic"}
               eventLocations={[]}
             />
             <ProgramItem
@@ -603,12 +684,38 @@ const Program = () => {
               title="Breakfast"
               eventLocations={[locations.restaurant]}
             />
+            <SpeechItem
+              dayStr="2024-05-25"
+              startTime="11:00"
+              endTime="13:00"
+              title="Project Pitches / Feedback Sessions"
+              description="Are you stuck, looking for another team member or want feedback on your idea? Join this session to pitch your project on stage or learn more about the projects others are working on!"
+              eventLocations={[locations.lexis]}
+            />
+            {isExtravaganza && (
+              <ProgramItem
+                dayStr="2024-05-25"
+                startTime="11:00"
+                endTime="23:59"
+                className={"text-berlin-red"}
+                title="Art Exhibition: Co-Create"
+                eventLocations={[]}
+              />
+            )}
             <ProgramItem
               dayStr="2024-05-25"
               startTime="13:00"
               endTime="15:00"
               title="Lunch"
               eventLocations={[locations.restaurant]}
+            />
+            <ProgramItem
+              dayStr="2024-05-25"
+              startTime="14:00"
+              endTime="17:00"
+              title="Mentoring Expert Office Hours"
+              description="Check mentor area for detailed schedule!"
+              eventLocations={[]}
             />
             <ProgramItem
               dayStr="2024-05-25"
@@ -631,7 +738,7 @@ const Program = () => {
           </div>
           <h2 className="text-xl font-bold font-ocra">Sunday, May 26th</h2>
           <p className="mt-4">
-            Don't forget to submit your projects by 11:00 am Berlin time!
+            Don't forget to submit your projects by 11:30 am Berlin time!
           </p>
           <p className="mt-4">
             <ul>
@@ -639,7 +746,8 @@ const Program = () => {
                 dayStr="2024-05-26"
                 startTime="00:00"
                 endTime="11:00"
-                title="HACKING (Submission deadline at 11:30 am)"
+                title="Hacking (Submission deadline at 11:30 am)"
+                className={"font-bold italic"}
                 eventLocations={[]}
               />
               <ProgramItem
@@ -653,13 +761,14 @@ const Program = () => {
                 dayStr="2024-05-26"
                 startTime="11:30"
                 title="PROJECT SUBMISSION DEADLINE"
+                className={"font-bold italic"}
                 eventLocations={[]}
               />
               <ProgramItem
                 dayStr="2024-05-26"
                 startTime="12:00"
                 endTime="16:30"
-                title="JUDGING"
+                title="Hackathon Project Judging"
                 eventLocations={[]}
               />
               <ProgramItem
@@ -671,12 +780,70 @@ const Program = () => {
               />
               <ProgramItem
                 dayStr="2024-05-26"
-                startTime="13:00"
-                endTime="17:30"
-                title="Keynotes"
+                startTime="14:00"
+                title="Stage opening"
                 eventLocations={[]}
               />
               <SpeechItem
+                dayStr="2024-05-26"
+                startTime="14:05"
+                endTime="14:35"
+                title="Talk: Ethevacuations: Crypto in a humanitarian crisis"
+                speakerName={
+                  "Kat Young (EthEvacuations), Joshua Dávila (The Blockchain Socialist)"
+                }
+                photo={kat}
+                photo2={josh}
+                eventLocations={[]}
+              />
+              <SpeechItem
+                dayStr="2024-05-26"
+                startTime="14:40"
+                endTime="15:10"
+                title="Talk: Information flow control a.k.a. privacy is not the concept your are looking for"
+                speakerName={"Christopher Goes (Anoma)"}
+                eventLocations={[]}
+              />
+              <SpeechItem
+                dayStr="2024-05-26"
+                startTime="15:15"
+                endTime="15:45"
+                title="Talk: Anarchy, Truth and Justice"
+                speakerName={"Edmund Edgar (RealityETH)"}
+                photo={edmundedgar}
+                eventLocations={[]}
+              />
+              <SpeechItem
+                dayStr="2024-05-26"
+                startTime="15:50"
+                endTime="16:20"
+                title="Talk: The Silent Strings of Proof of Personhood"
+                speakerName={
+                  "Puja Ohlhaver (Lawyer & Researcher), Mikhail Nikulin (Idena)"
+                }
+                photo={puja}
+                photo2={mikhail}
+                eventLocations={[]}
+              />
+              <SpeechItem
+                dayStr="2024-05-26"
+                startTime="16:25"
+                endTime="16:55"
+                title="Talk: Title TBA"
+                speakerName={"Ameen Soleimani (0xbow)"}
+                photo={ameen}
+                eventLocations={[]}
+              />
+              <SpeechItem
+                dayStr="2024-05-26"
+                startTime="17:00"
+                endTime="17:30"
+                title="Talk: The Challenge of Decentralised Communication"
+                speakerName={"Matthew Hodgson (Matrix)"}
+                photo={matthew}
+                eventLocations={[]}
+              />
+              <ProgramItem
                 dayStr="2024-05-26"
                 startTime="17:30"
                 endTime="19:00"

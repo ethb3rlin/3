@@ -5,7 +5,8 @@ import React, { useEffect } from "react";
 import twitterLogo from "../assets/twitter.png";
 import githubLogo from "../assets/github.png";
 import team from "../assets/people/team";
-// import keynotes from "../assets/people/keynotes";
+import speakers from "../assets/people/speakers";
+import workshopHosts from "../assets/people/workshops";
 import ETHBerlin from "../components/ETHBerlin";
 import { TbWorldWww } from "react-icons/tb";
 
@@ -33,7 +34,7 @@ const Person = ({
       </div>
       <div className="text-2xl text-center mt-2">{name}</div>
       {organization && (
-        <div className="text-center text-berlin-red text-lg">
+        <div className="text-center text-lg">
           <a href={organization.url} rel="noopener noreferrer" target="_blank">
             {organization.name}
           </a>{" "}
@@ -131,9 +132,14 @@ const Contributors = () => {
     setTitle("Team");
   };
 
-  const handleKeynotes = () => {
-    setPeople([]);
-    setTitle("Keynotes");
+  const handleSpeakers = () => {
+    setPeople(speakers);
+    setTitle("Speakers");
+  };
+
+  const handleWorkshops = () => {
+    setPeople(workshopHosts);
+    setTitle("Workshops");
   };
 
   return (
@@ -153,11 +159,29 @@ const Contributors = () => {
           <button
             className={`${
               title === "Team" ? "text-berlin-red underline" : ""
-            } text-xl md:text-2xl mx-4 my-2 
+            } text-lg md:text-xl mx-4 my-2 
           `}
             onClick={handleTeam}
           >
             {"<<Team<<<<<<"}
+          </button>
+          <button
+            className={`${
+              title === "Speakers" ? "text-berlin-red underline" : ""
+            } text-lg md:text-xl mx-4 my-2 
+          `}
+            onClick={handleSpeakers}
+          >
+            {"<<Speakers<<<<<<"}
+          </button>
+          <button
+            className={`${
+              title === "Workshops" ? "text-berlin-red underline" : ""
+            } text-lg md:text-xl mx-4 my-2
+          `}
+            onClick={handleWorkshops}
+          >
+            {"<<Workshop<Hosts<<<<<"}
           </button>
           {/* <button
             className={`${
