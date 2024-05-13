@@ -57,6 +57,9 @@ export default function HTML(props) {
                     case 's':
                         window.location.href= "/schedule";
                         break;
+                    case 'v':
+                        window.location.href= "/venue";
+                        break;
                     case 'b':
                         window.location.href= "https://blog.dod.ngo/";
                         break;
