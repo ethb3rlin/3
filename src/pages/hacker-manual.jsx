@@ -43,7 +43,7 @@ const Hack = () => {
               </a>
             </li>
             <li>
-              Register your attendance on ZuPass with your ETHBerlin04 email
+              Register your attendance on Zupass with your ETHBerlin04 email
               address:{" "}
               <a
                 href="https://zupass.org"
