@@ -779,7 +779,7 @@ const Program = () => {
                 <span className="inline-flex items-center">
                   Manu +{" "}
                   <a
-                    href="https://twitter.com/joakimhi"
+                    href="https://twitter.com/blockravers"
                     className="ml-2 inline-flex items-center opacity-70 hover:opacity-100 text-berlin-red hover:text-berlin-red"
                     target="_blank"
                     rel="noopener noreferrer"
