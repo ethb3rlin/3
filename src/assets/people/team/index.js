@@ -66,7 +66,7 @@ export default [
     name: "Helena",
     image: require("./hels.jpeg"),
     maskImage: require("./hels-mask.jpeg"),
-    twitter: "https://twitter.com/helsoftroy",
+    twitter: "https://twitter.com/helsfoftroy",
   },
   {
     name: "Martin",
