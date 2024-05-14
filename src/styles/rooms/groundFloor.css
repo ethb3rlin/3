@@ -29,6 +29,18 @@
   );
 }
 
+.nodeCafe {
+  top: 0;
+  left: 0;
+  position: absolute;
+  opacity: 0.9;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  animation: blinker 1s linear infinite;
+  clip-path: polygon(86.5% 10%, 96% 5%, 99.5% 58%, 89% 58%);
+}
+
 .yard1 {
   top: 0;
   left: 0;

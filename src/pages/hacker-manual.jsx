@@ -558,7 +558,7 @@ const Hack = () => {
           handleCloseModal={handleCloseModal}
           activeMapName={"Ground Floor (#0)"}
           activeMap={groundFloor} // only ground floor
-          activeRoomClass={"yard0"}
+          activeRoomClass={"nodeCafe"}
         />
 
         <div className="flex justify-center"></div>
