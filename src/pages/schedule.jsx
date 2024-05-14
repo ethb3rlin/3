@@ -885,9 +885,9 @@ const Program = () => {
                 endTime="14:35"
                 title="Talk: Ethevacuations: Crypto in a humanitarian crisis"
                 speakerName={
-                  "Kat Young (EthEvacuations), Joshua Dávila (The Blockchain Socialist)"
+                  "Kat (EthEvacuations), Joshua Dávila (The Blockchain Socialist)"
                 }
-                description="Kat Young recently left her crypto job to start Ethevacuations when the ongoing conflict in Gaza began as she learned that crypto was a useful tool to help those suffering under the bombardment. Kat will be interviewed by Joshua Dávila to talk about her experience and the reality of using crypto to help those evacuate from Gaza during one of the most difficult humanitarian crises imaginable. Crypto was made for this and there are important lessons to be had."
+                description="Kat recently left her crypto job to start Ethevacuations when the ongoing conflict in Gaza began as she learned that crypto was a useful tool to help those suffering under the bombardment. Kat will be interviewed by Joshua Dávila to talk about her experience and the reality of using crypto to help those evacuate from Gaza during one of the most difficult humanitarian crises imaginable. Crypto was made for this and there are important lessons to be had."
                 photo={kat}
                 photo2={josh}
                 eventLocations={[]}

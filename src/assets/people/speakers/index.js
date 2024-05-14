@@ -89,7 +89,7 @@ export default [
     twitter: "https://twitter.com/TBSocialist",
   },
   {
-    name: "Kat Young",
+    name: "Kat",
     organization: {
       name: "EthEvacuations",
       url: "https://ethevacuations.xyz/",
