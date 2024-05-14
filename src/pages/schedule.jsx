@@ -631,8 +631,8 @@ const Program = () => {
               />
               <SpeechItem
                 dayStr="2024-05-24"
-                startTime="22:30"
-                endTime="23:15"
+                startTime="23:15"
+                endTime="23:59"
                 title="Technical Workshop: How to add ZKPs to your app (with Zupass)?"
                 speakerName="Richard Liu (0xPARC), Ivan Chub (0xPARC)"
                 photo={richard}
