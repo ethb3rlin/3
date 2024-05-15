@@ -67,7 +67,7 @@
     @apply cursor-pointer;
   }
   li {
-    @apply list-disc list-inside mb-3 ml-4;
+    @apply list-disc list-inside mb-1 ml-4;
   }
   .blur-text {
     color: transparent;

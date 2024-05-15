@@ -19,16 +19,24 @@
   );
 }
 
-.persius {
+.wellnessRoom {
   top: 0;
   left: 0;
   position: absolute;
   opacity: 0.9;
   width: 100%;
   height: 100%;
-  background-color: red;
+  background-color: black;
   animation: blinker 1s linear infinite;
-  clip-path: polygon(50.5% 34%, 58.5% 28%, 58.5% 65%, 50.5% 65%);
+  clip-path: polygon(
+    49% 34%,
+    53% 30.1%,
+    57.5% 27%,
+    57.5% 72%,
+    65.5% 72%,
+    65.5% 77%,
+    49% 77%
+  );
 }
 
 .parlour {
@@ -52,9 +60,9 @@
   opacity: 0.9;
   width: 100%;
   height: 100%;
-  background-color: red;
+  background-color: black;
   animation: blinker 1s linear infinite;
-  clip-path: polygon(88% 13%, 96.5% 8%, 99% 45%, 99% 54%, 91% 54%);
+  clip-path: polygon(86% 11%, 96.5% 5.5%, 99.5% 59%, 89% 58%);
 }
 
 .cinebar {
@@ -64,9 +72,9 @@
   opacity: 0.9;
   width: 100%;
   height: 100%;
-  background-color: red;
-  animation: blinker 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
-  clip-path: polygon(95% 55%, 99.5% 55%, 99.5% 88%, 95% 88%);
+  background-color: black;
+  animation: blinker 1s linear infinite;
+  clip-path: polygon(94.5% 58%, 99.5% 58%, 99.5% 97%, 94.5% 97%);
 }
 
 .cinebar:hover {

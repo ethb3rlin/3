@@ -33,6 +33,10 @@ const Sidebar = ({ className }) => {
         {" "}
         &lt;&lt;<span className="text-berlin-red">V</span>&lt;ENUE
       </a>
+      <a className="my-2" href="/experiences">
+        {" "}
+        &lt;&lt;<span className="text-berlin-red">E</span>&lt;XPERIENCES
+      </a>
       <a className="my-2" href="/art">
         {" "}
         &lt;&lt;<span className="text-berlin-red">A</span>&lt;RT

@@ -32,18 +32,16 @@
   opacity: 0.8;
 }
 
-.peter {
+.library {
+  top: 0;
+  left: 0;
   position: absolute;
-  clip-path: polygon(87.5% 81%, 91.5% 81%, 91.5% 94%, 87.5% 94%);
-  opacity: 0.5;
-  background-color: darkorange;
+  opacity: 0.9;
   width: 100%;
   height: 100%;
-}
-
-.peter:hover {
-  cursor: pointer;
-  opacity: 0.8;
+  background-color: black;
+  animation: blinker 1s linear infinite;
+  clip-path: polygon(86.5% 10%, 96% 5%, 99.5% 58%, 89% 58%);
 }
 
 .else {
