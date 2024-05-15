@@ -118,7 +118,7 @@ const Hack = () => {
             Brandt" (BER) and is well connected with railway. You can take a
             train from European cities such as Stockholm or Paris to travel with
             the convenience of comfortable high-speed trains with internet
-            access, avoid the long security lines, missing luggages, and
+            access, avoid the long security lines, missing luggage, and
             decrease your CO2 footprint. Check the{" "}
             <a
               href="https://www.bahn.com/en"
@@ -532,7 +532,7 @@ const Hack = () => {
             shared.
           </p>
           <p>
-            You might also see the mentors througout the venue. They'll be
+            You might also see the mentors throughout the venue. They'll be
             wearing a button/badge on their shirt saying "Mentor". They're all
             very friendly so don't hesitate to ask them a question or get their
             feedback on something.
