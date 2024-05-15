@@ -276,6 +276,14 @@ const Program = () => {
         setIsMapModalOpen(true);
       },
     },
+    nodeCafe: {
+      name: "Node Cafe",
+      handler: () => {
+        handleGroundFloor();
+        setActiveRoomClass("nodeCafe");
+        setIsMapModalOpen(true);
+      },
+    },
     yard0: {
       name: "Yard 0",
       handler: () => {
@@ -759,7 +767,7 @@ const Program = () => {
               endTime="17:00"
               title="Mentoring Expert Office Hours"
               description="Check mentor area for detailed schedule!"
-              eventLocations={[]} //TODO: node cafe
+              eventLocations={[locations.nodeCafe]} //TODO: node cafe
             />
             <ProgramItem
               dayStr="2024-05-25"
