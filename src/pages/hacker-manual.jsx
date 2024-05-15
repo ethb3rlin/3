@@ -260,7 +260,7 @@ const Hack = () => {
             >
               zupass.org
             </a>{" "}
-            and sing up (or log in) with the same email address you used to
+            and sign up (or log in) with the same email address you used to
             register for the hackathon. You will find an active ETHBerlin04
             subscription in your account.
           </p>
