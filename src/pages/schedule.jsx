@@ -332,6 +332,14 @@ const Program = () => {
         setIsMapModalOpen(true);
       },
     },
+    mckinsey: {
+      name: "McKinsey",
+      handler: () => {
+        handleFirstFloor();
+        setActiveRoomClass("mckinsey");
+        setIsMapModalOpen(true);
+      },
+    },
     communitySpace1: {
       name: "First Floor Community Space",
       handler: () => {
@@ -918,7 +926,7 @@ const Program = () => {
                 startTime="12:00"
                 endTime="16:30"
                 title="Hackathon Project Judging"
-                eventLocations={[]} // TODO McKinsey Space (1st floor to the left)
+                eventLocations={[locations.mckinsey]} // TODO McKinsey Space (1st floor to the left)
               />
               <ProgramItem
                 dayStr="2024-05-26"
