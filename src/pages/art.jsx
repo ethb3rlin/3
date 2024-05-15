@@ -19,7 +19,7 @@ const Impressum = () => {
         <div className="mb-8">
           <em>An exhibition by Department of Decentralization and Refraction</em>
 
-          <p>
+          <p className="mt-4">
             Public entrance and talks: Saturday, May 25th, 2024, from 11:00 to 17:00
             <button
               className={"font-bold  text-berlin-red text-sm"}
@@ -33,6 +33,14 @@ const Impressum = () => {
               <span className="underline">Wildenbruch</span>
             </button>
           </p>
+          <p>
+          </p>
+          Tickets: <a
+            href="https://visas.ethberlin.org/ethberlin/art"
+            target="_blank"
+            rel="noreferrer noopener">
+            visas.ethberlin.org/ethberlin/art
+          </a>
           <p>
             In the history of media, sound, and related image-based practices, hardly any
             city in the world has been as impactful in the concept of collaborative
