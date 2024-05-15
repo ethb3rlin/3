@@ -472,7 +472,7 @@ const Program = () => {
                 title="Talk: Title TBA"
                 speakerName="Fatemeh Fannizadeh (Swarm)"
                 photo={fat}
-                eventLocations={[]}
+                eventLocations={[locations.lexis]}
               />
               <SpeechItem
                 dayStr="2024-05-24"
@@ -484,7 +484,7 @@ const Program = () => {
                   "Crypto was meant to be different. This was the technological frontier for a new world, away from the banks, centralised rent seeking and maximally extractive business models. So what happened? This talk lays out some home truths, discusses where we've gone wrong and what we can do to steer the industry into a better direction."
                 }
                 photo={nick}
-                eventLocations={[]}
+                eventLocations={[locations.lexis]}
               />
               <SpeechItem
                 dayStr="2024-05-24"
@@ -494,7 +494,7 @@ const Program = () => {
                 description="The US Treasury's decision to sanction Tornado Cash, including the immutable pool contracts, has set off a wave of criminal and civil litigation. Do these sanctions go too far, can similar sanctions be used to effectively outlaw crypto all together, and how can we fight back?"
                 speakerName="Peter van Valkenburg (Coin Center)"
                 photo={peter}
-                eventLocations={[]}
+                eventLocations={[locations.lexis]}
               />{" "}
               <SpeechItem
                 dayStr="2024-05-24"
@@ -503,7 +503,7 @@ const Program = () => {
                 title="Opening Ceremony"
                 speakerName="TBA"
                 // photo={gillordPisas}
-                eventLocations={[]}
+                eventLocations={[locations.lexis]}
               />
               <ProgramItem
                 dayStr="2024-05-24"
@@ -518,7 +518,7 @@ const Program = () => {
                 startTime="19:00"
                 endTime="19:30"
                 title="Hacker Team Finding Session"
-                eventLocations={[]}
+                eventLocations={[locations.lexis]}
               />
               <ProgramItem
                 dayStr="2024-05-24"
@@ -534,7 +534,7 @@ const Program = () => {
                   startTime="19:00"
                   endTime="23:59"
                   title="Art Exhibition: Co-Create"
-                  eventLocations={[]}
+                  eventLocations={[locations.wildenbruch]}
                 />
               )}
               <SpeechItem
@@ -544,7 +544,7 @@ const Program = () => {
                 title="Technical Workshop: Build an Ethereum dApp in 40 mins"
                 speakerName="Austin Griffith (Ethereum Foundation)"
                 photo={austin}
-                eventLocations={[]}
+                eventLocations={[locations.lexis]}
               />
               <SpeechItem
                 dayStr="2024-05-24"
@@ -570,7 +570,7 @@ const Program = () => {
                   </>
                 }
                 photo={pedro}
-                eventLocations={[]}
+                eventLocations={[locations.lexis]}
               />
               <SpeechItem
                 dayStr="2024-05-24"
@@ -581,7 +581,7 @@ const Program = () => {
                 speakerName="Tino Breddin (HOPR)"
                 description="TBA"
                 photo={tino}
-                eventLocations={[]}
+                eventLocations={[locations.lexis]}
               />
               <SpeechItem
                 dayStr="2024-05-24"
@@ -591,7 +591,7 @@ const Program = () => {
                 speakerName="Sergei Tikhomirov (Waku)"
                 description="TBA"
                 photo={sergei}
-                eventLocations={[]}
+                eventLocations={[locations.lexis]}
               />
               <SpeechItem
                 dayStr="2024-05-24"
@@ -627,7 +627,7 @@ const Program = () => {
                   </>
                 }
                 // photo={shumoChu}
-                eventLocations={[]}
+                eventLocations={[locations.lexis]}
               />
               <SpeechItem
                 dayStr="2024-05-24"
@@ -649,7 +649,7 @@ const Program = () => {
                   </>
                 }
                 // photo={shumoChu}
-                eventLocations={[]}
+                eventLocations={[locations.lexis]}
               />
               <ProgramItem
                 dayStr="2024-05-24"
@@ -697,8 +697,52 @@ const Program = () => {
                 endTime="23:59"
                 className={"text-berlin-red"}
                 title="Art Exhibition: Co-Create"
-                eventLocations={[]}
+                eventLocations={[locations.wildenbruch]}
               />
+            )}
+            {isExtravaganza && (
+              <SpeechItem
+              dayStr="2024-05-25"
+              startTime="12:00"
+              endTime="13:20"
+                className={"text-berlin-red"}
+                title="Panel - Decentralized Art Organisation"
+              speakerName="Vincent Trasov, Benny Giang"
+              // photo={richard}
+              // photo2={ivan}
+              description={
+                <>
+                  <div>
+                  Panel - Decentralized Art Organisation: With Vincent Trasov and
+                  Benny Giang; Moderated by Stina Gustafsson.
+                  </div>
+                </>
+              }
+              // photo={shumoChu}
+              eventLocations={[locations.wildenbruch]}
+            />
+            )}
+            {isExtravaganza && (
+              <SpeechItem
+              dayStr="2024-05-25"
+              startTime="13:30"
+              endTime="14:50"
+                className={"text-berlin-red"}
+                title="Panel - Art after NFTs"
+              speakerName="Joan Heemskerk, Billy Rennekamp"
+              // photo={richard}
+              // photo2={ivan}
+              description={
+                <>
+                  <div>
+                  Panel - Art after NFTs: With Joan Heemskerk and Billy Rennekamp;
+                  Moderated by María Paula Fernández.
+                  </div>
+                </>
+              }
+              // photo={shumoChu}
+              eventLocations={[locations.wildenbruch]}
+            />
             )}
             <ProgramItem
               dayStr="2024-05-25"
@@ -713,7 +757,7 @@ const Program = () => {
               endTime="17:00"
               title="Mentoring Expert Office Hours"
               description="Check mentor area for detailed schedule!"
-              eventLocations={[]}
+              eventLocations={[]} //TODO: node cafe
             />
             <ProgramItem
               dayStr="2024-05-25"
@@ -864,7 +908,7 @@ const Program = () => {
                 startTime="12:00"
                 endTime="16:30"
                 title="Hackathon Project Judging"
-                eventLocations={[]}
+                eventLocations={[]} // TODO McKinsey Space (1st floor to the left)
               />
               <ProgramItem
                 dayStr="2024-05-26"
@@ -877,7 +921,7 @@ const Program = () => {
                 dayStr="2024-05-26"
                 startTime="14:00"
                 title="Stage opening"
-                eventLocations={[]}
+                eventLocations={[locations.lexis]}
               />
               <SpeechItem
                 dayStr="2024-05-26"
@@ -890,7 +934,7 @@ const Program = () => {
                 description="Kat recently left her crypto job to start Ethevacuations when the ongoing conflict in Gaza began as she learned that crypto was a useful tool to help those suffering under the bombardment. Kat will be interviewed by Joshua Dávila to talk about her experience and the reality of using crypto to help those evacuate from Gaza during one of the most difficult humanitarian crises imaginable. Crypto was made for this and there are important lessons to be had."
                 photo={kat}
                 photo2={josh}
-                eventLocations={[]}
+                eventLocations={[locations.lexis]}
               />
               <SpeechItem
                 dayStr="2024-05-26"
@@ -898,19 +942,19 @@ const Program = () => {
                 endTime="15:10"
                 title="Talk: Information flow control a.k.a. privacy is not the concept your are looking for"
                 speakerName={"Christopher Goes (Anoma)"}
-                eventLocations={[]}
+                eventLocations={[locations.lexis]}
               />
               <SpeechItem
                 dayStr="2024-05-26"
                 startTime="15:15"
                 endTime="15:45"
                 title="Talk: Anarchy, Truth and Justice"
-                description={`We are building systems that resist coercion and promote freedom. We are not the first people in history to try that, so what happened before? 
+                description={`We are building systems that resist coercion and promote freedom. We are not the first people in history to try that, so what happened before?
 This talk will look at some historical attempts to create systems and societies that do not depend on government or institutional power, from the Diggers to the Free Software movement.
 Then we will look at tools and techniques we can use to govern and sustain crypto-economic systems and talk about how to increase their impact and protect them against bribery, cooption and destruction.`}
                 speakerName={"Edmund Edgar (RealityETH)"}
                 photo={edmundedgar}
-                eventLocations={[]}
+                eventLocations={[locations.lexis]}
               />
               <SpeechItem
                 dayStr="2024-05-26"
@@ -954,7 +998,7 @@ Then we will look at tools and techniques we can use to govern and sustain crypt
                 }
                 photo={puja}
                 photo2={mikhail}
-                eventLocations={[]}
+                eventLocations={[locations.lexis]}
               />
               <SpeechItem
                 dayStr="2024-05-26"
@@ -963,7 +1007,7 @@ Then we will look at tools and techniques we can use to govern and sustain crypt
                 title="Talk: Title TBA"
                 speakerName={"Ameen Soleimani (0xbow)"}
                 photo={ameen}
-                eventLocations={[]}
+                eventLocations={[locations.lexis]}
               />
               <SpeechItem
                 dayStr="2024-05-26"
@@ -993,21 +1037,21 @@ Then we will look at tools and techniques we can use to govern and sustain crypt
                 }
                 speakerName={"Matthew Hodgson (Matrix)"}
                 photo={matthew}
-                eventLocations={[]}
+                eventLocations={[locations.lexis]}
               />
               <ProgramItem
                 dayStr="2024-05-26"
                 startTime="17:30"
                 endTime="19:00"
                 title="Closing Ceremony"
-                eventLocations={[]}
+                eventLocations={[locations.lexis]}
               />
               <ProgramItem
                 dayStr="2024-05-26"
                 startTime="19:00"
                 endTime="20:00"
                 title="Closing aperitif, snacks & mingle with DJ"
-                eventLocations={[]}
+                eventLocations={[locations.yard0]}
               />
               <ProgramItem
                 dayStr="2024-05-26"
