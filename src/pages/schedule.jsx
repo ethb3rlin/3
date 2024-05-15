@@ -56,12 +56,13 @@ const ProgramItem = ({
 
   return (
     <li
-      className={`${currentDate > endDate
-        ? "text-gray-700"
-        : currentDate > startDate
+      className={`${
+        currentDate > endDate
+          ? "text-gray-700"
+          : currentDate > startDate
           ? "font-bold animate-pulse-faster"
           : className
-        } list-none text-lg`}
+      } list-none text-lg`}
     >
       <span className="fake-bold">
         <span className="text-berlin-red opacity-50">{"> "}</span>
@@ -70,12 +71,13 @@ const ProgramItem = ({
       {title}{" "}
       {eventLocations.map((loc) => (
         <button
-          className={`${currentDate > endDate
-            ? "text-gray-700"
-            : currentDate > startDate
+          className={`${
+            currentDate > endDate
+              ? "text-gray-700"
+              : currentDate > startDate
               ? "font-bold animate-pulse-faster"
               : "text-berlin-red"
-            } text-sm`}
+          } text-sm`}
           onClick={() => {
             loc.handler();
           }}
@@ -93,6 +95,7 @@ const ProgramItem = ({
 };
 
 const SpeechItem = ({
+  className,
   title,
   eventLocations,
   dayStr,
@@ -125,14 +128,16 @@ const SpeechItem = ({
         endDayStr={endDayStr}
         startTime={startTime}
         endTime={endTime}
+        className={className}
       />
       <div
-        className={`ml-8 -mt-2 mb-4 text-sm ${currentDate > endDate
-          ? "text-gray-700"
-          : currentDate > startDate
+        className={`ml-8 -mt-2 mb-4 text-sm ${
+          currentDate > endDate
+            ? "text-gray-700"
+            : currentDate > startDate
             ? "font-bold animate-pulse-faster"
             : ""
-          }`}
+        } ${className}`}
       >
         <span>
           <span className="text-xs text-berlin-red opacity-50 mr-0.5">
@@ -142,8 +147,9 @@ const SpeechItem = ({
         </span>
         <button
           onClick={() => setIsModalOpen(true)}
-          className={`underline ${currentDate > endDate ? "text-gray-700" : "text-gray-500"
-            } mx-2`}
+          className={`underline ${
+            currentDate > endDate ? "text-gray-700" : "text-gray-500"
+          } mx-2`}
         >
           More Info
         </button>
@@ -334,11 +340,11 @@ const Program = () => {
         setIsMapModalOpen(true);
       },
     },
-    wildenbruch: {
-      name: "Wildenbruch",
+    artExhibition: {
+      name: "Art Exhibition",
       handler: () => {
         handleFifthFloor();
-        setActiveRoomClass("wildenbruch");
+        setActiveRoomClass("artExhibition");
         setIsMapModalOpen(true);
       },
     },
@@ -409,8 +415,9 @@ const Program = () => {
           {/* Hacker Essentials vs Extravaganza */}
 
           <div
-            className={`flex items-center justify-center w-full sticky -top-1 py-4 text-center  ${isSticky ? "bg-white" : ""
-              }`}
+            className={`flex items-center justify-center w-full sticky -top-1 py-4 text-center  ${
+              isSticky ? "bg-white" : ""
+            }`}
             ref={toggleRef}
           >
             <label for="toogleA" className="flex items-center cursor-pointer">
@@ -423,14 +430,16 @@ const Program = () => {
                   onChange={() => setIsExtravaganza((prev) => !prev)}
                 />
                 <div
-                  className={`w-10 h-4 ${isExtravaganza ? "bg-red-500" : "bg-gray-400"
-                    } rounded-full shadow-inner`}
+                  className={`w-10 h-4 ${
+                    isExtravaganza ? "bg-red-500" : "bg-gray-400"
+                  } rounded-full shadow-inner`}
                 ></div>
                 <div
-                  className={`absolute w-6 h-6 rounded-full shadow -left-1 -top-1 transition ${isExtravaganza
-                    ? "translate-x-full bg-red-300"
-                    : "bg-gray-200"
-                    }`}
+                  className={`absolute w-6 h-6 rounded-full shadow -left-1 -top-1 transition ${
+                    isExtravaganza
+                      ? "translate-x-full bg-red-300"
+                      : "bg-gray-200"
+                  }`}
                 ></div>
               </div>
               <div className="ml-3 text-red-300">Hacker Extravaganza</div>
@@ -527,7 +536,7 @@ const Program = () => {
                   startTime="19:00"
                   endTime="23:59"
                   title="Art Exhibition: Co-Create"
-                  eventLocations={[locations.wildenbruch]}
+                  eventLocations={[locations.artExhibition]}
                 />
               )}
               <SpeechItem
@@ -690,7 +699,7 @@ const Program = () => {
                 endTime="23:59"
                 className={"text-berlin-red"}
                 title="Art Exhibition: Co-Create"
-                eventLocations={[locations.wildenbruch]}
+                eventLocations={[locations.artExhibition]}
               />
             )}
             {isExtravaganza && (
@@ -706,13 +715,13 @@ const Program = () => {
                 description={
                   <>
                     <div>
-                      Panel - Decentralized Art Organisation: With Vincent Trasov and
-                      Benny Giang; Moderated by Stina Gustafsson.
+                      Panel - Decentralized Art Organisation: With Vincent
+                      Trasov and Benny Giang; Moderated by Stina Gustafsson.
                     </div>
                   </>
                 }
                 // photo={shumoChu}
-                eventLocations={[locations.wildenbruch]}
+                eventLocations={[locations.artExhibition]}
               />
             )}
             {isExtravaganza && (
@@ -728,13 +737,13 @@ const Program = () => {
                 description={
                   <>
                     <div>
-                      Panel - Art after NFTs: With Joan Heemskerk and Billy Rennekamp;
-                      Moderated by María Paula Fernández.
+                      Panel - Art after NFTs: With Joan Heemskerk and Billy
+                      Rennekamp; Moderated by María Paula Fernández.
                     </div>
                   </>
                 }
                 // photo={shumoChu}
-                eventLocations={[locations.wildenbruch]}
+                eventLocations={[locations.artExhibition]}
               />
             )}
             <ProgramItem
