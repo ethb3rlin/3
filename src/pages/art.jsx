@@ -2,6 +2,13 @@ import React from "react";
 import Layout from "../components/Layout";
 
 const Impressum = () => {
+  const [isMapModalOpen, setIsMapModalOpen] = React.useState(false);
+
+  const handleCloseModal = (e) => {
+    e.stopPropagation();
+    setIsMapModalOpen(false);
+  };
+
   return (
     <Layout>
       <div className="textbox decorate-links">
@@ -14,6 +21,17 @@ const Impressum = () => {
 
           <p>
             Public entrance and talks: Saturday, May 25th, 2024, from 11:00 to 17:00
+            <button
+              className={"font-bold  text-berlin-red text-sm"}
+              onClick={() => setIsMapModalOpen(true)}
+            >
+              <span className="align-middle">
+                <span class="material-symbols-outlined text-sm mr-0.5 ml-1">
+                  my_location
+                </span>
+              </span>
+              <span className="underline">Wildenbruch</span>
+            </button>
           </p>
           <p>
             In the history of media, sound, and related image-based practices, hardly any
@@ -107,6 +125,14 @@ const Impressum = () => {
 
           </p>
         </div>
+
+        <VenueMapModal
+          isOpen={isMapModalOpen}
+          handleCloseModal={handleCloseModal}
+          activeMapName={"Top Floor (#5)"}
+          activeMap={fifthFloor} // only ground floor
+          activeRoomClass={"wildenbruch"}
+        />
       </div>
     </Layout>
   );
