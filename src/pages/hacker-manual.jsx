@@ -118,8 +118,8 @@ const Hack = () => {
             Brandt" (BER) and is well connected with railway. You can take a
             train from European cities such as Stockholm or Paris to travel with
             the convenience of comfortable high-speed trains with internet
-            access, avoid the long security lines, missing luggage, and
-            decrease your CO2 footprint. Check the{" "}
+            access, avoid the long security lines, missing luggage, and decrease
+            your CO2 footprint. Check the{" "}
             <a
               href="https://www.bahn.com/en"
               rel="noreferrer noopener"
@@ -457,11 +457,17 @@ const Hack = () => {
             an ode to ETHBerlin being powered by many awesome open-source
             projects. So for this one we invite you to go meta by building
             contributions that improve the ETHBerlin experience itself! Projects
-            eligible for this award can either pick from our wishlist{" "}
-            <i>(coming soon™)</i> of contributions, or can build an entirely new
-            thing that they consider to be a positive impact for future versions
-            of ETHBerlin. The winner of this track will receive{" "}
-            <strong>4,000 DAI</strong>.
+            eligible for this award can either pick from our{" "}
+            <a
+              href="https://office.ethberlin.org/pad/#/2/pad/view/nfLDua4xIU1WiiX+x82icF175fXVv3Ge1Cjpicjq1RE/embed/"
+              target="_blank"
+              rel="noreferrer noopener"
+            >
+              wishlist
+            </a>{" "}
+            of contributions, or can build an entirely new thing that they
+            consider to be a positive impact for future versions of ETHBerlin.
+            The winner of this track will receive <strong>4,000 DAI</strong>.
           </div>
           <h4 className="text-l mt-4 font-bold">The Hacker's Choice Award</h4>
           <div className="mt-2">
