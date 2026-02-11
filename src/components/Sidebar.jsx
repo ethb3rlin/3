@@ -53,7 +53,7 @@ const Sidebar = ({ className, hideLogo }) => {
           join our{" "}
           <a
             className="underline"
-            href="https://matrix.to/#/%23ethberlin:matrix.org"
+            href="https://matrix.to/#/%23ethberlin:dod.ngo"
             target="_blank"
             rel="noreferrer"
           >

@@ -24,15 +24,16 @@ const decentralization = () => (
           <span className="fake-bold">ETHBerlin (2018):</span> Hackathon,
           conference, and the first event that ran almost entirely using
           decentralized applications:{" "}
-          <a href="https://ethberlin.com" target="_blank">
-            ethberlin.com
+          <a href="https://2018.ethberlin.org" target="_blank">
+            2018.ethberlin.org
           </a>
         </li>
         <li>
           <span className="fake-bold">GoerliCon 0 (2019): </span>The Ethereum
           testnet and infrastructure conference where the Goerli Testnet was
-          launched live on stage: <a href="https://goerli.net/" target="_blank">
-            goerli.net
+          launched live on stage:{" "}
+          <a href="https://goerli.dod.ngo/" target="_blank">
+            goerli.dod.ngo
           </a>
         </li>
         <li>
@@ -57,8 +58,8 @@ const decentralization = () => (
         <li>
           <span className="fake-bold">ETHBerlin ZWEI (2019): </span>hackathon,
           conference, and cultural festival, second edition:{" "}
-          <a href="https://ethberlinzwei.com" target="_blank">
-            ethberlinzwei.com
+          <a href="https://2019.ethberlin.org" target="_blank">
+            2019.ethberlin.org
           </a>
         </li>
         <li>
@@ -93,8 +94,8 @@ const decentralization = () => (
         <li>
           <span className="fake-bold">ETHBerlin³ (2022): </span>hackathon,
           conference, and cultural festival, third edition:{" "}
-          <a href="https://ethberlin.ooo" target="_blank">
-            ethberlin.ooo
+          <a href="https://2022.ethberlin.org" target="_blank">
+            2022.ethberlin.org
           </a>
         </li>
       </ul>

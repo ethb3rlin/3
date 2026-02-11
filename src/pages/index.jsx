@@ -162,7 +162,7 @@ const Home = () => {
             join our{" "}
             <a
               className="underline"
-              href="https://matrix.to/#/%23ethberlin:matrix.org"
+              href="https://matrix.to/#/%23ethberlin:dod.ngo"
               target="_blank"
               rel="noreferrer"
             >
@@ -289,13 +289,13 @@ const Home = () => {
       >
         <a
           className="mx-4 my-2 sm:ml-8 text-berlin-yellow"
-          href="https://blog.ethberlin.ooo"
+          href="https://blog.2022.ethberlin.org"
         >
           (b)log
         </a>
         <a
           className="mx-4 my-2 sm:ml-8 text-berlin-yellow"
-          href="/decentralization"
+          href="https://dod.ngo"
         >
           department of (d)ecentralization
         </a>

@@ -32,7 +32,7 @@ const Hack = () => (
           redeem it before it expires
         </a>! Once, you redeemed your ticket,
         {" "}
-        <a href="https://matrix.to/#/%23ethberlin:matrix.org" target="_blank">
+        <a href="https://matrix.to/#/%23ethberlin:dod.ngo" target="_blank">
           join the official matrix space
         </a>, and read on!
       </p>

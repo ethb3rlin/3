@@ -40,13 +40,13 @@ export default function HTML(props) {
                   window.location.href= "/contact";
                 }
                 else if (e.key == 'd' || e.key == 'D') {
-                  window.location.href= "/decentralization";
+                  window.location.href= "https://dod.ngo";
                 }
                 else if (e.key == 'o' || e.key == 'O') {
                   window.location.href= "/code-of-conduct";
                 }
                 else if (e.key == 'b' || e.key == 'B') {
-                  window.location.href= "https://blog.ethberlin.ooo";
+                  window.location.href= "https://blog.2022.ethberlin.org";
                 }
                 else if (e.key == 'v' || e.key == 'V') {
                   window.location.href= "/venue";
