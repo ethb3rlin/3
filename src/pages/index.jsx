@@ -289,7 +289,7 @@ const Home = () => {
       >
         <a
           className="mx-4 my-2 sm:ml-8 text-berlin-yellow"
-          href="https://blog.2022.ethberlin.org"
+          href="https://dod.ngo/blog"
         >
           (b)log
         </a>

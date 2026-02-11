@@ -46,7 +46,7 @@ export default function HTML(props) {
                   window.location.href= "/code-of-conduct";
                 }
                 else if (e.key == 'b' || e.key == 'B') {
-                  window.location.href= "https://blog.2022.ethberlin.org";
+                  window.location.href= "https://dod.ngo/blog";
                 }
                 else if (e.key == 'v' || e.key == 'V') {
                   window.location.href= "/venue";
