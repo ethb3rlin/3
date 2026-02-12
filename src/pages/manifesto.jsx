@@ -12,11 +12,11 @@ const Manifesto = () => {
           <p>
             In fact, the world seems to have changed drastically since we last
             met in Berlin in{" "}
-            <a href="https://ethberlin.com/about/" target="_blank">
+            <a href="https://2018.ethberlin.org/about/" target="_blank">
               2018 for ETHBerlin
             </a>{" "}
             and in{" "}
-            <a href="https://ethberlinzwei.com/about.html" target="_blank">
+            <a href="https://2019.ethberlin.org/about.html" target="_blank">
               2019 for ETHBerlin ZWEI
             </a>
             .
@@ -152,7 +152,7 @@ const Manifesto = () => {
               IPFS Pinata
             </a>{" "}
             or the{" "}
-            <a href="https://goerli.net/" target="_blank">
+            <a href="https://goerli.dod.ngo/" target="_blank">
               Goerli Testnet
             </a>
             . And legend has it that even the Dune Analytics founders{" "}

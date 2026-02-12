@@ -1,8 +1,8 @@
 # ETHBerlin³ (2022) Website
 
-> - https://ethberlin.ooo
+> - https://2022.ethberlin.org
 
-Join the ETHBerlin³ Matrix space to contribute: https://matrix.to/#/#ethberlin:matrix.org
+Join the ETHBerlin³ Matrix space to contribute: https://matrix.to/#/%23ethberlin:dod.ngo
 
 # Run
 

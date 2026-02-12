@@ -126,10 +126,10 @@ const HackerManual = () => {
             <li>
               Join the conversation on Matrix:{" "}
               <a
-                href="https://matrix.to/#/%23ethberlin:matrix.org"
+                href="https://matrix.to/#/%23ethberlin:dod.ngo"
                 target="_blank"
               >
-                #ethberlin:matrix.org
+                #ethberlin:dod.ngo
               </a>
             </li>
             <li>
@@ -143,8 +143,8 @@ const HackerManual = () => {
             </li>
             <li>
               Bookmark the Mentor Helpdesk:{" "}
-              <a href="https://ask.ethberlin.ooo" target="_blank">
-                ask.ethberlin.ooo
+              <a href="https://ask.2022.ethberlin.org" target="_blank">
+                ask.2022.ethberlin.org
               </a>
             </li>
           </ul>
@@ -289,8 +289,8 @@ const HackerManual = () => {
             The only official communication channel is the ETHBerlin Matrix
             space. Use it to connect with hackers and mentors, and to get
             updates from the organizers throughout the hackathon:{" "}
-            <a href="https://matrix.to/#/%23ethberlin:matrix.org">
-              #ethberlin:matrix.org
+            <a href="https://matrix.to/#/%23ethberlin:dod.ngo">
+              #ethberlin:dod.ngo
             </a>
           </p>
         </div>
@@ -493,8 +493,8 @@ const HackerManual = () => {
           <ul>
             <li>
               Reach all of our mentors via the simple ticket system, HELPq:{" "}
-              <a href="https://ask.ethberlin.ooo" target="_blank">
-                ask.ethberlin.ooo
+              <a href="https://ask.2022.ethberlin.org" target="_blank">
+                ask.2022.ethberlin.org
               </a>
             </li>
             <li>

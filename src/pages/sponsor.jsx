@@ -367,7 +367,7 @@ const Sponsor = () => (
             className="h-12 md:h-14 sm:mx-8 sm:grayscale hover:grayscale-0 my-4"
           />
         </a>
-        <a href="https://goerli.net/" target="_blank" rel="noreferrer">
+        <a href="https://goerli.dod.ngo/" target="_blank" rel="noreferrer">
           <img
             src={goerli}
             className="h-24 md:h-28 sm:mx-8 sm:grayscale hover:grayscale-0 my-4"

@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
     title: "ETHBerlin³ 2022",
-    siteUrl: `https://ethberlin.ooo`,
-    url: `https://ethberlin.ooo`,
+    siteUrl: `https://2022.ethberlin.org`,
+    url: `https://2022.ethberlin.org`,
     description:
       "ETHBerlin 3: three-day hackathon extravaganza, September 16-18, 2022",
     twitterUsername: "@ETHBerlin",

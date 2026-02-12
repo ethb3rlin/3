@@ -50,7 +50,7 @@ const Contribute = () => (
       </p>
       <p>
         The sponsorship deck is available{" "}
-        <a href="https://ethberlin.ooo/sponsor.pdf" target="_blank">here.</a>
+        <a href="https://2022.ethberlin.org/sponsor.pdf" target="_blank">here.</a>
       </p>
       <p>
         As an acknowledged German non-profit entity we are entitled to issue

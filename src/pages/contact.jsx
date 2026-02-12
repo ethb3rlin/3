@@ -27,7 +27,7 @@ const Impressum = () => {
                 </li>
                 <li>
                   join our{" "}
-                  <a href="https://matrix.to/#/%23ethberlin:matrix.org">
+                  <a href="https://matrix.to/#/%23ethberlin:dod.ngo">
                     matrix space
                   </a>
                 </li>
