@@ -31,6 +31,21 @@ const Photos = () => {
   return (
     <Layout showEthDiamond={false}>
       <h1 className="my-4 underline text-secondary">(g)allery</h1>
+      <p>
+        Photos of the event were provided by{" "}
+        <a href="https://www.antontal.com/" target="_blank" rel="noreferrer">
+          Anton Tal
+        </a>
+        , licensed{" "}
+        <a
+          href="https://creativecommons.org/licenses/by-sa/4.0/"
+          target="_blank"
+          rel="noreferrer"
+        >
+          CC BY-SA 4.0
+        </a>
+        . Please consider leaving Anton a donation: <code>antontal.eth</code>
+      </p>
 
       <div>
         <Gallery
