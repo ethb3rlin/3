@@ -1,0 +1,65 @@
+/*
+ * SPDX-FileCopyrightText: 2026 Department of Decentralization
+ * SPDX-License-Identifier: Unlicense
+ *
+ * This is free and unencumbered software released into the public domain.
+ * For more information, please refer to <https://unlicense.org>
+ */
+
+/* The edition counter, src/components/EditionCounter.jsx. */
+
+/* A digit cell is as wide as its ghost 8. */
+.edition-digit {
+  position: relative;
+  display: block;
+  transition:
+    color 0.15s,
+    text-shadow 0.15s;
+}
+
+/* 60% yellow and never underlined. The :hover selector outweighs the site's
+   `a:hover` rule, which underlines links and turns them full yellow. */
+.edition-digit,
+.edition-digit:hover {
+  color: rgb(255 210 0 / 60%);
+  text-decoration: none;
+}
+
+/* Lit: this site's digit, and the digit the pointer or focus is on. The glow
+   is the logo's, as in `.blur-text-small`. */
+.edition-digit.is-lit,
+.edition-digit[aria-current] {
+  color: transparent;
+  text-shadow:
+    0 0 7px rgb(255 210 0 / 75%),
+    #ffd200 0 0 2px;
+}
+
+/* The mobile counter's lit digit glows like the mobile logo, as in
+   `.blur-text-smaller`. */
+.edition-counter--compact .edition-digit[aria-current] {
+  text-shadow:
+    0 0 5px rgb(255 210 0 / 75%),
+    #ffd200 0 0 1.5px;
+}
+
+/* The digit sits on the ghost's right-hand segments. */
+.edition-digit__value {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+/* Unlit segments: an 8 that never glows. */
+.edition-digit__ghost {
+  color: rgb(255 210 0 / 12%);
+  text-shadow: none;
+}
+
+.edition-counter__readout {
+  color: rgb(255 210 0 / 60%);
+}
+
+.edition-counter__readout.is-lit {
+  color: #ffd200;
+}
