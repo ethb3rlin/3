@@ -1,4 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
+import EditionCounter from "../components/EditionCounter";
 import EthBerlinLogo from "../components/EthBerlinLogo";
 import EthDiamond from "../components/EthDiamond";
 import Seo from "../components/seo";
@@ -96,11 +97,14 @@ const Home = () => {
       />
       {/* Non-moving logo navbar for mobile */}
       <div className="sm:hidden flex justify-between text-berlin-yellow my-8 mx-4">
-        <EthBerlinLogo
-          className=""
-          titleClassName="text-4xl"
-          subtitleClassName={`text-lg `}
-        />
+        <div>
+          <EthBerlinLogo
+            className=""
+            titleClassName="text-4xl"
+            subtitleClassName={`text-lg `}
+          />
+          <EditionCounter compact />
+        </div>
         <div className=" flex flex-col flex-grow-0 font-w95  text-2xl leading-3 justify-center z-30">
           <button
             className="p-2 blur-text-smaller"

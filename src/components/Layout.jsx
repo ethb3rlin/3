@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import EditionCounter from "./EditionCounter";
 import EthBerlinLogo from "./EthBerlinLogo";
 import EthDiamond from "./EthDiamond";
 import Seo from "./seo";
@@ -28,13 +29,16 @@ const Layout = ({ children, showEthDiamond }) => {
       <div className="sm:hidden text-berlin-yellow my-8 mx-4">
         {/* Header */}
         <div className="flex justify-between">
-          <a style={{ textDecoration: "none" }} href="/">
-            <EthBerlinLogo
-              className=""
-              titleClassName="text-4xl"
-              subtitleClassName={`text-lg `}
-            />
-          </a>
+          <div>
+            <a style={{ textDecoration: "none" }} href="/">
+              <EthBerlinLogo
+                className=""
+                titleClassName="text-4xl"
+                subtitleClassName={`text-lg `}
+              />
+            </a>
+            <EditionCounter compact />
+          </div>
           <div className=" flex flex-col flex-grow-0 font-w95  text-berlin-yellow text-2xl leading-3 justify-center">
             <button
               className="p-2 blur-text-smaller"

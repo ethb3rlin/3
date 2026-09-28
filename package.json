@@ -16,6 +16,7 @@
     "build": "gatsby build",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
+    "test": "node --test --experimental-test-coverage src/data/editions.test.mjs",
     "deploy": "echo 'https://2022.ethberlin.org' > ./build/CNAME && gh-pages -d build"
   },
   "dependencies": {

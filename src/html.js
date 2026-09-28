@@ -1,5 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
+import { editionKeys } from "./data/editions.mjs";
 
 export default function HTML(props) {
   return (
@@ -15,6 +16,7 @@ export default function HTML(props) {
           dangerouslySetInnerHTML={{
             __html: `
             document.onkeydown = checkKey;
+            var EDITION_KEYS = ${JSON.stringify(editionKeys())};
 
             function checkKey(e) {
                 e = e || window.event;
@@ -53,6 +55,9 @@ export default function HTML(props) {
                 }
                 else if (e.key == 'g' || e.key == 'G') {
                   window.location.href= "/gallery";
+                }
+                else if (EDITION_KEYS.hasOwnProperty(e.key) && !e.ctrlKey && !e.altKey && !e.metaKey) {
+                  window.location.href= EDITION_KEYS[e.key];
                 }
             }
             `,
